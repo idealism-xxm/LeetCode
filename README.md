@@ -8,11 +8,11 @@ LeetCode AC代码（附思路、注释）
 
 | 题目 | 难度 | 思路 | Go |
 | ------ | ------ | ------ | ------ |
-| [0001 - Two Sum](https://leetcode.com/problems/two-sum/) | Easy | 模拟 | [√](./Go/src/0001%20-%20Two%20Sum.go) |
+| [0001 - Two Sum](https://leetcode.com/problems/two-sum/) | Easy | 枚举 | [√](./Go/src/0001%20-%20Two%20Sum.go) |
 | [0002 - Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | Medium | 模拟 | [√](./Go/src/0002%20-%20Add%20Two%20Numbers.go) |
 | [0003 - Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | Medium | 双指针 | [√](./Go/src/0003%20-%20Longest%20Substring%20Without%20Repeating%20Characters.go) |
 | [0004 - Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/) | Hard | 二分 | [●](./Go/src/0004%20-%20Median%20of%20Two%20Sorted%20Arrays.go) |
-| [0005 - Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) | Medium | 暴力 &#124; Manacher | [√ &#124; ●](./Go/src/0004%20-%20Median%20of%20Two%20Sorted%20Arrays.go) |
+| [0005 - Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) | Medium | 枚举 &#124; Manacher | [√ &#124; ●](./Go/src/0004%20-%20Median%20of%20Two%20Sorted%20Arrays.go) |
 | [0006 - ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/) | Medium | 模拟 | [√](./Go/src/0006%20-%20ZigZag%20Conversion.go) |
 | [0007 - Reverse Integer](https://leetcode.com/problems/reverse-integer/) | Easy | 模拟 | [√](./Go/src/0007%20-%20Reverse%20Integer.go) |
 | [0008 - String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/) | Medium | 模拟 | [√](./Go/src/0008%20-%20String%20to%20Integer%20\(atoi\).go) |
@@ -21,3 +21,5 @@ LeetCode AC代码（附思路、注释）
 | [0011 - Container With Most Water](https://leetcode.com/problems/container-with-most-water/) | Medium | 双指针 | [●](./Go/src/0011%20-%20Container%20With%20Most%20Water.go) |
 | [0012 - Integer to Roman](https://leetcode.com/problems/integer-to-roman/) | Medium | 模拟 | [√](./Go/src/0012%20-%20Integer%20to%20Roman.go) |
 | [0013 - Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | Easy | 模拟 &#124; 规律 | [√ &#124; ●](./Go/src/0013%20-%20Roman%20to%20Integer.go) |
+| [0014 - Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/) | Easy | 枚举 | [√](./Go/src/0014%20-%20Longest%20Common%20Prefix.go) |
+| [0015 - 3Sum](https://leetcode.com/problems/3sum/) | Medium | 枚举 &#124; 双指针 | [√ &#124; ●](./Go/src/0015%20-%203Sum.go) |
