@@ -25,3 +25,4 @@ LeetCode AC代码（附思路、注释）
 | [0015 - 3Sum](https://leetcode.com/problems/3sum/) | Medium | 枚举 &#124; 双指针 | [√ &#124; ●](./Go/src/0015%20-%203Sum.go) |
 | [0016 - 3Sum Closest](https://leetcode.com/problems/3sum-closest/) | Medium | 双指针 | [√](./Go/src/0016%20-%203Sum%20Closest.go) |
 | [0017 - Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) | Medium | 递归 | [√](./Go/src/0017%20-%20Letter%20Combinations%20of%20a%20Phone%20Number.go) |
+| [0019 - Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | Medium | 模拟 &#124; 快慢指针| [√ &#124; ○](./Go/src/0019%20-%20Remove%20Nth%20Node%20From%20End%20of%20List.go) |
