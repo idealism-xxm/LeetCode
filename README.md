@@ -28,3 +28,5 @@ LeetCode AC代码（附思路、注释）
 | [0019 - Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | Medium | 模拟 &#124; 快慢指针| [√ &#124; ○](./Go/src/0019%20-%20Remove%20Nth%20Node%20From%20End%20of%20List.go) |
 | [0020 - Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | Easy | 模拟 | [√](./Go/src/0020%20-%20Valid%20Parentheses.go) |
 | [0021 - Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | Easy | 模拟 | [√](./Go/src/0021%20-%20Merge%20Two%20Sorted%20Lists.go) |
+| [0022 - Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) | Medium | 递归 | [√](./Go/src/0022%20-%20Generate%20Parentheses.go) |
+| [0023 - Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) | Hard | 堆 &#124; 分治 | [√ &#124; ○](./Go/src/0023%20-%20Merge%20k%20Sorted%20Lists.go) |
