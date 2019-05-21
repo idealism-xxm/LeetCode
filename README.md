@@ -25,8 +25,10 @@ LeetCode AC代码（附思路、注释）
 | [0015 - 3Sum](https://leetcode.com/problems/3sum/) | Medium | 枚举 &#124; 双指针 | [√ &#124; ●](./Go/src/0015%20-%203Sum.go) |
 | [0016 - 3Sum Closest](https://leetcode.com/problems/3sum-closest/) | Medium | 双指针 | [√](./Go/src/0016%20-%203Sum%20Closest.go) |
 | [0017 - Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) | Medium | 递归 | [√](./Go/src/0017%20-%20Letter%20Combinations%20of%20a%20Phone%20Number.go) |
+| [0018 - 4Sum](https://leetcode.com/problems/4sum/) | Medium | 枚举 &#124; 递归 &#124; 双指针 | [√ &#124; √ &#124; √](./Go/src/0018%20-%204Sum.go) |
 | [0019 - Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | Medium | 模拟 &#124; 快慢指针| [√ &#124; ○](./Go/src/0019%20-%20Remove%20Nth%20Node%20From%20End%20of%20List.go) |
 | [0020 - Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | Easy | 模拟 | [√](./Go/src/0020%20-%20Valid%20Parentheses.go) |
 | [0021 - Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | Easy | 模拟 | [√](./Go/src/0021%20-%20Merge%20Two%20Sorted%20Lists.go) |
 | [0022 - Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) | Medium | 递归 | [√](./Go/src/0022%20-%20Generate%20Parentheses.go) |
 | [0023 - Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) | Hard | 堆 &#124; 分治 | [√ &#124; ○](./Go/src/0023%20-%20Merge%20k%20Sorted%20Lists.go) |
+| [0024 - Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/) | Medium | 模拟 | [√](./Go/src/0024%20-%20Swap%20Nodes%20in%20Pairs.go) |
