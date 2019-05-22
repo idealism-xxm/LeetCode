@@ -12,7 +12,7 @@ LeetCode AC代码（附思路、注释）
 | [0002 - Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | Medium | 模拟 | [√](./Go/src/0002%20-%20Add%20Two%20Numbers.go) |
 | [0003 - Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | Medium | 双指针 | [√](./Go/src/0003%20-%20Longest%20Substring%20Without%20Repeating%20Characters.go) |
 | [0004 - Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/) | Hard | 二分 | [●](./Go/src/0004%20-%20Median%20of%20Two%20Sorted%20Arrays.go) |
-| [0005 - Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) | Medium | 枚举 &#124; Manacher | [√ &#124; ●](./Go/src/0004%20-%20Median%20of%20Two%20Sorted%20Arrays.go) |
+| [0005 - Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) | Medium | 枚举 &#124; Manacher | [√ &#124; ●](./Go/src/0005%20-%20Longest%20Palindromic%20Substring.go) |
 | [0006 - ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/) | Medium | 模拟 | [√](./Go/src/0006%20-%20ZigZag%20Conversion.go) |
 | [0007 - Reverse Integer](https://leetcode.com/problems/reverse-integer/) | Easy | 模拟 | [√](./Go/src/0007%20-%20Reverse%20Integer.go) |
 | [0008 - String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/) | Medium | 模拟 | [√](./Go/src/0008%20-%20String%20to%20Integer%20\(atoi\).go) |
@@ -32,3 +32,6 @@ LeetCode AC代码（附思路、注释）
 | [0022 - Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) | Medium | 递归 | [√](./Go/src/0022%20-%20Generate%20Parentheses.go) |
 | [0023 - Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) | Hard | 堆 &#124; 分治 | [√ &#124; ○](./Go/src/0023%20-%20Merge%20k%20Sorted%20Lists.go) |
 | [0024 - Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/) | Medium | 模拟 | [√](./Go/src/0024%20-%20Swap%20Nodes%20in%20Pairs.go) |
+| [0025 - Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/) | Hard | 头插法 + 计数 | [√](./Go/src/0025%20-%20Reverse%20Nodes%20in%20k-Group.go) |
+| [0026 - Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | Easy | 快慢指针 | [√](./Go/src/0026%20-%20Remove%20Duplicates%20from%20Sorted%20Array.go) |
+| [0027 - Remove Element](https://leetcode.com/problems/remove-element/) | Easy | 快慢指针 | [√](./Go/src/0027%20-%20Remove%20Element.go) |
