@@ -35,4 +35,5 @@ LeetCode AC代码（附思路、注释）
 | [0025 - Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/) | Hard | 头插法 + 计数 | [√](./Go/src/0025%20-%20Reverse%20Nodes%20in%20k-Group.go) |
 | [0026 - Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | Easy | 快慢指针 | [√](./Go/src/0026%20-%20Remove%20Duplicates%20from%20Sorted%20Array.go) |
 | [0027 - Remove Element](https://leetcode.com/problems/remove-element/) | Easy | 快慢指针 | [√](./Go/src/0027%20-%20Remove%20Element.go) |
-| [0028 - Implement strStr()](https://leetcode.com/problems/implement-strstr/) | Easy | 枚举 &#124; ● | [√ &#124; ●](./Go/src/0028%20-%20Implement%20strStr().go) |
+| [0028 - Implement strStr()](https://leetcode.com/problems/implement-strstr/) | Easy | 枚举 &#124; KMP | [√ &#124; ●](./Go/src/0028%20-%20Implement%20strStr().go) |
+| [0029 - Divide Two Integers](https://leetcode.com/problems/divide-two-integers/) | Medium | 位运算 &#124; 位运算 + 递归 | [√ &#124; √](./Go/src/0029%20-%20Divide%20Two%20Integers.go) |
