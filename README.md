@@ -37,3 +37,4 @@ LeetCode AC代码（附思路、注释）
 | [0027 - Remove Element](https://leetcode.com/problems/remove-element/) | Easy | 快慢指针 | [√](./Go/src/0027%20-%20Remove%20Element.go) |
 | [0028 - Implement strStr()](https://leetcode.com/problems/implement-strstr/) | Easy | 枚举 &#124; KMP | [√ &#124; ●](./Go/src/0028%20-%20Implement%20strStr().go) |
 | [0029 - Divide Two Integers](https://leetcode.com/problems/divide-two-integers/) | Medium | 位运算 &#124; 位运算 + 递归 | [√ &#124; √](./Go/src/0029%20-%20Divide%20Two%20Integers.go) |
+| [0031 - Next Permutation](https://leetcode.com/problems/next-permutation/) | Medium | 模拟 | [√](./Go/src/0031%20-%20Next%20Permutation.go) |
