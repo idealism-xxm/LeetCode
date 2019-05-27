@@ -38,3 +38,4 @@ LeetCode AC代码（附思路、注释）
 | [0028 - Implement strStr()](https://leetcode.com/problems/implement-strstr/) | Easy | 枚举 &#124; KMP | [√ &#124; ●](./Go/src/0028%20-%20Implement%20strStr().go) |
 | [0029 - Divide Two Integers](https://leetcode.com/problems/divide-two-integers/) | Medium | 位运算 &#124; 位运算 + 递归 | [√ &#124; √](./Go/src/0029%20-%20Divide%20Two%20Integers.go) |
 | [0031 - Next Permutation](https://leetcode.com/problems/next-permutation/) | Medium | 模拟 | [√](./Go/src/0031%20-%20Next%20Permutation.go) |
+| [0032 - Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses/) | Hard | 栈 + DP &#124; 栈 &#124; DP &#124; 计数 | [√ &#124; ○ &#124; ○ &#124; ●](./Go/src/0032%20-%20Longest%20Valid%20Parentheses.go) |
