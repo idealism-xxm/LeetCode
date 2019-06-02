@@ -43,3 +43,4 @@ LeetCode AC代码（附思路、注释）
 | [0033 - Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | Medium | 两次二分 &#124; 一次二分 | [√ &#124; ○](./Go/src/0033%20-%20Search%20in%20Rotated%20Sorted%20Array.go) |
 | [0034 - Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/) | Medium | 两次二分 | [√](./Go/src/0034%20-%20Find%20First%20and%20Last%20Position%20of%20Element%20in%20Sorted%20Array.go) |
 | [0035 - Search Insert Position](https://leetcode.com/problems/search-insert-position/) | Easy | 二分 | [√](./Go/src/0035%20-%20Search%20Insert%20Position.go) |
+| [0038 - Count and Say](https://leetcode-cn.com/problems/count-and-say/) | Easy | 模拟 | [√](./Go/src/0038%20-%20Count%20and%20Say.go) |
