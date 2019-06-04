@@ -45,3 +45,4 @@ LeetCode AC代码（附思路、注释）
 | [0035 - Search Insert Position](https://leetcode.com/problems/search-insert-position/) | Easy | 二分 | [√](./Go/src/0035%20-%20Search%20Insert%20Position.go) |
 | [0036 - Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) | Medium | 模拟 | [√](./Go/src/0036%20-%20Valid%20Sudoku.go) |
 | [0038 - Count and Say](https://leetcode-cn.com/problems/count-and-say/) | Easy | 模拟 | [√](./Go/src/0038%20-%20Count%20and%20Say.go) |
+| [0041 - First Missing Positive](https://leetcode.com/problems/first-missing-positive/) | Hard | 模拟 | [√](./Go/src/0041%20-%20First%20Missing%20Positive.go) |
