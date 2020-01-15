@@ -1,4 +1,4 @@
-// 链接：https://leetcode-cn.com/problems/count-and-say/
+// 链接：https://leetcode.com/problems/count-and-say/
 // 题意：存在以下规律的字符串：后一个字符串是前一个字符串把一段连续的数字说出来的形式
 //      1.      1
 //      2.      11              前一个字符串有 1个1，写作：11
@@ -13,12 +13,13 @@
 // 输入：4
 // 输出："1211"
 
-// 思路：模拟即可，
-//      从后往前找，每次记住最大的数 maxNum
-//      找到第一个小于当前最大的数的下标 index
-//      在从 index + 1 往后找比 nums[index] 大的最小数的下标 targetIndex
-//      交换 nums[index] 和 nums[targetIndex]，然后对 nums[index + 1] 按升序排序
-//      时间复杂度：O(nlogn)
+// 思路：模拟即可
+//      每次迭代，从前一个字符串 pre 的第二的字符 pre[i] 开始统计
+//      1. 若 pre[i - 1] == pre[i]
+//          则当前连续的数字还未结束，继续统计个数
+//      2. 若 pre[i - 1] != pre[i]
+//          则前一段连续的数字已结束，“说”出这一串数字
+//      每次迭代结束前，把最后一段数字“说出来”
 
 import (
     "bytes"
