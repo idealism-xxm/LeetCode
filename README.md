@@ -44,7 +44,8 @@ LeetCode AC代码（附思路、注释）
 | [0034 - Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/) | Medium | 两次二分 | [√](./Go/src/0034%20-%20Find%20First%20and%20Last%20Position%20of%20Element%20in%20Sorted%20Array.go) |
 | [0035 - Search Insert Position](https://leetcode.com/problems/search-insert-position/) | Easy | 二分 | [√](./Go/src/0035%20-%20Search%20Insert%20Position.go) |
 | [0036 - Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) | Medium | 模拟 | [√](./Go/src/0036%20-%20Valid%20Sudoku.go) |
+| [0037 - Sudoku Solver](https://leetcode.com/problems/sudoku-solver/) | Hard | 递归 | [√](./Go/src/0037%20-%20Sudoku%20Solver.go) |
 | [0038 - Count and Say](https://leetcode-cn.com/problems/count-and-say/) | Easy | 模拟 | [√](./Go/src/0038%20-%20Count%20and%20Say.go) |
-| [0039 - Combination Sum](https://leetcode.com/problems/combination-sum/) | Medium | 模拟 | [√](./Go/src/0039%20-%20Combination%20Sum.go) |
-| [0040 - Combination Sum II](https://leetcode.com/problems/combination-sum-ii/) | Medium | 模拟 | [√](./Go/src/0040%20-%20Combination%20Sum%20II.go) |
+| [0039 - Combination Sum](https://leetcode.com/problems/combination-sum/) | Medium | 递归 | [√](./Go/src/0039%20-%20Combination%20Sum.go) |
+| [0040 - Combination Sum II](https://leetcode.com/problems/combination-sum-ii/) | Medium | 递归 | [√](./Go/src/0040%20-%20Combination%20Sum%20II.go) |
 | [0041 - First Missing Positive](https://leetcode.com/problems/first-missing-positive/) | Hard | 模拟 | [√](./Go/src/0041%20-%20First%20Missing%20Positive.go) |
