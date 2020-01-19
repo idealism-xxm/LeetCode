@@ -49,3 +49,4 @@ LeetCode AC代码（附思路、注释）
 | [0039 - Combination Sum](https://leetcode.com/problems/combination-sum/) | Medium | 递归 | [√](./Go/src/0039%20-%20Combination%20Sum.go) |
 | [0040 - Combination Sum II](https://leetcode.com/problems/combination-sum-ii/) | Medium | 递归 | [√](./Go/src/0040%20-%20Combination%20Sum%20II.go) |
 | [0041 - First Missing Positive](https://leetcode.com/problems/first-missing-positive/) | Hard | 模拟 | [√](./Go/src/0041%20-%20First%20Missing%20Positive.go) |
+| [0042 - Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) | Hard | 枚举 &#124; 双指针 | [√ &#124; ○](./Go/src/0041%20-%20First%20Missing%20Positive.go) |
