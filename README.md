@@ -52,3 +52,4 @@ LeetCode AC代码（附思路、注释）
 | [0042 - Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) | Hard | 枚举 &#124; 双指针 | [√ &#124; ○](./Go/src/0042%20-%20Trapping%20Rain%20Water.go) |
 | [0043 - Multiply Strings](https://leetcode.com/problems/multiply-strings/) | Medium | 模拟 | [√](./Go/src/0043%20-%20Multiply%20Strings.go) |
 | [0044 - Wildcard Matching](https://leetcode.com/problems/wildcard-matching/) | Hard | DP | [√](./Go/src/0044%20-%20Wildcard%20Matching.go) |
+| [0045 - Jump Game II](https://leetcode.com/problems/jump-game-ii/) | Hard | DP | [√](./Go/src/0045%20-%20Jump%20Game%20II.go) |
