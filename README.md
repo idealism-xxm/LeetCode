@@ -53,3 +53,4 @@ LeetCode AC代码（附思路、注释）
 | [0043 - Multiply Strings](https://leetcode.com/problems/multiply-strings/) | Medium | 模拟 | [√](./Go/src/0043%20-%20Multiply%20Strings.go) |
 | [0044 - Wildcard Matching](https://leetcode.com/problems/wildcard-matching/) | Hard | DP | [√](./Go/src/0044%20-%20Wildcard%20Matching.go) |
 | [0045 - Jump Game II](https://leetcode.com/problems/jump-game-ii/) | Hard | DP | [√](./Go/src/0045%20-%20Jump%20Game%20II.go) |
+| [0046 - Permutations](https://leetcode.com/problems/permutations/) | Permutations | 递归 | [√](./Go/src/0046%20-%20Permutations.go) |
