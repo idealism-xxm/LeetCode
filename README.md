@@ -55,3 +55,4 @@ LeetCode AC代码（附思路、注释）
 | [0045 - Jump Game II](https://leetcode.com/problems/jump-game-ii/) | Hard | DP | [√](./Go/src/0045%20-%20Jump%20Game%20II.go) |
 | [0046 - Permutations](https://leetcode.com/problems/permutations/) | Medium | 递归 | [√](./Go/src/0046%20-%20Permutations.go) |
 | [0047 - Permutations II](https://leetcode.com/problems/permutations-ii/) | Medium | 递归 | [√](./Go/src/0047%20-%20Permutations%20II.go) |
+| [0048 - Rotate Image](https://leetcode.com/problems/rotate-image/) | Medium | 模拟 | [√](./Go/src/0048%20-%20Rotate%20Image.go) |
