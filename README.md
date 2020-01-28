@@ -58,3 +58,4 @@ LeetCode AC代码（附思路、注释）
 | [0048 - Rotate Image](https://leetcode.com/problems/rotate-image/) | Medium | 模拟 | [√](./Go/src/0048%20-%20Rotate%20Image.go) |
 | [0049 - Group Anagrams](https://leetcode.com/problems/group-anagrams/) | Medium | 排序模拟 &#124; 计数模拟 | [√ &#124; ●](./Go/src/0049%20-%20Group%20Anagrams.go) |
 | [0050 - Pow(x, n)](https://leetcode.com/problems/powx-n/) | Medium | 快速幂 | [√](./Go/src/0050%20-%20Pow(x,%20n).go) |
+| [0051 - N-Queens](https://leetcode.com/problems/n-queens/) | Hard | 递归 | [√](./Go/src/0051%20-%20N-Queens.go) |
