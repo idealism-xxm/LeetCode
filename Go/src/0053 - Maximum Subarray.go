@@ -10,7 +10,6 @@
 //		1. 若 dp[i] < 0 ，则 dp[i] = nums[i]
 //		2. 若 dp[i] >= 0 ， 则 dp[i] = dp[i - 1] + nums[i]
 //		时间复杂度：O(n)
-package main
 
 func maxSubArray(nums []int) int {
 	n := len(nums)

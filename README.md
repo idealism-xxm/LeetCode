@@ -61,3 +61,5 @@ LeetCode AC代码（附思路、注释）
 | [0051 - N-Queens](https://leetcode.com/problems/n-queens/) | Hard | 递归 | [√](./Go/src/0051%20-%20N-Queens.go) |
 | [0052 - N-Queens II](https://leetcode.com/problems/n-queens-ii/) | Hard | 递归 | [√](./Go/src/0052%20-%20N-Queens%20II.go) |
 | [0053 - Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | Easy | DP &#124; 分治 | [√ &#124; ○](./Go/src/0053%20-%20Maximum%20Subarray.go) |
+| [0054 - Spiral Matrix](https://leetcode.com/problems/spiral-matrix/) | Medium | 模拟 | [√](./Go/src/0054%20-%20Spiral%20Matrix.go) |
+| [0055 - Jump Game](https://leetcode.com/problems/jump-game/) | Medium | DP &#124; 贪心 | [√ &#124; ○](./Go/src/0055%20-%20Jump%20Game.go) |
