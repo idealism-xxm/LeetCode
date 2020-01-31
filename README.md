@@ -65,3 +65,4 @@ LeetCode AC代码（附思路、注释）
 | [0055 - Jump Game](https://leetcode.com/problems/jump-game/) | Medium | DP &#124; 贪心 | [√ &#124; ○](./Go/src/0055%20-%20Jump%20Game.go) |
 | [0056 - Merge Intervals](https://leetcode.com/problems/merge-intervals/) | Medium | 模拟 | [√](./Go/src/0056%20-%20Merge%20Intervals.go) |
 | [0057 - Insert Interval](https://leetcode.com/problems/insert-interval/) | Hard | 模拟 | [√](./Go/src/0057%20-%20Insert%20Interval.go) |
+| [0058 - Length of Last Word](https://leetcode.com/problems/length-of-last-word/) | Easy | 模拟 | [√](./Go/src/0058%20-%20Length%20of%20Last%20Word.go) |
