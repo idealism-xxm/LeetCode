@@ -13,7 +13,6 @@
 //		将 (https://leetcode.com/problems/spiral-matrix/) 的代码修改即可
 //		顺时针螺旋加入所有元素，注意换方向的边界即可
 //		时间复杂度： O(n ^ 2)
-package main
 
 func generateMatrix(n int) [][]int {
 	result := make([][]int, n) // 结果矩阵
