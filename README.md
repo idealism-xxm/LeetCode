@@ -68,3 +68,4 @@ LeetCode AC代码（附思路、注释）
 | [0058 - Length of Last Word](https://leetcode.com/problems/length-of-last-word/) | Easy | 模拟 | [√](./Go/src/0058%20-%20Length%20of%20Last%20Word.go) |
 | [0059 - Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii/) | Medium | 模拟 | [√](./Go/src/0059%20-%20Spiral%20Matrix%20II.go) |
 | [0060 - Permutation Sequence](https://leetcode.com/problems/permutation-sequence/) | Medium | 模拟 | [√](./Go/src/0060%20-%20Permutation%20Sequence.go) |
+| [0061 - Rotate List](https://leetcode.com/problems/rotate-list/) | Medium | 双指针 | [√](./Go/src/0061%20-%20Rotate%20List.go) |
