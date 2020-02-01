@@ -69,3 +69,5 @@ LeetCode AC代码（附思路、注释）
 | [0059 - Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii/) | Medium | 模拟 | [√](./Go/src/0059%20-%20Spiral%20Matrix%20II.go) |
 | [0060 - Permutation Sequence](https://leetcode.com/problems/permutation-sequence/) | Medium | 模拟 | [√](./Go/src/0060%20-%20Permutation%20Sequence.go) |
 | [0061 - Rotate List](https://leetcode.com/problems/rotate-list/) | Medium | 双指针 | [√](./Go/src/0061%20-%20Rotate%20List.go) |
+| [0062 - Unique Paths](https://leetcode.com/problems/unique-paths/) | Medium | DP | [√](./Go/src/0062%20-%20Unique%20Paths.go) |
+| [0063 - Unique Paths II](https://leetcode.com/problems/unique-paths-ii/) | Medium | DP | [√](./Go/src/0063%20-%20Unique%20Paths%20II.go) |
