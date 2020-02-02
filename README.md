@@ -74,3 +74,4 @@ LeetCode AC代码（附思路、注释）
 | [0064 - Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/) | Medium | DP | [√](./Go/src/0064%20-%20Minimum%20Path%20Sum.go) |
 | [0065 - Valid Number](https://leetcode.com/problems/valid-number/) | Hard | 模拟 | [√](./Go/src/0065%20-%20Valid%20Number.go) |
 | [0066 - Plus One](https://leetcode.com/problems/plus-one/) | Easy | 模拟 | [√](./Go/src/0066%20-%20Plus%20One.go) |
+| [0067 - Add Binary](https://leetcode.com/problems/add-binary/) | Easy | 模拟 | [√](./Go/src/0067%20-%20Add%20Binary.go) |
