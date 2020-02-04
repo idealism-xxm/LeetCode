@@ -78,3 +78,4 @@ LeetCode AC代码（附思路、注释）
 | [0068 - Text Justification](https://leetcode.com/problems/text-justification/) | Hard | 模拟 | [√](./Go/src/0068%20-%20Text%20Justification.go) |
 | [0069 - Sqrt(x)](https://leetcode.com/problems/sqrtx/) | Easy | 二分 | [√](./Go/src/0069%20-%20Sqrt(x).go) |
 | [0070 - Climbing Stairs.go](https://leetcode.com/problems/climbing-stairs/) | Easy | DP | [√](./Go/src/0070%20-%20Climbing%20Stairs.go) |
+| [0071 - Simplify Path](https://leetcode.com/problems/simplify-path/) | Medium | 模拟 | [√](./Go/src/0071%20-%20Simplify%20Path.go) |
