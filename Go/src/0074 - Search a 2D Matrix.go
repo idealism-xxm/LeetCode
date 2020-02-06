@@ -26,7 +26,6 @@
 //		先对第一列二分找到数字可能所在的行，
 //		再对当前行进行二分判断数字是否存在
 //		时间复杂度：O(logm + logn) ，空间复杂度： O(1)
-package main
 
 func searchMatrix(matrix [][]int, target int) bool {
 	if len(matrix) == 0 || len(matrix[0]) == 0 {
