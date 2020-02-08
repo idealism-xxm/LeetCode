@@ -86,3 +86,4 @@ LeetCode AC代码（附思路、注释）
 | [0076 - Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/) | Medium | 双指针 | [√](./Go/src/0076%20-%20Minimum%20Window%20Substring.go) |
 | [0077 - Combinations](https://leetcode.com/problems/combinations/) | Medium | 递归 | [√](./Go/src/0077%20-%20Combinations.go) |
 | [0078 - Subsets](https://leetcode.com/problems/subsets/) | Medium | 递归 | [√](./Go/src/0078%20-%20Subsets.go) |
+| [0079 - Word Search](https://leetcode.com/problems/word-search/) | Medium | 递归 | [√](./Go/src/0079%20-%20Word%20Search.go) |
