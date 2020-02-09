@@ -89,3 +89,4 @@ LeetCode AC代码（附思路、注释）
 | [0079 - Word Search](https://leetcode.com/problems/word-search/) | Medium | 递归 | [√](./Go/src/0079%20-%20Word%20Search.go) |
 | [0080 - Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/) | Medium | 双指针 | [√](./Go/src/0080%20-%20Remove%20Duplicates%20from%20Sorted%20Array%20II.go) |
 | [0081 - Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/) | Medium | 一次二分 | [√](./Go/src/0081%20-%20Search%20in%20Rotated%20Sorted%20Array%20II.go) |
+| [0082 - Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/) | Medium | 模拟 | [√](./Go/src/0082%20-%20Remove%20Duplicates%20from%20Sorted%20List%20II.go) |
