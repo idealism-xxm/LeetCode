@@ -91,3 +91,4 @@ LeetCode AC代码（附思路、注释）
 | [0081 - Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/) | Medium | 一次二分 | [√](./Go/src/0081%20-%20Search%20in%20Rotated%20Sorted%20Array%20II.go) |
 | [0082 - Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/) | Medium | 模拟 | [√](./Go/src/0082%20-%20Remove%20Duplicates%20from%20Sorted%20List%20II.go) |
 | [0083 - Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/) | Easy | 模拟 | [√](./Go/src/0083%20-%20Remove%20Duplicates%20from%20Sorted%20List.go) |
+| [0084 - Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/) | Hard | 单调栈 &#124; DP | [√ &#124; ●](./Go/src/0084%20-%20Largest%20Rectangle%20in%20Histogram.go) |
