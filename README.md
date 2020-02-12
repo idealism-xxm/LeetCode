@@ -94,3 +94,4 @@ LeetCode AC代码（附思路、注释）
 | [0084 - Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/) | Hard | 单调栈 &#124; DP | [√ &#124; ●](./Go/src/0084%20-%20Largest%20Rectangle%20in%20Histogram.go) |
 | [0085 - Maximal Rectangle](https://leetcode.com/problems/maximal-rectangle/) | Hard | 单调栈 &#124; DP | [√ &#124; √](./Go/src/0085%20-%20Maximal%20Rectangle.go) |
 | [0086 - Partition List](https://leetcode.com/problems/partition-list/) | Medium | 模拟 | [√](./Go/src/0086%20-%20Partition%20List.go) |
+| [0087 - Scramble String](https://leetcode.com/problems/scramble-string/) | Hard | 递归 + 记忆化 &#124; DP | [○ &#124; ●](./Go/src/0087%20-%20Scramble%20String.go) |
