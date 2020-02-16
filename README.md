@@ -99,3 +99,4 @@ LeetCode AC代码（附思路、注释）
 | [0089 - Gray Code](https://leetcode.com/problems/gray-code/) | Medium | DP &#124; 数学 | [● &#124; ●](./Go/src/0089%20-%20Gray%20Code.go) |
 | [0090 - Subsets II](https://leetcode.com/problems/subsets-ii/) | Medium | 递归 | [√](./Go/src/0090%20-%20Subsets%20II.go) |
 | [0091 - Decode Ways](https://leetcode.com/problems/decode-ways/) | Medium | DP | [√](./Go/src/0091%20-%20Decode%20Ways.go) |
+| [0092 - Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/) | Medium | 模拟 | [√](./Go/src/0092%20-%20Reverse%20Linked%20List%20II.go) |
