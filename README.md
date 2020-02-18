@@ -101,3 +101,4 @@ LeetCode AC代码（附思路、注释）
 | [0091 - Decode Ways](https://leetcode.com/problems/decode-ways/) | Medium | DP | [√](./Go/src/0091%20-%20Decode%20Ways.go) |
 | [0092 - Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/) | Medium | 模拟 | [√](./Go/src/0092%20-%20Reverse%20Linked%20List%20II.go) |
 | [0093 - Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses/) | Medium | 递归 | [√](./Go/src/0093%20-%20Restore%20IP%20Addresses.go) |
+| [0094 - Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/) | Medium | 模拟 | [√](./Go/src/0094%20-%20Binary%20Tree%20Inorder%20Traversal.go) |
