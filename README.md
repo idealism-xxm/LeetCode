@@ -102,3 +102,5 @@ LeetCode AC代码（附思路、注释）
 | [0092 - Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/) | Medium | 模拟 | [√](./Go/src/0092%20-%20Reverse%20Linked%20List%20II.go) |
 | [0093 - Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses/) | Medium | 递归 | [√](./Go/src/0093%20-%20Restore%20IP%20Addresses.go) |
 | [0094 - Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/) | Medium | 模拟 | [√](./Go/src/0094%20-%20Binary%20Tree%20Inorder%20Traversal.go) |
+| [0095 - Unique Binary Search Trees II](https://leetcode.com/problems/unique-binary-search-trees-ii/) | Medium | DP | [√](./Go/src/0095%20-%20Unique%20Binary%20Search%20Trees%20II.go) |
+| [0096 - Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees/) | Medium | DP | [√](./Go/src/0096%20-%20Unique%20Binary%20Search%20Trees.go) |
