@@ -6,6 +6,9 @@ LeetCode AC代码（附思路、注释）
 ○：看题解可以用该解法，思路和代码均独立完成  
 ●：参考并理解题解，代码独立完成  
 
+<details>
+<summary>0001 ~ 0100</summary>
+
 | 题目 | 难度 | 思路 | Go |
 | ------ | ------ | ------ | ------ |
 | [0001 - Two Sum](https://leetcode.com/problems/two-sum/) | Easy | 枚举 | [√](./Go/src/0001%20-%20Two%20Sum.go) |
@@ -106,4 +109,6 @@ LeetCode AC代码（附思路、注释）
 | [0096 - Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees/) | Medium | DP | [√](./Go/src/0096%20-%20Unique%20Binary%20Search%20Trees.go) |
 | [0097 - Interleaving String](https://leetcode.com/problems/interleaving-string/) | Hard | DP | [√](./Go/src/0097%20-%20Interleaving%20String.go) |
 | [0098 - Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/) | Medium | 递归 &#124; 循环 | [√ &#124; ●](./Go/src/0098%20-%20Validate%20Binary%20Search%20Tree.go) |
-| [0099 - Recover Binary Search Tree.go](https://leetcode.com/problems/recover-binary-search-tree/) | Hard | 递归 &#124; Morris | [√ &#124; ●](./Go/src/0099%20-%20Recover%20Binary%20Search%20Tree.go) |
+| [0099 - Recover Binary Search Tree](https://leetcode.com/problems/recover-binary-search-tree/) | Hard | 递归 &#124; Morris | [√ &#124; ●](./Go/src/0099%20-%20Recover%20Binary%20Search%20Tree.go) |
+| [0100 - Same Tree](https://leetcode.com/problems/same-tree/) | Easy | 递归| [√](./Go/src/0100%20-%20Same%20Tree.go) |
+</details>
