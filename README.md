@@ -127,4 +127,5 @@ LeetCode AC代码（附思路、注释）
 | [0107 - Binary Tree Level Order Traversal II](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/) | Easy | 模拟 | [√](./Go/src/0101%20~%200200/0107%20-%20Binary%20Tree%20Level%20Order%20Traversal%20II.go) |
 | [0108 - Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/) | Easy | 递归 | [√](./Go/src/0101%20~%200200/0108%20-%20Convert%20Sorted%20Array%20to%20Binary%20Search%20Tree.go) |
 | [0109 - Convert Sorted List to Binary Search Tree](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/) | Medium | 递归 + 快慢指针 &#124; 递归 + 中序模拟 | [√ &#124; ●](./Go/src/0101%20~%200200/0109%20-%20Convert%20Sorted%20List%20to%20Binary%20Search%20Tree.go) |
+| [0110 - Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/) | Easy | 递归 | [√](./Go/src/0101%20~%200200/0110%20-%20Balanced%20Binary%20Tree.go) |
 </details>

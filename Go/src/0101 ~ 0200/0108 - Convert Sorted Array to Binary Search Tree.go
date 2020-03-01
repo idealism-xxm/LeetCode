@@ -1,7 +1,7 @@
 // 链接：https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/
 // 题意：给定一个排好序的数组，将其转换成一颗二叉搜索树，并保证每个结点的左右子树高度差不大于 1 ？
 
-// 输入：[-10,-3,0,5,9],
+// 输入：[-10,-3,0,5,9]
 // 输出：
 //      0
 //     / \
