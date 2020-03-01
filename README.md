@@ -119,8 +119,8 @@ LeetCode AC代码（附思路、注释）
 | 题目 | 难度 | 思路 | Go |
 | ------ | ------ | ------ | ------ |
 | [0101 - Symmetric Tree](https://leetcode.com/problems/same-tree/) | Easy | 递归 &#124; 循环 | [√ &#124; ○](./Go/src/0101%20~%200200/0101%20-%20Symmetric%20Tree.go) |
-| [0102 - Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) | Medium | 模拟 | [√](./Go/src/0101%20~%200200/0102%20-%20Binary%20Tree%20Level%20Order%20Traversal.go) |
-| [0103 - Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/) | Medium | 模拟 | [√](./Go/src/0101%20~%200200/0103%20-%20Binary%20Tree%20Zigzag%20Level%20Order%20Traversal.go) |
+| [0102 - Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) | Medium | BFS | [√](./Go/src/0101%20~%200200/0102%20-%20Binary%20Tree%20Level%20Order%20Traversal.go) |
+| [0103 - Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/) | Medium | BFS | [√](./Go/src/0101%20~%200200/0103%20-%20Binary%20Tree%20Zigzag%20Level%20Order%20Traversal.go) |
 | [0104 - Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | Easy | 递归 | [√](./Go/src/0101%20~%200200/0104%20-%20Maximum%20Depth%20of%20Binary%20Tree.go) |
 | [0105 - Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) | Medium | 递归 | [√](./Go/src/0101%20~%200200/0105%20-%20Construct%20Binary%20Tree%20from%20Preorder%20and%20Inorder%20Traversal.go) |
 | [0106 - Construct Binary Tree from Inorder and Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/) | Medium | 递归 | [√](./Go/src/0101%20~%200200/0106%20-%20Construct%20Binary%20Tree%20from%20Inorder%20and%20Postorder%20Traversal.go) |
@@ -128,4 +128,5 @@ LeetCode AC代码（附思路、注释）
 | [0108 - Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/) | Easy | 递归 | [√](./Go/src/0101%20~%200200/0108%20-%20Convert%20Sorted%20Array%20to%20Binary%20Search%20Tree.go) |
 | [0109 - Convert Sorted List to Binary Search Tree](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/) | Medium | 递归 + 快慢指针 &#124; 递归 + 中序模拟 | [√ &#124; ●](./Go/src/0101%20~%200200/0109%20-%20Convert%20Sorted%20List%20to%20Binary%20Search%20Tree.go) |
 | [0110 - Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/) | Easy | 递归 | [√](./Go/src/0101%20~%200200/0110%20-%20Balanced%20Binary%20Tree.go) |
+| [0111 - Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/) | Easy | 递归 &#124; BFS | [√ &#124; ○](./Go/src/0101%20~%200200/0111%20-%20Minimum%20Depth%20of%20Binary%20Tree.go) |
 </details>
