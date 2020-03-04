@@ -132,4 +132,5 @@ LeetCode AC代码（附思路、注释）
 | [0112 - Path Sum](https://leetcode.com/problems/path-sum/) | Easy | 递归 | [√](./Go/src/0101%20~%200200/0112%20-%20Path%20Sum.go) |
 | [0113 - Path Sum II](https://leetcode.com/problems/path-sum-ii/) | Medium | 递归 | [√](./Go/src/0101%20~%200200/0113%20-%20Path%20Sum%20II.go) |
 | [0114 - Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/) | Medium | 递归 &#124; Morris | [√ &#124; ○](./Go/src/0101%20~%200200/0114%20-%20Flatten%20Binary%20Tree%20to%20Linked%20List.go) |
+| [0115 - Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences/) | Hard | DP &#124; DP | [√ &#124; ○](./Go/src/0101%20~%200200/0115%20-%20Distinct%20Subsequences.go) |
 </details>
