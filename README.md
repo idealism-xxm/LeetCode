@@ -135,4 +135,5 @@ LeetCode AC代码（附思路、注释）
 | [0115 - Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences/) | Hard | DP &#124; DP | [√ &#124; ○](./Go/src/0101%20~%200200/0115%20-%20Distinct%20Subsequences.go) |
 | [0116 - Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/) | Medium | 递归 &#124; 循环 | Java: [√ &#124; ●](./Java/src/0101%20~%200200/0116%20-%20Populating%20Next%20Right%20Pointers%20in%20Each%20Node.java) |
 | [0117 - Populating Next Right Pointers in Each Node II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/) | Medium | 循环 | Java: [√](./Java/src/0101%20~%200200/0117%20-%20Populating%20Next%20Right%20Pointers%20in%20Each%20Node%20II.java) |
+| [0118 - Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/) | Easy | DP | [√](./Go/src/0101%20~%200200/0118%20-%20Pascal's%20Triangle.go) |
 </details>
