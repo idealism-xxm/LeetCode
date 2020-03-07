@@ -25,7 +25,7 @@ func generate(numRows int) [][]int {
 
 	result := make([][]int, numRows)
 	result[0] = []int{1}
-	// 处理后面第行
+	// 处理后面的行
 	for i := 1; i < numRows; i++ {
 		// 第 i 行有 i + 1 个数字
 		row := make([]int, i + 1)
