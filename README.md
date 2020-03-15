@@ -143,5 +143,6 @@ LeetCode AC代码（附思路、注释）
 | [0123 - Best Time to Buy and Sell Stock III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/) | Hard | DP | [●](./Go/src/0101%20~%200200/0123%20-%20Best%20Time%20to%20Buy%20and%20Sell%20Stock%20III.go) |
 | [0124 - Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/) | Hard | 树形 DP | [√](./Go/src/0101%20~%200200/0124%20-%20Binary%20Tree%20Maximum%20Path%20Sum.go) |
 | [0125 - Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | Easy | 双指针 | [√](./Go/src/0101%20~%200200/0125%20-%20Valid%20Palindrome.go) |
-| [0126 - Word Ladder II](https://leetcode.com/problems/word-ladder-ii/) | Hard | BFS + DFS | [√](./Go/src/0101%20~%200200/0126%20-%20Word%20Ladder.go) |
+| [0126 - Word Ladder II](https://leetcode.com/problems/word-ladder-ii/) | Hard | BFS + DFS | [√](./Go/src/0101%20~%200200/0126%20-%20Word%20Ladder%20II.go) |
+| [0127 - Word Ladder](https://leetcode.com/problems/word-ladder/) | Medium | BFS | [○](./Go/src/0101%20~%200200/0127%20-%20Word%20Ladder.go) |
 </details>
