@@ -145,4 +145,5 @@ LeetCode AC代码（附思路、注释）
 | [0125 - Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | Easy | 双指针 | [√](./Go/src/0101%20~%200200/0125%20-%20Valid%20Palindrome.go) |
 | [0126 - Word Ladder II](https://leetcode.com/problems/word-ladder-ii/) | Hard | BFS + DFS | [√](./Go/src/0101%20~%200200/0126%20-%20Word%20Ladder%20II.go) |
 | [0127 - Word Ladder](https://leetcode.com/problems/word-ladder/) | Medium | BFS | [○](./Go/src/0101%20~%200200/0127%20-%20Word%20Ladder.go) |
+| [0128 - Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | Hard | 并查集 &#124; map | [√ &#124; √](./Go/src/0101%20~%200200/0128%20-%20Longest%20Consecutive%20Sequence.go) |
 </details>
