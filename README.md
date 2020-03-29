@@ -158,4 +158,5 @@ LeetCode AC代码（附思路、注释）
 | [0138 - Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/) | Medium | 递归 | [√](./Go/src/0101%20~%200200/0138%20-%20Copy%20List%20with%20Random%20Pointer.go) |
 | [0139 - Word Break](https://leetcode.com/problems/word-break/) | Medium | DP | [√](./Go/src/0101%20~%200200/0139%20-%20Word%20Break.go) |
 | [0140 - Word Break II](https://leetcode.com/problems/word-break-ii/) | Hard | 递归 + 记忆化 | [√](./Go/src/0101%20~%200200/0140%20-%20Word%20Break%20II.go) |
+| [0141 - Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) | Easy | 快慢指针 | [√](./Go/src/0101%20~%200200/0141%20-%20Linked%20List%20Cycle.go) |
 </details>
