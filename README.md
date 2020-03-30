@@ -159,4 +159,5 @@ LeetCode AC代码（附思路、注释）
 | [0139 - Word Break](https://leetcode.com/problems/word-break/) | Medium | DP | [√](./Go/src/0101%20~%200200/0139%20-%20Word%20Break.go) |
 | [0140 - Word Break II](https://leetcode.com/problems/word-break-ii/) | Hard | 递归 + 记忆化 | [√](./Go/src/0101%20~%200200/0140%20-%20Word%20Break%20II.go) |
 | [0141 - Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) | Easy | 快慢指针 | [√](./Go/src/0101%20~%200200/0141%20-%20Linked%20List%20Cycle.go) |
+| [0142 - Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/) | Medium | 快慢指针 + 二分 &#124; 快慢指针 + Floyd | [√ &#124; ●](./Go/src/0101%20~%200200/0142%20-%20Linked%20List%20Cycle%20II.go) |
 </details>
