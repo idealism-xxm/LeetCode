@@ -166,4 +166,5 @@ LeetCode AC代码（附思路、注释）
 | [0146 - LRU Cache](https://leetcode.com/problems/lru-cache/) | Medium | map + 双向链表 | [√](./Go/src/0101%20~%200200/0146%20-%20LRU%20Cache.go) |
 | [0147 - Insertion Sort List](https://leetcode.com/problems/insertion-sort-list/) | Medium | 插入排序 | [√](./Go/src/0101%20~%200200/0147%20-%20Insertion%20Sort%20List.go) |
 | [0148 - Sort List](https://leetcode.com/problems/sort-list/) | Medium | 归并排序 + 倍增法 | [○](./Go/src/0101%20~%200200/0148%20-%20Sort%20List.go) |
+| [0149 - Max Points on a Line](https://leetcode.com/problems/max-points-on-a-line/) | Hard | map | [○](./Go/src/0101%20~%200200/0149%20-%20Max%20Points%20on%20a%20Line.go) |
 </details>
