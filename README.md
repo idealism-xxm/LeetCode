@@ -167,4 +167,5 @@ LeetCode AC代码（附思路、注释）
 | [0147 - Insertion Sort List](https://leetcode.com/problems/insertion-sort-list/) | Medium | 插入排序 | [√](./Go/src/0101%20~%200200/0147%20-%20Insertion%20Sort%20List.go) |
 | [0148 - Sort List](https://leetcode.com/problems/sort-list/) | Medium | 归并排序 + 倍增法 | [○](./Go/src/0101%20~%200200/0148%20-%20Sort%20List.go) |
 | [0149 - Max Points on a Line](https://leetcode.com/problems/max-points-on-a-line/) | Hard | map | [○](./Go/src/0101%20~%200200/0149%20-%20Max%20Points%20on%20a%20Line.go) |
+| [0150 - Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/) | Medium | 模拟 | [√](./Go/src/0101%20~%200200/0150%20-%20Evaluate%20Reverse%20Polish%20Notation.go) |
 </details>
