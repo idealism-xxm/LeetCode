@@ -22,7 +22,6 @@
 //
 //		时间复杂度： O(n ✖ log* n)
 //		空间复杂度： O(n)
-package main
 
 func longestConsecutive(nums []int) int {
 	// 1. 初始化并查集
