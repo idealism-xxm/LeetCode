@@ -187,4 +187,5 @@ LeetCode AC代码（附思路、注释）
 | [0166 - Fraction to Recurring Decimal](https://leetcode.com/problems/fraction-to-recurring-decimal/) | Medium | 模拟 | [√](./Go/src/0101%20~%200200/0166%20-%20Fraction%20to%20Recurring%20Decimal.go) |
 | [0167 - Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | Easy | 双指针 | [√](./Go/src/0101%20~%200200/0167%20-%20Two%20Sum%20II%20-%20Input%20array%20is%20sorted.go) |
 | [0168 - Excel Sheet Column Title](https://leetcode.com/problems/excel-sheet-column-title/) | Easy | 模拟 | [√](./Go/src/0101%20~%200200/0168%20-%20Excel%20Sheet%20Column%20Title.go) |
+| [0169 - Majority Element](https://leetcode.com/problems/majority-element/) | Easy | 分治 &#124; 按位统计 &#124; Boyer-Moore 投票算法 | [● &#124; ● &#124; ●](./Go/src/0101%20~%200200/0169%20-%20Majority%20Element.go) |
 </details>
