@@ -190,4 +190,5 @@ LeetCode AC代码（附思路、注释）
 | [0169 - Majority Element](https://leetcode.com/problems/majority-element/) | Easy | 分治 &#124; 按位统计 &#124; Boyer-Moore 投票算法 | [● &#124; ● &#124; ●](./Go/src/0101%20~%200200/0169%20-%20Majority%20Element.go) |
 | [0170 - Two Sum III - Data structure design](https://leetcode.com/problems/two-sum-iii-data-structure-design/) | Easy |  | □ |
 | [0171 - Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number/) | Easy | 模拟 | [√](./Go/src/0101%20~%200200/0171%20-%20Excel%20Sheet%20Column%20Number.go) |
+| [0172 - Factorial Trailing Zeroes](https://leetcode.com/problems/factorial-trailing-zeroes/) | Easy | 模拟 | [√](./Go/src/0101%20~%200200/0172%20-%20Factorial%20Trailing%20Zeroes.go) |
 </details>
