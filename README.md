@@ -192,5 +192,6 @@ LeetCode AC代码（附思路、注释）
 | [0171 - Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number/) | Easy | 模拟 | [√](./Go/src/0101%20~%200200/0171%20-%20Excel%20Sheet%20Column%20Number.go) |
 | [0172 - Factorial Trailing Zeroes](https://leetcode.com/problems/factorial-trailing-zeroes/) | Easy | 模拟 | [√](./Go/src/0101%20~%200200/0172%20-%20Factorial%20Trailing%20Zeroes.go) |
 | [0175 - Combine Two Tables](https://leetcode.com/problems/combine-two-tables/) | Easy | 左联 | [√](./MySQL/src/0101%20~%200200/0175%20-%20Combine%20Two%20Tables.sql) |
-| [0176 - Second Highest Salary](https://leetcode.com/problems/second-highest-salary/) | Easy | 模拟 | [●](./MySQL/src/0101%20~%200200/0176%20-%20Second%20Highest%20Salary.sql) |
+| [0176 - Second Highest Salary](https://leetcode.com/problems/second-highest-salary/) | Easy | IFNULL | [●](./MySQL/src/0101%20~%200200/0176%20-%20Second%20Highest%20Salary.sql) |
+| [0177 - Nth Highest Salary](https://leetcode.com/problems/nth-highest-salary/) | Medium | FUNCTION | [●](./MySQL/src/0101%20~%200200/0177%20-%20Nth%20Highest%20Salary.sql) |
 </details>
