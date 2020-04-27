@@ -194,4 +194,5 @@ LeetCode AC代码（附思路、注释）
 | [0175 - Combine Two Tables](https://leetcode.com/problems/combine-two-tables/) | Easy | 左联 | [√](./MySQL/src/0101%20~%200200/0175%20-%20Combine%20Two%20Tables.sql) |
 | [0176 - Second Highest Salary](https://leetcode.com/problems/second-highest-salary/) | Easy | IFNULL | [●](./MySQL/src/0101%20~%200200/0176%20-%20Second%20Highest%20Salary.sql) |
 | [0177 - Nth Highest Salary](https://leetcode.com/problems/nth-highest-salary/) | Medium | FUNCTION | [●](./MySQL/src/0101%20~%200200/0177%20-%20Nth%20Highest%20Salary.sql) |
+| [0178 - Rank Scores](https://leetcode.com/problems/rank-scores/) | Medium | 子查询 &#124; 内联 + GROUP BY | [√ &#124; √](./MySQL/src/0101%20~%200200/0177%20-%20Nth%20Highest%20Salary.sql) |
 </details>
