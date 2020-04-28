@@ -195,4 +195,5 @@ LeetCode AC代码（附思路、注释）
 | [0176 - Second Highest Salary](https://leetcode.com/problems/second-highest-salary/) | Easy | IFNULL | [●](./MySQL/src/0101%20~%200200/0176%20-%20Second%20Highest%20Salary.sql) |
 | [0177 - Nth Highest Salary](https://leetcode.com/problems/nth-highest-salary/) | Medium | FUNCTION | [●](./MySQL/src/0101%20~%200200/0177%20-%20Nth%20Highest%20Salary.sql) |
 | [0178 - Rank Scores](https://leetcode.com/problems/rank-scores/) | Medium | 子查询 &#124; 内联 + GROUP BY | [√ &#124; √](./MySQL/src/0101%20~%200200/0177%20-%20Nth%20Highest%20Salary.sql) |
+| [0179 - Largest Number](https://leetcode.com/problems/largest-number/) | Medium | 排序 | [√](./Go/src/0101%20~%200200/0179%20-%20Largest%20Number.go) |
 </details>
