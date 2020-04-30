@@ -197,4 +197,5 @@ LeetCode AC代码（附思路、注释）
 | [0178 - Rank Scores](https://leetcode.com/problems/rank-scores/) | Medium | 子查询 &#124; 内联 + GROUP BY | MySQL: [√ &#124; √](./MySQL/src/0101%20~%200200/0177%20-%20Nth%20Highest%20Salary.sql) |
 | [0179 - Largest Number](https://leetcode.com/problems/largest-number/) | Medium | 排序 | [√](./Go/src/0101%20~%200200/0179%20-%20Largest%20Number.go) |
 | [0180 - Consecutive Numbers](https://leetcode.com/problems/consecutive-numbers/) | Medium | 内联 &#124; 变量 + IF | MySQL: [● &#124; ●](./MySQL/src/0101%20~%200200/0180%20-%20Consecutive%20Numbers.sql) |
+| [0181 - Employees Earning More Than Their Managers](https://leetcode.com/problems/employees-earning-more-than-their-managers/) | Easy | 内联 | MySQL: [√](./MySQL/src/0101%20~%200200/0181%20-%20Employees%20Earning%20More%20Than%20Their%20Managers.sql) |
 </details>
