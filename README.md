@@ -198,4 +198,5 @@ LeetCode AC代码（附思路、注释）
 | [0179 - Largest Number](https://leetcode.com/problems/largest-number/) | Medium | 排序 | [√](./Go/src/0101%20~%200200/0179%20-%20Largest%20Number.go) |
 | [0180 - Consecutive Numbers](https://leetcode.com/problems/consecutive-numbers/) | Medium | 内联 &#124; 变量 + IF | MySQL: [● &#124; ●](./MySQL/src/0101%20~%200200/0180%20-%20Consecutive%20Numbers.sql) |
 | [0181 - Employees Earning More Than Their Managers](https://leetcode.com/problems/employees-earning-more-than-their-managers/) | Easy | 内联 | MySQL: [√](./MySQL/src/0101%20~%200200/0181%20-%20Employees%20Earning%20More%20Than%20Their%20Managers.sql) |
+| [0182 - Duplicate Emails](https://leetcode.com/problems/duplicate-emails/) | Easy | GROUP BY + HAVING | MySQL: [√](./MySQL/src/0101%20~%200200/0182%20-%20Duplicate%20Emails.sql) |
 </details>
