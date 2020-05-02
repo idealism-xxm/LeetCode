@@ -200,4 +200,5 @@ LeetCode AC代码（附思路、注释）
 | [0181 - Employees Earning More Than Their Managers](https://leetcode.com/problems/employees-earning-more-than-their-managers/) | Easy | 内联 | MySQL: [√](./MySQL/src/0101%20~%200200/0181%20-%20Employees%20Earning%20More%20Than%20Their%20Managers.sql) |
 | [0182 - Duplicate Emails](https://leetcode.com/problems/duplicate-emails/) | Easy | GROUP BY + HAVING | MySQL: [√](./MySQL/src/0101%20~%200200/0182%20-%20Duplicate%20Emails.sql) |
 | [0183 - Customers Who Never Order](https://leetcode.com/problems/customers-who-never-order/) | Easy | 子查询 + NOT IN &#124; 左联 | MySQL: [√](./MySQL/src/0101%20~%200200/0183%20-%20Customers%20Who%20Never%20Order.sql) |
+| [0184 - Department Highest Salary](https://leetcode.com/problems/department-highest-salary/) | Medium | 内联 + 子查询 &#124; 内联 + 多字段 IN | MySQL: [√ &#124; ●](./MySQL/src/0101%20~%200200/0184%20-%20Department%20Highest%20Salary.sql) |
 </details>
