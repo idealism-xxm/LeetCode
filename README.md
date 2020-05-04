@@ -56,7 +56,7 @@ LeetCode AC代码（附思路、注释）
 | [0042 - Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) | Hard | 枚举 &#124; 双指针 | [√ &#124; ○](./Go/src/0001%20~%200100/0042%20-%20Trapping%20Rain%20Water.go) |
 | [0043 - Multiply Strings](https://leetcode.com/problems/multiply-strings/) | Medium | 模拟 | [√](./Go/src/0001%20~%200100/0043%20-%20Multiply%20Strings.go) |
 | [0044 - Wildcard Matching](https://leetcode.com/problems/wildcard-matching/) | Hard | DP | [√](./Go/src/0001%20~%200100/0044%20-%20Wildcard%20Matching.go) |
-| [0045 - Jump Game II](https://leetcode.com/problems/jump-game-ii/) | Hard | DP | [√](./Go/src/0001%20~%200100/0045%20-%20Jump%20Game%20II.go) |
+| [0045 - Jump Game II](https://leetcode.com/problems/jump-game-ii/) | Hard | DP &#124; 贪心 | [√ &#124; ●](./Go/src/0001%20~%200100/0045%20-%20Jump%20Game%20II.go) |
 | [0046 - Permutations](https://leetcode.com/problems/permutations/) | Medium | 递归 | [√](./Go/src/0001%20~%200100/0046%20-%20Permutations.go) |
 | [0047 - Permutations II](https://leetcode.com/problems/permutations-ii/) | Medium | 递归 | [√](./Go/src/0001%20~%200100/0047%20-%20Permutations%20II.go) |
 | [0048 - Rotate Image](https://leetcode.com/problems/rotate-image/) | Medium | 模拟 | [√](./Go/src/0001%20~%200100/0048%20-%20Rotate%20Image.go) |
