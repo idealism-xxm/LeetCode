@@ -205,4 +205,5 @@ LeetCode AC代码（附思路、注释）
 | [0186 - Reverse Words in a String II](https://leetcode.com/problems/reverse-words-in-a-string-ii/) | Medium |  | □ |
 | [0187 - Repeated DNA Sequences](https://leetcode.com/problems/repeated-dna-sequences/) | Medium | map + 计数 &#124; Rabin-Karp (hash) | [√](./Go/src/0101%20~%200200/0187%20-%20Repeated%20DNA%20Sequences.go) |
 | [0188 - Best Time to Buy and Sell Stock IV](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/) | Hard | DP | [√](./Go/src/0101%20~%200200/0188%20-%20Best%20Time%20to%20Buy%20and%20Sell%20Stock%20IV.go) |
+| [0189 - Rotate Array](https://leetcode.com/problems/rotate-array/) | Easy | 循环移动 &#124; 翻转 | [√ &#124; ●](./Go/src/0101%20~%200200/0189%20-%20Rotate%20Array.go) |
 </details>
