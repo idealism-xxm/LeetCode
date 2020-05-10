@@ -209,4 +209,5 @@ LeetCode AC代码（附思路、注释）
 | [0189 - Rotate Array](https://leetcode.com/problems/rotate-array/) | Easy | 循环移动 &#124; 翻转 | [√ &#124; ●](./Go/src/0101%20~%200200/0189%20-%20Rotate%20Array.go) |
 | [0190 - Reverse Bits](https://leetcode.com/problems/reverse-bits/) | Easy | 双指针 + 异或 &#124; 分治 + 位运算 | [√ &#124; ●](./Go/src/0101%20~%200200/0190%20-%20Reverse%20Bits.go) |
 | [0191 - Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/) | Easy | 位运算 | [●](./Go/src/0101%20~%200200/0191%20-%20Number%20of%201%20Bits.go) |
+| [0193 - Valid Phone Numbers](https://leetcode.com/problems/valid-phone-numbers/) | Easy | grep -E | [●](./Bash/src/0101%20~%200200/0193%20-%20Valid%20Phone%20Numbers.sh) |
 </details>
