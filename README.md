@@ -211,4 +211,5 @@ LeetCode AC代码（附思路、注释）
 | [0191 - Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/) | Easy | 位运算 | [●](./Go/src/0101%20~%200200/0191%20-%20Number%20of%201%20Bits.go) |
 | [0192 - Word Frequency](https://leetcode.com/problems/word-frequency/) | Medium | tr + sort + uniq + awk | [●](./Bash/src/0101%20~%200200/0192%20-%20Word%20Frequency.sh) |
 | [0193 - Valid Phone Numbers](https://leetcode.com/problems/valid-phone-numbers/) | Easy | grep -E | [●](./Bash/src/0101%20~%200200/0193%20-%20Valid%20Phone%20Numbers.sh) |
+| [0194 - Transpose File](https://leetcode.com/problems/transpose-file/) | Medium | head + awk + while + expr | [●](./Bash/src/0101%20~%200200/0194%20-%20Transpose%20File.sh) |
 </details>
