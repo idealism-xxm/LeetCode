@@ -212,5 +212,6 @@ LeetCode AC代码（附思路、注释）
 | [0192 - Word Frequency](https://leetcode.com/problems/word-frequency/) | Medium | tr + sort + uniq + awk | [●](./Bash/src/0101%20~%200200/0192%20-%20Word%20Frequency.sh) |
 | [0193 - Valid Phone Numbers](https://leetcode.com/problems/valid-phone-numbers/) | Easy | grep -E | [●](./Bash/src/0101%20~%200200/0193%20-%20Valid%20Phone%20Numbers.sh) |
 | [0194 - Transpose File](https://leetcode.com/problems/transpose-file/) | Medium | head + awk + while + expr | [●](./Bash/src/0101%20~%200200/0194%20-%20Transpose%20File.sh) |
-| [0195 - Tenth Line](https://leetcode.com/problems/tenth-line/) | Easy | sed &#124; wc + head + tail &#124; awk | [● &#124; ● &#124; ●](./Bash/src/0101%20~%200200/0194%20-%20Transpose%20File.sh) |
+| [0195 - Tenth Line](https://leetcode.com/problems/tenth-line/) | Easy | sed &#124; wc + head + tail &#124; awk | [● &#124; ● &#124; ●](./Bash/src/0101%20~%200200/0195%20-%20Tenth%20Line.sh) |
+| [0196 - Delete Duplicate Emails](https://leetcode.com/problems/delete-duplicate-emails/) | Easy | GROUP BY + MIN &#124; 内联 | [√ &#124; ●](./MySQL/src/0101%20~%200200/0196%20-%20Delete%20Duplicate%20Emails.sql) |
 </details>
