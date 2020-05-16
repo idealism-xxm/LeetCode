@@ -1,8 +1,8 @@
 # LeetCode
 LeetCode AC代码（附思路、注释）
 # 题目列表
-完成情况：
-□：尚未解锁完成的会员题目
+完成情况：  
+□：尚未解锁完成的会员题目  
 √：完全独立完成，无任何参考  
 ○：看题解可以用该解法，思路和代码均独立完成  
 ●：参考并理解题解，代码独立完成  
@@ -192,6 +192,7 @@ LeetCode AC代码（附思路、注释）
 | [0171 - Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number/) | Easy | 模拟 | [√](./Go/src/0101%20~%200200/0171%20-%20Excel%20Sheet%20Column%20Number.go) |
 | [0172 - Factorial Trailing Zeroes](https://leetcode.com/problems/factorial-trailing-zeroes/) | Easy | 模拟 | [√](./Go/src/0101%20~%200200/0172%20-%20Factorial%20Trailing%20Zeroes.go) |
 | [0173 - Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/) | Medium | 栈 | [√](./Go/src/0101%20~%200200/0173%20-%20Binary%20Search%20Tree%20Iterator.go) |
+| [0174 - Dungeon Game](https://leetcode.com/problems/dungeon-game/) | Hard | DP + 二分 &#124; DP | [● &#124; ●](./Go/src/0101%20~%200200/0174%20-%20Dungeon%20Game.go) |
 | [0175 - Combine Two Tables](https://leetcode.com/problems/combine-two-tables/) | Easy | 左联 | MySQL: [√](./MySQL/src/0101%20~%200200/0175%20-%20Combine%20Two%20Tables.sql) |
 | [0176 - Second Highest Salary](https://leetcode.com/problems/second-highest-salary/) | Easy | IFNULL | MySQL: [●](./MySQL/src/0101%20~%200200/0176%20-%20Second%20Highest%20Salary.sql) |
 | [0177 - Nth Highest Salary](https://leetcode.com/problems/nth-highest-salary/) | Medium | FUNCTION | MySQL: [●](./MySQL/src/0101%20~%200200/0177%20-%20Nth%20Highest%20Salary.sql) |
