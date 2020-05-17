@@ -215,4 +215,6 @@ LeetCode AC代码（附思路、注释）
 | [0194 - Transpose File](https://leetcode.com/problems/transpose-file/) | Medium | head + awk + while + expr | [●](./Bash/src/0101%20~%200200/0194%20-%20Transpose%20File.sh) |
 | [0195 - Tenth Line](https://leetcode.com/problems/tenth-line/) | Easy | sed &#124; wc + head + tail &#124; awk | [● &#124; ● &#124; ●](./Bash/src/0101%20~%200200/0195%20-%20Tenth%20Line.sh) |
 | [0196 - Delete Duplicate Emails](https://leetcode.com/problems/delete-duplicate-emails/) | Easy | GROUP BY + MIN &#124; 内联 | [√ &#124; ●](./MySQL/src/0101%20~%200200/0196%20-%20Delete%20Duplicate%20Emails.sql) |
+| [0197 - Rising Temperature](https://leetcode.com/problems/rising-temperature/) | Easy | 内联 | [√](./MySQL/src/0101%20~%200200/0197%20-%20Rising%20Temperature.sql) |
+| [0198 - House Robber](https://leetcode.com/problems/house-robber/) | Easy | DP | [√](./Go/src/0101%20~%200200/0198%20-%20House%20Robber.go) |
 </details>
