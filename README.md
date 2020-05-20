@@ -179,7 +179,7 @@ LeetCode AC代码（附思路、注释）
 | [0158 - Read N Characters Given Read4 II - Call multiple times](https://leetcode.com/problems/read-n-characters-given-read4-ii-call-multiple-times/) | Hard |  | □ |
 | [0159 - Longest Substring with At Most Two Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/) | Medium |  | □ |
 | [0160 - Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/) | Easy | 双指针 | [√](./Go/src/0101%20~%200200/0160%20-%20Intersection%20of%20Two%20Linked%20Lists.go) |
-| [0161 - One Edit Distance](https://leetcode.com/problems/one-edit-distance/) | Medium |  | □ |
+| [0161 - One Edit Distance](https://leetcode.com/problems/one-edit-distance/) | Medium | 双指针 | [√](./Go/src/0101%20~%200200/0161%20-%20One%20Edit%20Distance.go) |
 | [0162 - Find Peak Element](https://leetcode.com/problems/find-peak-element/) | Medium | 二分 | [√](./Go/src/0101%20~%200200/0162%20-%20Find%20Peak%20Element.go) |
 | [0163 - Missing Ranges](https://leetcode.com/problems/missing-ranges/) | Medium |  | □ |
 | [0164 - Maximum Gap](https://leetcode.com/problems/maximum-gap/) | Hard | 基数排序 &#124; 桶 + 鸽笼原理 | [√ &#124; ●](./Go/src/0101%20~%200200/0164%20-%20Maximum%20Gap.go) |
