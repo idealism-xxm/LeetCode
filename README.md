@@ -174,7 +174,7 @@ LeetCode AC代码（附思路、注释）
 | [0153 - Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) | Medium | 二分 | [√](./Go/src/0101%20~%200200/0153%20-%20Find%20Minimum%20in%20Rotated%20Sorted%20Array.go) |
 | [0154 - Find Minimum in Rotated Sorted Array II](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) | Hard | 二分 | [√](./Go/src/0101%20~%200200/0154%20-%20Find%20Minimum%20in%20Rotated%20Sorted%20Array%20II.go) |
 | [0155 - Min Stack](https://leetcode.com/problems/min-stack/) | Easy | 普通栈 + 单调栈 &#124; 普通栈 | [● &#124; ●](./Go/src/0101%20~%200200/0155%20-%20Min%20Stack.go) |
-| [0156 - Binary Tree Upside Down](https://leetcode.com/problems/binary-tree-upside-down/) | Medium |  | □ |
+| [0156 - Binary Tree Upside Down](https://leetcode.com/problems/binary-tree-upside-down/) | Medium | 模拟 | [√](./Go/src/0101%20~%200200/0156%20-%20Binary%20Tree%20Upside%20Down.go) |
 | [0157 - Read N Characters Given Read4](https://leetcode.com/problems/read-n-characters-given-read4/) | Easy | 模拟 | [√](./Go/src/0101%20~%200200/0157%20-%20Read%20N%20Characters%20Given%20Read4.go) |
 | [0158 - Read N Characters Given Read4 II - Call multiple times](https://leetcode.com/problems/read-n-characters-given-read4-ii-call-multiple-times/) | Hard | 模拟 | [√](./Go/src/0101%20~%200200/0158%20-%20Read%20N%20Characters%20Given%20Read4%20II%20-%20Call%20multiple%20times.go) |
 | [0159 - Longest Substring with At Most Two Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/) | Medium |  | □ |
