@@ -181,7 +181,7 @@ LeetCode AC代码（附思路、注释）
 | [0160 - Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/) | Easy | 双指针 | [√](./Go/src/0101%20~%200200/0160%20-%20Intersection%20of%20Two%20Linked%20Lists.go) |
 | [0161 - One Edit Distance](https://leetcode.com/problems/one-edit-distance/) | Medium | 双指针 | [√](./Go/src/0101%20~%200200/0161%20-%20One%20Edit%20Distance.go) |
 | [0162 - Find Peak Element](https://leetcode.com/problems/find-peak-element/) | Medium | 二分 | [√](./Go/src/0101%20~%200200/0162%20-%20Find%20Peak%20Element.go) |
-| [0163 - Missing Ranges](https://leetcode.com/problems/missing-ranges/) | Medium |  | □ |
+| [0163 - Missing Ranges](https://leetcode.com/problems/missing-ranges/) | Medium | 遍历 | [√](./Go/src/0101%20~%200200/0163%20-%20Missing%20Ranges.go) |
 | [0164 - Maximum Gap](https://leetcode.com/problems/maximum-gap/) | Hard | 基数排序 &#124; 桶 + 鸽笼原理 | [√ &#124; ●](./Go/src/0101%20~%200200/0164%20-%20Maximum%20Gap.go) |
 | [0165 - Compare Version Numbers](https://leetcode.com/problems/compare-version-numbers/) | Medium | 模拟 | [√](./Go/src/0101%20~%200200/0165%20-%20Compare%20Version%20Numbers.go) |
 | [0166 - Fraction to Recurring Decimal](https://leetcode.com/problems/fraction-to-recurring-decimal/) | Medium | 模拟 | [√](./Go/src/0101%20~%200200/0166%20-%20Fraction%20to%20Recurring%20Decimal.go) |
