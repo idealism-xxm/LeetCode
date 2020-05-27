@@ -204,7 +204,7 @@ LeetCode AC代码（附思路、注释）
 | [0183 - Customers Who Never Order](https://leetcode.com/problems/customers-who-never-order/) | Easy | 子查询 + NOT IN &#124; 左联 | MySQL: [√](./MySQL/src/0101%20~%200200/0183%20-%20Customers%20Who%20Never%20Order.sql) |
 | [0184 - Department Highest Salary](https://leetcode.com/problems/department-highest-salary/) | Medium | 内联 + 子查询 &#124; 内联 + 多字段 IN | MySQL: [√ &#124; ●](./MySQL/src/0101%20~%200200/0184%20-%20Department%20Highest%20Salary.sql) |
 | [0185 - Department Top Three Salaries](https://leetcode.com/problems/department-top-three-salaries/) | Hard | 内联 + IN + LIMIT &#124; 内联 + COUNT | MySQL: [√ &#124; ●](./MySQL/src/0101%20~%200200/0185%20-%20Department%20Top%20Three%20Salaries.sql) |
-| [0186 - Reverse Words in a String II](https://leetcode.com/problems/reverse-words-in-a-string-ii/) | Medium |  | □ |
+| [0186 - Reverse Words in a String II](https://leetcode.com/problems/reverse-words-in-a-string-ii/) | Medium | 遍历 | [√](./Go/src/0101%20~%200200/0186%20-%20Reverse%20Words%20in%20a%20String%20II.go) |
 | [0187 - Repeated DNA Sequences](https://leetcode.com/problems/repeated-dna-sequences/) | Medium | map + 计数 &#124; Rabin-Karp (hash) | [√](./Go/src/0101%20~%200200/0187%20-%20Repeated%20DNA%20Sequences.go) |
 | [0188 - Best Time to Buy and Sell Stock IV](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/) | Hard | DP | [√](./Go/src/0101%20~%200200/0188%20-%20Best%20Time%20to%20Buy%20and%20Sell%20Stock%20IV.go) |
 | [0189 - Rotate Array](https://leetcode.com/problems/rotate-array/) | Easy | 循环移动 &#124; 翻转 | [√ &#124; ●](./Go/src/0101%20~%200200/0189%20-%20Rotate%20Array.go) |
