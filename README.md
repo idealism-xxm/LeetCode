@@ -117,8 +117,8 @@ LeetCode AC代码（附思路、注释）
 <details>
 <summary>0101 ~ 0200</summary>
 
-| 题目 | 难度 | 思路 | Go |
-| ------ | ------ | ------ | ------ |
+| 题目 | 难度 | 思路 | Go | Java | MySQL | Bash | 
+| ------ | ------ | ------ | ------ | ------ | ------ | ------ |
 | [0101 - Symmetric Tree](https://leetcode.com/problems/same-tree/) | Easy | 递归 &#124; 循环 | [√ &#124; ○](./Go/src/0101%20~%200200/0101%20-%20Symmetric%20Tree.go) |
 | [0102 - Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) | Medium | BFS | [√](./Go/src/0101%20~%200200/0102%20-%20Binary%20Tree%20Level%20Order%20Traversal.go) |
 | [0103 - Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/) | Medium | BFS | [√](./Go/src/0101%20~%200200/0103%20-%20Binary%20Tree%20Zigzag%20Level%20Order%20Traversal.go) |
@@ -134,8 +134,8 @@ LeetCode AC代码（附思路、注释）
 | [0113 - Path Sum II](https://leetcode.com/problems/path-sum-ii/) | Medium | 递归 | [√](./Go/src/0101%20~%200200/0113%20-%20Path%20Sum%20II.go) |
 | [0114 - Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/) | Medium | 递归 &#124; Morris | [√ &#124; ○](./Go/src/0101%20~%200200/0114%20-%20Flatten%20Binary%20Tree%20to%20Linked%20List.go) |
 | [0115 - Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences/) | Hard | DP &#124; DP | [√ &#124; ○](./Go/src/0101%20~%200200/0115%20-%20Distinct%20Subsequences.go) |
-| [0116 - Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/) | Medium | 递归 &#124; 循环 | Java: [√ &#124; ●](./Java/src/0101%20~%200200/0116%20-%20Populating%20Next%20Right%20Pointers%20in%20Each%20Node.java) |
-| [0117 - Populating Next Right Pointers in Each Node II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/) | Medium | 循环 | Java: [√](./Java/src/0101%20~%200200/0117%20-%20Populating%20Next%20Right%20Pointers%20in%20Each%20Node%20II.java) |
+| [0116 - Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/) | Medium | 递归 &#124; 循环 | | [√ &#124; ●](./Java/src/0101%20~%200200/0116%20-%20Populating%20Next%20Right%20Pointers%20in%20Each%20Node.java) |
+| [0117 - Populating Next Right Pointers in Each Node II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/) | Medium | 循环 | | [√](./Java/src/0101%20~%200200/0117%20-%20Populating%20Next%20Right%20Pointers%20in%20Each%20Node%20II.java) |
 | [0118 - Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/) | Easy | DP | [√](./Go/src/0101%20~%200200/0118%20-%20Pascal's%20Triangle.go) |
 | [0119 - Pascal's Triangle II](https://leetcode.com/problems/pascals-triangle-ii/) | Easy | DP | [√](./Go/src/0101%20~%200200/0119%20-%20Pascal's%20Triangle%20II.go) |
 | [0120 - Triangle](https://leetcode.com/problems/triangle/) | Medium | DP | [√](./Go/src/0101%20~%200200/0120%20-%20Triangle.go) |
@@ -193,30 +193,38 @@ LeetCode AC代码（附思路、注释）
 | [0172 - Factorial Trailing Zeroes](https://leetcode.com/problems/factorial-trailing-zeroes/) | Easy | 模拟 | [√](./Go/src/0101%20~%200200/0172%20-%20Factorial%20Trailing%20Zeroes.go) |
 | [0173 - Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/) | Medium | 栈 | [√](./Go/src/0101%20~%200200/0173%20-%20Binary%20Search%20Tree%20Iterator.go) |
 | [0174 - Dungeon Game](https://leetcode.com/problems/dungeon-game/) | Hard | DP + 二分 &#124; DP | [● &#124; ●](./Go/src/0101%20~%200200/0174%20-%20Dungeon%20Game.go) |
-| [0175 - Combine Two Tables](https://leetcode.com/problems/combine-two-tables/) | Easy | 左联 | MySQL: [√](./MySQL/src/0101%20~%200200/0175%20-%20Combine%20Two%20Tables.sql) |
-| [0176 - Second Highest Salary](https://leetcode.com/problems/second-highest-salary/) | Easy | IFNULL | MySQL: [●](./MySQL/src/0101%20~%200200/0176%20-%20Second%20Highest%20Salary.sql) |
-| [0177 - Nth Highest Salary](https://leetcode.com/problems/nth-highest-salary/) | Medium | FUNCTION | MySQL: [●](./MySQL/src/0101%20~%200200/0177%20-%20Nth%20Highest%20Salary.sql) |
-| [0178 - Rank Scores](https://leetcode.com/problems/rank-scores/) | Medium | 子查询 &#124; 内联 + GROUP BY | MySQL: [√ &#124; √](./MySQL/src/0101%20~%200200/0177%20-%20Nth%20Highest%20Salary.sql) |
+| [0175 - Combine Two Tables](https://leetcode.com/problems/combine-two-tables/) | Easy | 左联 | | | [√](./MySQL/src/0101%20~%200200/0175%20-%20Combine%20Two%20Tables.sql) |
+| [0176 - Second Highest Salary](https://leetcode.com/problems/second-highest-salary/) | Easy | IFNULL | | | [●](./MySQL/src/0101%20~%200200/0176%20-%20Second%20Highest%20Salary.sql) |
+| [0177 - Nth Highest Salary](https://leetcode.com/problems/nth-highest-salary/) | Medium | FUNCTION | | | [●](./MySQL/src/0101%20~%200200/0177%20-%20Nth%20Highest%20Salary.sql) |
+| [0178 - Rank Scores](https://leetcode.com/problems/rank-scores/) | Medium | 子查询 &#124; 内联 + GROUP BY | | | [√ &#124; √](./MySQL/src/0101%20~%200200/0177%20-%20Nth%20Highest%20Salary.sql) |
 | [0179 - Largest Number](https://leetcode.com/problems/largest-number/) | Medium | 排序 | [√](./Go/src/0101%20~%200200/0179%20-%20Largest%20Number.go) |
-| [0180 - Consecutive Numbers](https://leetcode.com/problems/consecutive-numbers/) | Medium | 内联 &#124; 变量 + IF | MySQL: [● &#124; ●](./MySQL/src/0101%20~%200200/0180%20-%20Consecutive%20Numbers.sql) |
-| [0181 - Employees Earning More Than Their Managers](https://leetcode.com/problems/employees-earning-more-than-their-managers/) | Easy | 内联 | MySQL: [√](./MySQL/src/0101%20~%200200/0181%20-%20Employees%20Earning%20More%20Than%20Their%20Managers.sql) |
-| [0182 - Duplicate Emails](https://leetcode.com/problems/duplicate-emails/) | Easy | GROUP BY + HAVING | MySQL: [√](./MySQL/src/0101%20~%200200/0182%20-%20Duplicate%20Emails.sql) |
-| [0183 - Customers Who Never Order](https://leetcode.com/problems/customers-who-never-order/) | Easy | 子查询 + NOT IN &#124; 左联 | MySQL: [√](./MySQL/src/0101%20~%200200/0183%20-%20Customers%20Who%20Never%20Order.sql) |
-| [0184 - Department Highest Salary](https://leetcode.com/problems/department-highest-salary/) | Medium | 内联 + 子查询 &#124; 内联 + 多字段 IN | MySQL: [√ &#124; ●](./MySQL/src/0101%20~%200200/0184%20-%20Department%20Highest%20Salary.sql) |
-| [0185 - Department Top Three Salaries](https://leetcode.com/problems/department-top-three-salaries/) | Hard | 内联 + IN + LIMIT &#124; 内联 + COUNT | MySQL: [√ &#124; ●](./MySQL/src/0101%20~%200200/0185%20-%20Department%20Top%20Three%20Salaries.sql) |
+| [0180 - Consecutive Numbers](https://leetcode.com/problems/consecutive-numbers/) | Medium | 内联 &#124; 变量 + IF | | | [● &#124; ●](./MySQL/src/0101%20~%200200/0180%20-%20Consecutive%20Numbers.sql) |
+| [0181 - Employees Earning More Than Their Managers](https://leetcode.com/problems/employees-earning-more-than-their-managers/) | Easy | 内联 | | | [√](./MySQL/src/0101%20~%200200/0181%20-%20Employees%20Earning%20More%20Than%20Their%20Managers.sql) |
+| [0182 - Duplicate Emails](https://leetcode.com/problems/duplicate-emails/) | Easy | GROUP BY + HAVING | | | [√](./MySQL/src/0101%20~%200200/0182%20-%20Duplicate%20Emails.sql) |
+| [0183 - Customers Who Never Order](https://leetcode.com/problems/customers-who-never-order/) | Easy | 子查询 + NOT IN &#124; 左联 | | | [√](./MySQL/src/0101%20~%200200/0183%20-%20Customers%20Who%20Never%20Order.sql) |
+| [0184 - Department Highest Salary](https://leetcode.com/problems/department-highest-salary/) | Medium | 内联 + 子查询 &#124; 内联 + 多字段 IN | | | [√ &#124; ●](./MySQL/src/0101%20~%200200/0184%20-%20Department%20Highest%20Salary.sql) |
+| [0185 - Department Top Three Salaries](https://leetcode.com/problems/department-top-three-salaries/) | Hard | 内联 + IN + LIMIT &#124; 内联 + COUNT | | | [√ &#124; ●](./MySQL/src/0101%20~%200200/0185%20-%20Department%20Top%20Three%20Salaries.sql) |
 | [0186 - Reverse Words in a String II](https://leetcode.com/problems/reverse-words-in-a-string-ii/) | Medium | 遍历 | [√](./Go/src/0101%20~%200200/0186%20-%20Reverse%20Words%20in%20a%20String%20II.go) |
 | [0187 - Repeated DNA Sequences](https://leetcode.com/problems/repeated-dna-sequences/) | Medium | map + 计数 &#124; Rabin-Karp (hash) | [√](./Go/src/0101%20~%200200/0187%20-%20Repeated%20DNA%20Sequences.go) |
 | [0188 - Best Time to Buy and Sell Stock IV](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/) | Hard | DP | [√](./Go/src/0101%20~%200200/0188%20-%20Best%20Time%20to%20Buy%20and%20Sell%20Stock%20IV.go) |
 | [0189 - Rotate Array](https://leetcode.com/problems/rotate-array/) | Easy | 循环移动 &#124; 翻转 | [√ &#124; ●](./Go/src/0101%20~%200200/0189%20-%20Rotate%20Array.go) |
 | [0190 - Reverse Bits](https://leetcode.com/problems/reverse-bits/) | Easy | 双指针 + 异或 &#124; 分治 + 位运算 | [√ &#124; ●](./Go/src/0101%20~%200200/0190%20-%20Reverse%20Bits.go) |
 | [0191 - Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/) | Easy | 位运算 | [●](./Go/src/0101%20~%200200/0191%20-%20Number%20of%201%20Bits.go) |
-| [0192 - Word Frequency](https://leetcode.com/problems/word-frequency/) | Medium | tr + sort + uniq + awk | [●](./Bash/src/0101%20~%200200/0192%20-%20Word%20Frequency.sh) |
-| [0193 - Valid Phone Numbers](https://leetcode.com/problems/valid-phone-numbers/) | Easy | grep -E | [●](./Bash/src/0101%20~%200200/0193%20-%20Valid%20Phone%20Numbers.sh) |
-| [0194 - Transpose File](https://leetcode.com/problems/transpose-file/) | Medium | head + awk + while + expr | [●](./Bash/src/0101%20~%200200/0194%20-%20Transpose%20File.sh) |
-| [0195 - Tenth Line](https://leetcode.com/problems/tenth-line/) | Easy | sed &#124; wc + head + tail &#124; awk | [● &#124; ● &#124; ●](./Bash/src/0101%20~%200200/0195%20-%20Tenth%20Line.sh) |
-| [0196 - Delete Duplicate Emails](https://leetcode.com/problems/delete-duplicate-emails/) | Easy | GROUP BY + MIN &#124; 内联 | [√ &#124; ●](./MySQL/src/0101%20~%200200/0196%20-%20Delete%20Duplicate%20Emails.sql) |
-| [0197 - Rising Temperature](https://leetcode.com/problems/rising-temperature/) | Easy | 内联 | [√](./MySQL/src/0101%20~%200200/0197%20-%20Rising%20Temperature.sql) |
+| [0192 - Word Frequency](https://leetcode.com/problems/word-frequency/) | Medium | tr + sort + uniq + awk | | | | [●](./Bash/src/0101%20~%200200/0192%20-%20Word%20Frequency.sh) |
+| [0193 - Valid Phone Numbers](https://leetcode.com/problems/valid-phone-numbers/) | Easy | grep -E | | | | [●](./Bash/src/0101%20~%200200/0193%20-%20Valid%20Phone%20Numbers.sh) |
+| [0194 - Transpose File](https://leetcode.com/problems/transpose-file/) | Medium | head + awk + while + expr | | | | [●](./Bash/src/0101%20~%200200/0194%20-%20Transpose%20File.sh) |
+| [0195 - Tenth Line](https://leetcode.com/problems/tenth-line/) | Easy | sed &#124; wc + head + tail &#124; awk | | | | [● &#124; ● &#124; ●](./Bash/src/0101%20~%200200/0195%20-%20Tenth%20Line.sh) |
+| [0196 - Delete Duplicate Emails](https://leetcode.com/problems/delete-duplicate-emails/) | Easy | GROUP BY + MIN &#124; 内联 | | | [√ &#124; ●](./MySQL/src/0101%20~%200200/0196%20-%20Delete%20Duplicate%20Emails.sql) |
+| [0197 - Rising Temperature](https://leetcode.com/problems/rising-temperature/) | Easy | 内联 | | | [√](./MySQL/src/0101%20~%200200/0197%20-%20Rising%20Temperature.sql) |
 | [0198 - House Robber](https://leetcode.com/problems/house-robber/) | Easy | DP | [√](./Go/src/0101%20~%200200/0198%20-%20House%20Robber.go) |
 | [0199 - Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/) | Medium | DFS | [√](./Go/src/0101%20~%200200/0199%20-%20Binary%20Tree%20Right%20Side%20View.go) |
 | [0200 - Number of Islands](https://leetcode.com/problems/number-of-islands/) | Medium | DFS | [√](./Go/src/0101%20~%200200/0200%20-%20Number%20of%20Islands.go) |
+</details>
+
+<details>
+<summary>0201 ~ 0300</summary>
+
+| 题目 | 难度 | 思路 | Rust |
+| ------ | ------ | ------ | ------ |
+| [0202 - Happy Number](https://leetcode.com/problems/happy-number/) | Easy | 模拟 | [√](./Rust/src/0201%20~%200300/0202%20-%20Happy%20Number.rs) |
 </details>
