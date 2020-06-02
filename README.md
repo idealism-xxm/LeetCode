@@ -230,4 +230,5 @@ LeetCode AC代码（附思路、注释）
 | [0202 - Happy Number](https://leetcode.com/problems/happy-number/) | Easy | 模拟 | [√](./Rust/src/0201%20~%200300/0202%20-%20Happy%20Number.rs) |
 | [0203 - Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/) | Easy | 模拟 | [√](./Rust/src/0201%20~%200300/0203%20-%20Remove%20Linked%20List%20Elements.rs) |
 | [0204 - Count Primes](https://leetcode.com/problems/count-primes/) | Easy | 埃式筛 | [√](./Rust/src/0201%20~%200300/0204%20-%20Count%20Primes.rs) |
+| [0205 - Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/) | Easy | map + set | [√](./Rust/src/0201%20~%200300/0205%20-%20Isomorphic%20Strings.rs) |
 </details>
