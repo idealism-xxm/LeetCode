@@ -231,4 +231,5 @@ LeetCode AC代码（附思路、注释）
 | [0203 - Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/) | Easy | 模拟 | [√](./Rust/src/0201%20~%200300/0203%20-%20Remove%20Linked%20List%20Elements.rs) |
 | [0204 - Count Primes](https://leetcode.com/problems/count-primes/) | Easy | 埃式筛 | [√](./Rust/src/0201%20~%200300/0204%20-%20Count%20Primes.rs) |
 | [0205 - Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/) | Easy | map + set | [√](./Rust/src/0201%20~%200300/0205%20-%20Isomorphic%20Strings.rs) |
+| [0206 - Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | Easy | 递归 &#124; 循环 | [√ &#124; √](./Rust/src/0201%20~%200300/0206%20-%20Reverse%20Linked%20List.rs) |
 </details>
