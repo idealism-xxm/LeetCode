@@ -4,11 +4,11 @@
 
 // 输入： numCourses = 2, prerequisites = [[1,0]]
 // 输出： true
-// 解释： 总共有两门课，学习课程课程 1 之前，要先学习课程 0
+// 解释： 总共有两门课，学习课程 1 之前，要先学习课程 0
 
 // 输入： numCourses = 2, prerequisites = [[1,0],[0,1]]
 // 输出： true
-// 解释： 总共有两门课，学习课程课程 1 之前，要先学习课程 0 ；
+// 解释： 总共有两门课，学习课程 1 之前，要先学习课程 0 ；
 //		 而学习课程 0 之前，又要学习课程 1 ，所以无法学完所有课程
 
 // 思路1：拓扑排序
@@ -32,9 +32,9 @@ impl Solution {
 		let mut indegree = vec![0; edges.len()];
 		for prerequisite in prerequisites.iter() {
 			// 添加有向边
-			edges[prerequisite[0] as usize].push(prerequisite[1]);
+			edges[prerequisite[1] as usize].push(prerequisite[0]);
 			// 入度 + 1
-			indegree[prerequisite[1] as usize] += 1;
+			indegree[prerequisite[0] as usize] += 1;
 		}
 
 		// 入度为 0 的点的队列
