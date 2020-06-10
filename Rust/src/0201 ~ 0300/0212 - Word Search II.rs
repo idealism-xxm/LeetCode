@@ -58,7 +58,7 @@ impl TrieNode {
 
         // 如果当前节点是一个单词的结束字符，则收集对应的单词
         if cur.is_end {
-            result.insert(String::from_utf8(word.get(..=index).unwrap().to_vec()).unwrap());
+            result.insert(String::from_utf8(word[..=index].to_vec()).unwrap());
         }
 
         // 继续收集后续可能产生的单词
