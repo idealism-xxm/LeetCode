@@ -1,4 +1,4 @@
-// 链接：https://leetcode.com/problems/word-search-ii/
+// 链接：https://leetcode.com/problems/house-robber-ii/
 // 题意：给定一个数组表示的环，不能选择相邻的两个数，求选择某些数的和的最大值？
 
 // 输入： [2,3,2]
