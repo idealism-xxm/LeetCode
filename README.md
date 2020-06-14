@@ -242,4 +242,5 @@ LeetCode AC代码（附思路、注释）
 | [0214 - Shortest Palindrome](https://leetcode.com/problems/shortest-palindrome/) | Hard | 枚举 &#124; KMP | [√ &#124; ●](./Rust/src/0201%20~%200300/0214%20-%20Shortest%20Palindrome.rs) |
 | [0215 - Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/) | Medium | 优先队列 &#124; 快速排序 | [√ &#124; √](./Rust/src/0201%20~%200300/0215%20-%20Kth%20Largest%20Element%20in%20an%20Array.rs) |
 | [0216 - Combination Sum III](https://leetcode.com/problems/combination-sum-iii/) | Medium | 递归 | [√](./Rust/src/0201%20~%200300/0216%20-%20Combination%20Sum%20III.rs) |
+| [0217 - Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) | Easy | set | [√](./Rust/src/0201%20~%200300/0217%20-%20Contains%20Duplicate.rs) |
 </details>
