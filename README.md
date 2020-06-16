@@ -245,4 +245,5 @@ LeetCode AC代码（附思路、注释）
 | [0217 - Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) | Easy | set | [√](./Rust/src/0201%20~%200300/0217%20-%20Contains%20Duplicate.rs) |
 | [0219 - Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/) | Easy | map | [√](./Rust/src/0201%20~%200300/0219%20-%20Contains%20Duplicate%20II.rs) |
 | [0220 - Contains Duplicate III](https://leetcode.com/problems/contains-duplicate-iii/) | Medium | 滑动窗口 &#124; 桶 + 鸽笼原理 | [√ &#124; ●](./Rust/src/0201%20~%200300/0220%20-%20Contains%20Duplicate%20III.rs) |
+| [0221 - Maximal Square.rs](https://leetcode.com/problems/maximal-square/) | Medium | DP | [√](./Rust/src/0201%20~%200300/0221%20-%20Maximal%20Square.rs) |
 </details>
