@@ -249,4 +249,5 @@ LeetCode AC代码（附思路、注释）
 | [0222 - Count Complete Tree Nodes](https://leetcode-cn.com/problems/count-complete-tree-nodes/) | Medium | 二分 | [○](./Rust/src/0201%20~%200300/0222%20-%20Count%20Complete%20Tree%20Nodes.rs) |
 | [0223 - Rectangle Area](https://leetcode.com/problems/rectangle-area/) | Medium | 枚举 | [√](./Rust/src/0201%20~%200300/0223%20-%20Rectangle%20Area.rs) |
 | [0226 - Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/) | Easy | 递归 | [√](./Rust/src/0201%20~%200300/0226%20-%20Invert%20Binary%20Tree.rs) |
+| [0228 - Summary Ranges](https://leetcode.com/problems/summary-ranges/) | Medium | 双指针 | [√](./Rust/src/0201%20~%200300/0228%20-%20Summary%20Ranges.rs) |
 </details>
