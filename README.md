@@ -250,4 +250,5 @@ LeetCode AC代码（附思路、注释）
 | [0223 - Rectangle Area](https://leetcode.com/problems/rectangle-area/) | Medium | 枚举 | [√](./Rust/src/0201%20~%200300/0223%20-%20Rectangle%20Area.rs) |
 | [0226 - Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/) | Easy | 递归 | [√](./Rust/src/0201%20~%200300/0226%20-%20Invert%20Binary%20Tree.rs) |
 | [0228 - Summary Ranges](https://leetcode.com/problems/summary-ranges/) | Medium | 双指针 | [√](./Rust/src/0201%20~%200300/0228%20-%20Summary%20Ranges.rs) |
+| [0231 - Power of Two](https://leetcode-cn.com/problems/power-of-two/) | Easy | 位运算 | [√](./Rust/src/0201%20~%200300/0231%20-%20Power%20of%20Two.rs) |
 </details>
