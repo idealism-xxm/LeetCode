@@ -66,7 +66,7 @@ impl Solution {
 //		最后 pre 是新的头节点，返回 pre 节点即可
 //
 //		时间复杂度： O(n)
-//		空间复杂度： O(n)
+//		空间复杂度： O(1)
 
 // Definition for singly-linked list.
 // #[derive(PartialEq, Eq, Clone, Debug)]
