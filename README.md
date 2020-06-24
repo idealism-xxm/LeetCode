@@ -251,5 +251,6 @@ LeetCode AC代码（附思路、注释）
 | [0226 - Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/) | Easy | 递归 | [√](./Rust/src/0201%20~%200300/0226%20-%20Invert%20Binary%20Tree.rs) |
 | [0228 - Summary Ranges](https://leetcode.com/problems/summary-ranges/) | Medium | 双指针 | [√](./Rust/src/0201%20~%200300/0228%20-%20Summary%20Ranges.rs) |
 | [0231 - Power of Two](https://leetcode-cn.com/problems/power-of-two/) | Easy | 位运算 | [√](./Rust/src/0201%20~%200300/0231%20-%20Power%20of%20Two.rs) |
+| [0232 - Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/) | Easy | push 栈 + pop 栈 | [√](./Rust/src/0201%20~%200300/0233%20-%20Implement%20Queue%20using%20Stacks.rs) |
 | [0234 - Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/) | Easy | 快慢指针 | [√](./Rust/src/0201%20~%200300/0234%20-%20Palindrome%20Linked%20List.rs) |
 </details>
