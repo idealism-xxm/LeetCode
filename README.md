@@ -248,9 +248,10 @@ LeetCode AC代码（附思路、注释）
 | [0221 - Maximal Square.rs](https://leetcode.com/problems/maximal-square/) | Medium | DP | [√](./Rust/src/0201%20~%200300/0221%20-%20Maximal%20Square.rs) |
 | [0222 - Count Complete Tree Nodes](https://leetcode-cn.com/problems/count-complete-tree-nodes/) | Medium | 二分 | [○](./Rust/src/0201%20~%200300/0222%20-%20Count%20Complete%20Tree%20Nodes.rs) |
 | [0223 - Rectangle Area](https://leetcode.com/problems/rectangle-area/) | Medium | 枚举 | [√](./Rust/src/0201%20~%200300/0223%20-%20Rectangle%20Area.rs) |
+| [0225 - Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/) | Easy | 模拟 | [√](./Rust/src/0201%20~%200300/0225%20-%20Implement%20Stack%20using%20Queues.rs) |
 | [0226 - Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/) | Easy | 递归 | [√](./Rust/src/0201%20~%200300/0226%20-%20Invert%20Binary%20Tree.rs) |
 | [0228 - Summary Ranges](https://leetcode.com/problems/summary-ranges/) | Medium | 双指针 | [√](./Rust/src/0201%20~%200300/0228%20-%20Summary%20Ranges.rs) |
 | [0231 - Power of Two](https://leetcode-cn.com/problems/power-of-two/) | Easy | 位运算 | [√](./Rust/src/0201%20~%200300/0231%20-%20Power%20of%20Two.rs) |
-| [0232 - Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/) | Easy | push 栈 + pop 栈 | [√](./Rust/src/0201%20~%200300/0233%20-%20Implement%20Queue%20using%20Stacks.rs) |
+| [0232 - Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/) | Easy | push 栈 + pop 栈 | [√](./Rust/src/0201%20~%200300/0232%20-%20Implement%20Queue%20using%20Stacks.rs) |
 | [0234 - Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/) | Easy | 快慢指针 | [√](./Rust/src/0201%20~%200300/0234%20-%20Palindrome%20Linked%20List.rs) |
 </details>
