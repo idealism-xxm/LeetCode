@@ -117,8 +117,8 @@ LeetCode AC代码（附思路、注释）
 <details>
 <summary>0101 ~ 0200</summary>
 
-| 题目 | 难度 | 思路 | Rust | Go |
-| ------ | ------ | ------ | ------ | ------ |
+| 题目 | 难度 | 思路 | Go | Java | MySQL | Bash | 
+| ------ | ------ | ------ | ------ | ------ | ------ | ------ |
 | [0101 - Symmetric Tree](https://leetcode.com/problems/same-tree/) | Easy | 递归 &#124; 循环 | [√ &#124; ○](./Go/src/0101%20~%200200/0101%20-%20Symmetric%20Tree.go) |
 | [0102 - Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) | Medium | BFS | [√](./Go/src/0101%20~%200200/0102%20-%20Binary%20Tree%20Level%20Order%20Traversal.go) |
 | [0103 - Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/) | Medium | BFS | [√](./Go/src/0101%20~%200200/0103%20-%20Binary%20Tree%20Zigzag%20Level%20Order%20Traversal.go) |
@@ -249,6 +249,7 @@ LeetCode AC代码（附思路、注释）
 | [0221 - Maximal Square.rs](https://leetcode.com/problems/maximal-square/) | Medium | DP | [√](./Rust/src/0201%20~%200300/0221%20-%20Maximal%20Square.rs) |
 | [0222 - Count Complete Tree Nodes](https://leetcode-cn.com/problems/count-complete-tree-nodes/) | Medium | 二分 | [○](./Rust/src/0201%20~%200300/0222%20-%20Count%20Complete%20Tree%20Nodes.rs) |
 | [0223 - Rectangle Area](https://leetcode.com/problems/rectangle-area/) | Medium | 枚举 | [√](./Rust/src/0201%20~%200300/0223%20-%20Rectangle%20Area.rs) |
+| [0224 - Basic Calculator](https://leetcode.com/problems/basic-calculator/) | Hard | 调度场算法 | [√](./Rust/src/0201%20~%200300/0224%20-%20Basic%20Calculator.rs) |
 | [0225 - Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/) | Easy | 模拟 | [√](./Rust/src/0201%20~%200300/0225%20-%20Implement%20Stack%20using%20Queues.rs) |
 | [0226 - Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/) | Easy | 递归 | [√](./Rust/src/0201%20~%200300/0226%20-%20Invert%20Binary%20Tree.rs) |
 | [0228 - Summary Ranges](https://leetcode.com/problems/summary-ranges/) | Medium | 双指针 | [√](./Rust/src/0201%20~%200300/0228%20-%20Summary%20Ranges.rs) |
