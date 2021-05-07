@@ -10,11 +10,11 @@ LeetCode AC代码（附思路、注释）
 <details>
 <summary>0001 ~ 0100</summary>
 
-| 题目 | 难度 | 思路 | Go |
-| ------ | ------ | ------ | ------ |
-| [0001 - Two Sum](https://leetcode.com/problems/two-sum/) | Easy | 枚举 | [√](./Go/src/0001%20~%200100/0001%20-%20Two%20Sum.go) |
-| [0002 - Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | Medium | 模拟 | [√](./Go/src/0001%20~%200100/0002%20-%20Add%20Two%20Numbers.go) |
-| [0003 - Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | Medium | 双指针 | [√](./Go/src/0001%20~%200100/0003%20-%20Longest%20Substring%20Without%20Repeating%20Characters.go) |
+| 题目 | 难度 | 思路 | Go | Python3 |
+| ------ | ------ | ------ | ------ | ------ |
+| [0001 - Two Sum](https://leetcode.com/problems/two-sum/) | Easy | 枚举 | [√](./Go/src/0001%20~%200100/0001%20-%20Two%20Sum.go) | [√](./Python3/src/0001%20~%200100/0001%20-%20Two%20Sum.py) |
+| [0002 - Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | Medium | 模拟 | [√](./Go/src/0001%20~%200100/0002%20-%20Add%20Two%20Numbers.go) | [√](./Python3/src/0001%20~%200100/0002%20-%20Add%20Two%20Numbers.py) |
+| [0003 - Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | Medium | 双指针 | [√](./Go/src/0001%20~%200100/0003%20-%20Longest%20Substring%20Without%20Repeating%20Characters.go) | [√](./Python3/src/0001%20~%200100/0003%20-%20Longest%20Substring%20Without%20Repeating%20Characters.py) |
 | [0004 - Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/) | Hard | 二分 | [●](./Go/src/0001%20~%200100/0004%20-%20Median%20of%20Two%20Sorted%20Arrays.go) |
 | [0005 - Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) | Medium | 枚举 &#124; Manacher | [√ &#124; ●](./Go/src/0001%20~%200100/0005%20-%20Longest%20Palindromic%20Substring.go) |
 | [0006 - ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/) | Medium | 模拟 | [√](./Go/src/0001%20~%200100/0006%20-%20ZigZag%20Conversion.go) |
