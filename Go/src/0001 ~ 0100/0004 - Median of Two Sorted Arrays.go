@@ -60,7 +60,7 @@ func findMedianSortedArrays(a []int, b []int) float64 {
 	j := half - i
 	var rightMin int
 	// 处理好边界情况，防止越界
-	if i >= m { // i == m || i == m + 1
+	if i == m {
 		rightMin = b[j]
 	} else if j == n {
 		rightMin = a[i]
