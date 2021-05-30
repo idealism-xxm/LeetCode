@@ -267,3 +267,14 @@ LeetCode AC代码（附思路、注释）
 | [0241 - Different Ways to Add Parentheses](https://leetcode.com/problems/different-ways-to-add-parentheses/) | Medium | 递归 | [√](./Rust/src/0201%20~%200300/0241%20-%20Different%20Ways%20to%20Add%20Parentheses.rs) |
 | [0242 - Valid Anagram](https://leetcode.com/problems/valid-anagram/) | Easy | map | [√](./Rust/src/0201%20~%200300/0242%20-%20Valid%20Anagram.rs) |
 </details>
+
+<details>
+<summary>1801 ~ 1900</summary>
+
+| 题目 | 难度 | 思路 | Python3 |
+| ------ | ------ | ------ | ------ |
+| [1876 - Substrings of Size Three with Distinct Characters](https://leetcode.com/problems/substrings-of-size-three-with-distinct-characters/) | Easy | 枚举 | [√](./Python3/src/1801%20~%201900/1876%20-%20Substrings%20of%20Size%20Three%20with%20Distinct%20Characters.py) |
+| [1877 - Minimize Maximum Pair Sum in Array](https://leetcode.com/problems/minimize-maximum-pair-sum-in-array/) | Medium | 枚举 | [√](./Python3/src/1801%20~%201900/1877%20-%20Minimize%20Maximum%20Pair%20Sum%20in%20Array.py) |
+| [1878 - Get Biggest Three Rhombus Sums in a Grid](https://leetcode.com/problems/get-biggest-three-rhombus-sums-in-a-grid/) | Medium | 前缀和 | [√](./Python3/src/1801%20~%201900/1878%20-%20Get%20Biggest%20Three%20Rhombus%20Sums%20in%20a%20Grid.py) |
+| [1879 - Minimum XOR Sum of Two Arrays](https://leetcode.com/problems/minimum-xor-sum-of-two-arrays/) | Hard | 记忆化搜索 &#124; 状压 DP | [● &#124; ●](./Python3/src/1801%20~%201900/1879%20-%20Minimum%20XOR%20Sum%20of%20Two%20Arrays.py) |
+</details>
