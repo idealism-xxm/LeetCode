@@ -277,4 +277,9 @@ LeetCode AC代码（附思路、注释）
 | [1877 - Minimize Maximum Pair Sum in Array](https://leetcode.com/problems/minimize-maximum-pair-sum-in-array/) | Medium | 枚举 | [√](./Python3/src/1801%20~%201900/1877%20-%20Minimize%20Maximum%20Pair%20Sum%20in%20Array.py) |
 | [1878 - Get Biggest Three Rhombus Sums in a Grid](https://leetcode.com/problems/get-biggest-three-rhombus-sums-in-a-grid/) | Medium | 前缀和 | [√](./Python3/src/1801%20~%201900/1878%20-%20Get%20Biggest%20Three%20Rhombus%20Sums%20in%20a%20Grid.py) |
 | [1879 - Minimum XOR Sum of Two Arrays](https://leetcode.com/problems/minimum-xor-sum-of-two-arrays/) | Hard | 记忆化搜索 &#124; 状压 DP | [● &#124; ●](./Python3/src/1801%20~%201900/1879%20-%20Minimum%20XOR%20Sum%20of%20Two%20Arrays.py) |
+| [1880 - Check if Word Equals Summation of Two Words](https://leetcode.com/problems/check-if-word-equals-summation-of-two-words/) | Easy | 模拟 | [√](./Python3/src/1801%20~%201900/1880%20-%20Check%20if%20Word%20Equals%20Summation%20of%20Two%20Words.py) |
+| [1881 - Maximum Value after Insertion](https://leetcode.com/problems/maximum-value-after-insertion/) | Medium | 贪心 | [√](./Python3/src/1801%20~%201900/1881%20-%20Maximum%20Value%20after%20Insertion.py) |
+| [1882 - Process Tasks Using Servers](https://leetcode.com/problems/process-tasks-using-servers/) | Medium | 优先队列 | [√](./Python3/src/1801%20~%201900/1882%20-%20Process%20Tasks%20Using%20Servers.py) |
+| [1883 - Minimum Skips to Arrive at Meeting On Time](https://leetcode.com/problems/minimum-skips-to-arrive-at-meeting-on-time/) | Hard | DP | [●](./Python3/src/1801%20~%201900/1883%20-%20Minimum%20Skips%20to%20Arrive%20at%20Meeting%20On%20Time.py) |
+
 </details>
