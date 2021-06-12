@@ -281,5 +281,9 @@ LeetCode AC代码（附思路、注释）
 | [1881 - Maximum Value after Insertion](https://leetcode.com/problems/maximum-value-after-insertion/) | Medium | 贪心 | [√](./Python3/src/1801%20~%201900/1881%20-%20Maximum%20Value%20after%20Insertion.py) |
 | [1882 - Process Tasks Using Servers](https://leetcode.com/problems/process-tasks-using-servers/) | Medium | 优先队列 | [√](./Python3/src/1801%20~%201900/1882%20-%20Process%20Tasks%20Using%20Servers.py) |
 | [1883 - Minimum Skips to Arrive at Meeting On Time](https://leetcode.com/problems/minimum-skips-to-arrive-at-meeting-on-time/) | Hard | DP | [●](./Python3/src/1801%20~%201900/1883%20-%20Minimum%20Skips%20to%20Arrive%20at%20Meeting%20On%20Time.py) |
+| [1886 - Determine Whether Matrix Can Be Obtained By Rotation](https://leetcode.com/problems/determine-whether-matrix-can-be-obtained-by-rotation/) | Easy | 枚举 | [√](./Python3/src/1801%20~%201900/1886%20-%20Determine%20Whether%20Matrix%20Can%20Be%20Obtained%20By%20Rotation.py) |
+| [1887 - Reduction Operations to Make the Array Elements Equal](https://leetcode.com/problems/reduction-operations-to-make-the-array-elements-equal/) | Medium | 统计 | [√](./Python3/src/1801%20~%201900/1887%20-%20Reduction%20Operations%20to%20Make%20the%20Array%20Elements%20Equal.py) |
+| [1888 - Minimum Number of Flips to Make the Binary String Alternating](https://leetcode.com/problems/minimum-number-of-flips-to-make-the-binary-string-alternating/) | Medium | 滑动窗口 | [√](./Python3/src/1801%20~%201900/1888%20-%20Minimum%20Number%20of%20Flips%20to%20Make%20the%20Binary%20String%20Alternating.py) |
+| [1889 - Minimum Space Wasted From Packaging](https://leetcode.com/problems/minimum-space-wasted-from-packaging/) | Hard | 二分 | [●](./Python3/src/1801%20~%201900/1889%20-%20Minimum%20Space%20Wasted%20From%20Packaging.py) |
 
 </details>
