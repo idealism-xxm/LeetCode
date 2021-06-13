@@ -285,5 +285,9 @@ LeetCode AC代码（附思路、注释）
 | [1887 - Reduction Operations to Make the Array Elements Equal](https://leetcode.com/problems/reduction-operations-to-make-the-array-elements-equal/) | Medium | 统计 | [√](./Python3/src/1801%20~%201900/1887%20-%20Reduction%20Operations%20to%20Make%20the%20Array%20Elements%20Equal.py) |
 | [1888 - Minimum Number of Flips to Make the Binary String Alternating](https://leetcode.com/problems/minimum-number-of-flips-to-make-the-binary-string-alternating/) | Medium | 滑动窗口 | [√](./Python3/src/1801%20~%201900/1888%20-%20Minimum%20Number%20of%20Flips%20to%20Make%20the%20Binary%20String%20Alternating.py) |
 | [1889 - Minimum Space Wasted From Packaging](https://leetcode.com/problems/minimum-space-wasted-from-packaging/) | Hard | 二分 | [●](./Python3/src/1801%20~%201900/1889%20-%20Minimum%20Space%20Wasted%20From%20Packaging.py) |
+| [1893 - Check if All the Integers in a Range Are Covered](https://leetcode.com/problems/check-if-all-the-integers-in-a-range-are-covered/) | Easy | 枚举 | [√](./Python3/src/1801%20~%201900/1893%20-%20Check%20if%20All%20the%20Integers%20in%20a%20Range%20Are%20Covered.py) |
+| [1894 - Find the Student that Will Replace the Chalk](https://leetcode.com/problems/find-the-student-that-will-replace-the-chalk/) | Medium | 枚举 | [√](./Python3/src/1801%20~%201900/1894%20-%20Find%20the%20Student%20that%20Will%20Replace%20the%20Chalk.py) |
+| [1895 - Largest Magic Square](https://leetcode.com/problems/largest-magic-square/) | Medium | 枚举 | [√](./Python3/src/1801%20~%201900/1895%20-%20Largest%20Magic%20Square.py) |
+| [1896 - Minimum Cost to Change the Final Value of Expression](https://leetcode.com/problems/minimum-cost-to-change-the-final-value-of-expression/) | Hard | DFS + 栈  &#124; DP + 调度场算法  &#124; DP + 调度场算法 | [● &#124; ● &#124; ●](./Python3/src/1801%20~%201900/1896%20-%20Minimum%20Cost%20to%20Change%20the%20Final%20Value%20of%20Expression.py) |
 
 </details>
