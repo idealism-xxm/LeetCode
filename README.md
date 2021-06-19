@@ -289,5 +289,9 @@ LeetCode AC代码（附思路、注释）
 | [1894 - Find the Student that Will Replace the Chalk](https://leetcode.com/problems/find-the-student-that-will-replace-the-chalk/) | Medium | 枚举 | [√](./Python3/src/1801%20~%201900/1894%20-%20Find%20the%20Student%20that%20Will%20Replace%20the%20Chalk.py) |
 | [1895 - Largest Magic Square](https://leetcode.com/problems/largest-magic-square/) | Medium | 枚举 | [√](./Python3/src/1801%20~%201900/1895%20-%20Largest%20Magic%20Square.py) |
 | [1896 - Minimum Cost to Change the Final Value of Expression](https://leetcode.com/problems/minimum-cost-to-change-the-final-value-of-expression/) | Hard | DFS + 栈  &#124; DP + 调度场算法  &#124; DP + 调度场算法 | [● &#124; ● &#124; ●](./Python3/src/1801%20~%201900/1896%20-%20Minimum%20Cost%20to%20Change%20the%20Final%20Value%20of%20Expression.py) |
+| [1897 - Redistribute Characters to Make All Strings Equal](https://leetcode.com/problems/redistribute-characters-to-make-all-strings-equal/) | Easy | 统计 | [√](./Python3/src/1801%20~%201900/1897%20-%20Redistribute%20Characters%20to%20Make%20All%20Strings%20Equal.py) |
+| [1898 - Maximum Number of Removable Characters](https://leetcode.com/problems/maximum-number-of-removable-characters/) | Medium | 二分 + 双指针 | [√](./Python3/src/1801%20~%201900/1898%20-%20Maximum%20Number%20of%20Removable%20Characters.py) |
+| [1899 - Merge Triplets to Form Target Triplet](https://leetcode.com/problems/merge-triplets-to-form-target-triplet/) | Medium | 贪心 | [√](./Python3/src/1801%20~%201900/1899%20-%20Merge%20Triplets%20to%20Form%20Target%20Triplet.py) |
+| [1900 - The Earliest and Latest Rounds Where Players Compete](https://leetcode.com/problems/the-earliest-and-latest-rounds-where-players-compete/) | Hard | 递归 + 记忆化 &#124; 递归 + 记忆化 | [√ &#124; ●](./Python3/src/1801%20~%201900/1900%20-%20The%20Earliest%20and%20Latest%20Rounds%20Where%20Players%20Compete.py) |
 
 </details>
