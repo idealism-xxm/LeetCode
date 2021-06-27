@@ -295,3 +295,15 @@ LeetCode AC代码（附思路、注释）
 | [1900 - The Earliest and Latest Rounds Where Players Compete](https://leetcode.com/problems/the-earliest-and-latest-rounds-where-players-compete/) | Hard | 递归 + 记忆化 &#124; 递归 + 记忆化 | [√ &#124; ●](./Python3/src/1801%20~%201900/1900%20-%20The%20Earliest%20and%20Latest%20Rounds%20Where%20Players%20Compete.py) |
 
 </details>
+
+<details>
+<summary>1901 ~ 2000</summary>
+
+| 题目 | 难度 | 思路 | Python3 |
+| ------ | ------ | ------ | ------ |
+| [1903 - Largest Odd Number in String](https://leetcode.com/problems/largest-odd-number-in-string/) | Easy | 贪心 | [√](./Python3/src/1901%20~%202000/1903%20-%20Largest%20Odd%20Number%20in%20String.py) |
+| [1904 - The Number of Full Rounds You Have Played](https://leetcode.com/problems/the-number-of-full-rounds-you-have-played/) | Medium | 数学 | [√](./Python3/src/1901%20~%202000/1904%20-%20The%20Number%20of%20Full%20Rounds%20You%20Have%20Played.py) |
+| [1905 - Count Sub Islands](https://leetcode.com/problems/count-sub-islands/) | Medium | DFS | [√](./Python3/src/1901%20~%202000/1905%20-%20Count%20Sub%20Islands.py) |
+| [1906 - Minimum Absolute Difference Queries](https://leetcode.com/problems/minimum-absolute-difference-queries/) | Medium | 前缀和 | [√](./Python3/src/1901%20~%202000/1906%20-%20Minimum%20Absolute%20Difference%20Queries.py) |
+
+</details>
