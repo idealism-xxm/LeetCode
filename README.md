@@ -305,5 +305,9 @@ LeetCode AC代码（附思路、注释）
 | [1904 - The Number of Full Rounds You Have Played](https://leetcode.com/problems/the-number-of-full-rounds-you-have-played/) | Medium | 数学 | [√](./Python3/src/1901%20~%202000/1904%20-%20The%20Number%20of%20Full%20Rounds%20You%20Have%20Played.py) |
 | [1905 - Count Sub Islands](https://leetcode.com/problems/count-sub-islands/) | Medium | DFS | [√](./Python3/src/1901%20~%202000/1905%20-%20Count%20Sub%20Islands.py) |
 | [1906 - Minimum Absolute Difference Queries](https://leetcode.com/problems/minimum-absolute-difference-queries/) | Medium | 前缀和 | [√](./Python3/src/1901%20~%202000/1906%20-%20Minimum%20Absolute%20Difference%20Queries.py) |
+| [1913 - Maximum Product Difference Between Two Pairs](https://leetcode.com/problems/maximum-product-difference-between-two-pairs/) | Easy | 贪心 | [√](./Python3/src/1901%20~%202000/1913%20-%20Maximum%20Product%20Difference%20Between%20Two%20Pairs.py) |
+| [1914 - Cyclically Rotating a Grid](https://leetcode.com/problems/cyclically-rotating-a-grid/) | Medium | 模拟 | [√](./Python3/src/1901%20~%202000/1914%20-%20Cyclically%20Rotating%20a%20Grid.py) |
+| [1915 - Number of Wonderful Substrings](https://leetcode.com/problems/number-of-wonderful-substrings/) | Medium | 状态压缩 + 前缀异或和 | [√](./Python3/src/1901%20~%202000/1915%20-%20Number%20of%20Wonderful%20Substrings.py) |
+| [1916 - Count Ways to Build Rooms in an Ant Colony](https://leetcode.com/problems/count-ways-to-build-rooms-in-an-ant-colony/) | Hard | 树形 DP + 排列组合 | [√](./Python3/src/1901%20~%202000/1915%20-%20Number%20of%20Wonderful%20Substrings.py) |
 
 </details>
