@@ -312,5 +312,8 @@ LeetCode AC代码（附思路、注释）
 | [1914 - Cyclically Rotating a Grid](https://leetcode.com/problems/cyclically-rotating-a-grid/) | Medium | 模拟 | [√](./Python3/src/1901%20~%202000/1914%20-%20Cyclically%20Rotating%20a%20Grid.py) |
 | [1915 - Number of Wonderful Substrings](https://leetcode.com/problems/number-of-wonderful-substrings/) | Medium | 状态压缩 + 前缀异或和 | [√](./Python3/src/1901%20~%202000/1915%20-%20Number%20of%20Wonderful%20Substrings.py) |
 | [1916 - Count Ways to Build Rooms in an Ant Colony](https://leetcode.com/problems/count-ways-to-build-rooms-in-an-ant-colony/) | Hard | 树形 DP + 排列组合 | [√](./Python3/src/1901%20~%202000/1915%20-%20Number%20of%20Wonderful%20Substrings.py) |
+| [1920 - Build Array from Permutation](https://leetcode.com/problems/build-array-from-permutation/) | Easy | 模拟 | [√](./Python3/src/1901%20~%202000/1920%20-%20Build%20Array%20from%20Permutation.py) |
+| [1921 - Eliminate Maximum Number of Monsters](https://leetcode.com/problems/eliminate-maximum-number-of-monsters/) | Medium | 贪心 | [√](./Python3/src/1901%20~%202000/1921%20-%20Eliminate%20Maximum%20Number%20of%20Monsters.py) |
+| [1922 - Count Good Numbers](https://leetcode.com/problems/count-good-numbers/) | Medium | 快速幂 | [√](./Python3/src/1901%20~%202000/1922%20-%20Count%20Good%20Numbers.py) |
 
 </details>
