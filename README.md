@@ -315,5 +315,9 @@ LeetCode AC代码（附思路、注释）
 | [1920 - Build Array from Permutation](https://leetcode.com/problems/build-array-from-permutation/) | Easy | 模拟 | [√](./Python3/src/1901%20~%202000/1920%20-%20Build%20Array%20from%20Permutation.py) |
 | [1921 - Eliminate Maximum Number of Monsters](https://leetcode.com/problems/eliminate-maximum-number-of-monsters/) | Medium | 贪心 | [√](./Python3/src/1901%20~%202000/1921%20-%20Eliminate%20Maximum%20Number%20of%20Monsters.py) |
 | [1922 - Count Good Numbers](https://leetcode.com/problems/count-good-numbers/) | Medium | 快速幂 | [√](./Python3/src/1901%20~%202000/1922%20-%20Count%20Good%20Numbers.py) |
+| [1925 - Count Square Sum Triples](https://leetcode.com/problems/count-square-sum-triples/) | Easy | 模拟 | [√](./Python3/src/1901%20~%202000/1925%20-%20Count%20Square%20Sum%20Triples.py) |
+| [1926 - Nearest Exit from Entrance in Maze](https://leetcode.com/problems/nearest-exit-from-entrance-in-maze/) | Medium | BFS | [√](./Python3/src/1901%20~%202000/1926%20-%20Nearest%20Exit%20from%20Entrance%20in%20Maze.py) |
+| [1927 - Sum Game](https://leetcode.com/problems/sum-game/) | Medium | 分类讨论 | [√](./Python3/src/1901%20~%202000/1927%20-%20Sum%20Game.py) |
+| [1928 - Minimum Cost to Reach Destination in Time](https://leetcode.com/problems/minimum-cost-to-reach-destination-in-time/) | Hard | Dijkstra &#124; DP | [● &#124; ●](./Python3/src/1901%20~%202000/1928%20-%20Minimum%20Cost%20to%20Reach%20Destination%20in%20Time.py) |
 
 </details>
