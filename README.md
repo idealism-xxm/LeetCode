@@ -319,5 +319,9 @@ LeetCode AC代码（附思路、注释）
 | [1926 - Nearest Exit from Entrance in Maze](https://leetcode.com/problems/nearest-exit-from-entrance-in-maze/) | Medium | BFS | [√](./Python3/src/1901%20~%202000/1926%20-%20Nearest%20Exit%20from%20Entrance%20in%20Maze.py) |
 | [1927 - Sum Game](https://leetcode.com/problems/sum-game/) | Medium | 分类讨论 | [√](./Python3/src/1901%20~%202000/1927%20-%20Sum%20Game.py) |
 | [1928 - Minimum Cost to Reach Destination in Time](https://leetcode.com/problems/minimum-cost-to-reach-destination-in-time/) | Hard | Dijkstra &#124; DP | [● &#124; ●](./Python3/src/1901%20~%202000/1928%20-%20Minimum%20Cost%20to%20Reach%20Destination%20in%20Time.py) |
+| [1929 - Concatenation of Array](https://leetcode.com/problems/concatenation-of-array/) | Easy | 模拟 | [√](./Python3/src/1901%20~%202000/1929%20-%20Concatenation%20of%20Array.py) |
+| [1930 - Unique Length-3 Palindromic Subsequences](https://leetcode.com/problems/unique-length-3-palindromic-subsequences/) | Medium | 枚举 | [√](./Python3/src/1901%20~%202000/1930%20-%20Unique%20Length-3%20Palindromic%20Subsequences.py) |
+| [1931 - Painting a Grid With Three Different Colors](https://leetcode.com/problems/painting-a-grid-with-three-different-colors/) | Hard | DP | [√](./Python3/src/1901%20~%202000/1931%20-%20Painting%20a%20Grid%20With%20Three%20Different%20Colors.py) |
+| [1932 - Merge BSTs to Create Single BST](https://leetcode.com/problems/merge-bsts-to-create-single-bst/) | Hard | 模拟 | [√](./Python3/src/1901%20~%202000/1932%20-%20Merge%20BSTs%20to%20Create%20Single%20BST.py) |
 
 </details>
