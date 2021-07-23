@@ -323,5 +323,9 @@ LeetCode AC代码（附思路、注释）
 | [1930 - Unique Length-3 Palindromic Subsequences](https://leetcode.com/problems/unique-length-3-palindromic-subsequences/) | Medium | 枚举 | [√](./Python3/src/1901%20~%202000/1930%20-%20Unique%20Length-3%20Palindromic%20Subsequences.py) |
 | [1931 - Painting a Grid With Three Different Colors](https://leetcode.com/problems/painting-a-grid-with-three-different-colors/) | Hard | DP | [√](./Python3/src/1901%20~%202000/1931%20-%20Painting%20a%20Grid%20With%20Three%20Different%20Colors.py) |
 | [1932 - Merge BSTs to Create Single BST](https://leetcode.com/problems/merge-bsts-to-create-single-bst/) | Hard | 模拟 | [√](./Python3/src/1901%20~%202000/1932%20-%20Merge%20BSTs%20to%20Create%20Single%20BST.py) |
+| [1935 - Maximum Number of Words You Can Type](https://leetcode.com/problems/maximum-number-of-words-you-can-type/) | Easy | 模拟 | [√](./Python3/src/1901%20~%202000/1935%20-%20Maximum%20Number%20of%20Words%20You%20Can%20Type.py) |
+| [1936 - Add Minimum Number of Rungs](https://leetcode.com/problems/add-minimum-number-of-rungs/) | Medium | 贪心 | [√](./Python3/src/1901%20~%202000/1936%20-%20Add%20Minimum%20Number%20of%20Rungs.py) |
+| [1937 - Maximum Number of Points with Cost](https://leetcode.com/problems/maximum-number-of-points-with-cost/) | Medium | DP | [√](./Python3/src/1901%20~%202000/1937%20-%20Maximum%20Number%20of%20Points%20with%20Cost.py) |
+| [1938 - Maximum Genetic Difference Query](https://leetcode.com/problems/maximum-genetic-difference-query/) | Hard | Trie | [●](./Python3/src/1901%20~%202000/1938%20-%20Maximum%20Genetic%20Difference%20Query.py) |
 
 </details>

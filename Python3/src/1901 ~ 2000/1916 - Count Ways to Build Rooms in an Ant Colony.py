@@ -26,7 +26,7 @@
 
 # 思路： 树形 DP + 排列组合
 #
-#       先根据 preRoom 构建临接表，然后开始树形 DP ，
+#       先根据 preRoom 构建邻接表，然后开始树形 DP ，
 #       dfs(i) 返回 Tuple[int, int] ，
 #       第一个数 cnt 表示子树的大小，第二个数 num 表示子树不同构建顺序的数量。
 #
@@ -83,7 +83,7 @@ init()
 class Solution:
     def waysToBuildRooms(self, prevRoom: List[int]) -> int:
         n = len(prevRoom)
-        # 构建临接表
+        # 构建邻接表
         edges: List[List[int]] = [None] * n
         for i in range(n):
             edges[i] = []

@@ -30,7 +30,7 @@
 # 思路1： Dijkstra
 #
 #       重新根据初始边和费用重新构造一个有既有时间又有费用的图，
-#       即构造临接表 adj ，adj[s] = List[(fee, time, e)] ，
+#       即构造邻接表 adj ，adj[s] = List[(fee, time, e)] ，
 #       表示从 s 到 e 有一条边，该边有费用 fee ，经过会耗时 time
 #
 #       然后使用 Dijkstra 变形即可，
@@ -66,7 +66,7 @@ class Solution:
         # 初始化起点的距离
         dist[0] = passingFees[0], 0
 
-        # 初始化临接表
+        # 初始化邻接表
         for s, e, time in edges:
             adj[s].append((e, passingFees[e], time))
             adj[e].append((s, passingFees[s], time))
@@ -127,7 +127,7 @@ class Solution:
             dp[i] = [INF] * (maxTime + 1)
         dp[0][0] = passingFees[0]
 
-        # 初始化临接表（只记录费用最小的边）
+        # 初始化邻接表（只记录费用最小的边）
         adj: List[Dict[int, int]] = [None] * n
         for i in range(n):
             adj[i] = {}
