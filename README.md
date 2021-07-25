@@ -327,5 +327,8 @@ LeetCode AC代码（附思路、注释）
 | [1936 - Add Minimum Number of Rungs](https://leetcode.com/problems/add-minimum-number-of-rungs/) | Medium | 贪心 | [√](./Python3/src/1901%20~%202000/1936%20-%20Add%20Minimum%20Number%20of%20Rungs.py) |
 | [1937 - Maximum Number of Points with Cost](https://leetcode.com/problems/maximum-number-of-points-with-cost/) | Medium | DP | [√](./Python3/src/1901%20~%202000/1937%20-%20Maximum%20Number%20of%20Points%20with%20Cost.py) |
 | [1938 - Maximum Genetic Difference Query](https://leetcode.com/problems/maximum-genetic-difference-query/) | Hard | Trie | [●](./Python3/src/1901%20~%202000/1938%20-%20Maximum%20Genetic%20Difference%20Query.py) |
+| [1941 - Check if All Characters Have Equal Number of Occurrences](https://leetcode.com/problems/check-if-all-characters-have-equal-number-of-occurrences/) | Easy | 模拟 | [√](./Python3/src/1901%20~%202000/1941%20-%20Check%20if%20All%20Characters%20Have%20Equal%20Number%20of%20Occurrences.py) |
+| [1942 - The Number of the Smallest Unoccupied Chair](https://leetcode.com/problems/the-number-of-the-smallest-unoccupied-chair/) | Medium | 优先队列 | [√](./Python3/src/1901%20~%202000/1942%20-%20The%20Number%20of%20the%20Smallest%20Unoccupied%20Chair.py) |
+| [1943 - Describe the Painting.py](https://leetcode.com/problems/describe-the-painting/) | Medium | 树状数组 &#124; 差分数组 | [√ &#124; ●](./Python3/src/1901%20~%202000/1943%20-%20Describe%20the%20Painting.py) |
 
 </details>
