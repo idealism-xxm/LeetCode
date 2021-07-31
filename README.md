@@ -330,5 +330,7 @@ LeetCode AC代码（附思路、注释）
 | [1941 - Check if All Characters Have Equal Number of Occurrences](https://leetcode.com/problems/check-if-all-characters-have-equal-number-of-occurrences/) | Easy | 模拟 | [√](./Python3/src/1901%20~%202000/1941%20-%20Check%20if%20All%20Characters%20Have%20Equal%20Number%20of%20Occurrences.py) |
 | [1942 - The Number of the Smallest Unoccupied Chair](https://leetcode.com/problems/the-number-of-the-smallest-unoccupied-chair/) | Medium | 优先队列 | [√](./Python3/src/1901%20~%202000/1942%20-%20The%20Number%20of%20the%20Smallest%20Unoccupied%20Chair.py) |
 | [1943 - Describe the Painting.py](https://leetcode.com/problems/describe-the-painting/) | Medium | 树状数组 &#124; 差分数组 | [√ &#124; ●](./Python3/src/1901%20~%202000/1943%20-%20Describe%20the%20Painting.py) |
+| [1945 - Sum of Digits of String After Convert](https://leetcode.com/problems/sum-of-digits-of-string-after-convert/) | Easy | 模拟 | [√](./Python3/src/1901%20~%202000/1945%20-%20Sum%20of%20Digits%20of%20String%20After%20Convert.py) |
+| [1946 - Largest Number After Mutating Substring](https://leetcode.com/problems/largest-number-after-mutating-substring/) | Medium | 贪心 | [√](./Python3/src/1901%20~%202000/1946%20-%20Largest%20Number%20After%20Mutating%20Substring.py) |
 
 </details>
