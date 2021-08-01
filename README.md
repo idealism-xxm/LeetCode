@@ -332,5 +332,6 @@ LeetCode AC代码（附思路、注释）
 | [1943 - Describe the Painting.py](https://leetcode.com/problems/describe-the-painting/) | Medium | 树状数组 &#124; 差分数组 | [√ &#124; ●](./Python3/src/1901%20~%202000/1943%20-%20Describe%20the%20Painting.py) |
 | [1945 - Sum of Digits of String After Convert](https://leetcode.com/problems/sum-of-digits-of-string-after-convert/) | Easy | 模拟 | [√](./Python3/src/1901%20~%202000/1945%20-%20Sum%20of%20Digits%20of%20String%20After%20Convert.py) |
 | [1946 - Largest Number After Mutating Substring](https://leetcode.com/problems/largest-number-after-mutating-substring/) | Medium | 贪心 | [√](./Python3/src/1901%20~%202000/1946%20-%20Largest%20Number%20After%20Mutating%20Substring.py) |
+| [1947 - Maximum Compatibility Score Sum](https://leetcode.com/problems/maximum-compatibility-score-sum/) | Medium | 状压 DP | [√](./Python3/src/1901%20~%202000/1947%20-%20Maximum%20Compatibility%20Score%20Sum.py) |
 
 </details>
