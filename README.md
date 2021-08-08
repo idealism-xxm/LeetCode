@@ -337,5 +337,8 @@ LeetCode AC代码（附思路、注释）
 | [1953 - Maximum Number of Weeks for Which You Can Work](https://leetcode.com/problems/maximum-number-of-weeks-for-which-you-can-work/) | Medium | 贪心 | [√](./Python3/src/1901%20~%202000/1953%20-%20Maximum%20Number%20of%20Weeks%20for%20Which%20You%20Can%20Work.py) |
 | [1954 - Minimum Garden Perimeter to Collect Enough Apples](https://leetcode.com/problems/minimum-garden-perimeter-to-collect-enough-apples/) | Medium | 数学 + 二分 | [√](./Python3/src/1901%20~%202000/1954%20-%20Minimum%20Garden%20Perimeter%20to%20Collect%20Enough%20Apples.py) |
 | [1955 - Count Number of Special Subsequences](https://leetcode.com/problems/count-number-of-special-subsequences/) | Hard | DP | [√](./Python3/src/1901%20~%202000/1955%20-%20Count%20Number%20of%20Special%20Subsequences.py) |
+| [1957 - Delete Characters to Make Fancy String](https://leetcode.com/problems/delete-characters-to-make-fancy-string) | Easy | 模拟 | [√](./Python3/src/1901%20~%202000/1957%20-%20Delete%20Characters%20to%20Make%20Fancy%20String.py) |
+| [1958 - Check if Move is Legal](https://leetcode.com/problems/check-if-move-is-legal/) | Medium | 模拟 | [√](./Python3/src/1901%20~%202000/1958%20-%20Check%20if%20Move%20is%20Legal.py) |
+| [1959 - Minimum Total Space Wasted With K Resizing Operations](https://leetcode.com/problems/minimum-total-space-wasted-with-k-resizing-operations/) | Medium | DP &#124; DP | [√ &#124; ●](./Python3/src/1901%20~%202000/1959%20-%20Minimum%20Total%20Space%20Wasted%20With%20K%20Resizing%20Operations.py) |
 
 </details>
