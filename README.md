@@ -344,5 +344,6 @@ LeetCode AC代码（附思路、注释）
 | [1962 - Remove Stones to Minimize the Total](https://leetcode.com/problems/remove-stones-to-minimize-the-total/) | Medium | 贪心 + 堆 | [√](./Python3/src/1901%20~%202000/1962%20-%20Remove%20Stones%20to%20Minimize%20the%20Total.py) |
 | [1963 - Minimum Number of Swaps to Make the String Balanced](https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-string-balanced/) | Medium | 贪心 | [√](./Python3/src/1901%20~%202000/1963%20-%20Minimum%20Number%20of%20Swaps%20to%20Make%20the%20String%20Balanced.py) |
 | [1964 - Find the Longest Valid Obstacle Course at Each Position](https://leetcode.com/problems/find-the-longest-valid-obstacle-course-at-each-position/) | Hard | DP + 二分 | [√](./Python3/src/1901%20~%202000/1964%20-%20Find%20the%20Longest%20Valid%20Obstacle%20Course%20at%20Each%20Position.py) |
+| [1967 - Number of Strings That Appear as Substrings in Word](https://leetcode.com/problems/number-of-strings-that-appear-as-substrings-in-word/) | Easy | 模拟 | [√](./Python3/src/1901%20~%202000/1967%20-%20Number%20of%20Strings%20That%20Appear%20as%20Substrings%20in%20Word.py) |
 
 </details>
