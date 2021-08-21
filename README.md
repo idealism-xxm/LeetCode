@@ -346,6 +346,8 @@ LeetCode AC代码（附思路、注释）
 | [1964 - Find the Longest Valid Obstacle Course at Each Position](https://leetcode.com/problems/find-the-longest-valid-obstacle-course-at-each-position/) | Hard | DP + 二分 | [√](./Python3/src/1901%20~%202000/1964%20-%20Find%20the%20Longest%20Valid%20Obstacle%20Course%20at%20Each%20Position.py) |
 | [1967 - Number of Strings That Appear as Substrings in Word](https://leetcode.com/problems/number-of-strings-that-appear-as-substrings-in-word/) | Easy | 模拟 | [√](./Python3/src/1901%20~%202000/1967%20-%20Number%20of%20Strings%20That%20Appear%20as%20Substrings%20in%20Word.py) |
 | [1968 - Array With Elements Not Equal to Average of Neighbors](https://leetcode.com/problems/array-with-elements-not-equal-to-average-of-neighbors/) | Medium | 排序 + 贪心 | [√](./Python3/src/1901%20~%202000/1968%20-%20Array%20With%20Elements%20Not%20Equal%20to%20Average%20of%20Neighbors.py) |
+| [1969 - Minimum Non-Zero Product of the Array Elements](https://leetcode.com/problems/minimum-non-zero-product-of-the-array-elements/) | Medium | 贪心 | [√](./Python3/src/1901%20~%202000/1969%20-%20Minimum%20Non-Zero%20Product%20of%20the%20Array%20Elements.py) |
+| [1970 - Last Day Where You Can Still Cross](https://leetcode.com/problems/last-day-where-you-can-still-cross/) | Medium | 二分 + BFS &#124; 并查集 | [√ &#124; ○](./Python3/src/1901%20~%202000/1970%20-%20Last%20Day%20Where%20You%20Can%20Still%20Cross.py) |
 
 
 </details>

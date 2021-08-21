@@ -115,3 +115,81 @@ class Solution:
                     q.put((rr, cc))
         # 循环中没有到达最后一行，则不能成功
         return False
+
+
+# 思路2： 并查集
+#
+#       使用并查集有两种不同的方式处理：
+#
+#       1. 正序处理，考虑第一次不能走的情况：必定是水的八联通块最左侧是 1 ，最右侧是 col ，
+#           这样陆地的四联通块就无法从第一行到最后一行
+#           那么我们可以使用并查集维护同一个水联通块，并记录每个联通块最左侧和最右侧能到达的列数，
+#           当某一次合并后，水的八联通块最左侧是 1 ，最右侧是 col ，那么前一天就是最后一天能成功的
+#
+#           为了简化处理，我们可以增加一个源点 s 与第 1 列的水相连，增加一个终点 t 与第 col 列的水相连，
+#           这样就不需要额外的 left 和 right 数组，只需要判断 s 和 t 是否相连即可
+#
+#       2. 倒序处理，考虑最后一次能走的情况：必定是陆地的四联通块最上侧是 1， 最下侧是 row ，
+#           这样陆地的四联通块就能从第一行到最后一行
+#           那么我们可以使用并查集维护同一个陆地联通块，并记录每个联通块最上侧和最下侧能到达的行数，
+#           当某一次合并后，陆地的四联通块最上侧是 1 ，最下侧是 row ，那么前一天就是最后一天能成功的
+#
+#           为了简化处理，我们可以增加一个源点 s 与第 1 行的陆地相连，增加一个终点 t 与第 row 行的陆地相连，
+#           这样就不需要额外的 up 和 down 数组，只需要判断 s 和 t 是否相连即可
+#    
+#       【注意】这两种方式都需要判断相连的水/陆地是否存在，只有存在时才能进行合并
+#
+#       时间复杂度： O(row * col * alpha(row * col))
+#       空间复杂度： O(row * col)
+
+
+d = [(-1, 0), (0, 1), (1, 0), (0, -1)]
+
+
+class Solution:
+    def latestDayToCross(self, row: int, col: int, cells: List[List[int]]) -> int:
+        # 初始化并查集（ -1 表示当前还不合法）
+        parents = [-1 for i in range(row * col + 2)]
+
+        def find(x: int) -> int:
+            if parents[x] == x:
+                return x
+            parents[x] = find(parents[x])
+            return parents[x]
+        
+        def union(x: int, y: int) -> None:
+            x, y = find(x), find(y)
+            if x != y:
+                parents[x] = y
+
+        # 增加一个源点和终点，方便简化处理
+        s, t = row * col, row * col + 1
+        # 源点和终点是陆地
+        parents[s], parents[t] = s, t
+        # 倒序处理，记录陆地的四联通块
+        for i in range(len(cells) - 1, -1, -1):
+            # 标记 (r, c) 处为陆地
+            r, c = cells[i][0] - 1, cells[i][1] - 1
+            num = r * col + c
+            parents[num] = num
+            # 第一行要和源点 s 联通
+            if r == 0:
+                union(num, s)
+            # 第一行要和终点 t 联通
+            if r == row - 1:
+                union(num, t)
+
+            # 遍历周围四个块
+            for dr, dc in d:
+                # 如果 (rr, cc) 处合法且是陆地，则可以联通
+                rr, cc = r + dr, c + dc
+                nxt_num = rr * col + cc
+                if 0 <= rr < row and 0 <= cc < col and parents[nxt_num] != -1:
+                    # 合并
+                    union(num, nxt_num)
+                    # 如果合并后， s 和 t 联通，则此时是最后一天能成功的
+                    if find(s) == find(t):
+                        return i
+        
+        # 不可能会到这里
+        return -1
