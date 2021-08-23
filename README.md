@@ -349,5 +349,6 @@ LeetCode AC代码（附思路、注释）
 | [1969 - Minimum Non-Zero Product of the Array Elements](https://leetcode.com/problems/minimum-non-zero-product-of-the-array-elements/) | Medium | 贪心 | [√](./Python3/src/1901%20~%202000/1969%20-%20Minimum%20Non-Zero%20Product%20of%20the%20Array%20Elements.py) |
 | [1970 - Last Day Where You Can Still Cross](https://leetcode.com/problems/last-day-where-you-can-still-cross/) | Medium | 二分 + BFS &#124; 并查集 | [√ &#124; ○](./Python3/src/1901%20~%202000/1970%20-%20Last%20Day%20Where%20You%20Can%20Still%20Cross.py) |
 | [1974 - Minimum Time to Type Word Using Special Typewriter](https://leetcode.com/problems/minimum-time-to-type-word-using-special-typewriter/) | Easy | 模拟 | [√](./Python3/src/1901%20~%202000/1974%20-%20Minimum%20Time%20to%20Type%20Word%20Using%20Special%20Typewriter.py) |
+| [1975 - Maximum Matrix Sum](https://leetcode.com/problems/maximum-matrix-sum/) | Medium | 贪心 | [√](./Python3/src/1901%20~%202000/1975%20-%20Maximum%20Matrix%20Sum.py) |
 
 </details>
