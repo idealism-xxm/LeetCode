@@ -350,5 +350,6 @@ LeetCode AC代码（附思路、注释）
 | [1970 - Last Day Where You Can Still Cross](https://leetcode.com/problems/last-day-where-you-can-still-cross/) | Medium | 二分 + BFS &#124; 并查集 | [√ &#124; ○](./Python3/src/1901%20~%202000/1970%20-%20Last%20Day%20Where%20You%20Can%20Still%20Cross.py) |
 | [1974 - Minimum Time to Type Word Using Special Typewriter](https://leetcode.com/problems/minimum-time-to-type-word-using-special-typewriter/) | Easy | 模拟 | [√](./Python3/src/1901%20~%202000/1974%20-%20Minimum%20Time%20to%20Type%20Word%20Using%20Special%20Typewriter.py) |
 | [1975 - Maximum Matrix Sum](https://leetcode.com/problems/maximum-matrix-sum/) | Medium | 贪心 | [√](./Python3/src/1901%20~%202000/1975%20-%20Maximum%20Matrix%20Sum.py) |
+| [1976 - Number of Ways to Arrive at Destination](https://leetcode.com/problems/number-of-ways-to-arrive-at-destination/) | Medium | Floyd | [√](./Python3/src/1901%20~%202000/1976%20-%20Number%20of%20Ways%20to%20Arrive%20at%20Destination.py) |
 
 </details>
