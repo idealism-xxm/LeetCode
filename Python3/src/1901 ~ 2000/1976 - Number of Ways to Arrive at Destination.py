@@ -80,3 +80,63 @@ class Solution:
                         cnt[i][j] = cnt[j][i] = (cnt[i][j] + cnt[i][k] * cnt[k][j]) % MOD
         # 最后返回 (0, n - 1) 的最短路径数
         return cnt[0][n - 1] 
+
+
+# 思路2： Dijkstra
+#
+#       本题就是在求最短路的同时，再加一个状态，就是记录当前最短路的数量，
+#       只要能求最短路就行，可以使用时间复杂度更低的 Dijkstra 算法。
+#
+#       最开始先初始化邻接表，。
+#       然后就可以直接跑 Dijkstra 算法了，如果发现计算的路径已经超过了 n - 1 的路径，那么就可以跳出循环
+#           1. 当到达 nxt 的路径更短时，那么需要更新最短路，同时重新计算路径数 = cur_cnt
+#           2. 当到达 nxt 的路径也是最段路时，那么需要加上这部分的路径数 cur_cnt
+#       
+#       时间复杂度： O(ElogE)
+#       空间复杂度： O(E + V)
+
+MX = 1000000000000
+MOD = 1000000007
+
+class Solution:
+    def __init__(self):
+        self.dist = [0 for _ in range(203)]
+        self.cnt = [0 for _ in range(203)]
+
+    def countPaths(self, n: int, roads: List[List[int]]) -> int:
+        # 初始化最短路径和最短路径数
+        dist, cnt = self.dist, self.cnt
+        for i in range(n):
+            dist[i] = MX
+            cnt[i] = 0
+        # 自己到自己的最短路径数为 1
+        cnt[0] = 1
+        # 构建邻接表
+        edges = defaultdict(list)
+        for u, v, t in roads:
+            edges[u].append((v, t))
+            edges[v].append((u, t))
+        
+        # 初始放入 0 ，最短路径为 0
+        q = [(0, 0)]
+        heapq.heapify(q)
+        while len(q):
+            cur_cost, cur = heapq.heappop(q)
+            # 如果到 cur 的最短路已经超过了到 n - 1 的最短路，那么就不用继续更新了
+            if cur_cost > dist[n - 1]:
+                break
+            # 遍历 cur 的邻接点
+            for nxt, t in edges[cur]:
+                # 计算到该点的最短路
+                nxt_cost = cur_cost + t
+                # 如果 nxt_cost 更短，则更新最短路，并更新最短路径数
+                if nxt_cost < dist[nxt]:
+                    dist[nxt] = nxt_cost
+                    cnt[nxt] = cnt[cur]
+                    heapq.heappush(q, (dist[nxt], nxt))
+                elif nxt_cost == dist[nxt]:
+                    # 如果 nxt_cost 就是最短路，则加上从 cur 来的最短路径数
+                    cnt[nxt] = (cnt[nxt] + cnt[cur]) % MOD
+
+        # 最后返回 n - 1 的最短路径数
+        return cnt[n - 1] 
