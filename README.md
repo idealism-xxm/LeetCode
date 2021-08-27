@@ -353,5 +353,6 @@ LeetCode AC代码（附思路、注释）
 | [1976 - Number of Ways to Arrive at Destination](https://leetcode.com/problems/number-of-ways-to-arrive-at-destination/) | Medium | Floyd &#124; Dijkstra | [√ &#124; √](./Python3/src/1901%20~%202000/1976%20-%20Number%20of%20Ways%20to%20Arrive%20at%20Destination.py) |
 | [1979 - Find Greatest Common Divisor of Array](https://leetcode.com/problems/find-greatest-common-divisor-of-array/) | Easy | 模拟 | [√](./Python3/src/1901%20~%202000/1979%20-%20Find%20Greatest%20Common%20Divisor%20of%20Array.py) |
 | [1980 - Find Unique Binary String](https://leetcode.com/problems/find-unique-binary-string/) | Medium | 对角线证法 | [√](./Python3/src/1901%20~%202000/1980%20-%20Find%20Unique%20Binary%20String.py) |
+| [1981 - Minimize the Difference Between Target and Chosen Elements](https://leetcode.com/problems/minimize-the-difference-between-target-and-chosen-elements/) | Medium | DP | [○](./Python3/src/1901%20~%202000/1981%20-%20Minimize%20the%20Difference%20Between%20Target%20and%20Chosen%20Elements.py) |
 
 </details>
