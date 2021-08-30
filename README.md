@@ -355,5 +355,6 @@ LeetCode AC代码（附思路、注释）
 | [1980 - Find Unique Binary String](https://leetcode.com/problems/find-unique-binary-string/) | Medium | 对角线证法 | [√](./Python3/src/1901%20~%202000/1980%20-%20Find%20Unique%20Binary%20String.py) |
 | [1981 - Minimize the Difference Between Target and Chosen Elements](https://leetcode.com/problems/minimize-the-difference-between-target-and-chosen-elements/) | Medium | DP | [○](./Python3/src/1901%20~%202000/1981%20-%20Minimize%20the%20Difference%20Between%20Target%20and%20Chosen%20Elements.py) |
 | [1982 - Find Array Given Subset Sums](https://leetcode.com/problems/find-array-given-subset-sums/) | Hard | 贪心 | [●](./Python3/src/1901%20~%202000/1982%20-%20Find%20Array%20Given%20Subset%20Sums.py) |
+| [1984 - Minimum Difference Between Highest and Lowest of K Scores](https://leetcode.com/problems/minimum-difference-between-highest-and-lowest-of-k-scores/) | Easy | 贪心 | [√](./Python3/src/1901%20~%202000/1984%20-%20Minimum%20Difference%20Between%20Highest%20and%20Lowest%20of%20K%20Scores.py) |
 
 </details>
