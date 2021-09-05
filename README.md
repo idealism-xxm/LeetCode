@@ -361,5 +361,6 @@ LeetCode AC代码（附思路、注释）
 | [1985 - Find the Kth Largest Integer in the Array](https://leetcode.com/problems/find-the-kth-largest-integer-in-the-array/) | Medium | 排序 | [√](./Python3/src/1901%20~%202000/1985%20-%20Find%20the%20Kth%20Largest%20Integer%20in%20the%20Array.py) |
 | [1986 - Minimum Number of Work Sessions to Finish the Tasks](https://leetcode.com/problems/minimum-number-of-work-sessions-to-finish-the-tasks/) | Medium | 状压 DP | [√](./Python3/src/1901%20~%202000/1986%20-%20Minimum%20Number%20of%20Work%20Sessions%20to%20Finish%20the%20Tasks.py) |
 | [1987 - Number of Unique Good Subsequences](https://leetcode.com/problems/number-of-unique-good-subsequences/) | Hard | DP | [√](./Python3/src/1901%20~%202000/1987%20-%20Number%20of%20Unique%20Good%20Subsequences.py) |
+| [1991 - Find the Middle Index in Array](https://leetcode.com/problems/find-the-middle-index-in-array/) | Easy | 枚举 | [√](./Python3/src/1901%20~%202000/1991%20-%20Find%20the%20Middle%20Index%20in%20Array.py) |
 
 </details>
