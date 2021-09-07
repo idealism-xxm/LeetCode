@@ -362,5 +362,6 @@ LeetCode AC代码（附思路、注释）
 | [1986 - Minimum Number of Work Sessions to Finish the Tasks](https://leetcode.com/problems/minimum-number-of-work-sessions-to-finish-the-tasks/) | Medium | 状压 DP | [√](./Python3/src/1901%20~%202000/1986%20-%20Minimum%20Number%20of%20Work%20Sessions%20to%20Finish%20the%20Tasks.py) |
 | [1987 - Number of Unique Good Subsequences](https://leetcode.com/problems/number-of-unique-good-subsequences/) | Hard | DP | [√](./Python3/src/1901%20~%202000/1987%20-%20Number%20of%20Unique%20Good%20Subsequences.py) |
 | [1991 - Find the Middle Index in Array](https://leetcode.com/problems/find-the-middle-index-in-array/) | Easy | 枚举 | [√](./Python3/src/1901%20~%202000/1991%20-%20Find%20the%20Middle%20Index%20in%20Array.py) |
+| [1992 - Find All Groups of Farmland](https://leetcode.com/problems/find-all-groups-of-farmland/) | Medium | DFS | [√](./Python3/src/1901%20~%202000/1992%20-%20Find%20All%20Groups%20of%20Farmland.py) |
 
 </details>
