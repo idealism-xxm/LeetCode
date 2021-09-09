@@ -363,5 +363,6 @@ LeetCode AC代码（附思路、注释）
 | [1987 - Number of Unique Good Subsequences](https://leetcode.com/problems/number-of-unique-good-subsequences/) | Hard | DP | [√](./Python3/src/1901%20~%202000/1987%20-%20Number%20of%20Unique%20Good%20Subsequences.py) |
 | [1991 - Find the Middle Index in Array](https://leetcode.com/problems/find-the-middle-index-in-array/) | Easy | 枚举 | [√](./Python3/src/1901%20~%202000/1991%20-%20Find%20the%20Middle%20Index%20in%20Array.py) |
 | [1992 - Find All Groups of Farmland](https://leetcode.com/problems/find-all-groups-of-farmland/) | Medium | DFS | [√](./Python3/src/1901%20~%202000/1992%20-%20Find%20All%20Groups%20of%20Farmland.py) |
+| [1993 - Operations on Tree](https://leetcode.com/problems/operations-on-tree/) | Medium | 模拟 | [√](./Python3/src/1901%20~%202000/1993%20-%20Operations%20on%20Tree.py) |
 
 </details>
