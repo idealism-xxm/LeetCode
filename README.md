@@ -364,6 +364,7 @@ LeetCode AC代码（附思路、注释）
 | [1991 - Find the Middle Index in Array](https://leetcode.com/problems/find-the-middle-index-in-array/) | Easy | 枚举 | [√](./Python3/src/1901%20~%202000/1991%20-%20Find%20the%20Middle%20Index%20in%20Array.py) |
 | [1992 - Find All Groups of Farmland](https://leetcode.com/problems/find-all-groups-of-farmland/) | Medium | DFS | [√](./Python3/src/1901%20~%202000/1992%20-%20Find%20All%20Groups%20of%20Farmland.py) |
 | [1993 - Operations on Tree](https://leetcode.com/problems/operations-on-tree/) | Medium | 模拟 | [√](./Python3/src/1901%20~%202000/1993%20-%20Operations%20on%20Tree.py) |
+| [1994 - The Number of Good Subsets](https://leetcode.com/problems/the-number-of-good-subsets/) | Hard | 状压 DP | [√](./Python3/src/1901%20~%202000/1994%20-%20The%20Number%20of%20Good%20Subsets.py) |
 | [1995 - Count Special Quadruplets](https://leetcode.com/problems/count-special-quadruplets/) | Easy | map | [○](./Python3/src/1901%20~%202000/1995%20-%20Count%20Special%20Quadruplets.py) |
 | [1996 - The Number of Weak Characters in the Game](https://leetcode.com/problems/the-number-of-weak-characters-in-the-game/) | Medium | 排序 | [√](./Python3/src/1901%20~%202000/1996%20-%20The%20Number%20of%20Weak%20Characters%20in%20the%20Game.py) |
 
