@@ -368,5 +368,6 @@ LeetCode AC代码（附思路、注释）
 | [1995 - Count Special Quadruplets](https://leetcode.com/problems/count-special-quadruplets/) | Easy | map | [○](./Python3/src/1901%20~%202000/1995%20-%20Count%20Special%20Quadruplets.py) |
 | [1996 - The Number of Weak Characters in the Game](https://leetcode.com/problems/the-number-of-weak-characters-in-the-game/) | Medium | 排序 | [√](./Python3/src/1901%20~%202000/1996%20-%20The%20Number%20of%20Weak%20Characters%20in%20the%20Game.py) |
 | [1997 - First Day Where You Have Been in All the Rooms](https://leetcode.com/problems/first-day-where-you-have-been-in-all-the-rooms/) | Medium | DP | [√](./Python3/src/1901%20~%202000/1997%20-%20First%20Day%20Where%20You%20Have%20Been%20in%20All%20the%20Rooms.py) |
+| [1998 - GCD Sort of an Array](https://leetcode.com/problems/gcd-sort-of-an-array/) | Hard | 并查集 | [○](./Python3/src/1901%20~%202000/1998%20-%20GCD%20Sort%20of%20an%20Array.py) |
 
 </details>
