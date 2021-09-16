@@ -372,3 +372,12 @@ LeetCode AC代码（附思路、注释）
 | [2000 - Reverse Prefix of Word](hhttps://leetcode.com/problems/reverse-prefix-of-word/) | Easy | 模拟 | [√](./Python3/src/1901%20~%202000/2000%20-%20Reverse%20Prefix%20of%20Word.py) |
 
 </details>
+
+<details>
+<summary>1901 ~ 2000</summary>
+
+| 题目 | 难度 | 思路 | Python3 |
+| ------ | ------ | ------ | ------ |
+| [2001 - Number of Pairs of Interchangeable Rectangles](https://leetcode.com/problems/number-of-pairs-of-interchangeable-rectangles/) | Medium | 数学 | [√](./Python3/src/2001%20~%203000/2001%20-%20Number%20of%20Pairs%20of%20Interchangeable%20Rectangles.py) |
+
+</details>
