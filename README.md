@@ -379,5 +379,6 @@ LeetCode AC代码（附思路、注释）
 | 题目 | 难度 | 思路 | Python3 |
 | ------ | ------ | ------ | ------ |
 | [2001 - Number of Pairs of Interchangeable Rectangles](https://leetcode.com/problems/number-of-pairs-of-interchangeable-rectangles/) | Medium | 数学 | [√](./Python3/src/2001%20~%203000/2001%20-%20Number%20of%20Pairs%20of%20Interchangeable%20Rectangles.py) |
+| [2002 - Maximum Product of the Length of Two Palindromic Subsequences](https://leetcode.com/problems/maximum-product-of-the-length-of-two-palindromic-subsequences/) | Medium | 状压 DP | [√](./Python3/src/2001%20~%203000/2002%20-%20Maximum%20Product%20of%20the%20Length%20of%20Two%20Palindromic%20Subsequences.py) |
 
 </details>
