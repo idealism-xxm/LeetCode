@@ -383,5 +383,6 @@ LeetCode AC代码（附思路、注释）
 | [2003 - Smallest Missing Genetic Value in Each Subtree](https://leetcode.com/problems/smallest-missing-genetic-value-in-each-subtree/) | Hard | DFS | [●](./Python3/src/2001%20~%203000/2003%20-%20Smallest%20Missing%20Genetic%20Value%20in%20Each%20Subtree.py) |
 | [2011 - Final Value of Variable After Performing Operations](https://leetcode.com/problems/final-value-of-variable-after-performing-operations/) | Easy | 模拟 | [√](./Python3/src/2001%20~%203000/2011%20-%20Final%20Value%20of%20Variable%20After%20Performing%20Operations.py) |
 | [2012 - Sum of Beauty in the Array](https://leetcode.com/problems/sum-of-beauty-in-the-array/) | Medium | 前缀和 | [√](./Python3/src/2001%20~%203000/2012%20-%20Sum%20of%20Beauty%20in%20the%20Array.py) |
+| [2013 - Detect Squares](https://leetcode.com/problems/detect-squares/) | Medium | Map | [○](./Python3/src/2001%20~%203000/2013%20-%20Detect%20Squares.py) |
 
 </details>
