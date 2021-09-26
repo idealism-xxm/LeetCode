@@ -387,5 +387,6 @@ LeetCode AC代码（附思路、注释）
 | [2012 - Sum of Beauty in the Array](https://leetcode.com/problems/sum-of-beauty-in-the-array/) | Medium | 前缀和 | [√](./Python3/src/2001%20~%203000/2012%20-%20Sum%20of%20Beauty%20in%20the%20Array.py) |
 | [2013 - Detect Squares](https://leetcode.com/problems/detect-squares/) | Medium | Map | [○](./Python3/src/2001%20~%203000/2013%20-%20Detect%20Squares.py) |
 | [2014 - Longest Subsequence Repeated k Times](https://leetcode.com/problems/longest-subsequence-repeated-k-times/) | Hard | DFS | [●](./Python3/src/2001%20~%203000/2014%20-%20Longest%20Subsequence%20Repeated%20k%20Times.py) |
+| [2015 - Maximum Difference Between Increasing Elements](https://leetcode.com/problems/maximum-difference-between-increasing-elements/) | Easy | 枚举 | [√](./Python3/src/2001%20~%203000/2015%20-%20Maximum%20Difference%20Between%20Increasing%20Elements.py) |
 
 </details>
