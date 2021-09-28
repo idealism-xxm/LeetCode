@@ -389,5 +389,6 @@ LeetCode AC代码（附思路、注释）
 | [2013 - Detect Squares](https://leetcode.com/problems/detect-squares/) | Medium | Map | [○](./Python3/src/2001%20~%203000/2013%20-%20Detect%20Squares.py) |
 | [2014 - Longest Subsequence Repeated k Times](https://leetcode.com/problems/longest-subsequence-repeated-k-times/) | Hard | DFS | [●](./Python3/src/2001%20~%203000/2014%20-%20Longest%20Subsequence%20Repeated%20k%20Times.py) |
 | [2016 - Maximum Difference Between Increasing Elements](https://leetcode.com/problems/maximum-difference-between-increasing-elements/) | Easy | 枚举 | [√](./Python3/src/2001%20~%203000/2016%20-%20Maximum%20Difference%20Between%20Increasing%20Elements.py) |
+| [2017 - Grid Game](https://leetcode.com/problems/grid-game/) | Medium | 前缀和 | [●](./Python3/src/2001%20~%203000/2017%20-%20Grid%20Game.py) |
 
 </details>
