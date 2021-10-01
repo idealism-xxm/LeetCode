@@ -391,5 +391,6 @@ LeetCode AC代码（附思路、注释）
 | [2016 - Maximum Difference Between Increasing Elements](https://leetcode.com/problems/maximum-difference-between-increasing-elements/) | Easy | 枚举 | [√](./Python3/src/2001%20~%203000/2016%20-%20Maximum%20Difference%20Between%20Increasing%20Elements.py) |
 | [2017 - Grid Game](https://leetcode.com/problems/grid-game/) | Medium | 前缀和 | [●](./Python3/src/2001%20~%203000/2017%20-%20Grid%20Game.py) |
 | [2018 - Check if Word Can Be Placed In Crossword](https://leetcode.com/problems/check-if-word-can-be-placed-in-crossword/) | Medium | 枚举 | [○](./Python3/src/2001%20~%203000/2018%20-%20Check%20if%20Word%20Can%20Be%20Placed%20In%20Crossword.py) |
+| [2019 - The Score of Students Solving Math Expression](https://leetcode.com/problems/the-score-of-students-solving-math-expression/) | Hard | 调度场算法 + DP | [○](./Python3/src/2001%20~%203000/2019%20-%20The%20Score%20of%20Students%20Solving%20Math%20Expression.py) |
 
 </details>
