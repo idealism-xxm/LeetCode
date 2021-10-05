@@ -395,5 +395,6 @@ LeetCode AC代码（附思路、注释）
 | [2018 - Check if Word Can Be Placed In Crossword](https://leetcode.com/problems/check-if-word-can-be-placed-in-crossword/) | Medium | 枚举 | [○](./Python3/src/2001%20~%203000/2018%20-%20Check%20if%20Word%20Can%20Be%20Placed%20In%20Crossword.py) |
 | [2019 - The Score of Students Solving Math Expression](https://leetcode.com/problems/the-score-of-students-solving-math-expression/) | Hard | 调度场算法 + DP | [○](./Python3/src/2001%20~%203000/2019%20-%20The%20Score%20of%20Students%20Solving%20Math%20Expression.py) |
 | [2027 - Minimum Moves to Convert String](https://leetcode.com/problems/minimum-moves-to-convert-string/) | Easy | 贪心 | [√](./Python3/src/2001%20~%203000/2027%20-%20Minimum%20Moves%20to%20Convert%20String.py) |
+| [2029 - Stone Game IX](https://leetcode.com/problems/stone-game-ix/) | Medium | 博弈 | [●](./Python3/src/2001%20~%203000/2029%20-%20Stone%20Game%20IX.py) |
 
 </details>
