@@ -396,5 +396,6 @@ LeetCode AC代码（附思路、注释）
 | [2019 - The Score of Students Solving Math Expression](https://leetcode.com/problems/the-score-of-students-solving-math-expression/) | Hard | 调度场算法 + DP | [○](./Python3/src/2001%20~%203000/2019%20-%20The%20Score%20of%20Students%20Solving%20Math%20Expression.py) |
 | [2027 - Minimum Moves to Convert String](https://leetcode.com/problems/minimum-moves-to-convert-string/) | Easy | 贪心 | [√](./Python3/src/2001%20~%203000/2027%20-%20Minimum%20Moves%20to%20Convert%20String.py) |
 | [2029 - Stone Game IX](https://leetcode.com/problems/stone-game-ix/) | Medium | 博弈 | [●](./Python3/src/2001%20~%203000/2029%20-%20Stone%20Game%20IX.py) |
+| [2030 - Smallest K-Length Subsequence With Occurrences of a Letter](https://leetcode.com/problems/smallest-k-length-subsequence-with-occurrences-of-a-letter/) | Hard | 贪心 + 栈 | [●](./Python3/src/2001%20~%203000/2030%20-%20Smallest%20K-Length%20Subsequence%20With%20Occurrences%20of%20a%20Letter.py) |
 
 </details>
