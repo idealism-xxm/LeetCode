@@ -83,3 +83,76 @@ class Solution:
                 remain_letter -= 1
 
         return ''.join(stack)
+
+
+# 思路2： 贪心
+#
+#       我们维护每个字符所有出现的位置，以及每个位置及其后面的 letter 数
+#       然后枚举答案中的第 i 个位置，贪心从 'a' 开始枚举 ch ，直至 'z' ，
+#       假设 ch 最左侧的位置为 j ，
+#       那么枚举的字符能放入第 i 个位置的条件要满足以下条件：
+#           1. len(s) - j >= k - i: 保证最终子序列长度能达到 k
+#           2. remain_letter[j] >= repetition - cnt_letter: 
+#               保证最终子序列中至少含有 repetition 个 letter
+#           3. ch == letter or k - i - 1 >= repetition - cnt_letter: 
+#               保证还有足够的位置放下 repetition - cnt_letter 个 letter
+#
+#       时间复杂度： O(n + k * t) ，其中 t = 26
+#       空间复杂度： O(n)
+
+
+class Solution:
+    def smallestSubsequence(self, s: str, k: int, letter: str, repetition: int) -> str:
+        # remain_letter[i] 表示 s[i:] 中的 letter 数
+        remain_letter = [0] * len(s)
+        # ch_to_postions[ch] 表示 ch 在 s 中的位置列表
+        ch_to_postions = defaultdict(list)
+        ch_to_postions[s[-1]].append(len(s) - 1)
+        if s[-1] == letter:
+            remain_letter[-1] = 1
+        # 初始化 remain_letter 和 ch_to_postions
+        for i in range(len(s) - 2, -1, -1):
+            ch_to_postions[s[i]].append(i)
+            if s[i] == letter:
+                remain_letter[i] = remain_letter[i + 1] + 1
+            else:
+                remain_letter[i] = remain_letter[i + 1]
+
+        ans = [''] * k
+        # ans 中最后一个字符的位置
+        last_position = -1
+        # ans 中 letter 数
+        cnt_letter = 0
+
+        # 枚举答案的第 i 个位置
+        for i in range(k):
+            # 枚举答案中的第 i 个位置的字符（保证字典序）
+            for ch in string.ascii_lowercase:
+                # 如果 positions 的最后一个位置小于等于 last_position ，
+                # 则最后一个位置需要丢弃，因为子序列的下标单调递增
+                positions = ch_to_postions[ch]
+                while positions and positions[-1] <= last_position:
+                    positions.pop()
+                if not positions:
+                    continue
+                
+                # 获取 ch 可用的最小位置
+                j = positions[-1]
+                # 1. len(s) - j >= k - i: 保证最终子序列长度能达到 k
+                # 2. remain_letter[j] >= repetition - cnt_letter: 
+                #       保证最终子序列中至少含有 repetition 个 letter
+                # 3. ch == letter or k - i - 1 >= repetition - cnt_letter: 
+                #       保证还有足够的位置放下 repetition - cnt_letter 个 letter
+                if len(s) - j >= k - i and remain_letter[j] >= repetition - cnt_letter and (ch == letter or k - i - 1 >= repetition - cnt_letter):
+                    # 当前位置放入 ch
+                    ans[i] = ch
+                    # 并记录 ans 中最后一个字符的位置是 j
+                    last_position = j
+                    # 如果当前字符是 letter ，则 cnt_letter 加 1
+                    if ch == letter:
+                        cnt_letter += 1
+                    
+                    # 跳出处理下一个位置
+                    break
+
+        return ''.join(ans)
