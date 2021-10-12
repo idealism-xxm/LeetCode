@@ -400,6 +400,7 @@ LeetCode AC代码（附思路、注释）
 | [2027 - Minimum Moves to Convert String](https://leetcode.com/problems/minimum-moves-to-convert-string/) | Easy | 贪心 | [√](./Python3/src/2001%20~%203000/2027%20-%20Minimum%20Moves%20to%20Convert%20String.py) |
 | [2029 - Stone Game IX](https://leetcode.com/problems/stone-game-ix/) | Medium | 博弈 | [●](./Python3/src/2001%20~%203000/2029%20-%20Stone%20Game%20IX.py) |
 | [2030 - Smallest K-Length Subsequence With Occurrences of a Letter](https://leetcode.com/problems/smallest-k-length-subsequence-with-occurrences-of-a-letter/) | Hard | 贪心 + 栈 &#124; 贪心 | [● &#124; ○](./Python3/src/2001%20~%203000/2030%20-%20Smallest%20K-Length%20Subsequence%20With%20Occurrences%20of%20a%20Letter.py) |
+| [2032 - Two Out of Three](https://leetcode.com/problems/two-out-of-three/) | Easy | 统计 | [√](./Python3/src/2001%20~%203000/2032%20-%20Two%20Out%20of%20Three.py) |
 | [2035 - Partition Array Into Two Arrays to Minimize Sum Difference](https://leetcode.com/problems/partition-array-into-two-arrays-to-minimize-sum-difference/) | Hard | Meet in the middle + DP + 二分 | [●](./Python3/src/2001%20~%203000/2035%20-%20Partition%20Array%20Into%20Two%20Arrays%20to%20Minimize%20Sum%20Difference.py) |
 
 </details>
