@@ -401,6 +401,7 @@ LeetCode AC代码（附思路、注释）
 | [2029 - Stone Game IX](https://leetcode.com/problems/stone-game-ix/) | Medium | 博弈 | [●](./Python3/src/2001%20~%203000/2029%20-%20Stone%20Game%20IX.py) |
 | [2030 - Smallest K-Length Subsequence With Occurrences of a Letter](https://leetcode.com/problems/smallest-k-length-subsequence-with-occurrences-of-a-letter/) | Hard | 贪心 + 栈 &#124; 贪心 | [● &#124; ○](./Python3/src/2001%20~%203000/2030%20-%20Smallest%20K-Length%20Subsequence%20With%20Occurrences%20of%20a%20Letter.py) |
 | [2032 - Two Out of Three](https://leetcode.com/problems/two-out-of-three/) | Easy | 统计 | [√](./Python3/src/2001%20~%203000/2032%20-%20Two%20Out%20of%20Three.py) |
+| [2033 - Minimum Operations to Make a Uni-Value Grid](https://leetcode.com/problems/minimum-operations-to-make-a-uni-value-grid/) | Medium | 排序 | [√](./Python3/src/2001%20~%203000/2033%20-%20Minimum%20Operations%20to%20Make%20a%20Uni-Value%20Grid.py) |
 | [2034 - Stock Price Fluctuation](https://leetcode.com/problems/stock-price-fluctuation/) | Medium | map + 堆 | [√](./Python3/src/2001%20~%203000/2034%20-%20Stock%20Price%20Fluctuation.py) |
 | [2035 - Partition Array Into Two Arrays to Minimize Sum Difference](https://leetcode.com/problems/partition-array-into-two-arrays-to-minimize-sum-difference/) | Hard | Meet in the middle + DP + 二分 | [●](./Python3/src/2001%20~%203000/2035%20-%20Partition%20Array%20Into%20Two%20Arrays%20to%20Minimize%20Sum%20Difference.py) |
 
