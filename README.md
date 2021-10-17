@@ -274,6 +274,7 @@ LeetCode AC代码（附思路、注释）
 | 题目 | 难度 | 思路 | Python3 |
 | ------ | ------ | ------ | ------ |
 | [1863 - Sum of All Subset XOR Totals](https://leetcode.com/problems/sum-of-all-subset-xor-totals/) | Easy | 异或 | [●](./Python3/src/1801%20~%201900/1863%20-%20Sum%20of%20All%20Subset%20XOR%20Totals.py) |
+| [1864 - Minimum Number of Swaps to Make the Binary String Alternating](https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-binary-string-alternating/) | Medium | 贪心 | [√](./Python3/src/1801%20~%201900/1864%20-%20Minimum%20Number%20of%20Swaps%20to%20Make%20the%20Binary%20String%20Alternating.py) |
 | [1869 - Longer Contiguous Segments of Ones than Zeros](https://leetcode.com/problems/longer-contiguous-segments-of-ones-than-zeros/) | Easy | 枚举 | [√](./Python3/src/1801%20~%201900/1869%20-%20Longer%20Contiguous%20Segments%20of%20Ones%20than%20Zeros.py) |
 | [1876 - Substrings of Size Three with Distinct Characters](https://leetcode.com/problems/substrings-of-size-three-with-distinct-characters/) | Easy | 枚举 | [√](./Python3/src/1801%20~%201900/1876%20-%20Substrings%20of%20Size%20Three%20with%20Distinct%20Characters.py) |
 | [1877 - Minimize Maximum Pair Sum in Array](https://leetcode.com/problems/minimize-maximum-pair-sum-in-array/) | Medium | 枚举 | [√](./Python3/src/1801%20~%201900/1877%20-%20Minimize%20Maximum%20Pair%20Sum%20in%20Array.py) |
