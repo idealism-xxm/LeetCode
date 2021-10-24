@@ -412,5 +412,6 @@ LeetCode AC代码（附思路、注释）
 | [2035 - Partition Array Into Two Arrays to Minimize Sum Difference](https://leetcode.com/problems/partition-array-into-two-arrays-to-minimize-sum-difference/) | Hard | Meet in the middle + DP + 二分 | [●](./Python3/src/2001%20~%202100/2035%20-%20Partition%20Array%20Into%20Two%20Arrays%20to%20Minimize%20Sum%20Difference.py) |
 | [2042 - Check if Numbers Are Ascending in a Sentence](https://leetcode.com/problems/check-if-numbers-are-ascending-in-a-sentence/) | Easy | 枚举 | [√](./Python3/src/2001%20~%202100/2042%20-%20Check%20if%20Numbers%20Are%20Ascending%20in%20a%20Sentence.py) |
 | [2043 - Simple Bank System](https://leetcode.com/problems/simple-bank-system/) | Medium | 模拟 | [√](./Python3/src/2001%20~%202100/2043%20-%20Simple%20Bank%20System.py) |
+| [2044 - Count Number of Maximum Bitwise-OR Subsets](https://leetcode.com/problems/count-number-of-maximum-bitwise-or-subsets/) | Medium | DFS | [√](./Python3/src/2001%20~%202100/2044%20-%20Count%20Number%20of%20Maximum%20Bitwise-OR%20Subsets.py) |
 
 </details>
