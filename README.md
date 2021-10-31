@@ -418,6 +418,7 @@ LeetCode AC代码（附思路、注释）
 | [2044 - Count Number of Maximum Bitwise-OR Subsets](https://leetcode.com/problems/count-number-of-maximum-bitwise-or-subsets/) | Medium | DFS | [√](./Python3/src/2001%20~%202100/2044%20-%20Count%20Number%20of%20Maximum%20Bitwise-OR%20Subsets.py) |
 | [2047 - Number of Valid Words in a Sentence](https://leetcode.com/problems/number-of-valid-words-in-a-sentence/) | Easy | 模拟 | [√](./Python3/src/2001%20~%202100/2047%20-%20Number%20of%20Valid%20Words%20in%20a%20Sentence.py) |
 | [2048 - Next Greater Numerically Balanced Number](https://leetcode.com/problems/next-greater-numerically-balanced-number/) | Medium | 枚举 | [√](./Python3/src/2001%20~%202100/2048%20-%20Next%20Greater%20Numerically%20Balanced%20Number.py) |
+| [2049 - Count Nodes With the Highest Score](https://leetcode.com/problems/count-nodes-with-the-highest-score/) | Medium | DFS | [√](./Python3/src/2001%20~%202100/2049%20-%20Count%20Nodes%20With%20the%20Highest%20Score.py) |
 | [2050 - Parallel Courses III](https://leetcode.com/problems/parallel-courses-iii/) | Hard | 拓扑排序 + BFS | [√](./Python3/src/2001%20~%202100/2050%20-%20Parallel%20Courses%20III.py) |
 
 </details>
