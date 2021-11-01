@@ -420,5 +420,6 @@ LeetCode AC代码（附思路、注释）
 | [2048 - Next Greater Numerically Balanced Number](https://leetcode.com/problems/next-greater-numerically-balanced-number/) | Medium | 枚举 | [√](./Python3/src/2001%20~%202100/2048%20-%20Next%20Greater%20Numerically%20Balanced%20Number.py) |
 | [2049 - Count Nodes With the Highest Score](https://leetcode.com/problems/count-nodes-with-the-highest-score/) | Medium | DFS | [√](./Python3/src/2001%20~%202100/2049%20-%20Count%20Nodes%20With%20the%20Highest%20Score.py) |
 | [2050 - Parallel Courses III](https://leetcode.com/problems/parallel-courses-iii/) | Hard | 拓扑排序 + BFS | [√](./Python3/src/2001%20~%202100/2050%20-%20Parallel%20Courses%20III.py) |
+| [2053 - Kth Distinct String in an Array](https://leetcode.com/problems/kth-distinct-string-in-an-array/) | Easy | 计数 | [√](./Python3/src/2001%20~%202100/2053%20-%20Kth%20Distinct%20String%20in%20an%20Array.py) |
 
 </details>
