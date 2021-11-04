@@ -421,7 +421,7 @@ LeetCode AC代码（附思路、注释）
 | [2049 - Count Nodes With the Highest Score](https://leetcode.com/problems/count-nodes-with-the-highest-score/) | Medium | DFS | [√](./Python3/src/2001%20~%202100/2049%20-%20Count%20Nodes%20With%20the%20Highest%20Score.py) |
 | [2050 - Parallel Courses III](https://leetcode.com/problems/parallel-courses-iii/) | Hard | 拓扑排序 + BFS | [√](./Python3/src/2001%20~%202100/2050%20-%20Parallel%20Courses%20III.py) |
 | [2053 - Kth Distinct String in an Array](https://leetcode.com/problems/kth-distinct-string-in-an-array/) | Easy | 计数 | [√](./Python3/src/2001%20~%202100/2053%20-%20Kth%20Distinct%20String%20in%20an%20Array.py) |
-| [2054 - Two Best Non-Overlapping Events](https://leetcode.com/problems/two-best-non-overlapping-events/) | Medium | 二分 | [√](./Python3/src/2001%20~%202100/2054%20-%20Two%20Best%20Non-Overlapping%20Events.py) |
+| [2054 - Two Best Non-Overlapping Events](https://leetcode.com/problems/two-best-non-overlapping-events/) | Medium | 二分 &#124; 堆 | [√ &#124; ○](./Python3/src/2001%20~%202100/2054%20-%20Two%20Best%20Non-Overlapping%20Events.py) |
 | [2057 - Smallest Index With Equal Value](https://leetcode.com/problems/smallest-index-with-equal-value/) | Easy | 枚举 | [√](./Python3/src/2001%20~%202100/2057%20-%20Smallest%20Index%20With%20Equal%20Value.py) |
 
 </details>

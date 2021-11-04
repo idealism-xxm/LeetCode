@@ -73,3 +73,47 @@ class Solution:
                 # 如果能找到，则两个活动都可以参加
                 ans = max(ans, value + max_values[target])
         return ans
+
+
+# 思路2： 堆
+#
+#       思路1 中我们选择定要参加的活动 i ，
+#           寻找它之后可参加的活动中值最大的活动 target 。
+#       在思路 2 中我们则选定要参加的活动 i ，
+#           寻找它之前可参加的活动中最大值 max_value 。
+#       由于这个最大值已经在我们前面遍历过了，
+#           且只有结束时间小于当前活动开始时间的活动可以被计入。
+#       所以我们可以用结束时间的最小堆维护，
+#           每次将最小堆中结束时间小于当前活动刚开始时间的活动弹出，
+#           更新 max_value 即可
+#
+#       时间复杂度： O(nlogn)
+#       空间复杂度： O(n)
+
+
+class Solution:
+    def maxTwoEvents(self, events: List[List[int]]) -> int:
+        n = len(events)
+        # 按照开始时间升序排序
+        events.sort()
+        # 初始化可参加活动中的最大值
+        max_value = 0
+        # 初始化结束时间的最小堆，值为 (end_time, value)
+        pending_events = []
+
+        # 初始化答案为 0
+        ans = 0
+        for start_time, end_time, value in events:
+            # 如果最小堆为空，且堆顶活动的结束时间小于当前活动开始时间，
+            # 则该活动可以参加，弹出它并更新 max_value
+            while len(pending_events) > 0 and pending_events[0][0] < start_time:
+                # 弹出最小堆中的活动
+                _, pending_value = heapq.heappop(pending_events)
+                # 更新 max_value
+                max_value = max(max_value, pending_value)
+
+            # 更新答案
+            ans = max(ans, value + max_value)
+            # 将当前活动插入最小堆
+            heapq.heappush(pending_events, (end_time, value))
+        return ans
