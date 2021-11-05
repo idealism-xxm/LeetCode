@@ -423,5 +423,6 @@ LeetCode AC代码（附思路、注释）
 | [2053 - Kth Distinct String in an Array](https://leetcode.com/problems/kth-distinct-string-in-an-array/) | Easy | 计数 | [√](./Python3/src/2001%20~%202100/2053%20-%20Kth%20Distinct%20String%20in%20an%20Array.py) |
 | [2054 - Two Best Non-Overlapping Events](https://leetcode.com/problems/two-best-non-overlapping-events/) | Medium | 二分 &#124; 堆 | [√ &#124; ○](./Python3/src/2001%20~%202100/2054%20-%20Two%20Best%20Non-Overlapping%20Events.py) |
 | [2057 - Smallest Index With Equal Value](https://leetcode.com/problems/smallest-index-with-equal-value/) | Easy | 枚举 | [√](./Python3/src/2001%20~%202100/2057%20-%20Smallest%20Index%20With%20Equal%20Value.py) |
+| [2058 - Find the Minimum and Maximum Number of Nodes Between Critical Points](https://leetcode.com/problems/find-the-minimum-and-maximum-number-of-nodes-between-critical-points/) | Medium | 枚举 | [√](./Python3/src/2001%20~%202100/2058%20-%20Find%20the%20Minimum%20and%20Maximum%20Number%20of%20Nodes%20Between%20Critical%20Points.py) |
 
 </details>
