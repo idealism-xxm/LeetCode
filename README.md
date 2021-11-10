@@ -428,5 +428,6 @@ LeetCode AC代码（附思路、注释）
 | [2058 - Find the Minimum and Maximum Number of Nodes Between Critical Points](https://leetcode.com/problems/find-the-minimum-and-maximum-number-of-nodes-between-critical-points/) | Medium | 枚举 | [√](./Python3/src/2001%20~%202100/2058%20-%20Find%20the%20Minimum%20and%20Maximum%20Number%20of%20Nodes%20Between%20Critical%20Points.py) |
 | [2059 - Minimum Operations to Convert Number](https://leetcode.com/problems/minimum-operations-to-convert-number/) | Medium | BFS | [√](./Python3/src/2001%20~%202100/2059%20-%20Minimum%20Operations%20to%20Convert%20Number.py) |
 | [2060 - Check if an Original String Exists Given Two Encoded Strings](https://leetcode.com/problems/check-if-an-original-string-exists-given-two-encoded-strings/) | Hard | DP | [●](./Python3/src/2001%20~%202100/2060%20-%20Check%20if%20an%20Original%20String%20Exists%20Given%20Two%20Encoded%20Strings.py) |
+| [2062 - Count Vowel Substrings of a String](https://leetcode.com/problems/count-vowel-substrings-of-a-string/) | Easy | 枚举 | [√](./Python3/src/2001%20~%202100/2062%20-%20Count%20Vowel%20Substrings%20of%20a%20String.py) |
 
 </details>
