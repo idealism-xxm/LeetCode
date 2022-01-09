@@ -269,6 +269,14 @@ LeetCode AC代码（附思路、注释）
 </details>
 
 <details>
+<summary>1001 ~ 1100</summary>
+
+| 题目 | 难度 | 思路 | Rust |
+| ------ | ------ | ------ | ------ |
+| [1041 - Robot Bounded In Circle](https://leetcode.com/problems/robot-bounded-in-circle/) | Medium | 模拟 | [√](./Rust/src/1001%20~%201100/1042%20-%20Robot%20Bounded%20In%20Circle.rs) |
+</details>
+
+<details>
 <summary>1801 ~ 1900</summary>
 
 | 题目 | 难度 | 思路 | Python3 |
