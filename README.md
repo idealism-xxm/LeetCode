@@ -273,7 +273,8 @@ LeetCode AC代码（附思路、注释）
 
 | 题目 | 难度 | 思路 | Rust |
 | ------ | ------ | ------ | ------ |
-| [1041 - Robot Bounded In Circle](https://leetcode.com/problems/robot-bounded-in-circle/) | Medium | 模拟 | [√](./Rust/src/1001%20~%201100/1042%20-%20Robot%20Bounded%20In%20Circle.rs) |
+| [1022 - Sum of Root To Leaf Binary Numbers](https://leetcode.com/problems/sum-of-root-to-leaf-binary-numbers/) | Easy | DFS | [√](./Rust/src/1001%20~%201100/1022%20-%20Sum%20of%20Root%20To%20Leaf%20Binary%20Numbers.rs) |
+| [1041 - Robot Bounded In Circle](https://leetcode.com/problems/robot-bounded-in-circle/) | Medium | 模拟 | [√](./Rust/src/1001%20~%201100/1041%20-%20Robot%20Bounded%20In%20Circle.rs) |
 </details>
 
 <details>
