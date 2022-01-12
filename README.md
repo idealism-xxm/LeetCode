@@ -269,6 +269,14 @@ LeetCode AC代码（附思路、注释）
 </details>
 
 <details>
+<summary>0701 ~ 0800</summary>
+
+| 题目 | 难度 | 思路 | Rust |
+| ------ | ------ | ------ | ------ |
+| [0701 - Insert into a Binary Search Tree](https://leetcode.com/problems/insert-into-a-binary-search-tree/) | Medium | 递归 | [√](./Rust/src/0701%20~%200800/0701%20-%20Insert%20into%20a%20Binary%20Search%20Tree.rs) |
+</details>
+
+<details>
 <summary>1001 ~ 1100</summary>
 
 | 题目 | 难度 | 思路 | Rust |
