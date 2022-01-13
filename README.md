@@ -269,6 +269,14 @@ LeetCode AC代码（附思路、注释）
 </details>
 
 <details>
+<summary>0401 ~ 0500</summary>
+
+| 题目 | 难度 | 思路 | Rust |
+| ------ | ------ | ------ | ------ |
+| [0452 - Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/) | Medium | 贪心 | [√](./Rust/src/0401%20~%200500/0452%20-%20Minimum%20Number%20of%20Arrows%20to%20Burst%20Balloons.rs) |
+</details>
+
+<details>
 <summary>0701 ~ 0800</summary>
 
 | 题目 | 难度 | 思路 | Rust |
