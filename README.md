@@ -19,7 +19,7 @@ LeetCode AC代码（附思路、注释）
 | [0005 - Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) | Medium | 枚举 &#124; Manacher | [√ &#124; ●](./Go/src/0001%20~%200100/0005%20-%20Longest%20Palindromic%20Substring.go) |
 | [0006 - ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/) | Medium | 模拟 | [√](./Go/src/0001%20~%200100/0006%20-%20ZigZag%20Conversion.go) |
 | [0007 - Reverse Integer](https://leetcode.com/problems/reverse-integer/) | Easy | 模拟 | [√](./Go/src/0001%20~%200100/0007%20-%20Reverse%20Integer.go) |
-| [0008 - String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/) | Medium | 模拟 | [√](./Go/src/0001%20~%200100/0008%20-%20String%20to%20Integer%20\(atoi\).go) |
+| [0008 - String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/) | Medium | 模拟 | [√](./Go/src/0001%20~%200100/0008%20-%20String%20to%20Integer%20\(atoi\).go) | | [√](./Rust/src/0001%20~%200100/0008%20-%20String%20to%20Integer%20\(atoi\).rs)
 | [0009 - Palindrome Number](https://leetcode.com/problems/palindrome-number/) | Medium | 模拟 | [√](./Go/src/0001%20~%200100/0009%20-%20Palindrome%20Number.go) |
 | [0010 - Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/) | Hard | 递归 &#124; 记忆化 &#124; DP | [√ &#124; √ &#124; ○](./Go/src/0001%20~%200100/0010%20-%20Regular%20Expression%20Matching.go) |
 | [0011 - Container With Most Water](https://leetcode.com/problems/container-with-most-water/) | Medium | 双指针 | [●](./Go/src/0001%20~%200100/0011%20-%20Container%20With%20Most%20Water.go) |
