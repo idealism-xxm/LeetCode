@@ -294,6 +294,14 @@ LeetCode AC代码（附思路、注释）
 </details>
 
 <details>
+<summary>1301 ~ 1400</summary>
+
+| 题目 | 难度 | 思路 | Rust |
+| ------ | ------ | ------ | ------ |
+| [1345 - Jump Game IV](https://leetcode.com/problems/jump-game-iv/) | Hard | BFS | [√](./Rust/src/1301%20~%201400/1345%20-%20Jump%20Game%20IV.rs) |
+</details>
+
+<details>
 <summary>1801 ~ 1900</summary>
 
 | 题目 | 难度 | 思路 | Python3 |
