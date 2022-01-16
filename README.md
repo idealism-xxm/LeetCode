@@ -269,6 +269,14 @@ LeetCode AC代码（附思路、注释）
 </details>
 
 <details>
+<summary>0301 ~ 0400</summary>
+
+| 题目 | 难度 | 思路 | Rust |
+| ------ | ------ | ------ | ------ |
+| [0312 - Burst Balloons.rs](https://leetcode.com/problems/burst-balloons/) | Hard | 区间 DP | [○](./Rust/src/0301%20~%200400/0312%20-%20Burst%20Balloons.rs) |
+</details>
+
+<details>
 <summary>0401 ~ 0500</summary>
 
 | 题目 | 难度 | 思路 | Rust |
