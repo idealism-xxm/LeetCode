@@ -285,6 +285,14 @@ LeetCode AC代码（附思路、注释）
 </details>
 
 <details>
+<summary>0801 ~ 0900</summary>
+
+| 题目 | 难度 | 思路 | Rust |
+| ------ | ------ | ------ | ------ |
+| [0849 - Maximize Distance to Closest Person](https://leetcode.com/problems/maximize-distance-to-closest-person/) | Medium | 模拟 | [√](./Rust/src/0801%20~%200900/0849%20-%20Maximize%20Distance%20to%20Closest%20Person.rs) |
+</details>
+
+<details>
 <summary>1001 ~ 1100</summary>
 
 | 题目 | 难度 | 思路 | Rust |
