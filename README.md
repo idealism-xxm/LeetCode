@@ -266,6 +266,7 @@ LeetCode AC代码（附思路、注释）
 | [0240 - Search a 2D Matrix II](https://leetcode-cn.com/problems/search-a-2d-matrix-ii/) | Medium | 分治 &#124; 减治 | | [√ &#124; ●](./Go/src/0201%20~%200300/0240%20-%20Search%20a%202D%20Matrix%20II.go) |
 | [0241 - Different Ways to Add Parentheses](https://leetcode.com/problems/different-ways-to-add-parentheses/) | Medium | 递归 | [√](./Rust/src/0201%20~%200300/0241%20-%20Different%20Ways%20to%20Add%20Parentheses.rs) |
 | [0242 - Valid Anagram](https://leetcode.com/problems/valid-anagram/) | Easy | map | [√](./Rust/src/0201%20~%200300/0242%20-%20Valid%20Anagram.rs) |
+| [0290 - Word Pattern](https://leetcode.com/problems/word-pattern/) | Easy | map | [√](./Rust/src/0201%20~%200300/0290%20-%20Word%20Pattern.rs) |
 </details>
 
 <details>
