@@ -286,6 +286,14 @@ LeetCode AC代码（附思路、注释）
 </details>
 
 <details>
+<summary>0601 ~ 0700</summary>
+
+| 题目 | 难度 | 思路 | Rust |
+| ------ | ------ | ------ | ------ |
+| [0605 - Can Place Flowers](https://leetcode.com/problems/can-place-flowers/) | Easy | 贪心 | [√](./Rust/src/0601%20~%200700/0605%20-%20Can%20Place%20Flowers.rs) |
+</details>
+
+<details>
 <summary>0701 ~ 0800</summary>
 
 | 题目 | 难度 | 思路 | Rust |
