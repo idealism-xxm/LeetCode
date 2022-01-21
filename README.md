@@ -117,8 +117,8 @@ LeetCode AC代码（附思路、注释）
 <details>
 <summary>0101 ~ 0200</summary>
 
-| 题目 | 难度 | 思路 | Go | Java | MySQL | Bash | 
-| ------ | ------ | ------ | ------ | ------ | ------ | ------ |
+| 题目 | 难度 | 思路 | Go | Java | MySQL | Bash | Rust |
+| ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
 | [0101 - Symmetric Tree](https://leetcode.com/problems/same-tree/) | Easy | 递归 &#124; 循环 | [√ &#124; ○](./Go/src/0101%20~%200200/0101%20-%20Symmetric%20Tree.go) |
 | [0102 - Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) | Medium | BFS | [√](./Go/src/0101%20~%200200/0102%20-%20Binary%20Tree%20Level%20Order%20Traversal.go) |
 | [0103 - Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/) | Medium | BFS | [√](./Go/src/0101%20~%200200/0103%20-%20Binary%20Tree%20Zigzag%20Level%20Order%20Traversal.go) |
@@ -152,7 +152,7 @@ LeetCode AC代码（附思路、注释）
 | [0131 - Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/) | Medium | 遍历 + 递归 | [√](./Go/src/0101%20~%200200/0131%20-%20Palindrome%20Partitioning.go) |
 | [0132 - Palindrome Partitioning II](https://leetcode.com/problems/palindrome-partitioning-ii/) | Medium | DP | [√](./Go/src/0101%20~%200200/0132%20-%20Palindrome%20Partitioning%20II.go) |
 | [0133 - Clone Graph](https://leetcode.com/problems/clone-graph/) | Medium | 递归 | [√](./Go/src/0101%20~%200200/0133%20-%20Clone%20Graph.go) |
-| [0134 - Gas Station](https://leetcode.com/problems/gas-station/) | Medium | 线段树 &#124; 一次遍历 | [√ &#124; ●](./Go/src/0101%20~%200200/0134%20-%20Gas%20Station.go) |
+| [0134 - Gas Station](https://leetcode.com/problems/gas-station/) | Medium | 线段树 &#124; 一次遍历 | [√ &#124; ●](./Go/src/0101%20~%200200/0134%20-%20Gas%20Station.go) | | | | | [_ &#124; ●](./Rust/src/0101%20~%200200/0134%20-%20Gas%20Station.rs)
 | [0135 - Candy](https://leetcode.com/problems/clone-graph/) | Hard | 贪心 | [√](./Go/src/0101%20~%200200/0135%20-%20Candy.go) |
 | [0136 - Single Number](https://leetcode.com/problems/single-number/) | Easy | 异或 | [√](./Go/src/0101%20~%200200/0136%20-%20Single%20Number.go) |
 | [0137 - Single Number II](https://leetcode.com/problems/single-number-ii/) | Medium | 按位统计 &#124; 异或 | [√ &#124; ●](./Go/src/0101%20~%200200/0137%20-%20Single%20Number%20II.go) |
