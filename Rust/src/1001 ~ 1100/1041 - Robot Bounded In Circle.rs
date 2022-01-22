@@ -1,11 +1,15 @@
 // 链接：https://leetcode.com/problems/robot-bounded-in-circle/
 // 题意：在一个无限的平面上，一个机器人初始在 (0, 0) 处，面朝北方，
-//      现在给定一个字符串 instructions ，表示一连三种串行动指令：
+//      现在给定一个字符串 instructions ，表示一连串三种行动指令：
 //          "G": 向现在面朝的方向走 1 步
 //          "L": 向左转 90 度
 //          "R": 向右转 90 度
 //      这个机器人按照 instructions 的指令行动，并且会无限重复，
 //      现在判断这个机器人的行动路径是否是一个圈？
+
+// 数据限制：
+//  1 <= instructions.length <= 100 
+//  instructions[i] 是 'G', 'L' 或 'R'
 
 // 输入： instructions = "GGLLGG"
 // 输出： true
@@ -47,30 +51,35 @@ static DIRS: [(i32, i32); 4] = [(-1, 0), (0, 1), (1, 0), (0, -1)];
 
 impl Solution {
     pub fn is_robot_bounded(instructions: String) -> bool {
-        // 初始机器人在 (0, 0) ，方向 0 表示面朝北
-        let (mut x, mut y, mut dir) = (0, 0, 0);
-        // 遍历所有的操作指令
-        for instruction in instructions.chars() {
-            match instruction {
-                // 如果指令是前进，则更新位置
-                'G' => {
-                    // 获取当前方向的位置改变量
-                    let (dx, dy) = DIRS[dir];
-                    // 机器人朝该方向走 1 步
-                    x += dx;
-                    y += dy;
+        // 获取 flod 最后返回的机器人所在位置 (x, y) 和面朝方向 dir
+        let (x, y, dir) = instructions
+            // 遍历所有的操作指令
+            .chars()
+            // 使用 fold 进行累积
+            .fold(
+                // 初始机器人在 (0, 0) ，方向 0 表示面朝北
+                (0, 0, 0),
+                // 机器人当前在 (x, y) ，面朝 dir 方向，
+                // 根据操作指令进行移动，并返回新的机器人位置和方向
+                |(x, y, dir), instruction| match instruction {
+                    // 如果指令是前进，则更新位置
+                    'G' => {
+                        // 获取当前方向的位置改变量
+                        let (dx, dy) = DIRS[dir];
+                        // 机器人朝该方向走 1 步，方向不变
+                        (x + dx, y + dy, dir)
+                    }
+                    // 如果指令是左转，则更新方向为 (dir + 3) % 4
+                    'L' => (x, y, (dir + 3) % 4),
+                    // 如果指令是右转，则更新方向为 (dir + 1) % 4
+                    'R' => (x, y, (dir + 1) % 4),
+                    // 其他情况不存在
+                    _ => unreachable!(),
                 }
-                // 如果指令是左转，则更新方向为 (dir + 3) % 4
-                'L' => dir = (dir + 3) % 4,
-                // 如果指令是右转，则更新方向为 (dir + 1) % 4
-                'R' => dir = (dir + 1) % 4,
-                // 其他情况不存在
-                _ => unreachable!(),
-            }
-        }
+            );
         // 最后机器人能形成一个圈的情况：
         //  1. 机器人还在 (0, 0)
         //  2. 机器人不是面朝北方
-        x == 0 && y == 0 || dir != 0
+        (x == 0 && y == 0) || dir != 0
     }
 }
