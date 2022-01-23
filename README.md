@@ -329,6 +329,14 @@ LeetCode AC代码（附思路、注释）
 </details>
 
 <details>
+<summary>1201 ~ 1300</summary>
+
+| 题目 | 难度 | 思路 | Rust |
+| ------ | ------ | ------ | ------ |
+| [1291 - Sequential Digits](https://leetcode.com/problems/sequential-digits/) | Medium | BFS | [√](./Rust/src/1201%20~%201300/1291%20-%20Sequential%20Digits.rs) |
+</details>
+
+<details>
 <summary>1301 ~ 1400</summary>
 
 | 题目 | 难度 | 思路 | Rust |
