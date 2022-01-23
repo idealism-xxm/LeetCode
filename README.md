@@ -337,6 +337,14 @@ LeetCode AC代码（附思路、注释）
 </details>
 
 <details>
+<summary>1501 ~ 1600</summary>
+
+| 题目 | 难度 | 思路 | Rust |
+| ------ | ------ | ------ | ------ |
+| [1510 - Stone Game IV](https://leetcode.com/problems/stone-game-iv/) | Hard | DP + 博弈论 | [√](./Rust/src/1501%20~%201600/1510%20-%20Stone%20Game%20IV.rs) |
+</details>
+
+<details>
 <summary>1801 ~ 1900</summary>
 
 | 题目 | 难度 | 思路 | Python3 |
