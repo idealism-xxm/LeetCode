@@ -286,6 +286,14 @@ LeetCode AC代码（附思路、注释）
 </details>
 
 <details>
+<summary>0501 ~ 0600</summary>
+
+| 题目 | 难度 | 思路 | Rust |
+| ------ | ------ | ------ | ------ |
+| [0520 - Detect Capital](https://leetcode.com/problems/detect-capital/) | Easy | 模拟 | [√](./Rust/src/0501%20~%200600/0520%20-%20Detect%20Capital.rs) |
+</details>
+
+<details>
 <summary>0601 ~ 0700</summary>
 
 | 题目 | 难度 | 思路 | Rust |
