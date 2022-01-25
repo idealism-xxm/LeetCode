@@ -322,6 +322,7 @@ LeetCode AC代码（附思路、注释）
 
 | 题目 | 难度 | 思路 | Rust |
 | ------ | ------ | ------ | ------ |
+| [0941 - Valid Mountain Array](https://leetcode.com/problems/valid-mountain-array/) | Easy | 模拟 | [√](./Rust/src/0901%20~%201000/0941%20-%20Valid%20Mountain%20Array.rs) |
 | [0997 - Find the Town Judge](https://leetcode.com/problems/find-the-town-judge/) | Easy | 模拟 | [√](./Rust/src/0901%20~%201000/0997%20-%20Find%20the%20Town%20Judge.rs) |
 </details>
 
