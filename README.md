@@ -236,7 +236,7 @@ LeetCode AC代码（附思路、注释）
 | [0208 - Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/) | Medium | Trie | [√](./Rust/src/0201%20~%200300/0208%20-%20Implement%20Trie%20(Prefix%20Tree).rs) |
 | [0209 - Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/) | Medium | 双指针 &#124; 二分 | [√ &#124; ○](./Rust/src/0201%20~%200300/0209%20-%20Minimum%20Size%20Subarray%20Sum.rs) |
 | [0210 - Course Schedule II](https://leetcode.com/problems/course-schedule-ii/) | Medium | 拓扑排序 | [√](./Rust/src/0201%20~%200300/0210%20-%20Course%20Schedule%20II.rs) |
-| [0211 - Add and Search Word - Data structure design](https://leetcode.com/problems/add-and-search-word-data-structure-design/) | Medium | Trie | [√](./Rust/src/0201%20~%200300/0211%20-%20Add%20and%20Search%20Word%20-%20Data%20structure%20design.rs) |
+| [0211 - Add and Search Word - Data structure design](https://leetcode.com/problems/add-and-search-word-data-structure-design/) | Medium | Trie + 递归 | [√](./Rust/src/0201%20~%200300/0211%20-%20Add%20and%20Search%20Word%20-%20Data%20structure%20design.rs) |
 | [0212 - Word Search II](https://leetcode.com/problems/word-search-ii/) | Hard | Trie | [√](./Rust/src/0201%20~%200300/0212%20-%20Word%20Search%20II.rs) |
 | [0213 - House Robber II.rs](https://leetcode.com/problems/house-robber-ii/) | Medium | DP | [√](./Rust/src/0201%20~%200300/0213%20-%20House%20Robber%20II.rs) |
 | [0214 - Shortest Palindrome](https://leetcode.com/problems/shortest-palindrome/) | Hard | 枚举 &#124; KMP | [√ &#124; ●](./Rust/src/0201%20~%200300/0214%20-%20Shortest%20Palindrome.rs) |
