@@ -207,7 +207,7 @@ LeetCode AC代码（附思路、注释）
 | [0186 - Reverse Words in a String II](https://leetcode.com/problems/reverse-words-in-a-string-ii/) | Medium | 遍历 | [√](./Go/src/0101%20~%200200/0186%20-%20Reverse%20Words%20in%20a%20String%20II.go) |
 | [0187 - Repeated DNA Sequences](https://leetcode.com/problems/repeated-dna-sequences/) | Medium | map + 计数 &#124; Rabin-Karp (hash) | [√](./Go/src/0101%20~%200200/0187%20-%20Repeated%20DNA%20Sequences.go) |
 | [0188 - Best Time to Buy and Sell Stock IV](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/) | Hard | DP | [√](./Go/src/0101%20~%200200/0188%20-%20Best%20Time%20to%20Buy%20and%20Sell%20Stock%20IV.go) |
-| [0189 - Rotate Array](https://leetcode.com/problems/rotate-array/) | Easy | 循环移动 &#124; 翻转 | [√ &#124; ●](./Go/src/0101%20~%200200/0189%20-%20Rotate%20Array.go) |
+| [0189 - Rotate Array](https://leetcode.com/problems/rotate-array/) | Easy | 模拟 &#124; GCD &#124; 翻转 | [_ &#124; √ &#124; ●](./Go/src/0101%20~%200200/0189%20-%20Rotate%20Array.go) | | | | [√ &#124; ● &#124; ●](./Rust/src/0101%20~%200200/0189%20-%20Rotate%20Array.rs) |
 | [0190 - Reverse Bits](https://leetcode.com/problems/reverse-bits/) | Easy | 双指针 + 异或 &#124; 分治 + 位运算 | [√ &#124; ●](./Go/src/0101%20~%200200/0190%20-%20Reverse%20Bits.go) |
 | [0191 - Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/) | Easy | 位运算 | [●](./Go/src/0101%20~%200200/0191%20-%20Number%20of%201%20Bits.go) |
 | [0192 - Word Frequency](https://leetcode.com/problems/word-frequency/) | Medium | tr + sort + uniq + awk | | | | [●](./Bash/src/0101%20~%200200/0192%20-%20Word%20Frequency.sh) |
