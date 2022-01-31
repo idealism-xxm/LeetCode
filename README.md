@@ -364,6 +364,14 @@ LeetCode AC代码（附思路、注释）
 </details>
 
 <details>
+<summary>1601 ~ 1700</summary>
+
+| 题目 | 难度 | 思路 | Rust |
+| ------ | ------ | ------ | ------ |
+| [1672 - Richest Customer Wealth](https://leetcode.com/problems/richest-customer-wealth/) | Easy | 模拟 | [√](./Rust/src/1601%20~%201700/1672%20-%20Richest%20Customer%20Wealth.rs) |
+</details>
+
+<details>
 <summary>1801 ~ 1900</summary>
 
 | 题目 | 难度 | 思路 | Python3 |
