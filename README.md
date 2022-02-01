@@ -139,7 +139,7 @@ LeetCode AC代码（附思路、注释）
 | [0118 - Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/) | Easy | DP | [√](./Go/src/0101%20~%200200/0118%20-%20Pascal's%20Triangle.go) |
 | [0119 - Pascal's Triangle II](https://leetcode.com/problems/pascals-triangle-ii/) | Easy | DP | [√](./Go/src/0101%20~%200200/0119%20-%20Pascal's%20Triangle%20II.go) |
 | [0120 - Triangle](https://leetcode.com/problems/triangle/) | Medium | DP | [√](./Go/src/0101%20~%200200/0120%20-%20Triangle.go) |
-| [0121 - Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | Easy | 贪心 | [√](./Go/src/0101%20~%200200/0121%20-%20Best%20Time%20to%20Buy%20and%20Sell%20Stock.go) |
+| [0121 - Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | Easy | 贪心 | [√](./Go/src/0101%20~%200200/0121%20-%20Best%20Time%20to%20Buy%20and%20Sell%20Stock.go) | | | | [√](./Rust/src/0101%20~%200200/0121%20-%20Best%20Time%20to%20Buy%20and%20Sell%20Stock.rs) |
 | [0122 - Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/) | Easy | DP &#124; 贪心 | [√ &#124; ○](./Go/src/0101%20~%200200/0122%20-%20Best%20Time%20to%20Buy%20and%20Sell%20Stock%20II.go) |
 | [0123 - Best Time to Buy and Sell Stock III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/) | Hard | DP | [●](./Go/src/0101%20~%200200/0123%20-%20Best%20Time%20to%20Buy%20and%20Sell%20Stock%20III.go) |
 | [0124 - Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/) | Hard | 树形 DP | [√](./Go/src/0101%20~%200200/0124%20-%20Binary%20Tree%20Maximum%20Path%20Sum.go) |
