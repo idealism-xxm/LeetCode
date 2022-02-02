@@ -31,7 +31,7 @@
 //
 //      遍历完单词的所有字符后，直接返回 node.is_end ：
 //          1. 如果当前节点 node.is_end == true ，则说明单词存在，返回 true
-//          2. 如果当前节点 node.is_end == true ，则说明单词不存在，返回 false
+//          2. 如果当前节点 node.is_end == false ，则说明单词不存在，返回 false
 //
 //
 //      设 C 表示字符集大小，为常数 26 ， L 为单词最大长度， 
