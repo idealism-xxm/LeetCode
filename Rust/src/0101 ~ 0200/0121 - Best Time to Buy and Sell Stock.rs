@@ -20,12 +20,24 @@
 impl Solution {
     pub fn max_profit(prices: Vec<i32>) -> i32 {
         prices
+            // 转成迭代器
             .iter()
+            // 跳过第一天，同一天买卖不亏不赚
+            // （这里是否跳过不影响结果，
+            //  是为了语义上更符合我们后续使用的 pre 变量）
             .skip(1)
+            // 使用 fold 积累结果
             .fold(
+                // 维护两个值 ans 和 pre ，
+                // ans 表示目前进行一次买卖时的最大获利
+                // pre 表示当前天之前的股票最低价
                 (0, prices[0]), 
+                // 假设当天 cur 买入，则前几天选择最低价 pre 买入，则获利 cur - pre ，
+                // 更新最大获利 ans = ans.max(cur - pre) 。
+                // 同时更新后一天之前的股票最低价 pre = min(pre, cu)
                 |(ans, pre), &cur| (ans.max(cur - pre), pre.min(cur)),
             )
+            // 最后返回最大获利即可
             .0
     }
 }
