@@ -283,6 +283,7 @@ LeetCode AC代码（附思路、注释）
 | 题目 | 难度 | 思路 | Rust |
 | ------ | ------ | ------ | ------ |
 | [0421 - Maximum XOR of Two Numbers in an Array](https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/) | Medium | Trie | [√](./Rust/src/0401%20~%200500/0421%20-%20Maximum%20XOR%20of%20Two%20Numbers%20in%20an%20Array.rs) |
+| [0438 - Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/) | Medium | 滑动窗口 | [√](./Rust/src/0401%20~%200500/0438%20-%20Find%20All%20Anagrams%20in%20a%20String.rs) |
 | [0452 - Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/) | Medium | 贪心 | [√](./Rust/src/0401%20~%200500/0452%20-%20Minimum%20Number%20of%20Arrows%20to%20Burst%20Balloons.rs) |
 </details>
 
