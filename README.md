@@ -91,7 +91,7 @@ LeetCode AC代码（附思路、注释）
 | [0077 - Combinations](https://leetcode.com/problems/combinations/) | Medium | 递归 | [√](./Go/src/0001%20~%200100/0077%20-%20Combinations.go) |
 | [0078 - Subsets](https://leetcode.com/problems/subsets/) | Medium | 递归 | [√](./Go/src/0001%20~%200100/0078%20-%20Subsets.go) |
 | [0079 - Word Search](https://leetcode.com/problems/word-search/) | Medium | 递归 | [√](./Go/src/0001%20~%200100/0079%20-%20Word%20Search.go) |
-| [0080 - Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/) | Medium | 双指针 | [√](./Go/src/0001%20~%200100/0080%20-%20Remove%20Duplicates%20from%20Sorted%20Array%20II.go) |
+| [0080 - Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/) | Medium | 双指针 | [√](./Go/src/0001%20~%200100/0080%20-%20Remove%20Duplicates%20from%20Sorted%20Array%20II.go) | | [√](./Rust/src/0001%20~%200100/0080%20-%20Remove%20Duplicates%20from%20Sorted%20Array%20II.rs)
 | [0081 - Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/) | Medium | 一次二分 | [√](./Go/src/0001%20~%200100/0081%20-%20Search%20in%20Rotated%20Sorted%20Array%20II.go) |
 | [0082 - Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/) | Medium | 模拟 | [√](./Go/src/0001%20~%200100/0082%20-%20Remove%20Duplicates%20from%20Sorted%20List%20II.go) |
 | [0083 - Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/) | Easy | 模拟 | [√](./Go/src/0001%20~%200100/0083%20-%20Remove%20Duplicates%20from%20Sorted%20List.go) |
