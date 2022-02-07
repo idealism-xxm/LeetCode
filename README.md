@@ -274,7 +274,8 @@ LeetCode AC代码（附思路、注释）
 
 | 题目 | 难度 | 思路 | Rust |
 | ------ | ------ | ------ | ------ |
-| [0312 - Burst Balloons.rs](https://leetcode.com/problems/burst-balloons/) | Hard | 区间 DP | [○](./Rust/src/0301%20~%200400/0312%20-%20Burst%20Balloons.rs) |
+| [0312 - Burst Balloons](https://leetcode.com/problems/burst-balloons/) | Hard | 区间 DP | [○](./Rust/src/0301%20~%200400/0312%20-%20Burst%20Balloons.rs) |
+| [0389 - Find the Difference](https://leetcode.com/problems/find-the-difference/) | Easy | 异或 | [○](./Rust/src/0301%20~%200400/0389%20-%20Find%20the%20Difference.rs) |
 </details>
 
 <details>
