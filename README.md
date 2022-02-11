@@ -299,6 +299,7 @@ LeetCode AC代码（附思路、注释）
 | [0525 - Contiguous Array](https://leetcode.com/problems/contiguous-array/) | Medium | 前缀和 + Map | [√](./Rust/src/0501%20~%200600/0525%20-%20Contiguous%20Array.rs) |
 | [0532 - K-diff Pairs in an Array](https://leetcode.com/problems/k-diff-pairs-in-an-array/) | Medium | Map | [√](./Rust/src/0501%20~%200600/0532%20-%20K-diff%20Pairs%20in%20an%20Array.rs) |
 | [0560 - Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/) | Medium | 前缀和 + Map | [√](./Rust/src/0501%20~%200600/0560%20-%20Subarray%20Sum%20Equals%20K.rs) |
+| [0567 - Permutation in String](https://leetcode.com/problems/permutation-in-string/) | Medium | 滑动窗口 | [√](./Rust/src/0501%20~%200600/0567%20-%20Permutation%20in%20String.rs) |
 </details>
 
 <details>
