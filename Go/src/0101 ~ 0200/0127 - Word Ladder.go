@@ -1,33 +1,39 @@
 // 链接：https://leetcode.com/problems/word-ladder/
 // 题意：给定开始单词、结束单词和一个单词列表（所有单词长度一样），
-//		每次个以改变一个字母变成单词列表内的一个单词，求从开始单词变成结束单词最短变换序列的长度？
+//		每次可以改变一个字母变成单词列表内的一个单词，
+//      求从开始单词变成结束单词最短变换序列的长度？
 
-// 输入：
-// beginWord = "hit",
-// endWord = "cog",
-// wordList = ["hot","dot","dog","lot","log","cog"]
-// 输出： 5
-// 解释： "hit" -> "hot" -> "dot" -> "dog" -> "cog"
 
-// 输入：
-// beginWord = "hit"
-// endWord = "cog"
-// wordList = ["hot","dot","dog","lot","log"]
-// 输出： 0
-// 解释：结束单词 "cog" 不在单词列表中，因此不存在可能的转换序列
+// 数据限制：
+//  1 <= beginWord.length <= 10
+//  endWord.length == beginWord.length
+//  1 <= wordList.length <= 5000
+//  wordList[i].length == beginWord.length
+//  beginWord, endWord 和 wordList[i] 均由小写英文字母组成
+//  beginWord != endWord
+//  wordList 中的所有字符串互不相同
+
+
+// 输入：beginWord = "hit", endWord = "cog", wordList = ["hot","dot","dog","lot","log","cog"]
+// 输出：5
+// 解释：一个最短转换序列是 "hit" -> "hot" -> "dot" -> "dog" -> "cog", 返回它的长度 5 。
+
+// 输入：beginWord = "hit", endWord = "cog", wordList = ["hot","dot","dog","lot","log"]
+// 输出：0
+// 解释：结束单词 "cog" 不在单词列表中，所以无法进行转换。
 
 // 思路： BFS
 //		0126 的简化版，直接使用 BFS 即可
-//		刚开始第一反应就是在 O(n ^ 2) 将可相互转换的单词标记，视为无向边，变长均为 1 ，
+//		刚开始第一反应就是在 O(m * n ^ 2) 将可相互转换的单词标记，视为无向边，变长均为 1 ，
 //		【题解用 map 和字符串变换，可以将相互可转换的单词在 O(n) 内找出来，感觉非常巧妙
-//		可以将时间复杂度优化为 O(m * n) , m 是单词长度】
+//		可以将时间复杂度优化为 O(n * m ^ 2) , m 是单词长度】
 //		这样就转换成了边长都相同的最短路，直接 BFS 并标记转换到每个单词最短路径长度
 //		后来发现其实不需要预处理无向边，直接在 BFS 的时候判断即可，
 //		因为每个单词只会入队一次，入队前和一个单词判断一次，出队后和列表中的单词判断一次
 //
 //		由于本题只用找到最短路径的长度即可，所以也可以使用 双向 BFS
 //
-//		时间复杂度： O(m * n)
+//		时间复杂度： O(n * m ^ 2)
 //		空间复杂度： O(m * n)
 
 func ladderLength(beginWord string, endWord string, wordList []string) int {
