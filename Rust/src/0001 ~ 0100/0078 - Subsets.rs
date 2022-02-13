@@ -28,20 +28,30 @@
 //      空间复杂度：O(n * 2 ^ n) 。总共有 O(2 ^ n) 个子集，每个子集最长为 O(n) 。
 //          实际计算所有子集的元素个数的公式为： sum(i * C(n, i)) = n * 2 ^ (n - 1)
 
-func subsets(nums []int) [][]int {
-	list := make([]int, len(nums))
-	return dfs(nums, 0, list)
-}
+impl Solution {
+    pub fn subsets(nums: Vec<i32>) -> Vec<Vec<i32>> {
+        // list 用于收集当前子集内的数字，最大长度为 nums.len()
+        let mut list = Vec::with_capacity(nums.len());
+        // ans 用于收集所有可能的子集
+        let mut ans = vec![];
+        // 回溯遍历所有可能情况
+        Self::dfs(&nums[..], &mut list, &mut ans);
 
-func dfs(nums []int, count int, list []int) [][]int {
-	if len(nums) == 0 {  // 没有需要处理的数，则将现有结果放入集合中
-		return [][]int{append(list[:0:0], list[:count]...)}
-	}
+        ans
+    }
 
-	// 不选用第一个数
-	result := dfs(nums[1:], count, list)
-	// 选用第一个数
-	list[count] = nums[0]
-	result = append(result, dfs(nums[1:], count + 1, list)...)
-	return result
+    fn dfs(nums: &[i32], mut list: &mut Vec<i32>, mut ans: &mut Vec<Vec<i32>>) {
+        // 如果已经遍历完所有的数字，则当前 list 就是一种合法的子集
+        if nums.len() == 0 {
+            ans.push(list.clone());
+            return
+        }
+
+        // 不选第一个数
+        Self::dfs(&nums[1..], list, ans);
+        // 选第一个数，则先把 nums[0] 放入到 list 中
+        list.push(nums[0]);
+        Self::dfs(&nums[1..], list, ans);
+        list.pop();
+    }
 }
