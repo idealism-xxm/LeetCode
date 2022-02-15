@@ -34,10 +34,12 @@
 //		时间复杂度： O(n)
 //		空间复杂度： O(1)
 
-func singleNumber(nums []int) int {
-	result := 0
-	for _, num := range nums {
-		result ^= num
-	}
-	return result
+impl Solution {
+    pub fn single_number(nums: Vec<i32>) -> i32 {
+        nums
+            // 转成迭代器
+            .iter()
+            // 使用 fold 积累所有数字的异或和
+            .fold(0, |result, num| result ^ num)
+    }
 }

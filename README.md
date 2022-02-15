@@ -154,7 +154,7 @@ LeetCode AC代码（附思路、注释）
 | [0133 - Clone Graph](https://leetcode.com/problems/clone-graph/) | Medium | 递归 | [√](./Go/src/0101%20~%200200/0133%20-%20Clone%20Graph.go) |
 | [0134 - Gas Station](https://leetcode.com/problems/gas-station/) | Medium | 线段树 &#124; 一次遍历 | [√ &#124; ●](./Go/src/0101%20~%200200/0134%20-%20Gas%20Station.go) | | | | | [_ &#124; ●](./Rust/src/0101%20~%200200/0134%20-%20Gas%20Station.rs)
 | [0135 - Candy](https://leetcode.com/problems/clone-graph/) | Hard | 贪心 | [√](./Go/src/0101%20~%200200/0135%20-%20Candy.go) |
-| [0136 - Single Number](https://leetcode.com/problems/single-number/) | Easy | 异或 | [√](./Go/src/0101%20~%200200/0136%20-%20Single%20Number.go) |
+| [0136 - Single Number](https://leetcode.com/problems/single-number/) | Easy | 异或 | [√](./Go/src/0101%20~%200200/0136%20-%20Single%20Number.go) | | | | [√](./Rust/src/0101%20~%200200/0136%20-%20Single%20Number.rs) |
 | [0137 - Single Number II](https://leetcode.com/problems/single-number-ii/) | Medium | 按位统计 &#124; 异或 | [√ &#124; ●](./Go/src/0101%20~%200200/0137%20-%20Single%20Number%20II.go) |
 | [0138 - Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/) | Medium | 递归 | [√](./Go/src/0101%20~%200200/0138%20-%20Copy%20List%20with%20Random%20Pointer.go) |
 | [0139 - Word Break](https://leetcode.com/problems/word-break/) | Medium | DP | [√](./Go/src/0101%20~%200200/0139%20-%20Word%20Break.go) |
