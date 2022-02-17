@@ -56,37 +56,40 @@
 //          2. 实际难以计算比较上界
 
 
-func combinationSum(candidates []int, target int) [][]int {
-    // 先对 candidates 按升序排序，方便后续优化和处理
-    sort.Ints(candidates)
+impl Solution {
+    pub fn combination_sum(mut candidates: Vec<i32>, target: i32) -> Vec<Vec<i32>> {
+        // 先对 candidates 按升序排序，方便后续优化和处理
+        candidates.sort();
 
-    // list 用于收集当前列表内的数字，最大长度为 target / candidates[0] + 1
-    list := make([]int, 0, target / candidates[0] + 1)
-    // ans 用于收集所有可能的列表
-    ans := make([][]int, 0)
-    dfs(candidates, target, 0, &list, &ans)
-    return ans
-}
+        // list 用于收集当前列表内的数字，最大长度为 target / candidates[0] + 1
+        let mut list = Vec::with_capacity((target / candidates[0] + 1) as usize);
+        // ans 用于收集所有可能的列表
+        let mut ans = Vec::new();
+        Self::dfs(&candidates, target, 0, &mut list, &mut ans);
 
-func dfs(candidates []int, target int, cur int, list *[]int, ans *[][]int) {
-    // 如果列表中的和已满足题意，则当前 list 就是一种合法的列表
-    if target == 0 {
-        *ans = append(*ans, append((*list)[:0:0], (*list)...))
-        return
-    }
-    // 如果已经遍历完所有的数字 或者 能选的最小数字都比 target 大，
-    // 则当前 list 就是一种不合法的列表，直接返回
-    if len(candidates) == cur || target < candidates[cur] {
-        return 
+        ans
     }
 
-    // 不选第 cur 个数，递归处理目标数为 target 的情况，从 cur + 1 开始
-    dfs(candidates, target, cur + 1, list, ans);
-    // 选择第 cur 个数 ，将其加入 list 中
-    *list = append(*list, candidates[cur]);
-    // 递归处理目标数为 target - candidates[cur] 的情况，
-    // 从 cur 开始，保证可重复选
-    dfs(candidates, target - candidates[cur], cur, list, ans);
-    // 移除最后一个数
-    *list = (*list)[:len(*list) - 1];
+    fn dfs(candidates: &Vec<i32>, target: i32, cur: usize, list: &mut Vec<i32>, ans: &mut Vec<Vec<i32>>) {
+        // 如果列表中的和已满足题意，则当前 list 就是一种合法的列表
+        if target == 0 {
+            ans.push(list.clone());
+            return;
+        }
+        // 如果已经遍历完所有的数字 或者 能选的最小数字都比 target 大，
+        // 则当前 list 就是一种不合法的列表，直接返回
+        if cur == candidates.len() || target < candidates[cur] {
+            return;
+        }
+
+        // 不选第 cur 个数，递归处理目标数为 target 的情况，从 cur + 1 开始
+        Self::dfs(candidates, target, cur + 1, list, ans);
+        // 选择第 cur 个数 ，将其加入 list 中
+        list.push(candidates[cur]);
+        // 递归处理目标数为 target - candidates[cur] 的情况，
+        // 从 cur 开始，保证可重复选
+        Self::dfs(candidates, target - candidates[cur], cur, list, ans);
+        // 移除最后一个数
+        list.pop();
+    }
 }
