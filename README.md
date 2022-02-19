@@ -379,6 +379,7 @@ LeetCode AC代码（附思路、注释）
 | 题目 | 难度 | 思路 | Rust |
 | ------ | ------ | ------ | ------ |
 | [1672 - Richest Customer Wealth](https://leetcode.com/problems/richest-customer-wealth/) | Easy | 模拟 | [√](./Rust/src/1601%20~%201700/1672%20-%20Richest%20Customer%20Wealth.rs) |
+| [1675 - Minimize Deviation in Array](https://leetcode-cn.com/problems/minimize-deviation-in-array/) | Hard | 贪心 + 优先队列（堆） | [●](./Rust/src/1601%20~%201700/1675%20-%20Minimize%20Deviation%20in%20Array.rs) |
 </details>
 
 <details>

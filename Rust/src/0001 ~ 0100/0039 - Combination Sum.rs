@@ -29,7 +29,7 @@
 //
 //		按照顺序递归处理 candidates 中的第 cur 个数，每一层可做两个操作：
 //		    1. candidates[cur] 不放入结果待选列表 list 中，
-///             下一层递归处理 candidates[cur + 1]
+//              下一层递归处理 candidates[cur + 1]
 //          2. candidates[cur] 放入结果待选列表 list 中，
 //              下一层递归处理 candidates[cur] ，因为一个数可以重复选择
 //
@@ -42,18 +42,18 @@
 //
 //      【进阶】需要保证数字不能重复选择。
 //
-//      这就是 [LeetCode 40](https://leetcode.com/problems/combination-sum-ii/) 这题，只需要修改递归 cur 的改变逻辑即可，
-//      无论是否选择了第 cur 个数，下一层都要从 cur + 1 开始。
+//      这就是 [LeetCode 40](https://leetcode.com/problems/combination-sum-ii/) 这题，
+//      只需要修改递归 cur 的改变逻辑即可：无论是否选择了第 cur 个数，下一层都要从 cur + 1 开始。
 //
 //      设结果列表大小为 S
 //
 //		时间复杂度： O(S * target)
 //          1. 要遍历完 O(S) 个结果
 //          2. 最后收集每个结果时都要克隆 list 中的数字，最长为 O(target)
-//          3. 实际难以计算比较上界
+//          3. 实际难以计算比较紧上界
 //		空间复杂度： O(S * target)
 //          1. 总共有 O(S) 个结果，每个结果最长为 O(target)
-//          2. 实际难以计算比较上界
+//          2. 实际难以计算比较紧上界
 
 
 impl Solution {

@@ -23,8 +23,8 @@
 //      综上： 总时间复杂度为 O(n1 + n2) ，总空间复杂度为 O(n1 + n2)
 //      
 //
-//      时间复杂度： O(n)
-//      空间复杂度： O(n)
+//      时间复杂度： O(n1 + n2)
+//      空间复杂度： O(n1 + n2)
 
 
 // Definition for a binary tree node.
