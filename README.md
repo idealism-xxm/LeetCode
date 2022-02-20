@@ -34,7 +34,7 @@ LeetCode AC代码（附思路、注释）
 | [0020 - Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | Easy | 模拟 | [√](./Go/src/0001%20~%200100/0020%20-%20Valid%20Parentheses.go) |
 | [0021 - Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | Easy | 模拟 | [√](./Go/src/0001%20~%200100/0021%20-%20Merge%20Two%20Sorted%20Lists.go) |
 | [0022 - Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) | Medium | 递归 | [√](./Go/src/0001%20~%200100/0022%20-%20Generate%20Parentheses.go) |
-| [0023 - Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) | Hard | 堆 &#124; 分治 | [√ &#124; ○](./Go/src/0001%20~%200100/0023%20-%20Merge%20k%20Sorted%20Lists.go) | | [√ &#124; _](./Rust/src/0001%20~%200100/0023%20-%20Merge%20k%20Sorted%20Lists.rs) |
+| [0023 - Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) | Hard | 优先队列（堆） &#124; 分治 | [√ &#124; ○](./Go/src/0001%20~%200100/0023%20-%20Merge%20k%20Sorted%20Lists.go) | | [√ &#124; _](./Rust/src/0001%20~%200100/0023%20-%20Merge%20k%20Sorted%20Lists.rs) |
 | [0024 - Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/) | Medium | 模拟 | [√](./Go/src/0001%20~%200100/0024%20-%20Swap%20Nodes%20in%20Pairs.go) | | [√](./Rust/src/0001%20~%200100/0024%20-%20Swap%20Nodes%20in%20Pairs.rs) |
 | [0025 - Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/) | Hard | 头插法 + 计数 | [√](./Go/src/0001%20~%200100/0025%20-%20Reverse%20Nodes%20in%20k-Group.go) |
 | [0026 - Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | Easy | 快慢指针 | [√](./Go/src/0001%20~%200100/0026%20-%20Remove%20Duplicates%20from%20Sorted%20Array.go) |
@@ -353,6 +353,7 @@ LeetCode AC代码（附思路、注释）
 
 | 题目 | 难度 | 思路 | Rust |
 | ------ | ------ | ------ | ------ |
+| [1288 - Remove Covered Intervals](https://leetcode.com/problems/remove-covered-intervals/) | Medium | BFS | [√](./Rust/src/1201%20~%201300/1288%20-%20Remove%20Covered%20Intervals.rs) |
 | [1291 - Sequential Digits](https://leetcode.com/problems/sequential-digits/) | Medium | BFS | [√](./Rust/src/1201%20~%201300/1291%20-%20Sequential%20Digits.rs) |
 </details>
 
