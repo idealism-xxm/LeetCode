@@ -4,7 +4,7 @@
 //      返回最后相加的和的十进制值。
 
 // 数据限制：
-//  树的节点数量在 [1, 1000] 范围内
+//  树的结点数量在 [1, 1000] 范围内
 //  Node.val 是 0 或 1
 
 // 输入： root = [1,0,1,0,1,0,1]
@@ -16,13 +16,13 @@
 
 // 思路： DFS
 //
-//      从根节点 dfs ，不断计算路径上 01 串代表的十进制数字 cur ，
-//          1. 如果当前节点 node 是 none ，则返回 0 ，
-//          2. 如果当前节点 node 不是 none ，则计算 val = (cur << 1) + node.val ，
-//              (1) 如果 node 是叶子节点，则直接返回 val
-//              (2) 如果 node 不是叶子节点，则返回 dfs(val, node.left) + dfs(val, node.right)
+//      从根结点 dfs ，不断计算路径上 01 串代表的十进制数字 cur ，
+//          1. 如果当前结点 node 是 none ，则返回 0 ，
+//          2. 如果当前结点 node 不是 none ，则计算 val = (cur << 1) + node.val ，
+//              (1) 如果 node 是叶子结点，则直接返回 val
+//              (2) 如果 node 不是叶子结点，则返回 dfs(val, node.left) + dfs(val, node.right)
 //
-//      由于这颗二叉树是完全二叉树，所以 dfs 的递归深度为 O(logn) ，空间复杂度为 O(logn)
+//      数据范围决定了这是完全二叉树，所以 dfs 的递归深度为 O(logn) ，空间复杂度为 O(logn)
 //
 //      时间复杂度： O(n)
 //      空间复杂度： O(logn)
@@ -55,16 +55,16 @@ impl Solution {
                 let node = node.borrow();
                 // 更新路径上的值
                 let val = (cur << 1) + node.val;
-                // 如果当前节点为叶子节点，则 cur 就是根到叶子结点的值
+                // 如果当前结点为叶子结点，则 cur 就是根到叶子结点的值
                 if node.left.is_none() && node.right.is_none() {
                     return val;
                 }
 
-                // 分别返回左右子节点的值
+                // 分别返回左右子结点的值
                 dfs(val, &node.left) + dfs(val, &node.right)
             } else {
                 // 当 root 是 none 时，直接返回 0
-                // 这样就不用在上一层判断左右子节点是否存在了
+                // 这样就不用在上一层判断左右子结点是否存在了
                 0
             }
         }

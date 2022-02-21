@@ -117,8 +117,8 @@ LeetCode AC代码（附思路、注释）
 <details>
 <summary>0101 ~ 0200</summary>
 
-| 题目 | 难度 | 思路 | Go | Java | MySQL | Bash | Rust |
-| ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
+| 题目 | 难度 | 思路 | Go | Java | MySQL | Bash | Rust | Python3 |
+| ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
 | [0101 - Symmetric Tree](https://leetcode.com/problems/same-tree/) | Easy | 递归 &#124; 循环 | [√ &#124; ○](./Go/src/0101%20~%200200/0101%20-%20Symmetric%20Tree.go) |
 | [0102 - Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) | Medium | BFS | [√](./Go/src/0101%20~%200200/0102%20-%20Binary%20Tree%20Level%20Order%20Traversal.go) |
 | [0103 - Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/) | Medium | BFS | [√](./Go/src/0101%20~%200200/0103%20-%20Binary%20Tree%20Zigzag%20Level%20Order%20Traversal.go) |
@@ -154,7 +154,7 @@ LeetCode AC代码（附思路、注释）
 | [0133 - Clone Graph](https://leetcode.com/problems/clone-graph/) | Medium | 递归 | [√](./Go/src/0101%20~%200200/0133%20-%20Clone%20Graph.go) |
 | [0134 - Gas Station](https://leetcode.com/problems/gas-station/) | Medium | 线段树 &#124; 一次遍历 | [√ &#124; ●](./Go/src/0101%20~%200200/0134%20-%20Gas%20Station.go) | | | | | [_ &#124; ●](./Rust/src/0101%20~%200200/0134%20-%20Gas%20Station.rs)
 | [0135 - Candy](https://leetcode.com/problems/clone-graph/) | Hard | 贪心 | [√](./Go/src/0101%20~%200200/0135%20-%20Candy.go) |
-| [0136 - Single Number](https://leetcode.com/problems/single-number/) | Easy | 异或 | [√](./Go/src/0101%20~%200200/0136%20-%20Single%20Number.go) | | | | [√](./Rust/src/0101%20~%200200/0136%20-%20Single%20Number.rs) |
+| [0136 - Single Number](https://leetcode.com/problems/single-number/) | Easy | 异或 | [√](./Go/src/0101%20~%200200/0136%20-%20Single%20Number.go) | | | | [√](./Rust/src/0101%20~%200200/0136%20-%20Single%20Number.rs) | [√](./Python3/src/0101%20~%200200/0136%20-%20Single%20Number.py) |
 | [0137 - Single Number II](https://leetcode.com/problems/single-number-ii/) | Medium | 按位统计 &#124; 异或 | [√ &#124; ●](./Go/src/0101%20~%200200/0137%20-%20Single%20Number%20II.go) |
 | [0138 - Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/) | Medium | 递归 | [√](./Go/src/0101%20~%200200/0138%20-%20Copy%20List%20with%20Random%20Pointer.go) |
 | [0139 - Word Break](https://leetcode.com/problems/word-break/) | Medium | DP | [√](./Go/src/0101%20~%200200/0139%20-%20Word%20Break.go) |
@@ -273,10 +273,10 @@ LeetCode AC代码（附思路、注释）
 <details>
 <summary>0301 ~ 0400</summary>
 
-| 题目 | 难度 | 思路 | Rust |
-| ------ | ------ | ------ | ------ |
+| 题目 | 难度 | 思路 | Rust | Python3 |
+| ------ | ------ | ------ | ------ | ------ |
 | [0312 - Burst Balloons](https://leetcode.com/problems/burst-balloons/) | Hard | 区间 DP | [○](./Rust/src/0301%20~%200400/0312%20-%20Burst%20Balloons.rs) |
-| [0389 - Find the Difference](https://leetcode.com/problems/find-the-difference/) | Easy | 异或 | [○](./Rust/src/0301%20~%200400/0389%20-%20Find%20the%20Difference.rs) |
+| [0389 - Find the Difference](https://leetcode.com/problems/find-the-difference/) | Easy | 异或 | [○](./Rust/src/0301%20~%200400/0389%20-%20Find%20the%20Difference.rs) | [○](./Python3/src/0301%20~%200400/0389%20-%20Find%20the%20Difference.py) |
 </details>
 
 <details>
@@ -294,9 +294,9 @@ LeetCode AC代码（附思路、注释）
 <details>
 <summary>0501 ~ 0600</summary>
 
-| 题目 | 难度 | 思路 | Rust |
-| ------ | ------ | ------ | ------ |
-| [0520 - Detect Capital](https://leetcode.com/problems/detect-capital/) | Easy | 模拟 | [√](./Rust/src/0501%20~%200600/0520%20-%20Detect%20Capital.rs) |
+| 题目 | 难度 | 思路 | Rust | Python3 |
+| ------ | ------ | ------ | ------ | ------ |
+| [0520 - Detect Capital](https://leetcode.com/problems/detect-capital/) | Easy | 模拟 | [√](./Rust/src/0501%20~%200600/0520%20-%20Detect%20Capital.rs) | [√](./Python3/src/0501%20~%200600/0520%20-%20Detect%20Capital.py) |
 | [0525 - Contiguous Array](https://leetcode.com/problems/contiguous-array/) | Medium | 前缀和 + Map | [√](./Rust/src/0501%20~%200600/0525%20-%20Contiguous%20Array.rs) |
 | [0532 - K-diff Pairs in an Array](https://leetcode.com/problems/k-diff-pairs-in-an-array/) | Medium | Map | [√](./Rust/src/0501%20~%200600/0532%20-%20K-diff%20Pairs%20in%20an%20Array.rs) |
 | [0560 - Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/) | Medium | 前缀和 + Map | [√](./Rust/src/0501%20~%200600/0560%20-%20Subarray%20Sum%20Equals%20K.rs) |
@@ -339,21 +339,21 @@ LeetCode AC代码（附思路、注释）
 <details>
 <summary>1001 ~ 1100</summary>
 
-| 题目 | 难度 | 思路 | Rust |
-| ------ | ------ | ------ | ------ |
+| 题目 | 难度 | 思路 | Rust | Python3 |
+| ------ | ------ | ------ | ------ | ------ |
 | [1009 - Complement of Base 10 Integer](https://leetcode.com/problems/complement-of-base-10-integer/) | Easy | 位运算 | [√](./Rust/src/1001%20~%201100/1009%20-%20Complement%20of%20Base%2010%20Integer.rs) |
 | [1010 - Pairs of Songs With Total Durations Divisible by 60](https://leetcode.com/problems/pairs-of-songs-with-total-durations-divisible-by-60/) | Easy | 统计 | [√](./Rust/src/1001%20~%201100/1010%20-%20Pairs%20of%20Songs%20With%20Total%20Durations%20Divisible%20by%2060.rs) |
-| [1022 - Sum of Root To Leaf Binary Numbers](https://leetcode.com/problems/sum-of-root-to-leaf-binary-numbers/) | Easy | DFS | [√](./Rust/src/1001%20~%201100/1022%20-%20Sum%20of%20Root%20To%20Leaf%20Binary%20Numbers.rs) |
-| [1041 - Robot Bounded In Circle](https://leetcode.com/problems/robot-bounded-in-circle/) | Medium | 模拟 | [√](./Rust/src/1001%20~%201100/1041%20-%20Robot%20Bounded%20In%20Circle.rs) |
+| [1022 - Sum of Root To Leaf Binary Numbers](https://leetcode.com/problems/sum-of-root-to-leaf-binary-numbers/) | Easy | DFS | [√](./Rust/src/1001%20~%201100/1022%20-%20Sum%20of%20Root%20To%20Leaf%20Binary%20Numbers.rs) | [√](./Python3/src/1001%20~%201100/1022%20-%20Sum%20of%20Root%20To%20Leaf%20Binary%20Numbers.py) |
+| [1041 - Robot Bounded In Circle](https://leetcode.com/problems/robot-bounded-in-circle/) | Medium | 模拟 | [√](./Rust/src/1001%20~%201100/1041%20-%20Robot%20Bounded%20In%20Circle.rs) | [√](./Python3/src/1001%20~%201100/1041%20-%20Robot%20Bounded%20In%20Circle.py) |
 | [1094 - Car Pooling](https://leetcode.com/problems/car-pooling/) | Medium | 模拟 | [√](./Rust/src/1001%20~%201100/1094%20-%20Car%20Pooling.rs) |
 </details>
 
 <details>
 <summary>1201 ~ 1300</summary>
 
-| 题目 | 难度 | 思路 | Rust |
-| ------ | ------ | ------ | ------ |
-| [1288 - Remove Covered Intervals](https://leetcode.com/problems/remove-covered-intervals/) | Medium | BFS | [√](./Rust/src/1201%20~%201300/1288%20-%20Remove%20Covered%20Intervals.rs) |
+| 题目 | 难度 | 思路 | Rust | Python3 |
+| ------ | ------ | ------ | ------ | ------ |
+| [1288 - Remove Covered Intervals](https://leetcode.com/problems/remove-covered-intervals/) | Medium | 贪心 + 排序 | [√](./Rust/src/1201%20~%201300/1288%20-%20Remove%20Covered%20Intervals.rs) | [√](./Python3/src/1201%20~%201300/1288%20-%20Remove%20Covered%20Intervals.py) |
 | [1291 - Sequential Digits](https://leetcode.com/problems/sequential-digits/) | Medium | BFS | [√](./Rust/src/1201%20~%201300/1291%20-%20Sequential%20Digits.rs) |
 </details>
 
