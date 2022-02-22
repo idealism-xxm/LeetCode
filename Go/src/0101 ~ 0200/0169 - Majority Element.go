@@ -29,7 +29,7 @@
 //		空间复杂度： O(logn)
 
 func majorityElement(nums []int) int {
-	return dfs(nums, 0, len(nums) - 1)
+	return dfs(nums, 0, len(nums)-1)
 }
 
 func dfs(nums []int, l, r int) int {
@@ -41,7 +41,7 @@ func dfs(nums []int, l, r int) int {
 	// 递归找到左右区间的众数
 	mid := (l + r) >> 1
 	left := dfs(nums, l, mid)
-	right := dfs(nums, mid + 1, r)
+	right := dfs(nums, mid+1, r)
 
 	// 如果左右区间的众数一样，则其必定是当前区间的众数
 	if left == right {
@@ -70,18 +70,32 @@ func count(nums []int, l, r, left, right int) (leftCount, rightCount int) {
 	return leftCount, rightCount
 }
 
-// 思路2： 按位统计
-//		看题解下面的评论还有提到按位统计，这样空间复杂度就可以优化为 O(1)
-//		针对每一位看：
-//		1. 若众数的该位为 1 ，那么这位为 1 的数字个数必定超过一半
-//		2. 若众数的该位为 0 ，那么这位为 1 的数字个数必定不超过一半
+// 思路2：位运算
 //
-//		时间复杂度： O(n)
-//		空间复杂度： O(1)
+//		针对每一个二进制：
+//		    1. 若众数的该位为 1 ，那么这位为 1 的数字个数必定超过一半
+//		    2. 若众数的该位为 0 ，那么这位为 1 的数字个数必定不超过一半
+//
+//      所以我们维护一个长度为 32 的数组 count ，
+//      count[i] 表示所有数中第 i 个二进制位为 1 的数字个数。
+//
+//      那么最终统计完成后，我们维护 majority 表示众数，
+//      遍历所有的二进制位 i ，如果 count[i] > nums.len() / 2 ，
+//      则众数的第 i 位是 1 ，执行 majority |= 1 << i
+//
+//
+//      假设 N 为 n 的最大值，这里是 2 ^ 31 - 1
+//
+//		时间复杂度： O(nlogN)
+//          1. 需要遍历全部 O(n) 个数字
+//          2. 每个数字都要遍历全部二进制位，可以看作 O(1) ，
+//              但实际严格来讲应该是 O(logN)
+//		空间复杂度： O(logN)
+//          1. 实际上开辟的二进制位空间与 n 有关系，严格来说应该是 O(logN)
 
 func majorityElement(nums []int) int {
 	half := len(nums) >> 1
-	result := 0
+	majority := 0
 	for i := 0; i < 32; i++ {
 		bit := 1 << i
 		count := 0
@@ -91,42 +105,49 @@ func majorityElement(nums []int) int {
 			}
 		}
 		if count > half {
-			result |= bit
+			majority |= bit
 		}
 	}
 	// 传入的是 32 位整数，所以需要先转换成 32 位整数兼容负数的情况
-	return int(int32(result))
+	return int(int32(majority))
 }
 
 // 思路3： Boyer-Moore 投票算法
+//
 //		题解也提到了最优的 Boyer-Moore 投票算法
-//		先指定众数 result = random ，并且其出现的次数 count = 0
+//		先指定众数 majority = random ，并且其出现的次数 count = 0
 //		然后遍历整个数组：
-//		1. count == 0 时： 令 result = num
-//		2. result == num 时： count++
-//		3. result != num 时： count--
+//		    1. count == 0 时： 令 majority = num
+//		    2. majority == num 时： count++
+//		    3. majority != num 时： count--
 //
 //		算法正确性：
-//		1. 由于先判断 count == 0 时，令 result = num ，所以 count 必定时非负数
-//		2. 若 result 就是众数，那么下一次 count 为 0 时，必定抵消了相同数量的非众数，
-//			剩余的数组中，众数还是占一半以上
-//		3. 若 result 不是众数，那么下一次 count 为 0 时，最多抵消了相同数量的众数，
-//			剩余的数组中，众数还是占一半以上
+//		    1. 由于先判断 count == 0 时，令 majority = num ，
+//              所以 count 必定是非负数
+//		    2. 若 majority 就是众数，那么下一次 count 为 0 时，
+//              必定抵消了相同数量的非众数，
+//              剩余的数组中，众数还是占一半以上
+//		    3. 若 majority 不是众数，那么下一次 count 为 0 时，
+//              最多抵消了相同数量的众数，
+//		    	剩余的数组中，众数还是占一半以上
+//
 //
 //		时间复杂度： O(n)
+//          1. 只需要遍历全部 O(n) 个数字一次
 //		空间复杂度： O(1)
+//          1. 只维护 2 个变量，所以空间复杂度为 O(1)
 
 func majorityElement(nums []int) int {
-	result, count := 0, 0
+	majority, count := 0, 0
 	for _, num := range nums {
 		if count == 0 {
-			result = num
+			majority = num
 		}
-		if result == num {
+		if majority == num {
 			count++
 		} else {
 			count--
 		}
 	}
-	return result
+	return majority
 }
