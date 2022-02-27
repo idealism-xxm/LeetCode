@@ -183,7 +183,7 @@ LeetCode AC代码（附思路、注释）
 | [0162 - Find Peak Element](https://leetcode.com/problems/find-peak-element/) | Medium | 二分 | [√](./Go/src/0101%20~%200200/0162%20-%20Find%20Peak%20Element.go) |
 | [0163 - Missing Ranges](https://leetcode.com/problems/missing-ranges/) | Medium | 遍历 | [√](./Go/src/0101%20~%200200/0163%20-%20Missing%20Ranges.go) |
 | [0164 - Maximum Gap](https://leetcode.com/problems/maximum-gap/) | Hard | 基数排序 &#124; 桶 + 鸽笼原理 | [√ &#124; ●](./Go/src/0101%20~%200200/0164%20-%20Maximum%20Gap.go) |
-| [0165 - Compare Version Numbers](https://leetcode.com/problems/compare-version-numbers/) | Medium | 模拟 | [√](./Go/src/0101%20~%200200/0165%20-%20Compare%20Version%20Numbers.go) |
+| [0165 - Compare Version Numbers](https://leetcode.com/problems/compare-version-numbers/) | Medium | 模拟 | [√](./Go/src/0101%20~%200200/0165%20-%20Compare%20Version%20Numbers.go) | | | | [√](./Rust/src/0101%20~%200200/0165%20-%20Compare%20Version%20Numbers.rs) | [√](./Python3/src/0101%20~%200200/0165%20-%20Compare%20Version%20Numbers.py) |
 | [0166 - Fraction to Recurring Decimal](https://leetcode.com/problems/fraction-to-recurring-decimal/) | Medium | 模拟 | [√](./Go/src/0101%20~%200200/0166%20-%20Fraction%20to%20Recurring%20Decimal.go) |
 | [0167 - Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | Easy | 双指针 | [√](./Go/src/0101%20~%200200/0167%20-%20Two%20Sum%20II%20-%20Input%20array%20is%20sorted.go) |
 | [0168 - Excel Sheet Column Title](https://leetcode.com/problems/excel-sheet-column-title/) | Easy | 模拟 | [√](./Go/src/0101%20~%200200/0168%20-%20Excel%20Sheet%20Column%20Title.go) |
