@@ -224,8 +224,8 @@ LeetCode AC代码（附思路、注释）
 <details>
 <summary>0201 ~ 0300</summary>
 
-| 题目 | 难度 | 思路 | Rust | Go |
-| ------ | ------ | ------ | ------ | ------ |
+| 题目 | 难度 | 思路 | Rust | Go | Python3
+| ------ | ------ | ------ | ------ | ------ | ------ |
 | [0201 - Bitwise AND of Numbers Range](https://leetcode.com/problems/bitwise-and-of-numbers-range/) | Medium | 位运算 &#124; 位移 | [√ &#124; ●](./Rust/src/0201%20~%200300/0201%20-%20Bitwise%20AND%20of%20Numbers%20Range.rs) |
 | [0202 - Happy Number](https://leetcode.com/problems/happy-number/) | Easy | 模拟 | [√](./Rust/src/0201%20~%200300/0202%20-%20Happy%20Number.rs) |
 | [0203 - Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/) | Easy | 模拟 | [√](./Rust/src/0201%20~%200300/0203%20-%20Remove%20Linked%20List%20Elements.rs) |
@@ -253,7 +253,7 @@ LeetCode AC代码（附思路、注释）
 | [0225 - Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/) | Easy | 模拟 | [√](./Rust/src/0201%20~%200300/0225%20-%20Implement%20Stack%20using%20Queues.rs) |
 | [0226 - Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/) | Easy | 递归 | [√](./Rust/src/0201%20~%200300/0226%20-%20Invert%20Binary%20Tree.rs) |
 | [0227 - Basic Calculator II](https://leetcode.com/problems/basic-calculator-ii/) | Medium | 调度场算法 | [√](./Rust/src/0201%20~%200300/0227%20-%20Basic%20Calculator%20II.rs) |
-| [0228 - Summary Ranges](https://leetcode.com/problems/summary-ranges/) | Medium | 双指针 | [√](./Rust/src/0201%20~%200300/0228%20-%20Summary%20Ranges.rs) |
+| [0228 - Summary Ranges](https://leetcode.com/problems/summary-ranges/) | Medium | 双指针 | [√](./Rust/src/0201%20~%200300/0228%20-%20Summary%20Ranges.rs) | | [√](./Python3/src/0201%20~%200300/0228%20-%20Summary%20Ranges.py) |
 | [0230 - Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) | Medium | 递归 | [√](./Rust/src/0201%20~%200300/0230%20-%20Kth%20Smallest%20Element%20in%20a%20BST.rs) |
 | [0231 - Power of Two](https://leetcode-cn.com/problems/power-of-two/) | Easy | 位运算 | [√](./Rust/src/0201%20~%200300/0231%20-%20Power%20of%20Two.rs) |
 | [0232 - Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/) | Easy | push 栈 + pop 栈 | [√](./Rust/src/0201%20~%200300/0232%20-%20Implement%20Queue%20using%20Stacks.rs) |
