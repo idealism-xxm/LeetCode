@@ -278,6 +278,7 @@ LeetCode AC代码（附思路、注释）
 | [0312 - Burst Balloons](https://leetcode.com/problems/burst-balloons/) | Hard | 区间 DP | [○](./Rust/src/0301%20~%200400/0312%20-%20Burst%20Balloons.rs) |
 | [0338 - Counting Bits](https://leetcode.com/problems/counting-bits/) | Easy | DP + 位运算 | [√](./Rust/src/0301%20~%200400/0338%20-%20Counting%20Bits.rs) | [√](./Python3/src/0301%20~%200400/0338%20-%20Counting%20Bits.py) |
 | [0389 - Find the Difference](https://leetcode.com/problems/find-the-difference/) | Easy | 异或 | [○](./Rust/src/0301%20~%200400/0389%20-%20Find%20the%20Difference.rs) | [○](./Python3/src/0301%20~%200400/0389%20-%20Find%20the%20Difference.py) |
+| [0392 - Is Subsequence](https://leetcode.com/problems/is-subsequence/) | Easy | 双指针 | [√](./Rust/src/0301%20~%200400/0392%20-%20Is%20Subsequence.rs) | [√](./Python3/src/0301%20~%200400/0392%20-%20Is%20Subsequence.py) |
 </details>
 
 <details>
