@@ -317,9 +317,10 @@ LeetCode AC代码（附思路、注释）
 <details>
 <summary>0701 ~ 0800</summary>
 
-| 题目 | 难度 | 思路 | Rust |
-| ------ | ------ | ------ | ------ |
+| 题目 | 难度 | 思路 | Rust | Python3
+| ------ | ------ | ------ | ------ | ------ |
 | [0701 - Insert into a Binary Search Tree](https://leetcode.com/problems/insert-into-a-binary-search-tree/) | Medium | 递归 | [√](./Rust/src/0701%20~%200800/0701%20-%20Insert%20into%20a%20Binary%20Search%20Tree.rs) |
+| [0799 - Champagne Tower](https://leetcode.com/problems/champagne-tower/) | Medium | DP | [●](./Rust/src/0701%20~%200800/0799%20-%20Champagne%20Tower.rs) | [●](./Python3/src/0701%20~%200800/0799%20-%20Champagne%20Tower.py) |
 </details>
 
 <details>
