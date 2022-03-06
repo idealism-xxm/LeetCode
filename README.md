@@ -367,10 +367,11 @@ LeetCode AC代码（附思路、注释）
 <details>
 <summary>1301 ~ 1400</summary>
 
-| 题目 | 难度 | 思路 | Rust |
-| ------ | ------ | ------ | ------ |
+| 题目 | 难度 | 思路 | Rust | Python3
+| ------ | ------ | ------ | ------ | ------ |
 | [1305 - All Elements in Two Binary Search Trees](https://leetcode.com/problems/all-elements-in-two-binary-search-trees/) | Medium | 递归 + 中序遍历 | [√](./Rust/src/1301%20~%201400/1305%20-%20All%20Elements%20in%20Two%20Binary%20Search%20Trees.rs) |
 | [1345 - Jump Game IV](https://leetcode.com/problems/jump-game-iv/) | Hard | BFS | [√](./Rust/src/1301%20~%201400/1345%20-%20Jump%20Game%20IV.rs) |
+| [1359 - Count All Valid Pickup and Delivery Options](https://leetcode.com/problems/count-all-valid-pickup-and-delivery-options/) | Hard | 排列组合 | [√](./Rust/src/1301%20~%201400/1359%20-%20Count%20All%20Valid%20Pickup%20and%20Delivery%20Options.rs) | [√](./Python3/src/1301%20~%201400/1359%20-%20Count%20All%20Valid%20Pickup%20and%20Delivery%20Options.py) |
 </details>
 
 <details>
