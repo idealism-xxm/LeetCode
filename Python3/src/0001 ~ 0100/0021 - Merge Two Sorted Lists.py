@@ -81,7 +81,7 @@ class Solution:
             # 则将 list1 直接放在 tail 后面
             tail.next = list1
         else:
-            # 如果 list1 没有结点，表明 list2 已遍历完成，
+            # 如果 list1 没有结点，表明 list1 已遍历完成，
             # 则将 list2 直接放在 tail 后面
             tail.next = list2
 
