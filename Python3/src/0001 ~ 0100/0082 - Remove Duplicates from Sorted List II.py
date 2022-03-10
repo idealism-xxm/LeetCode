@@ -31,7 +31,7 @@
 #		使用 pre 记录当前结点 cur 的前一个结点，
 #       并用 is_pre_duplicated 记录前一个结点的值 pre.val 是否重复。
 #
-#      当原始链表还有结点时，不断循环处理：
+#       当原始链表还有结点时，不断循环处理：
 #           1. cur.val == pre.val: 前一个结点的值必定重复，
 #               标记 is_pre_duplicated = true
 #           2. cur.val != pre.val: 如果此时 is_pre_duplicated 是 false ，
