@@ -72,7 +72,7 @@ LeetCode AC代码（附思路、注释）
 | [0058 - Length of Last Word](https://leetcode.com/problems/length-of-last-word/) | Easy | 模拟 | [√](./Go/src/0001%20~%200100/0058%20-%20Length%20of%20Last%20Word.go) |
 | [0059 - Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii/) | Medium | 模拟 | [√](./Go/src/0001%20~%200100/0059%20-%20Spiral%20Matrix%20II.go) |
 | [0060 - Permutation Sequence](https://leetcode.com/problems/permutation-sequence/) | Medium | 模拟 | [√](./Go/src/0001%20~%200100/0060%20-%20Permutation%20Sequence.go) |
-| [0061 - Rotate List](https://leetcode.com/problems/rotate-list/) | Medium | 双指针 | [√](./Go/src/0001%20~%200100/0061%20-%20Rotate%20List.go) |
+| [0061 - Rotate List](https://leetcode.com/problems/rotate-list/) | Medium | 双指针 | [√](./Go/src/0001%20~%200100/0061%20-%20Rotate%20List.go) | [√](./Python3/src/0001%20~%200100/0061%20-%20Rotate%20List.py) | [√](./Rust/src/0001%20~%200100/0061%20-%20Rotate%20List.rs) |
 | [0062 - Unique Paths](https://leetcode.com/problems/unique-paths/) | Medium | DP | [√](./Go/src/0001%20~%200100/0062%20-%20Unique%20Paths.go) |
 | [0063 - Unique Paths II](https://leetcode.com/problems/unique-paths-ii/) | Medium | DP | [√](./Go/src/0001%20~%200100/0063%20-%20Unique%20Paths%20II.go) |
 | [0064 - Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/) | Medium | DP | [√](./Go/src/0001%20~%200100/0064%20-%20Minimum%20Path%20Sum.go) |
