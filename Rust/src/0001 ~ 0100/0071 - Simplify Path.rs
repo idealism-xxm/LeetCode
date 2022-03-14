@@ -8,10 +8,12 @@
 //          4. 路径仅包含从根目录到目标文件或目录的路径上的目录
 //              （即不含 '.' 或 '..' ）
 
+
 // 数据限制：
 //  1 <= path.length <= 3000
 //  路径仅有英文字母、数字、 '.' 、 '/' 和 '-' 组成
 //  路径是一个合法的 Unix 绝对路径
+
 
 // 输入： path = "/home/"
 // 输出： "/home"
@@ -27,6 +29,7 @@
 
 // 输入： path = "/a/./b/../../c/"
 // 输出： "/c"
+
 
 // 思路： 模拟
 //
@@ -56,34 +59,37 @@
 //          1. 需要记录 path 中的目录，最差情况下有 O(n) 级目录
 
 
-func simplifyPath(path string) string {
-	// 记录规范路径的目录列表，
-	// 初始放入空串 "" ，方便最后拼接时在最前面有 "/"
-	result := []string{""}
-	// 将 path 用 '/' 划分成多个部分，并遍历
-	for _, part := range strings.Split(path, "/") {
-		// 根据 part 的值决定处理逻辑
-		if part == "." || part == "" {
-			// 如果是 "." ，则表明当前目录，无需处理
-			// 如果是 "" ，则表明有连续多个 '/' ，无需处理
-		} else if part == ".." {
-			// 如果是 "..": 则表明父目录，需要往上一层
-			// 注意只有非根目录才能往上一层
-			if len(result) > 1 {
-				result = result[:len(result)-1]
-			}
-		} else {
-			// 其他情况是一个合法的目录名，直接放入即可
-			result = append(result, part)
-		}
-	}
+impl Solution {
+    pub fn simplify_path(path: String) -> String {
+        // 记录规范路径的目录列表，
+        // 初始放入空串 "" ，方便最后拼接时在最前面有 "/"
+        let mut result = vec![""];
+        // 将 path 用 '/' 划分成多个部分，并遍历
+        for part in path.split('/') {
+            // 根据 part 的值决定处理逻辑
+            match part {
+                // 如果是 "." ，则表明当前目录，无需处理
+                // 如果是 "" ，则表明有连续多个 '/' ，无需处理
+                "." | "" => {},
+                // 如果是 "..": 则表明父目录，需要往上一层
+                ".." => {
+                    // 注意只有非根目录才能往上一层
+                    if result.len() > 1 {
+                        result.pop();
+                    }
+                },
+                // 其他情况是一个合法的目录名，直接放入即可
+                _ => result.push(part),
+            }
+        }
 
-	if len(result) == 1 {
-		// 如果 result 只有一个元素，那么必定是 "" ，
-		// 则说明是根目录 "/" ，直接返回即可
-		return "/"
-	} else {
-		// 如果 result 不止一个元素，那么需要用 "/" 拼接各级目录
-		return strings.Join(result, "/")
-	}
+        if result.len() == 1 {
+            // 如果 result 只有一个元素，那么必定是 "" ，
+            // 则说明是根目录 "/" ，直接返回即可
+            "/".to_string()
+        } else {
+            // 如果 result 不止一个元素，那么需要用 "/" 拼接各级目录
+            result.join("/")
+        }
+    }
 }

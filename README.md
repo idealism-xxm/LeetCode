@@ -82,14 +82,14 @@ LeetCode AC代码（附思路、注释）
 | [0068 - Text Justification](https://leetcode.com/problems/text-justification/) | Hard | 模拟 | [√](./Go/src/0001%20~%200100/0068%20-%20Text%20Justification.go) |
 | [0069 - Sqrt(x)](https://leetcode.com/problems/sqrtx/) | Easy | 二分 | [√](./Go/src/0001%20~%200100/0069%20-%20Sqrt(x).go) |
 | [0070 - Climbing Stairs.go](https://leetcode.com/problems/climbing-stairs/) | Easy | DP | [√](./Go/src/0001%20~%200100/0070%20-%20Climbing%20Stairs.go) |
-| [0071 - Simplify Path](https://leetcode.com/problems/simplify-path/) | Medium | 模拟 | [√](./Go/src/0001%20~%200100/0071%20-%20Simplify%20Path.go) |
+| [0071 - Simplify Path](https://leetcode.com/problems/simplify-path/) | Medium | 模拟 | [√](./Go/src/0001%20~%200100/0071%20-%20Simplify%20Path.go) | [√](./Python3/src/0001%20~%200100/0071%20-%20Simplify%20Path.py) | [√](./Rust/src/0001%20~%200100/0071%20-%20Simplify%20Path.rs) |
 | [0072 - Edit Distance.go](https://leetcode.com/problems/edit-distance/) | Hard | DP | [√](./Go/src/0001%20~%200100/0072%20-%20Edit%20Distance.go) |
 | [0073 - Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/) | Medium | 模拟 | [●](./Go/src/0001%20~%200100/0073%20-%20Set%20Matrix%20Zeroes.go) |
 | [0074 - Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/) | Medium | 二分 | [√](./Go/src/0001%20~%200100/0074%20-%20Search%20a%202D%20Matrix.go) |
 | [0075 - Sort Colors](https://leetcode.com/problems/sort-colors/) | Medium | 计数 &#124; 三路快排 | [√ &#124; ●](./Go/src/0001%20~%200100/0075%20-%20Sort%20Colors.go) |
 | [0076 - Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/) | Medium | 双指针 | [√](./Go/src/0001%20~%200100/0076%20-%20Minimum%20Window%20Substring.go) |
 | [0077 - Combinations](https://leetcode.com/problems/combinations/) | Medium | 递归 | [√](./Go/src/0001%20~%200100/0077%20-%20Combinations.go) |
-| [0078 - Subsets](https://leetcode.com/problems/subsets/) | Medium | 回溯 | [√](./Go/src/0001%20~%200100/0078%20-%20Subsets.go) | | | | [√](./Rust/src/0001%20~%200100/0078%20-%20Subsets.rs) |
+| [0078 - Subsets](https://leetcode.com/problems/subsets/) | Medium | 回溯 | [√](./Go/src/0001%20~%200100/0078%20-%20Subsets.go) | | [√](./Rust/src/0001%20~%200100/0078%20-%20Subsets.rs) |
 | [0079 - Word Search](https://leetcode.com/problems/word-search/) | Medium | 递归 | [√](./Go/src/0001%20~%200100/0079%20-%20Word%20Search.go) |
 | [0080 - Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/) | Medium | 双指针 | [√](./Go/src/0001%20~%200100/0080%20-%20Remove%20Duplicates%20from%20Sorted%20Array%20II.go) | | [√](./Rust/src/0001%20~%200100/0080%20-%20Remove%20Duplicates%20from%20Sorted%20Array%20II.rs)
 | [0081 - Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/) | Medium | 一次二分 | [√](./Go/src/0001%20~%200100/0081%20-%20Search%20in%20Rotated%20Sorted%20Array%20II.go) |
