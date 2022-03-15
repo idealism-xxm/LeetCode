@@ -358,8 +358,9 @@ LeetCode AC代码（附思路、注释）
 <details>
 <summary>1201 ~ 1300</summary>
 
-| 题目 | 难度 | 思路 | Rust | Python3 |
-| ------ | ------ | ------ | ------ | ------ |
+| 题目 | 难度 | 思路 | Rust | Python3 | Go |
+| ------ | ------ | ------ | ------ | ------ | ------ |
+| [1249 - Minimum Remove to Make Valid Parentheses](https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/) | Medium | 栈 | [√](./Rust/src/1201%20~%201300/1249%20-%20Minimum%20Remove%20to%20Make%20Valid%20Parentheses.rs) | [√](./Python3/src/1201%20~%201300/1249%20-%20Minimum%20Remove%20to%20Make%20Valid%20Parentheses.py) | [√](./Go/src/1201%20~%201300/1249%20-%20Minimum%20Remove%20to%20Make%20Valid%20Parentheses.go) |
 | [1288 - Remove Covered Intervals](https://leetcode.com/problems/remove-covered-intervals/) | Medium | 贪心 + 排序 | [√](./Rust/src/1201%20~%201300/1288%20-%20Remove%20Covered%20Intervals.rs) | [√](./Python3/src/1201%20~%201300/1288%20-%20Remove%20Covered%20Intervals.py) |
 | [1291 - Sequential Digits](https://leetcode.com/problems/sequential-digits/) | Medium | BFS | [√](./Rust/src/1201%20~%201300/1291%20-%20Sequential%20Digits.rs) |
 </details>
