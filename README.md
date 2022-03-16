@@ -337,9 +337,10 @@ LeetCode AC代码（附思路、注释）
 <details>
 <summary>0901 ~ 1000</summary>
 
-| 题目 | 难度 | 思路 | Rust |
-| ------ | ------ | ------ | ------ |
+| 题目 | 难度 | 思路 | Rust | Python3 | Go |
+| ------ | ------ | ------ | ------ | ------ | ------ |
 | [0941 - Valid Mountain Array](https://leetcode.com/problems/valid-mountain-array/) | Easy | 模拟 | [√](./Rust/src/0901%20~%201000/0941%20-%20Valid%20Mountain%20Array.rs) |
+| [0946 - Validate Stack Sequences](https://leetcode.com/problems/validate-stack-sequences/) | Medium | 栈 | [√](./Rust/src/0901%20~%201000/0946%20-%20Validate%20Stack%20Sequences.rs) | [√](./Python3/src/0901%20~%201000/0946%20-%20Validate%20Stack%20Sequences.py) | [√](./Go/src/0901%20~%201000/0946%20-%20Validate%20Stack%20Sequences.go) |
 | [0997 - Find the Town Judge](https://leetcode.com/problems/find-the-town-judge/) | Easy | 模拟 | [√](./Rust/src/0901%20~%201000/0997%20-%20Find%20the%20Town%20Judge.rs) |
 </details>
 
