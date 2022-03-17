@@ -43,7 +43,7 @@
 //		时间复杂度： O(n)
 //			1. 需要遍历链表中的全部 O(n) 个结点
 //		空间复杂度： O(n)
-//			1. 需要对拷贝链表中的全部 O(n) 个结点
+//			1. 需要存储拷贝链表中的全部 O(n) 个结点
 //			2. 需要维护一个 O(n) 的 Map 来记录已经拷贝过的结点
 
 /**
@@ -89,4 +89,105 @@ func copyRandomList(head *Node) *Node {
 	}
 
 	return dfs(head)
+}
+
+
+// 思路2： 三次迭代
+//
+//   	在思路 1 中，我们使用了 Map 记录了原始结点对应的克隆结点，
+//      如果不使用 Map ，那似乎就没有很好的方法处理了。
+//
+//      看了讨论区后，发现可以充分利用链表的特性，
+//      使用三次迭代处理，这样就可以避免使用 Map 了。
+//
+//      1. 第一次迭代，先对原链表的每个结点都进行克隆，
+//       	并将克隆结点 cloned 插入到原结点 origin 后面。
+//
+//          现在链表的变为 A -> a -> B -> b ...  的形式，
+//          （其中大写字母代表原结点 origin ，小写字母代表对应的克隆结点 cloned ）
+//          这样只要找到了原结点 origin ，就能找到对应的克隆结点 cloned = origin.Next
+//
+//      2. 第二次迭代，将克隆链表中的每个结点的 random ，
+//          指向对应的克隆结点 random.Next 。
+//
+//      3. 第三次迭代，先保存克隆链表的头结点 clonedHead = head.next 。
+//          然后将原链表和克隆链表分开，即复原原链表，并建立克隆链表。
+//
+//
+//		时间复杂度： O(n)
+//			1. 需要遍历链表中的全部 O(n) 个结点
+//		空间复杂度： O(n)
+//			1. 需要存储拷贝链表中的全部 O(n) 个结点
+
+
+/**
+ * Definition for a Node.
+ * type Node struct {
+ *     Val int
+ *     Next *Node
+ *     Random *Node
+ * }
+ */
+
+ func copyRandomList(head *Node) *Node {
+	// 如果原链表为空，则直接返回即可
+	if head == nil {
+		return nil
+	}
+
+	// 第一次迭代，为原链表中的每个结点创建一个克隆结点，并插入到原结点之后。
+	origin := head
+	// 如果原链表还有结点，那么继续克隆
+	for ; origin != nil; {
+		// 克隆当前结点
+		cloned  := &Node{Val: origin.Val, Next: origin.Next, Random: origin.Random}
+		// 将克隆结点 cloned 插入到当前结点 origin 之后
+		origin.Next = cloned
+		// 移动至下一个原始结点
+		origin = cloned.Next
+	}
+	
+	// 现在链表的变为 A -> a -> B -> b ...  的形式，
+	// （其中大写字母代表原结点 origin ，小写字母代表对应的克隆结点 cloned ）
+	// 这样只要找到了原结点 origin ，就能找到对应的克隆结点 cloned = origin.next
+
+	// 第二次迭代，将克隆链表中的每个结点的 random 指向对应的克隆结点 random.next
+	cloned := head.Next
+	// 如果克隆链表还有结点，那么继续处理其 random
+	for ; cloned != nil; {
+		// 将克隆结点的 random 指向对应的克隆结点 random.next 。
+		// 注意 random 不为空时，才有对应的克隆结点
+		if cloned.Random != nil {
+			cloned.Random = cloned.Random.Next
+		}
+		// 移动至下一个原结点
+		cloned = cloned.Next
+		// 如果还有原结点，则移动至对应的克隆结点
+		if cloned != nil {
+			cloned = cloned.Next
+		}
+	}
+
+	// 记录克隆链表的头结点，拆分完成后返回
+	clonedHead := head.Next
+	// 第三次迭代，将原链表和克隆链表分开，即复原原链表，并建立克隆链表
+	origin = head
+	cloned = clonedHead
+	// 如果原链表还有结点，那么继续进行拆分
+	for ; origin != nil; {
+		// 将原结点的 next 指向下一个原结点
+		origin.Next = origin.Next.Next
+		// 如果还有原结点，则将克隆结点的 next 指向下一个克隆结点
+		if cloned.Next != nil {
+			cloned.Next = cloned.Next.Next
+		}
+
+		// 原结点移动至下一个原结点
+		origin = origin.Next
+		// 克隆结点移动至下一个克隆结点
+		cloned = cloned.Next
+	}
+
+	// 返回克隆链表的头结点
+	return clonedHead
 }

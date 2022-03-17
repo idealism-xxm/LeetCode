@@ -43,7 +43,7 @@
 #		时间复杂度： O(n)
 #			1. 需要遍历链表中的全部 O(n) 个结点
 #		空间复杂度： O(n)
-#			1. 需要对拷贝链表中的全部 O(n) 个结点
+#			1. 需要存储拷贝链表中的全部 O(n) 个结点
 #			2. 需要维护一个 O(n) 的 Map 来记录已经拷贝过的结点
 
 
@@ -55,6 +55,9 @@ class Node:
         self.next = next
         self.random = random
 """
+
+from typing import Optional
+
 
 class Solution:
     def copyRandomList(self, head: 'Optional[Node]') -> 'Optional[Node]':
@@ -86,3 +89,97 @@ class Solution:
             return cloned
 
         return dfs(head)
+
+
+# 思路2： 三次迭代
+#
+#      	在思路 1 中，我们使用了 Map 记录了原始结点对应的克隆结点，
+#       如果不使用 Map ，那似乎就没有很好的方法处理了。
+#
+#       看了讨论区后，发现可以充分利用链表的特性，
+#       使用三次迭代处理，这样就可以避免使用 Map 了。
+#
+#       1. 第一次迭代，先对原链表的每个结点都进行克隆，
+#           并将克隆结点 cloned 插入到原结点 origin 后面。
+#
+#           现在链表的变为 A -> a -> B -> b ...  的形式，
+#           （其中大写字母代表原结点 origin ，小写字母代表对应的克隆结点 cloned ）
+#           这样只要找到了原结点 origin ，就能找到对应的克隆结点 cloned = origin.next
+#
+#       2. 第二次迭代，将克隆链表中的每个结点的 random ，
+#           指向对应的克隆结点 random.next 。
+#
+#       3. 第三次迭代，先保存克隆链表的头结点 cloned_head = head.next 。
+#           然后将原链表和克隆链表分开，即复原原链表，并建立克隆链表。
+#
+#
+#		时间复杂度： O(n)
+#			1. 需要遍历链表中的全部 O(n) 个结点
+#		空间复杂度： O(n)
+#			1. 需要存储拷贝链表中的全部 O(n) 个结点
+
+
+"""
+# Definition for a Node.
+class Node:
+    def __init__(self, x: int, next: 'Node' = None, random: 'Node' = None):
+        self.val = int(x)
+        self.next = next
+        self.random = random
+"""
+
+class Solution:
+    def copyRandomList(self, head: 'Optional[Node]') -> 'Optional[Node]':
+        # 如果原链表为空，则直接返回即可
+        if not head:
+            return None
+
+        # 第一次迭代，为原链表中的每个结点创建一个克隆结点，并插入到原结点之后。
+        origin: Optional[Node] = head
+        # 如果原链表还有结点，那么继续克隆
+        while origin:
+            # 克隆当前结点
+            cloned: Node = Node(origin.val, origin.next, origin.random)
+            # 将克隆结点 cloned 插入到当前结点 origin 之后
+            origin.next = cloned
+            # 移动至下一个原始结点
+            origin = cloned.next
+        
+        # 现在链表的变为 A -> a -> B -> b ...  的形式，
+        # （其中大写字母代表原结点 origin ，小写字母代表对应的克隆结点 cloned ）
+        # 这样只要找到了原结点 origin ，就能找到对应的克隆结点 cloned = origin.next
+
+        # 第二次迭代，将克隆链表中的每个结点的 random 指向对应的克隆结点 random.next
+        cloned: Optional[Node] = head.next
+        # 如果克隆链表还有结点，那么继续处理其 random
+        while cloned:
+            # 将克隆结点的 random 指向对应的克隆结点 random.next 。
+            # 注意 random 不为空时，才有对应的克隆结点
+            if cloned.random:
+                cloned.random = cloned.random.next
+            # 移动至下一个原结点
+            cloned = cloned.next
+            # 如果还有原结点，则移动至对应的克隆结点
+            if cloned:
+                cloned = cloned.next
+
+        # 记录克隆链表的头结点，拆分完成后返回
+        cloned_head: Optional[Node] = head.next
+        # 第三次迭代，将原链表和克隆链表分开，即复原原链表，并建立克隆链表
+        origin: Optional[Node] = head
+        cloned: Optional[Node] = cloned_head
+        # 如果原链表还有结点，那么继续进行拆分
+        while origin:
+            # 将原结点的 next 指向下一个原结点
+            origin.next = origin.next.next
+            # 如果还有原结点，则将克隆结点的 next 指向下一个克隆结点
+            if cloned.next:
+                cloned.next = cloned.next.next
+
+            # 原结点移动至下一个原结点
+            origin = origin.next
+            # 克隆结点移动至下一个克隆结点
+            cloned = cloned.next
+
+        # 返回克隆链表的头结点
+        return cloned_head
