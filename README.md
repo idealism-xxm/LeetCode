@@ -328,10 +328,11 @@ LeetCode AC代码（附思路、注释）
 <details>
 <summary>0801 ~ 0900</summary>
 
-| 题目 | 难度 | 思路 | Rust | Python3 |
-| ------ | ------ | ------ | ------ | ------ |
+| 题目 | 难度 | 思路 | Rust | Python3 | Go |
+| ------ | ------ | ------ | ------ | ------ | ------ |
 | [0847 - Shortest Path Visiting All Nodes](https://leetcode.com/problems/shortest-path-visiting-all-nodes/) | Hard | BFS + 状态压缩 | [√](./Rust/src/0801%20~%200900/0847%20-%20Shortest%20Path%20Visiting%20All%20Nodes.rs) | [√](./Python3/src/0801%20~%200900/0847%20-%20Shortest%20Path%20Visiting%20All%20Nodes.py) |
 | [0849 - Maximize Distance to Closest Person](https://leetcode.com/problems/maximize-distance-to-closest-person/) | Medium | 模拟 | [√](./Rust/src/0801%20~%200900/0849%20-%20Maximize%20Distance%20to%20Closest%20Person.rs) |
+| [0856 - Score of Parentheses](https://leetcode.com/problems/shortest-path-visiting-all-nodes/) | Medium | 栈 | [●](./Rust/src/0801%20~%200900/0856%20-%20Score%20of%20Parentheses.rs) | [●](./Python3/src/0801%20~%200900/0856%20-%20Score%20of%20Parentheses.py) | [●](./Go/src/0801%20~%200900/0856%20-%20Score%20of%20Parentheses.go) |
 </details>
 
 <details>
