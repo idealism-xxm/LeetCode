@@ -390,8 +390,9 @@ LeetCode AC代码（附思路、注释）
 <details>
 <summary>1601 ~ 1700</summary>
 
-| 题目 | 难度 | 思路 | Rust |
-| ------ | ------ | ------ | ------ |
+| 题目 | 难度 | 思路 | Rust | Python3 | Go |
+| ------ | ------ | ------ | ------ | ------ | ------ |
+| [1663 - Smallest String With A Given Numeric Value](https://leetcode.com/problems/smallest-string-with-a-given-numeric-value/) | Medium | 贪心 | [√](./Rust/src/1601%20~%201700/1663%20-%20Smallest%20String%20With%20A%20Given%20Numeric%20Value.rs) | [√](./Python3/src/1601%20~%201700/1663%20-%20Smallest%20String%20With%20A%20Given%20Numeric%20Value.py) | [√](./Go/src/1601%20~%201700/1663%20-%20Smallest%20String%20With%20A%20Given%20Numeric%20Value.go) |
 | [1672 - Richest Customer Wealth](https://leetcode.com/problems/richest-customer-wealth/) | Easy | 模拟 | [√](./Rust/src/1601%20~%201700/1672%20-%20Richest%20Customer%20Wealth.rs) |
 | [1675 - Minimize Deviation in Array](https://leetcode-cn.com/problems/minimize-deviation-in-array/) | Hard | 贪心 + 优先队列（堆） | [●](./Rust/src/1601%20~%201700/1675%20-%20Minimize%20Deviation%20in%20Array.rs) |
 </details>
