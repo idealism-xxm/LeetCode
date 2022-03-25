@@ -357,6 +357,7 @@ LeetCode AC代码（附思路、注释）
 | [1009 - Complement of Base 10 Integer](https://leetcode.com/problems/complement-of-base-10-integer/) | Easy | 位运算 | [√](./Rust/src/1001%20~%201100/1009%20-%20Complement%20of%20Base%2010%20Integer.rs) |
 | [1010 - Pairs of Songs With Total Durations Divisible by 60](https://leetcode.com/problems/pairs-of-songs-with-total-durations-divisible-by-60/) | Easy | 统计 | [√](./Rust/src/1001%20~%201100/1010%20-%20Pairs%20of%20Songs%20With%20Total%20Durations%20Divisible%20by%2060.rs) |
 | [1022 - Sum of Root To Leaf Binary Numbers](https://leetcode.com/problems/sum-of-root-to-leaf-binary-numbers/) | Easy | DFS | [√](./Rust/src/1001%20~%201100/1022%20-%20Sum%20of%20Root%20To%20Leaf%20Binary%20Numbers.rs) | [√](./Python3/src/1001%20~%201100/1022%20-%20Sum%20of%20Root%20To%20Leaf%20Binary%20Numbers.py) |
+| [1029 - Two City Scheduling](https://leetcode.com/problems/two-city-scheduling/) | Medium | 贪心 + 排序 | [√](./Rust/src/1001%20~%201100/1029%20-%20Two%20City%20Scheduling.rs) | [√](./Python3/src/1001%20~%201100/1029%20-%20Two%20City%20Scheduling.py) | [√](./Go/src/1001%20~%201100/1029%20-%20Two%20City%20Scheduling.go) |
 | [1041 - Robot Bounded In Circle](https://leetcode.com/problems/robot-bounded-in-circle/) | Medium | 模拟 | [√](./Rust/src/1001%20~%201100/1041%20-%20Robot%20Bounded%20In%20Circle.rs) | [√](./Python3/src/1001%20~%201100/1041%20-%20Robot%20Bounded%20In%20Circle.py) |
 | [1094 - Car Pooling](https://leetcode.com/problems/car-pooling/) | Medium | 模拟 | [√](./Rust/src/1001%20~%201100/1094%20-%20Car%20Pooling.rs) |
 </details>
