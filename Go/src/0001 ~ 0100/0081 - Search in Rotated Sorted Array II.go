@@ -1,89 +1,106 @@
 // 链接：https://leetcode.com/problems/search-in-rotated-sorted-array-ii/
-// 题意：给定一个升序的有重复数字的整型数组，将后面一的部分（不清楚有多少数）放到前面，
-//		判断指定的数是否在数组内？
+// 题意：给定一个升序的有重复数字的整型数组 nums ，
+//      将后面一部分（不清楚有多少数）放到前面，
+//		判断指定的数 target 是否在数组内？
 
-// 输入：nums = [2,5,6,0,0,1,2], target = 0
-// 输出：true
 
-// 输入：nums = [2,5,6,0,0,1,2], target = 3
-// 输出：false
+// 数据限制：
+//  1 <= nums.length <= 5000
+//  -(10 ^ 4) <= nums[i] <= 10 ^ 4
+//  nums 确保在某个点旋转
+//  -(10 ^ 4) <= target <= 10 ^ 4
 
-// 思路：一次二分
-//	大部分情况下和 0033 题是一样的，由于多了重复数字，
-//	所以最差情况下需要 O(n) 的时间复杂度，因为无法判断
-//  在每次确定起点（最小值）的区间后后，判断 目标数的相应区间
-//  1. nums[l] > nums[mid] -> 起点（最小值）在左边区间（不包括起点为区间开始点）：
-//      (1) 目标值在右边区间数的范围内：l = mid + 1 （因为右边区间的数是连续的，所以很好比较）
-//      (2) 否则认为目标数在左边区间：  r = mid - 1
-//  2. nums[mid] > nums[r] -> 起点（最小值）在右边区间：
-//      (1) 目标值在左边区间数的范围内：r = mid - 1 （因为左边区间的数是连续的，所以很好比较）
-//      (2) 否则认为目标数在左边区间：  l = mid + 1
-//	3. 上面两个都不满足，则有：nums[l] <= nums[mid] <= nums[r] ，
-//		此时又分为两种种情况：
-//		(1) nums[l] == nums[mid] == nums[r] ：
-//			则无法判断起点（最小值）在哪个区间，
-//			需要遍历左边区间
-//			(a) 若存在，则直接返回 true
-//			(b) 若不存在，且左边区间的数不全是 nums[l] ：
-//				则起点在左边区间，右边区间的数都是 nums[l] ，直接返回 false
-//			(c) 若不存在，且左边区间的数都是 nums[l] ：
-//				则可认为起点在右边区间，对右边区间继续二分
-//		(2) nums[l] < nums[mid] || nums[mid] < nums[r] ：
-//			直接判断是否在两边的区间即可
-//			(a) 目标值在左边区间数的范围内： r = mid - 1
-//			(b) 目标值在右边区间数的范围内： l = mid + 1
-//			(c) 目标值均不在两边区间范围内，直接返回 false
+
+// 输入： nums = [2,5,6,0,0,1,2], target = 0
+// 输出： true
+// 解释： 0 在数组 nums 中
+
+// 输入： nums = [2,5,6,0,0,1,2], target = 3
+// 输出： false
+// 解释： 3 不在数组 nums 中
+
+
+// 思路： 二分
 //
-//  时间复杂度：平均 O(logn) / 最差 O(n) ，空间复杂度：O(1)
+//      大部分情况下和 LeetCode - 0033 是一样的，
+//      由于多了重复数字，会存在无法判断的情况，
+//      所以最差情况下的时间复杂度为 O(n) 。
+//
+//      在每次确定起点（最小值）的区间后，判断 target 所在的区间即可：
+//          1. nums[l] == nums[mid] == nums[r]:
+//              无法区分起点（最小值）的区间，也无法知道 target 在哪个区间，
+//              只能排除 nums[l] 和 nums[r] 均不为 target 这种情况，
+//              令 l = l + 1, r = r - 1
+//
+//          2. nums[l] <= nums[mid]: 左边区间是连续的，
+//              所以可以判断 target 是否在 [num[l], num[mid]] 内
+//
+//              (1) num[l] <= target <= nums[mid]:
+//                  target 在左边区间数的范围内，令 r = mid - 1
+//              (2) 其他情况，认为目标数在右边区间，令 l = mid + 1
+//
+//          3. nums[mid] <= nums[r]: 右边区间是连续的，
+//              所以可以判断 target 是否在 [num[mid], num[r]] 内
+//              （注意不可能存在 nums[l] > nums[mid] > nums[r] 这种情况）
+//
+//              (1) num[mid] <= target <= nums[r]:
+//                  target 在右边区间数的范围内，令 l = mid + 1
+//              (2) 其他情况，认为目标数在左边区间，令 r = mid - 1
+//
+//
+//		时间复杂度： 最好 O(logn) | 最差 O(n)
+//          1. 最好情况下，所有分支每次都会排除一半数字，
+//              时间复杂度为 O(logn)
+//          2. 最差情况下，所有数字都一样，并且 target 不在 nums 中，
+//              时间复杂度为 O(n)
+//		空间复杂度： O(1)
+//          1. 只需要使用常数个额外变量
+
 
 func search(nums []int, target int) bool {
-	l, r := 0, len(nums) - 1
-	for ; l <= r; {
+	// 二分区间左边界
+	l := 0
+	// 二分区间右边界（注意必须使用 i32 类型，因为 r 最终可能小于 0 ）
+	r := len(nums) - 1
+	for l <= r {
+		// 计算区间中点下标
 		mid := (l + r) >> 1
+		// 如果区间中点下标对应的数字等于 target ，则直接返回 true
 		if nums[mid] == target {
 			return true
 		}
-		if nums[l] > nums[mid] {  // 起点（最小值）在左边区间
-			if nums[mid] < target && target <= nums[r] {  // 目标数在右边区间
-				l = mid + 1
-			} else {  // 目标数在左边区间
+		if nums[l] == nums[mid] && nums[mid] == nums[r] {
+			// 如果三个点的值都相等，无法区分起点（最小值）的区间，
+			// 也无法知道 target 在哪个区间，
+			// 只能排除 nums[l] 和 nums[r] 均不为 target 这种情况
+			l += 1
+			r -= 1
+		} else if nums[l] <= nums[mid] {
+			// 左边区间是连续的，
+			// 所以可以判断 target 是否在 [num[l], num[mid]] 内
+			if nums[l] <= target && target <= nums[mid] {
+				// target 在左边区间数的范围内，下次查找的区间为 [l, mid - 1]
 				r = mid - 1
-			}
-		} else if nums[mid] > nums[r] {  // 起点（最小值）在右边区间
-			if nums[l] <= target && target < nums[mid] {  // 目标数在左边区间
-				r = mid - 1
-			} else {  // 目标数在右边区间
+			} else {
+				// 其他情况，认为目标数在右边区间，下次查找的区间为 [mid + 1, r]
 				l = mid + 1
 			}
-		} else {  // nums[l] <= nums[mid] <= nums[r]
-			if nums[l] == nums[mid] && nums[mid] == nums[r] {
-				// 则无法判断起点（最小值）在哪个区间，
-				// 遍历左边区间，并记录左边区间的数字是否都一样
-				isAllSame := true
-				for i := l + 1; i < mid; i++ {
-					if nums[i] == target {
-						return true
-					}
-					if nums[i] != nums[l] {
-						isAllSame = false
-					}
-				}
-				// 左边区间不存在目标数字
-				if isAllSame {  // 左边区间数字都一样，认为起点在右边区间，继续进行二分
-					l = mid + 1
-				} else {  // 左边区间存在数字不一样，则起点在左边区间，右边区间数字都一样，直接返回 false
-					return false
-				}
-			} else { // nums[l] < nums[mid] || nums[mid] < nums[r]
-				if nums[l] <= target && target < nums[mid] {  // 目标数在左边区间
-					r = mid - 1
-				} else if nums[mid] < target && target <= nums[r] {   // 目标数在右边区间
-					l = mid + 1
-				} else { // 目标数均不在左右区间，直接返回false
-					return false
-				}
+		} else {
+			// 此时必定是 nums[mid] <= nums[r] ，
+			// 因为不可能存在 nums[l] > nums[mid] > nums[r] 这种情况。
+			//
+			// 则右边区间是连续的，
+			// 所以可以判断 target 是否在 [num[mid], num[r]] 内
+			if nums[mid] <= target && target <= nums[r] {
+				// target 在右边区间数的范围内，下次查找的区间为 [mid + 1, r]
+				l = mid + 1
+			} else {
+				// 其他情况，认为目标数在左边区间，下次查找的区间为 [l, mid - 1]
+				r = mid - 1
 			}
 		}
 	}
+
+	// 此时表明没有找到 target ，返回 false
 	return false
 }
