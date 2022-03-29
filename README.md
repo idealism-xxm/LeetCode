@@ -224,7 +224,7 @@ LeetCode AC代码（附思路、注释）
 <details>
 <summary>0201 ~ 0300</summary>
 
-| 题目 | 难度 | 思路 | Rust | Go | Python3
+| 题目 | 难度 | 思路 | Rust | Go | Python3 |
 | ------ | ------ | ------ | ------ | ------ | ------ |
 | [0201 - Bitwise AND of Numbers Range](https://leetcode.com/problems/bitwise-and-of-numbers-range/) | Medium | 位运算 &#124; 位移 | [√ &#124; ●](./Rust/src/0201%20~%200300/0201%20-%20Bitwise%20AND%20of%20Numbers%20Range.rs) |
 | [0202 - Happy Number](https://leetcode.com/problems/happy-number/) | Easy | 模拟 | [√](./Rust/src/0201%20~%200300/0202%20-%20Happy%20Number.rs) |
@@ -267,6 +267,7 @@ LeetCode AC代码（附思路、注释）
 | [0241 - Different Ways to Add Parentheses](https://leetcode.com/problems/different-ways-to-add-parentheses/) | Medium | 递归 | [√](./Rust/src/0201%20~%200300/0241%20-%20Different%20Ways%20to%20Add%20Parentheses.rs) |
 | [0242 - Valid Anagram](https://leetcode.com/problems/valid-anagram/) | Easy | map | [√](./Rust/src/0201%20~%200300/0242%20-%20Valid%20Anagram.rs) |
 | [0258 - Add Digits](https://leetcode.com/problems/add-digits/) | Easy | 模拟 | [√](./Rust/src/0201%20~%200300/0258%20-%20Add%20Digits.rs) |
+| [0287 - Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) | Medium | 二分 | [●](./Rust/src/0201%20~%200300/0287%20-%20Find%20the%20Duplicate%20Number.rs) | [●](./Go/src/0201%20~%200300/0287%20-%20Find%20the%20Duplicate%20Number.go) | [●](./Python3/src/0201%20~%200300/0287%20-%20Find%20the%20Duplicate%20Number.py) |
 | [0290 - Word Pattern](https://leetcode.com/problems/word-pattern/) | Easy | map | [√](./Rust/src/0201%20~%200300/0290%20-%20Word%20Pattern.rs) |
 </details>
 
