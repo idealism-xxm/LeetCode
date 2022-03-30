@@ -56,34 +56,36 @@
 //          1. 只需要维护常数个额外变量
 
 
-func searchMatrix(matrix [][]int, target int) bool {
-    // 矩阵行数
-    m := len(matrix)
-    // 矩阵列数
-    n := len(matrix[0])
+impl Solution {
+    pub fn search_matrix(matrix: Vec<Vec<i32>>, target: i32) -> bool {
+        // 矩阵行数
+        let mut m = matrix.len();
+        // 矩阵列数
+        let mut n = matrix[0].len();
 
-    // 二分区间左边界初始化为 0
-    l := 0
-    // 二分区间右边界初始化为 m * n - 1
-    r := m * n - 1
-    // 当二分区间至少还存在 2 个数时，继续二分
-    for l < r {
-        // 计算区间中点
-        mid := (l + r) >> 1;
-        if matrix[mid / n][mid % n] < target {
-            // 如果中点对应的数小于 target ，
-            // 那么 target 存在的话，必定在 [mid + 1, r] 内
-            l = mid + 1
-        } else {
-            // 否则认为 target 在 [l, mid] 内
-            // （注意这里不会取到 mid - 1 ，
-            // 因为二分终止条件是 l < r ）
-            r = mid
+        // 二分区间左边界初始化为 0
+        let mut l = 0;
+        // 二分区间右边界初始化为 m * n - 1
+        let mut r = m * n - 1;
+        // 当二分区间至少还存在 2 个数时，继续二分
+        while l < r {
+            // 计算区间中点
+            let mid = (l + r) >> 1;
+            if matrix[mid / n][mid % n] < target {
+                // 如果中点对应的数小于 target ，
+                // 那么 target 存在的话，必定在 [mid + 1, r] 内
+                l = mid + 1;
+            } else {
+                // 否则认为 target 在 [l, mid] 内
+                // （注意这里不会取到 mid - 1 ，
+                // 因为二分终止条件是 l < r ）
+                r = mid;
+            }
         }
-    }
 
-    // 现在 matrix[l / n][l % n] 是大于等于 target 的第一个数，
-    // 只有 matrix[l / n][l % n] == target 时，
-    // target 才存在于矩阵中。
-    return matrix[l / n][l % n] == target
+        // 现在 matrix[l / n][l % n] 是大于等于 target 的第一个数，
+        // 只有 matrix[l / n][l % n] == target 时，
+        // target 才存在于矩阵中。
+        matrix[l / n][l % n] == target
+    }
 }
