@@ -10,6 +10,7 @@
 //  nums 中的数字各不相同且按升序排序
 //  -(10 ^ 4) <= target <= 10 ^ 4
 
+
 // 输入： nums = [1,3,5,6], target = 5
 // 输出： 2
 // 解释： 5 在 nums 中，下标为 2
@@ -32,7 +33,7 @@
 //      找到 nums 中第一个大于等于 target 的数字。
 //
 //      我们定义左闭右闭的二分区间 [l, r] ，
-//      其中 l 为左边界，初始化为 0 ，
+//      其中 l 为左边界，初始化为 0 ， 
 //      r 为右边界，初始化为 nums.length - 1 。
 //
 //      那么只要这个区间 [l, r] 不为空，我们就可以继续循环处理，
@@ -55,35 +56,37 @@
 //          1. 只需要维护常数个额外变量
 
 
-func searchInsert(nums []int, target int) int {
-	// 二分区间的左边界，初始化为 0
-	l := 0
-	// 二分区间的右边界，初始化为 nums.len() - 1
-	r := len(nums) - 1
-	// 当区间不为空时，继续二分
-	// （注意这里取等号是因为我们的区间是左闭右闭区间，
-	// 且收缩 r 时不取到 mid）
-	for l <= r {
-		// 计算区间中点下标
-		mid := (l + r) >> 1
-		if nums[mid] < target {
-			// 如果区间中点的值小于 target ，
-			// 则第一个大于等于 target 的元素
-			// 必定在右边区间 [mid + 1, r] 中
-			l = mid + 1
-		} else {
-			// 如果区间中点的值大于等于 target ，
-			// 则第一个大于等于 target 的元素
-			// 必定在左边区间 [l, mid - 1] 中
-            // （如果此时 mid 指向的元素，
-            //   就是 nums 中第一个大于等于 target 的元素，
-            //   那么在最后 l == r 时，会更新为 l = l + 1 ，
-            //   最终选择到此时的 mid ）
-			r = mid - 1
-		}
-	}
+impl Solution {
+    pub fn search_insert(nums: Vec<i32>, target: i32) -> i32 {
+        // 二分区间的左边界，初始化为 0
+        let mut l = 0;
+        // 二分区间的右边界，初始化为 nums.len() - 1
+        let mut r = nums.len() as i32 - 1;
+        // 当区间不为空时，继续二分
+        // （注意这里取等号是因为我们的区间是左闭右闭区间，
+        // 且收缩 r 时不取到 mid）
+        while l <= r {
+            // 计算区间中点下标
+            let mid = (l + r) >> 1;
+            if nums[mid as usize] < target {
+                // 如果区间中点的值小于 target ，
+                // 则第一个大于等于 target 的元素
+                // 必定在右边区间 [mid + 1, r] 中
+                l = mid + 1;
+            } else {
+                // 如果区间中点的值大于等于 target ，
+                // 则第一个大于等于 target 的元素
+                // 必定在左边区间 [l, mid - 1] 中
+                // （如果此时 mid 指向的元素，
+                //   就是 nums 中第一个大于等于 target 的元素，
+                //   那么在最后 l == r 时，会更新为 l = l + 1 ，
+                //   最终选择到此时的 mid ）
+                r = mid - 1;
+            }
+        }
 
-	// 此时 l 指向 nums 中
-	// 第一个大于等于 target 的元素的下标
-	return l
+        // 此时 l 指向 nums 中
+        // 第一个大于等于 target 的元素的下标
+        l
+    }
 }
