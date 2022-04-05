@@ -47,43 +47,31 @@
 //          1. 只需要维护常数个额外变量
 
 
-func maxArea(height []int) int {
-	// 维护题目所需的最大面积 ans ，初始化为 0
-	ans := 0
-	// 左指针 l ，初始化为 0
-	l := 0
-	// 右指针 r ，初始化为 height.len() - 1
-	r := len(height) - 1
-	// 当矩形底还存在时，继续循环
-	for l < r {
-		// 计算当前矩形的面积
-		area := (r - l) * min(height[l], height[r])
-		// 更新 ans 的最大值
-		ans = max(ans, area)
-		if height[l] <= height[r] {
-			// 如果 height[l] <= height[r] ，
-			// 则 l 向右移动一位，r 不动
-			l += 1
-		} else {
-			// 如果 height[l] > height[r] ，
-			// 则 r 向左移动一位，l 不动
-			r -= 1
-		}
-	}
+impl Solution {
+    pub fn max_area(height: Vec<i32>) -> i32 {
+        // 维护题目所需的最大面积 ans ，初始化为 0
+        let mut ans = 0;
+        // 左指针 l ，初始化为 0
+        let mut l = 0;
+        // 右指针 r ，初始化为 height.len() - 1
+        let mut r = height.len() - 1;
+        // 当矩形底还存在时，继续循环
+        while l < r {
+            // 计算当前矩形的面积
+            let area = (r - l) as i32 * (height[l].min(height[r]));
+            // 更新 ans 的最大值
+            ans = ans.max(area);
+            if height[l] <= height[r] {
+                // 如果 height[l] <= height[r] ，
+                // 则 l 向右移动一位，r 不动
+                l += 1;
+            } else {
+                // 如果 height[l] > height[r] ，
+                // 则 r 向左移动一位，l 不动
+                r -= 1;
+            }
+        }
 
-	return ans
-}
-
-func max(a, b int) int {
-	if a > b {
-		return a
-	}
-	return b
-}
-
-func min(a, b int) int {
-	if a < b {
-		return a
-	}
-	return b
+        ans
+    }
 }
