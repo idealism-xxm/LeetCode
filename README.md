@@ -325,6 +325,7 @@ LeetCode AC代码（附思路、注释）
 | 题目 | 难度 | 思路 | Rust | Python3 | Go |
 | ------ | ------ | ------ | ------ | ------ | ------ |
 | [0701 - Insert into a Binary Search Tree](https://leetcode.com/problems/insert-into-a-binary-search-tree/) | Medium | 递归 | [√](./Rust/src/0701%20~%200800/0701%20-%20Insert%20into%20a%20Binary%20Search%20Tree.rs) |
+| [0703 - Kth Largest Element in a Stream](https://leetcode.com/problems/binary-search/) | Easy | 优先队列（堆） | [√](./Rust/src/0701%20~%200800/0703%20-%20Kth%20Largest%20Element%20in%20a%20Stream.rs) | [√](./Python3/src/0701%20~%200800/0703%20-%20Kth%20Largest%20Element%20in%20a%20Stream.py) | [√](./Go/src/0701%20~%200800/0703%20-%20Kth%20Largest%20Element%20in%20a%20Stream.go) |
 | [0704 - Binary Search](https://leetcode.com/problems/binary-search/) | Easy | 二分 | [√](./Rust/src/0701%20~%200800/0704%20-%20Binary%20Search.rs) | [√](./Python3/src/0701%20~%200800/0704%20-%20Binary%20Search.py) | [√](./Go/src/0701%20~%200800/0704%20-%20Binary%20Search.go) |
 | [0763 - Partition Labels](https://leetcode.com/problems/partition-labels/) | Medium | 贪心 | [√](./Rust/src/0701%20~%200800/0763%20-%20Partition%20Labels.rs) | [√](./Python3/src/0701%20~%200800/0763%20-%20Partition%20Labels.py) | [√](./Go/src/0701%20~%200800/0763%20-%20Partition%20Labels.go) |
 | [0740 - Delete and Earn](https://leetcode.com/problems/champagne-tower/) | Medium | DP + Map | [○](./Rust/src/0701%20~%200800/0740%20-%20Delete%20and%20Earn.rs) | [○](./Python3/src/0701%20~%200800/0740%20-%20Delete%20and%20Earn.py) |

@@ -92,7 +92,7 @@ func (h *IntHeap) Push(x interface{}) {
 // 由于 Pop 会修改切片，所以需要传指针
 func (h *IntHeap) Pop() interface{} {
     n := h.Len()
-    // 最后一个数字是堆顶
+    // 堆顶已被移动到切片最后，方便删除
     x := (*h)[n-1]
     *h = (*h)[0 : n-1]
     return x

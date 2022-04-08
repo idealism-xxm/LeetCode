@@ -153,9 +153,8 @@ func (h *RowInfoHeap) Push(x interface{}) {
 // 由于 Pop 会修改切片，所以需要传指针
 func (h *RowInfoHeap) Pop() interface{} {
 	n := h.Len()
-	// 最后一个元素是最小的
+	// 堆顶已被移动到切片最后，方便删除
 	x := (*h)[n-1]
-	// 移除最小的元素
 	*h = (*h)[0 : n-1]
 	return x
 }
