@@ -318,6 +318,7 @@ LeetCode AC代码（附思路、注释）
 | [0605 - Can Place Flowers](https://leetcode.com/problems/can-place-flowers/) | Easy | 贪心 | [√](./Rust/src/0601%20~%200700/0605%20-%20Can%20Place%20Flowers.rs) |
 | [0662 - Maximum Width of Binary Tree](https://leetcode.com/problems/maximum-width-of-binary-tree/) | Medium | DFS | [√](./Rust/src/0601%20~%200700/0662%20-%20Maximum%20Width%20of%20Binary%20Tree.rs) | [√](./Python3/src/0601%20~%200700/0662%20-%20Maximum%20Width%20of%20Binary%20Tree.py) |
 | [0680 - Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii/) | Easy | 双指针 | [√](./Rust/src/0601%20~%200700/0680%20-%20Valid%20Palindrome%20II.rs) | [√](./Python3/src/0601%20~%200700/0680%20-%20Valid%20Palindrome%20II.py) | [√](./Go/src/0601%20~%200700/0680%20-%20Valid%20Palindrome%20II.go) |
+| [0682 - Baseball Game](https://leetcode.com/problems/baseball-game/) | Easy | 模拟 | [√](./Rust/src/0601%20~%200700/0682%20-%20Baseball%20Game.rs) | [√](./Python3/src/0601%20~%200700/0682%20-%20Baseball%20Game.py) | [√](./Go/src/0601%20~%200700/0682%20-%20Baseball%20Game.go) |
 </details>
 
 <details>
