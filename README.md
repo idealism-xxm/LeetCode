@@ -207,7 +207,7 @@ LeetCode AC代码（附思路、注释）
 | [0186 - Reverse Words in a String II](https://leetcode.com/problems/reverse-words-in-a-string-ii/) | Medium | 遍历 | [√](./Go/src/0101%20~%200200/0186%20-%20Reverse%20Words%20in%20a%20String%20II.go) |
 | [0187 - Repeated DNA Sequences](https://leetcode.com/problems/repeated-dna-sequences/) | Medium | map + 计数 &#124; Rabin-Karp (hash) | [√](./Go/src/0101%20~%200200/0187%20-%20Repeated%20DNA%20Sequences.go) |
 | [0188 - Best Time to Buy and Sell Stock IV](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/) | Hard | DP | [√](./Go/src/0101%20~%200200/0188%20-%20Best%20Time%20to%20Buy%20and%20Sell%20Stock%20IV.go) |
-| [0189 - Rotate Array](https://leetcode.com/problems/rotate-array/) | Easy | 模拟 &#124; GCD &#124; 翻转 | [_ &#124; √ &#124; ●](./Go/src/0101%20~%200200/0189%20-%20Rotate%20Array.go) | | | | [√ &#124; ● &#124; ●](./Rust/src/0101%20~%200200/0189%20-%20Rotate%20Array.rs) |
+| [0189 - Rotate Array](https://leetcode.com/problems/rotate-array/) | Easy | 模拟 &#124; GCD &#124; 三次翻转 | [_ &#124; √ &#124; ●](./Go/src/0101%20~%200200/0189%20-%20Rotate%20Array.go) | | | | [√ &#124; ● &#124; ●](./Rust/src/0101%20~%200200/0189%20-%20Rotate%20Array.rs) | [_ &#124; _ &#124; ●](./Python3/src/0101%20~%200200/0189%20-%20Rotate%20Array.py) |
 | [0190 - Reverse Bits](https://leetcode.com/problems/reverse-bits/) | Easy | 双指针 + 异或 &#124; 分治 + 位运算 | [√ &#124; ●](./Go/src/0101%20~%200200/0190%20-%20Reverse%20Bits.go) |
 | [0191 - Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/) | Easy | 位运算 | [●](./Go/src/0101%20~%200200/0191%20-%20Number%20of%201%20Bits.go) |
 | [0192 - Word Frequency](https://leetcode.com/problems/word-frequency/) | Medium | tr + sort + uniq + awk | | | | [●](./Bash/src/0101%20~%200200/0192%20-%20Word%20Frequency.sh) |
@@ -377,6 +377,7 @@ LeetCode AC代码（附思路、注释）
 | 题目 | 难度 | 思路 | Rust | Python3 | Go |
 | ------ | ------ | ------ | ------ | ------ | ------ |
 | [1249 - Minimum Remove to Make Valid Parentheses](https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/) | Medium | 栈 | [√](./Rust/src/1201%20~%201300/1249%20-%20Minimum%20Remove%20to%20Make%20Valid%20Parentheses.rs) | [√](./Python3/src/1201%20~%201300/1249%20-%20Minimum%20Remove%20to%20Make%20Valid%20Parentheses.py) | [√](./Go/src/1201%20~%201300/1249%20-%20Minimum%20Remove%20to%20Make%20Valid%20Parentheses.go) |
+| [1260 - Shift 2D Grid](https://leetcode.com/problems/shift-2d-grid/) | Easy | 三次翻转 | [√](./Rust/src/1201%20~%201300/1260%20-%20Shift%202D%20Grid.rs) | [√](./Python3/src/1201%20~%201300/1260%20-%20Shift%202D%20Grid.py) | [√](./Go/src/1201%20~%201300/1260%20-%20Shift%202D%20Grid.go) |
 | [1288 - Remove Covered Intervals](https://leetcode.com/problems/remove-covered-intervals/) | Medium | 贪心 + 排序 | [√](./Rust/src/1201%20~%201300/1288%20-%20Remove%20Covered%20Intervals.rs) | [√](./Python3/src/1201%20~%201300/1288%20-%20Remove%20Covered%20Intervals.py) |
 | [1291 - Sequential Digits](https://leetcode.com/problems/sequential-digits/) | Medium | BFS | [√](./Rust/src/1201%20~%201300/1291%20-%20Sequential%20Digits.rs) |
 </details>
