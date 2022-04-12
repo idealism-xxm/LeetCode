@@ -268,6 +268,7 @@ LeetCode AC代码（附思路、注释）
 | [0242 - Valid Anagram](https://leetcode.com/problems/valid-anagram/) | Easy | map | [√](./Rust/src/0201%20~%200300/0242%20-%20Valid%20Anagram.rs) |
 | [0258 - Add Digits](https://leetcode.com/problems/add-digits/) | Easy | 模拟 | [√](./Rust/src/0201%20~%200300/0258%20-%20Add%20Digits.rs) |
 | [0287 - Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) | Medium | 二分 | [●](./Rust/src/0201%20~%200300/0287%20-%20Find%20the%20Duplicate%20Number.rs) | [●](./Go/src/0201%20~%200300/0287%20-%20Find%20the%20Duplicate%20Number.go) | [●](./Python3/src/0201%20~%200300/0287%20-%20Find%20the%20Duplicate%20Number.py) |
+| [0289 - Game of Life](https://leetcode.com/problems/game-of-life/) | Medium | 模拟 + 状态压缩 | [●](./Rust/src/0201%20~%200300/0289%20-%20Game%20of%20Life.rs) | [●](./Go/src/0201%20~%200300/0289%20-%20Game%20of%20Life.go) | [●](./Python3/src/0201%20~%200300/0289%20-%20Game%20of%20Life.py) |
 | [0290 - Word Pattern](https://leetcode.com/problems/word-pattern/) | Easy | map | [√](./Rust/src/0201%20~%200300/0290%20-%20Word%20Pattern.rs) |
 </details>
 
