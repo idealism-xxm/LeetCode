@@ -52,41 +52,41 @@
 
 
 // 4 个方向的行下标改变量
-var DR = [4]int{0, 1, 0, -1}
+static DR: [i32; 4] = [0, 1, 0, -1];
 // 4 个方向的列下标改变量
-var DC = [4]int{1, 0, -1, 0}
+static DC: [i32; 4] = [1, 0, -1, 0];
 
 
-func generateMatrix(n int) [][]int {
-	// 定义 n * n 的结果矩阵，初始化都是 0
-	matrix := make([][]int, n)
-	for i := 0; i < n; i++ {
-		matrix[i] = make([]int, n)
-	}
-	// 定义最开始的行下标和列下标
-	r, c := 0, 0
-	// 定义最开始的方向
-	direction := 0
-	// 遍历要生成的所有数
-	for num, mx := 1, n * n; num <= mx; num++ {
-		// 将当前数字放入到 matrix[r][c] 处
-		matrix[r][c] = num
-		// 计算下一个数字所在位置的可能的行下标和列下标
-		rr := r + DR[direction]
-		cc := c + DC[direction]
-		// 以下两种情况需要右转换方向：
-		//  1. rr 或 cc 越界，此时说明超出了最外层
-		//  2. matrix[rr][cc] 不为 0 ，
-		//      此时说明超出了非最外层
-		if rr < 0 || rr >= n || cc < 0 || cc >= n || matrix[rr][cc] != 0 {
-			// 右转换方向，
-			// 按照 右 -> 下 -> 左 -> 上 的顺序不断循环
-			direction = (direction + 1) % 4
-		}
-		// 计算当前下一个位置的真正行下标和列下标
-		r += DR[direction]
-		c += DC[direction]
-	}
+impl Solution {
+    pub fn generate_matrix(n: i32) -> Vec<Vec<i32>> {
+        let n = n as usize;
+        // 定义 n * n 的结果矩阵，初始化都是 0
+        let mut matrix = vec![vec![0; n]; n];
+        // 定义最开始的行下标和列下标
+        let (mut r, mut c) = (0, 0);
+        // 定义最开始的方向
+        let mut direction = 0;
+        // 遍历要生成的所有数
+        for num in 1..=n*n {
+            // 将当前数字放入到 matrix[r][c] 处
+            matrix[r][c] = num as i32;
+            // 计算下一个数字所在位置的可能的行下标和列下标
+            let rr = r as i32 + DR[direction];
+            let cc = c as i32 + DC[direction];
+            // 以下两种情况需要右转换方向：
+            //  1. rr 或 cc 越界，此时说明超出了最外层
+            //  2. matrix[rr][cc] 不为 0 ，
+            //      此时说明超出了非最外层
+            if rr < 0 || rr >= n as i32 || cc < 0 || cc >= n as i32 || matrix[rr as usize][cc as usize] != 0 {
+                // 右转换方向，
+                // 按照 右 -> 下 -> 左 -> 上 的顺序不断循环
+                direction = (direction + 1) % 4;
+            }
+            // 计算当前下一个位置的真正行下标和列下标
+            r += DR[direction] as usize;
+            c += DC[direction] as usize;
+        }
 
-	return matrix
+        matrix
+    }
 }
