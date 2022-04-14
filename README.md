@@ -320,6 +320,7 @@ LeetCode AC代码（附思路、注释）
 | [0662 - Maximum Width of Binary Tree](https://leetcode.com/problems/maximum-width-of-binary-tree/) | Medium | DFS | [√](./Rust/src/0601%20~%200700/0662%20-%20Maximum%20Width%20of%20Binary%20Tree.rs) | [√](./Python3/src/0601%20~%200700/0662%20-%20Maximum%20Width%20of%20Binary%20Tree.py) |
 | [0680 - Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii/) | Easy | 双指针 | [√](./Rust/src/0601%20~%200700/0680%20-%20Valid%20Palindrome%20II.rs) | [√](./Python3/src/0601%20~%200700/0680%20-%20Valid%20Palindrome%20II.py) | [√](./Go/src/0601%20~%200700/0680%20-%20Valid%20Palindrome%20II.go) |
 | [0682 - Baseball Game](https://leetcode.com/problems/baseball-game/) | Easy | 模拟 | [√](./Rust/src/0601%20~%200700/0682%20-%20Baseball%20Game.rs) | [√](./Python3/src/0601%20~%200700/0682%20-%20Baseball%20Game.py) | [√](./Go/src/0601%20~%200700/0682%20-%20Baseball%20Game.go) |
+| [0700 - Search in a Binary Search Tree](https://leetcode.com/problems/search-in-a-binary-search-tree/) | Easy | 迭代 | [√](./Rust/src/0601%20~%200700/0700%20-%20Search%20in%20a%20Binary%20Search%20Tree.rs) | [√](./Python3/src/0601%20~%200700/0700%20-%20Search%20in%20a%20Binary%20Search%20Tree.py) | [√](./Go/src/0601%20~%200700/0700%20-%20Search%20in%20a%20Binary%20Search%20Tree.go) |
 </details>
 
 <details>
