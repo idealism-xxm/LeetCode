@@ -54,7 +54,7 @@
  *     Right *TreeNode
  * }
  */
- func searchBST(root *TreeNode, val int) *TreeNode {
+func searchBST(root *TreeNode, val int) *TreeNode {
     // 如果当前根结点不为空，则继续处理
     for root != nil {
         if root.Val == val {

@@ -254,7 +254,7 @@ LeetCode AC代码（附思路、注释）
 | [0226 - Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/) | Easy | 递归 | [√](./Rust/src/0201%20~%200300/0226%20-%20Invert%20Binary%20Tree.rs) |
 | [0227 - Basic Calculator II](https://leetcode.com/problems/basic-calculator-ii/) | Medium | 调度场算法 | [√](./Rust/src/0201%20~%200300/0227%20-%20Basic%20Calculator%20II.rs) |
 | [0228 - Summary Ranges](https://leetcode.com/problems/summary-ranges/) | Medium | 双指针 | [√](./Rust/src/0201%20~%200300/0228%20-%20Summary%20Ranges.rs) | | [√](./Python3/src/0201%20~%200300/0228%20-%20Summary%20Ranges.py) |
-| [0230 - Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) | Medium | 递归 | [√](./Rust/src/0201%20~%200300/0230%20-%20Kth%20Smallest%20Element%20in%20a%20BST.rs) |
+| [0230 - Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) | Medium | 递归 | [√](./Rust/src/0201%20~%200300/0230%20-%20Kth%20Smallest%20Element%20in%20a%20BST.rs) | [√](./Go/src/0201%20~%200300/0230%20-%20Kth%20Smallest%20Element%20in%20a%20BST.go) | [√](./Python3/src/0201%20~%200300/0230%20-%20Kth%20Smallest%20Element%20in%20a%20BST.py) |
 | [0231 - Power of Two](https://leetcode-cn.com/problems/power-of-two/) | Easy | 位运算 | [√](./Rust/src/0201%20~%200300/0231%20-%20Power%20of%20Two.rs) |
 | [0232 - Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/) | Easy | push 栈 + pop 栈 | [√](./Rust/src/0201%20~%200300/0232%20-%20Implement%20Queue%20using%20Stacks.rs) |
 | [0233 - Number of Digit One](https://leetcode.com/problems/number-of-digit-one/) | Hard | 数位 DP | [√](./Rust/src/0201%20~%200300/0233%20-%20Number%20of%20Digit%20One.rs) |
