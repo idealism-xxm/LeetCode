@@ -1,23 +1,64 @@
 // 链接：https://leetcode.com/problems/recover-binary-search-tree/
-// 题意：有一个二叉搜索树，交换了其中两个结点的值，将其恢复成二叉搜索树？
+// 题意：给定一棵二叉搜索树 root ，其中恰好有两个结点被互换了，
+//      将这颗二叉搜索树复原。
 
-// 输入：[1,3,null,null,2]
-// 输出：[3,1,null,null,2]
 
-// 输入：[3,1,4,null,null,2]
-// 输出：[2,1,4,null,null,3]
+// 数据限制：
+//  树的结点数为 n
+//  1 <= k <= n <= 10 ^ 4
+//  0 <= Node.Val <= 10 ^ 4
 
-// 思路1：递归
+
+// 输入： root = [1,3,null,null,2]
+// 输出： [3,1,null,null,2]
+// 解释： 3 不能作为 1 的左子结点，因为 3 > 1 
+//       1            3
+//      /            /
+//     3      →     1
+//      \            \
+//       2            2
 //
-//		按照 0098 思路2 的思想：一个二叉搜索树的中序遍历值必定严格递增
-//		所以我们只要进行中序遍历，然后比较相邻两个结点的值
-//		1. 若当前结点的值小于前一个结点的值，则前一个结点（设为 large ）必定是其中一个结点
-//		2. 在找到 1 中结点的前提下，找到第一个比 large 值大的结点，
-//			则其前一个结点（设为 small ）必定是选择的另一个结点
-//			（若找不到则为最后一个结点）
-//		3. 递归完成后，交换 large 和 small 结点的值即可
+
+// 输入： root = [3,1,4,null,null,2]
+// 输出： [2,1,4,null,null,3]
+// 解释： 2 不能在 3 的右子树中，因为 2 < 3
+//       3           2
+//      / \         / \
+//     1   4   →   1   4
+//        /           /
+//       2           3
+
+
+// 思路1： 递归
 //
-//		时间复杂度： O(n) 空间复杂度： O(n)
+//      一个二叉搜索树的中序遍历值必定严格递增，
+//      所以我们只要进行中序遍历，然后比较相邻两个结点的值。
+//
+//      我们可以使用 dfs 闭包递归中序遍历处理，
+//      该闭包能引用三个外部变量：
+//          1. previous: 表示中序遍历的前一个结点
+//          2. first:    表示互换结点的前者，该结点必定比后一个结点大
+//          3. second:   表示互换结点的后者，前一个结点必定比该结点大
+//
+//      可以发现两个互换的结点，必定出现在中序遍历时大小不对的位置处，
+//      所以在 dfs 中，如果前一个结点 previous 的值大于当前结点 root 的值，
+//      则找到了一个互换的结点。
+//
+//      1. 如果这样的位置有 1 处，那么 first 必定是 previous ，
+//          second 必定是 root 
+//      2. 如果这样的位置有 2 处，那么 first 一定是第一处的 previous ，
+//          second 一定是第二处的 root
+//
+//      综上： first 必定是第一处的 previous ，
+//           second 必定是最后一处的 root
+//
+//
+//      时间复杂度：O(n)
+//          1. 需要遍历找到两个互换的结点，最差情况下，
+//              最后一个结点被换了，需要遍历全部 O(n) 个结点
+//      空间复杂度：O(n)
+//          1. 栈递归深度就是树高，最差情况下，全部 O(n) 个结点在一条链上
+
 
 /**
  * Definition for a binary tree node.
@@ -28,49 +69,49 @@
  * }
  */
 func recoverTree(root *TreeNode)  {
-	// 1. 找到交换的两个结点
-	large, small, last := find(root, nil, nil)
-	// 2. 进行交换
-	if small == nil {
-		// 如果没找到第一个比 large 值大的结点，则 最后一个结点 是另一个结点
-		small = last
+	// 定义 first 和 second ，用于维护交换的两个结点
+	// previous: 表示中序遍历的前一个结点
+	// first:    表示互换结点的前者，该结点必定比后一个结点大
+	var first, second *TreeNode
+	// previous: 表示中序遍历的前一个结点
+	var previous *TreeNode
+	var dfs func(root *TreeNode)
+	dfs = func(root *TreeNode) {
+		// 对 root 子树进行递归中序遍历，找到两个互换的结点。
+
+		// 如果当前结点为空，则直接返回
+		if root == nil {
+			return
+		}
+
+		// 先递归处理左子树
+		dfs(root.Left)
+
+		// 如果前一个结点的值大于当前结点，则找到了一个互换的结点
+		if previous != nil && previous.Val > root.Val {
+			if first == nil {
+				// 如果第 1 个结点未找到，则设置第 1 个结点为前一个结点
+				first = previous
+			}
+			if first != nil {
+				// 如果第 1 个结点已找到，则当前找到的是第 2 个结点，
+				// 设置第 2 个结点为当前结点
+				second = root
+			}
+		}
+
+		// 设置前一个结点为当前结点
+		previous = root
+		// 继续递归处理右子树
+		dfs(root.Right)
 	}
-	large.Val, small.Val = small.Val, large.Val
+
+	// 递归中序遍历找到互换的结点
+	dfs(root)
+	// 交换 first 和 second 两个结点的值
+	first.Val, second.Val = second.Val, first.Val
 }
 
-func find(root, large, last *TreeNode) (*TreeNode, *TreeNode, *TreeNode) {
-	// 对 root 子树进行中序遍历
-	// large, last 分别表示前面遍历所得的 large 结点和上一个结点
-
-	// 空子树不改变对应对值
-	if root == nil {
-		return large, nil, last
-	}
-
-	// 先处理左子树
-	lLarge, lSmall, lLast := find(root.Left, large, last)
-	// 如果左边子树已找到交换的两个结点，则直接结束递归
-	if lSmall != nil {
-		return lLarge, lSmall, lLast
-	}
-
-	// 处理根结点
-	if lLarge == nil {
-		// 若前面还没有找到 large 结点，则需要先找到它
-		if lLast != nil && root.Val < lLast.Val {
-			lLarge = lLast
-		}
-	} else {
-		// 若前面已找到 large 结点，则需要找到 small 结点
-		// 找到则直接结束递归
-		if root.Val > lLarge.Val {
-			return lLarge, lLast, nil
-		}
-	}
-
-	// 最后处理右子树
-	return find(root.Right, lLarge, root)
-}
 
 // 思路2：Morris
 //		基本思路还是同上
