@@ -55,60 +55,76 @@
 //          1. 栈递归深度就是树高 h ，最差情况下，全部 O(n) 个结点在一条链上
 
 
-/**
- * Definition for a binary tree node.
- * type TreeNode struct {
- *     Val int
- *     Left *TreeNode
- *     Right *TreeNode
- * }
+// Definition for a binary tree node.
+// #[derive(Debug, PartialEq, Eq)]
+// pub struct TreeNode {
+//   pub val: i32,
+//   pub left: Option<Rc<RefCell<TreeNode>>>,
+//   pub right: Option<Rc<RefCell<TreeNode>>>,
+// }
+// 
+// impl TreeNode {
+//   #[inline]
+//   pub fn new(val: i32) -> Self {
+//     TreeNode {
+//       val,
+//       left: None,
+//       right: None
+//     }
+//   }
+// }
+use std::cell::RefCell;
+use std::rc::Rc;
+use std::collections::VecDeque;
+struct BSTIterator {
+    // 结点栈（所有结点的左子结点都已经入栈过）
+    stack: VecDeque<Rc<RefCell<TreeNode>>>
+}
+
+
+/** 
+ * `&self` means the method takes an immutable reference.
+ * If you need a mutable reference, change it to `&mut self` instead.
  */
-type BSTIterator struct {
-	// 结点栈（所有结点的左子结点都已经入栈过）
-	stack []*TreeNode
+impl BSTIterator {
+
+    fn new(root: Option<Rc<RefCell<TreeNode>>>) -> Self {
+        // 初始化一个空栈的迭代器
+        let mut iter = BSTIterator{stack: VecDeque::new()};
+        // 将 root 放入迭代器中
+        iter.add_bst(root);
+        iter
+    }
+    
+    fn next(&mut self) -> i32 {
+        // 取出栈顶结点 top ， top 就是下一个需要遍历的结点
+        let mut top = self.stack.pop_back().unwrap();
+        // 将 top 的左子树放入栈中
+        self.add_bst(top.borrow_mut().right.take());
+        // 返回 top 的值
+        let val = top.borrow().val;
+        val
+    }
+    
+    fn has_next(&self) -> bool {
+        // 如果栈不为空，则还有下一个结点
+        !self.stack.is_empty()
+    }
+
+    fn add_bst(&mut self, mut root: Option<Rc<RefCell<TreeNode>>>) {
+        // 当 root 不为空时，继续处理
+        while let Some(mut node) = root {
+            // 更新 root 为其左子树
+            root = node.borrow_mut().left.take();
+            // 将根结点 node 入栈
+            self.stack.push_back(node);
+        }
+    }
 }
-
-
-func Constructor(root *TreeNode) BSTIterator {
-	// 初始化一个空栈的迭代器
-	bstIterator := BSTIterator{}
-	// 将 root 放入迭代器中
-	bstIterator.putBst(root)
-	return bstIterator
-}
-
-
-func (this *BSTIterator) Next() int {
-	// 取出栈顶结点 top ， top 就是下一个需要遍历的结点
-	top:= this.stack[len(this.stack) - 1]
-	this.stack = this.stack[:len(this.stack) - 1]
-	// 将右子树入栈
-	this.putBst(top.Right)
-	// 返回 top 的值
-	return top.Val
-}
-
-
-func (this *BSTIterator) HasNext() bool {
-	// 如果栈不为空，则还有下一个结点
-	return len(this.stack) != 0
-}
-
-
-func (this *BSTIterator) putBst(root *TreeNode) {
-	// 当 root 不为空时，继续处理
-	for ; root != nil; {
-		// 将根结点 root 入栈
-		this.stack = append(this.stack, root)
-		// 更新 root 为其左子树
-		root = root.Left
-	}
-}
-
 
 /**
  * Your BSTIterator object will be instantiated and called as such:
- * obj := Constructor(root);
- * param_1 := obj.Next();
- * param_2 := obj.HasNext();
+ * let obj = BSTIterator::new(root);
+ * let ret_1: i32 = obj.next();
+ * let ret_2: bool = obj.has_next();
  */
