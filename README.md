@@ -399,6 +399,7 @@ LeetCode AC代码（附思路、注释）
 | [1337 - The K Weakest Rows in a Matrix](https://leetcode.com/problems/the-k-weakest-rows-in-a-matrix/) | Easy | 二分 + 优先队列（堆） | [●](./Rust/src/1301%20~%201400/1337%20-%20The%20K%20Weakest%20Rows%20in%20a%20Matrix.rs) | [●](./Python3/src/1301%20~%201400/1337%20-%20The%20K%20Weakest%20Rows%20in%20a%20Matrix.py) | [●](./Go/src/1301%20~%201400/1337%20-%20The%20K%20Weakest%20Rows%20in%20a%20Matrix.go) |
 | [1345 - Jump Game IV](https://leetcode.com/problems/jump-game-iv/) | Hard | BFS | [√](./Rust/src/1301%20~%201400/1345%20-%20Jump%20Game%20IV.rs) |
 | [1359 - Count All Valid Pickup and Delivery Options](https://leetcode.com/problems/count-all-valid-pickup-and-delivery-options/) | Hard | 排列组合 | [√](./Rust/src/1301%20~%201400/1359%20-%20Count%20All%20Valid%20Pickup%20and%20Delivery%20Options.rs) | [√](./Python3/src/1301%20~%201400/1359%20-%20Count%20All%20Valid%20Pickup%20and%20Delivery%20Options.py) |
+| [1396 - Design Underground System](https://leetcode.com/problems/design-underground-system/) | Medium | Map | [√](./Rust/src/1301%20~%201400/1396%20-%20Design%20Underground%20System.rs) | [√](./Python3/src/1301%20~%201400/1396%20-%20Design%20Underground%20System.py) | [√](./Go/src/1301%20~%201400/1396%20-%20Design%20Underground%20System.go) |
 </details>
 
 <details>
