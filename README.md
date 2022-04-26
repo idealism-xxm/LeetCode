@@ -406,9 +406,10 @@ LeetCode AC代码（附思路、注释）
 <details>
 <summary>1501 ~ 1600</summary>
 
-| 题目 | 难度 | 思路 | Rust |
-| ------ | ------ | ------ | ------ |
+| 题目 | 难度 | 思路 | Rust | Python3 | Go |
+| ------ | ------ | ------ | ------ | ------ | ------ |
 | [1510 - Stone Game IV](https://leetcode.com/problems/stone-game-iv/) | Hard | DP + 博弈论 | [√](./Rust/src/1501%20~%201600/1510%20-%20Stone%20Game%20IV.rs) |
+| [1584 - Min Cost to Connect All Points](https://leetcode.com/problems/min-cost-to-connect-all-points/) | Medium | Prim 算法 | [√](./Rust/src/1501%20~%201600/1584%20-%20Min%20Cost%20to%20Connect%20All%20Points.rs) | [√](./Python3/src/1501%20~%201600/1584%20-%20Min%20Cost%20to%20Connect%20All%20Points.py) | [√](./Go/src/1501%20~%201600/1584%20-%20Min%20Cost%20to%20Connect%20All%20Points.go) |
 </details>
 
 <details>
