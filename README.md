@@ -385,6 +385,7 @@ LeetCode AC代码（附思路、注释）
 
 | 题目 | 难度 | 思路 | Rust | Python3 | Go |
 | ------ | ------ | ------ | ------ | ------ | ------ |
+| [1202 - Smallest String With Swaps](https://leetcode.com/problems/smallest-string-with-swaps/) | Medium | 并查集 | [√](./Rust/src/1201%20~%201300/1202%20-%20Smallest%20String%20With%20Swaps.rs) | [√](./Python3/src/1201%20~%201300/1202%20-%20Smallest%20String%20With%20Swaps.py) | [√](./Go/src/1201%20~%201300/1202%20-%20Smallest%20String%20With%20Swaps.go) |
 | [1249 - Minimum Remove to Make Valid Parentheses](https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/) | Medium | 栈 | [√](./Rust/src/1201%20~%201300/1249%20-%20Minimum%20Remove%20to%20Make%20Valid%20Parentheses.rs) | [√](./Python3/src/1201%20~%201300/1249%20-%20Minimum%20Remove%20to%20Make%20Valid%20Parentheses.py) | [√](./Go/src/1201%20~%201300/1249%20-%20Minimum%20Remove%20to%20Make%20Valid%20Parentheses.go) |
 | [1260 - Shift 2D Grid](https://leetcode.com/problems/shift-2d-grid/) | Easy | 三次翻转 | [√](./Rust/src/1201%20~%201300/1260%20-%20Shift%202D%20Grid.rs) | [√](./Python3/src/1201%20~%201300/1260%20-%20Shift%202D%20Grid.py) | [√](./Go/src/1201%20~%201300/1260%20-%20Shift%202D%20Grid.go) |
 | [1288 - Remove Covered Intervals](https://leetcode.com/problems/remove-covered-intervals/) | Medium | 贪心 + 排序 | [√](./Rust/src/1201%20~%201300/1288%20-%20Remove%20Covered%20Intervals.rs) | [√](./Python3/src/1201%20~%201300/1288%20-%20Remove%20Covered%20Intervals.py) |
