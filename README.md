@@ -339,6 +339,7 @@ LeetCode AC代码（附思路、注释）
 | [0706 - Design HashMap](https://leetcode.com/problems/design-hashmap/) | Medium | 模拟 | [√](./Rust/src/0701%20~%200800/0706%20-%20Design%20HashMap.rs) | [√](./Python3/src/0701%20~%200800/0706%20-%20Design%20HashMap.py) | [√](./Go/src/0701%20~%200800/0706%20-%20Design%20HashMap.go) |
 | [0763 - Partition Labels](https://leetcode.com/problems/partition-labels/) | Medium | 贪心 | [√](./Rust/src/0701%20~%200800/0763%20-%20Partition%20Labels.rs) | [√](./Python3/src/0701%20~%200800/0763%20-%20Partition%20Labels.py) | [√](./Go/src/0701%20~%200800/0763%20-%20Partition%20Labels.go) |
 | [0740 - Delete and Earn](https://leetcode.com/problems/champagne-tower/) | Medium | DP + Map | [○](./Rust/src/0701%20~%200800/0740%20-%20Delete%20and%20Earn.rs) | [○](./Python3/src/0701%20~%200800/0740%20-%20Delete%20and%20Earn.py) |
+| [0785 - Is Graph Bipartite?](https://leetcode.com/problems/is-graph-bipartite/) | Medium | DFS | [●](./Rust/src/0701%20~%200800/0785%20-%20Is%20Graph%20Bipartite.rs) | [●](./Python3/src/0701%20~%200800/0785%20-%20Is%20Graph%20Bipartite.py) | [●](./Go/src/0701%20~%200800/0785%20-%20Is%20Graph%20Bipartite.go) |
 | [0799 - Champagne Tower](https://leetcode.com/problems/champagne-tower/) | Medium | DP | [●](./Rust/src/0701%20~%200800/0799%20-%20Champagne%20Tower.rs) | [●](./Python3/src/0701%20~%200800/0799%20-%20Champagne%20Tower.py) |
 </details>
 

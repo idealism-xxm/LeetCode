@@ -62,7 +62,7 @@
  *   }
  */
 
- type PeekingIterator struct {
+type PeekingIterator struct {
     // 原始迭代器
     iter       *Iterator
     // 下一个元素（存在的话）
