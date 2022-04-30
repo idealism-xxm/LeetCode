@@ -85,7 +85,7 @@ func newUnionFind(n int) *UnionFind {
 }
 
 // 查找元素 x 所在集合的根元素
-func (uf *UnionFind) Find(x int) int {
+func (uf *UnionFind) find(x int) int {
     if uf.parent[x] == x {
         // 如果 x 的父元素是自己，那么 x 是根元素
         return x
@@ -93,7 +93,7 @@ func (uf *UnionFind) Find(x int) int {
 
     // 如果 x 的父元素不是自己，那么递归查找其所在集合的根元素。
     // 这里使用路径压缩优化，将路径上所有的元素都直接挂在根元素下
-    uf.parent[x] = uf.Find(uf.parent[x])
+    uf.parent[x] = uf.find(uf.parent[x])
     // 返回 x 所在集合的根元素
     return uf.parent[x]
 }
@@ -101,8 +101,8 @@ func (uf *UnionFind) Find(x int) int {
 // 合并元素 x 和 y 所在的集合
 func (uf *UnionFind) union(x int, y int) {
     // 找到 x 和 y 所在集合的根元素
-    xRoot := uf.Find(x);
-    yRoot := uf.Find(y);
+    xRoot := uf.find(x);
+    yRoot := uf.find(y);
     // 如果 x 和 y 在同一个集合，则不需要合并
     if xRoot == yRoot {
         return
@@ -142,7 +142,7 @@ func smallestStringWithSwaps(s string, pairs [][]int) string {
     // 遍历每个元素
     for i := 0; i < len(s); i++ {
         // 找到元素所在集合的根元素
-        root := unionFind.Find(i)
+        root := unionFind.find(i)
         // 将元素 i 添加到元素列表中
         rootToIndices[root] = append(rootToIndices[root], i)
     }

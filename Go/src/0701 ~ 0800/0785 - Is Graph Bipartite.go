@@ -103,3 +103,124 @@ func dfs(graph [][]int, colors []int, cur, color int) bool {
     // 即当前联通子图是一个二分图，返回 true
     return true
 }
+
+
+
+// 思路2： 并查集
+//
+//      二分图需要将图分成两个独立的点集，
+//      并且每条边的两个点分别在不同的集合中。
+//
+//      那么点 i 的所有邻接点必定在同一个集合中，
+//      我们可以使用并查集来维护这个关系。
+//
+//      所以我们可以枚举每个点 i ，
+//      然后再枚举其邻接点 j ：
+//          1. 如果 i 和 j 在同一个集合中，
+//              那么它们所在的联通子图不是二分图，
+//              直接返回 false
+//          2. 如果 i 和 j 不在同一个集合中，
+//              那么将 i 的第 0 个邻接点和 j 合并入一个集合中
+//
+//      遍历完所邻接点还没有返回，则所有边的两点都不在同一个集合中，
+//      即当前图是一个二分图，返回 true
+//
+//
+//      设 n 为点的数量， m 为边的数量。
+//
+//      时间复杂度：O(n + m * α(n))
+//          1. 需要遍历全部 O(n) 个点
+//          2. 需要遍历全部 O(m) 条边
+//          3. 遍历每条边时，都需要执行常数次并查集的操作，
+//              时间复杂度为 O(α(n))
+//      空间复杂度：O(n)
+//          1. 需要维护一个大小为 O(n) 的并查集
+
+
+func isBipartite(graph [][]int) bool {
+    // 初始化一个大小为 n 的并查集
+    unionFind := newUnionFind(len(graph))
+    // 遍历所有的点
+    for i, adjacent := range graph {
+        // 遍历所有邻接点
+        for _, j := range adjacent {
+            // 如果 i 和 j 已经在同一个集合中，
+            // 则说明它们所在的联通子图不是二分图，
+            // 返回 false
+            if unionFind.find(i) == unionFind.find(j) {
+                return false
+            }
+
+            // 否则将 i 所有的邻接点合并入同一个集合
+            unionFind.union(adjacent[0], j)
+        }
+    }
+
+    // 此时，所有边的两点都不在同一个集合中，
+    // 则说明是一个二分图，返回 true
+    return true
+}
+
+// 并查集
+type UnionFind struct {
+    // parent[i] 表示第 i 个元素所指向的父元素
+    parent []int
+    // rank[i] 表示以第 i 个元素的深度（秩），
+    // 当 i 是根元素（即 parent[i] == i ）时有效
+    rank []int
+}
+
+
+    // 初始化一个大小为 n 的并查集
+func newUnionFind(n int) *UnionFind {
+    parent := make([]int, n)
+    rank := make([]int, n)
+    for i := 0; i < n; i++ {
+        // 初始每个元素的父元素都是自己
+        parent[i] = i
+        // 初始化深度（秩）都是 1
+        rank[i] = 1
+    }
+    return &UnionFind{parent, rank}
+}
+
+// 查找元素 x 所在集合的根元素
+func (uf *UnionFind) find(x int) int {
+    if uf.parent[x] == x {
+        // 如果 x 的父元素是自己，那么 x 是根元素
+        return x
+    }
+
+    // 如果 x 的父元素不是自己，那么递归查找其所在集合的根元素。
+    // 这里使用路径压缩优化，将路径上所有的元素都直接挂在根元素下
+    uf.parent[x] = uf.find(uf.parent[x])
+    // 返回 x 所在集合的根元素
+    return uf.parent[x]
+}
+
+// 合并元素 x 和 y 所在的集合
+func (uf *UnionFind) union(x int, y int) {
+    // 找到 x 和 y 所在集合的根元素
+    xRoot := uf.find(x);
+    yRoot := uf.find(y);
+    // 如果 x 和 y 在同一个集合，则不需要合并
+    if xRoot == yRoot {
+        return
+    }
+
+    if uf.rank[xRoot] < uf.rank[yRoot] {
+        // 如果 xRoot 深度（秩）更小，
+        // 则将 yRoot 合并入 xRoot 中
+        uf.parent[xRoot] = yRoot
+    } else if uf.rank[xRoot] > uf.rank[yRoot] {
+        // 如果 xRoot 深度（秩）更大，
+        // 则将 xRoot 合并入 yRoot 中
+        uf.parent[yRoot] = xRoot
+    } else {
+        // 如果 xRoot 深度（秩）相等，
+        // 则将 yRoot 合并入 xRoot 中
+        uf.parent[yRoot] = xRoot
+        // 同时将 xRoot 的深度（秩）加 1
+        uf.rank[xRoot] += 1
+    }
+}
