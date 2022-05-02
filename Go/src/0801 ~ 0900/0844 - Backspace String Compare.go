@@ -70,3 +70,99 @@ func getText(s string) string {
     // 最后将所有字符转换为字符串
     return string(stack)
 }
+
+
+// 思路2： 双指针
+//
+//      从前往后遍历时，无法知道一个字符是否会在最终文本中存在，
+//      所以我们可以从后往前遍历。
+//
+//      从后往前遍历字符串 s ，
+//      同时维护还需要跳过的字符数 sSkip ：
+//          1. 当遇到一个 '#' 时，对 sSkip 进行加 1
+//          2. 当遇到一个英文字母时，根据 sSkip 的值进行处理：
+//              (1) sSkip == 0: 当前字符会出现在最终文本中
+//              (2) sSkip != 0: 当前字符需要跳过，对 sSkip 进行减 1
+//
+//      我们可以对 t 进行同样的操作，
+//      每次找到 s 和 t 的最终文本中必定存在的字符，
+//      如果字符不同 或者 有且仅有一个遍历完成，
+//      则说明两个字符串的最终文本不同，直接返回 false 。
+//
+//      最后 s 和 t 中的所有字符都全部遍历完成，
+//      则说明两个字符串的最终文本相同，直接返回 true 。
+//
+//
+//      时间复杂度：O(n + m)
+//          1. 需要遍历 s 中全部 O(n) 个字符
+//          2. 需要遍历 t 中全部 O(m) 个字符
+//      空间复杂度：O(1)
+//          1. 只需要维护常数个额外遍历即可       
+
+
+func backspaceCompare(s string, t string) bool {
+    // 初始化 s 对应的指针 sIndex 和当前应该跳过的字符数 sSkip
+    sIndex, sSkip := len(s) - 1, 0
+    // 初始化 t 对应的指针 tIndex 和当前应该跳过的字符数 tSkip
+    tIndex, tSkip := len(t) - 1, 0
+    // 当 s 和 t 至少有一个还有字符时，继续处理
+    for sIndex >= 0 || tIndex >= 0 {
+        // 当 s 还有字符时，需要继续处理
+        for sIndex >= 0 {
+            if s[sIndex] == '#' {
+                // 如果当前字符是 '#' ，则需要跳过的字符数加 1
+                sSkip += 1
+            } else if sSkip > 0 {
+                // 如果当前字符不是 '#' ，且还需要跳过字符，
+                // 则跳过当前字符
+                sSkip -= 1
+            } else {
+                // 如果当前字符不是 '#' ，且不需要跳过字符，
+                // 则当前字符在最终文本中，跳出循环即可
+                break
+            }
+            // 将 sIndex 向前移动一位
+            sIndex -= 1
+        }
+        // 当 t 还有字符时，需要继续处理
+        for tIndex >= 0 {
+            if t[tIndex] == '#' {
+                // 如果当前字符是 '#' ，则需要跳过的字符数加 1
+                tSkip += 1
+            } else if tSkip > 0 {
+                // 如果当前字符不是 '#' ，且还需要跳过字符，
+                // 则跳过当前字符
+                tSkip -= 1
+            } else {
+                // 如果当前字符不是 '#' ，且不需要跳过字符，
+                // 则当前字符在最终文本中，跳出循环即可
+                break
+            }
+            // 将 tIndex 向前移动一位
+            tIndex -= 1
+        }
+
+        // 处理 s 和 t 的当前字符
+        if sIndex >= 0 && tIndex >= 0 {
+            // 如果两者都有字符，则继续比较当前字符。
+            // 两者字符不同，则最终文本不同，直接返回 false
+            if s[sIndex] != t[tIndex] {
+                return false
+            }
+        } else if sIndex < 0 && tIndex < 0 {
+            // 如果两者都无字符，则最终文本相同，直接返回 true
+            return true
+        } else {
+            // 如果一个有字符，一个无字符，则最终文本不同，直接返回 false
+            return false
+        }
+
+        // s 和 t 的当前字符处理完毕，
+        // 将 sIndex 和 tIndex 向前移动一位
+        sIndex -= 1
+        tIndex -= 1
+    }
+    // 此时 s 和 t 都没有字符了，
+    // 说明最终文本完全匹配，返回 true
+    return true
+}
