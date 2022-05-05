@@ -250,7 +250,7 @@ LeetCode AC代码（附思路、注释）
 | [0222 - Count Complete Tree Nodes](https://leetcode-cn.com/problems/count-complete-tree-nodes/) | Medium | 二分 | [○](./Rust/src/0201%20~%200300/0222%20-%20Count%20Complete%20Tree%20Nodes.rs) |
 | [0223 - Rectangle Area](https://leetcode.com/problems/rectangle-area/) | Medium | 枚举 | [√](./Rust/src/0201%20~%200300/0223%20-%20Rectangle%20Area.rs) |
 | [0224 - Basic Calculator](https://leetcode.com/problems/basic-calculator/) | Hard | 调度场算法 | [√](./Rust/src/0201%20~%200300/0224%20-%20Basic%20Calculator.rs) |
-| [0225 - Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/) | Easy | 模拟 | [√](./Rust/src/0201%20~%200300/0225%20-%20Implement%20Stack%20using%20Queues.rs) |
+| [0225 - Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/) | Easy | 模拟 | [√](./Rust/src/0201%20~%200300/0225%20-%20Implement%20Stack%20using%20Queues.rs) | [√](./Go/src/0201%20~%200300/0225%20-%20Implement%20Stack%20using%20Queues.go) | [√](./Python3/src/0201%20~%200300/0225%20-%20Implement%20Stack%20using%20Queues.py) |
 | [0226 - Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/) | Easy | 递归 | [√](./Rust/src/0201%20~%200300/0226%20-%20Invert%20Binary%20Tree.rs) |
 | [0227 - Basic Calculator II](https://leetcode.com/problems/basic-calculator-ii/) | Medium | 调度场算法 | [√](./Rust/src/0201%20~%200300/0227%20-%20Basic%20Calculator%20II.rs) |
 | [0228 - Summary Ranges](https://leetcode.com/problems/summary-ranges/) | Medium | 双指针 | [√](./Rust/src/0201%20~%200300/0228%20-%20Summary%20Ranges.rs) | | [√](./Python3/src/0201%20~%200300/0228%20-%20Summary%20Ranges.py) |

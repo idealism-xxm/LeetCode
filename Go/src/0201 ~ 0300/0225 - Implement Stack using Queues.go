@@ -50,68 +50,54 @@
 //          1. push/pop/top/empty: 只需要使用常数个额外变量
 
 
-use std::collections::VecDeque;
-
-
-#[derive(Default)]
-struct MyStack {
-    // 模拟所需的队列
-    q: VecDeque<i32>
+type MyStack struct {
+    q *list.List
 }
 
 
-/** 
- * `&self` means the method takes an immutable reference.
- * If you need a mutable reference, change it to `&mut self` instead.
- */
-impl MyStack {
+func Constructor() MyStack {
+    return MyStack { q: list.New() }
+}
 
-    /** Initialize your data structure here. */
-    fn new() -> Self {
-        Default::default()
-    }
-    
-    /** Push element x onto stack. */
-    fn push(&mut self, x: i32) {
-        // 获取需要移动的元素个数
-        let mut length = self.q.len();
+
+func (this *MyStack) Push(x int)  {
+    // 获取需要移动的元素个数
+    length := this.q.Len()
+    // 将元素放入队尾
+    this.q.PushBack(x)
+    // 将队列前 length 个元素依次弹出并放入队尾
+    for length > 0 {
+        // 弹出队首元素
+        num := this.q.Remove(this.q.Front())
         // 将元素放入队尾
-        self.q.push_back(x);
-        // 将队列前 length 个元素依次弹出并放入队尾
-        while length > 0 {
-            // 弹出队首元素
-            let num = self.q.pop_front().unwrap();
-            // 将元素放入队尾
-            self.q.push_back(num);
-            // 需要移动的元素个数减 1
-            length -= 1;
-        }
-    }
-    
-    /** Removes the element on top of the stack and returns that element. */
-    fn pop(&mut self) -> i32 {
-        // 直接 pop 队首元素
-        self.q.pop_front().unwrap()
-    }
-    
-    /** Get the top element. */
-    fn top(&self) -> i32 {
-        // 直接返回队首元素
-        *self.q.front().unwrap()
-    }
-    
-    /** Returns whether the stack is empty. */
-    fn empty(&self) -> bool {
-        // 判断队列是否为空
-        self.q.is_empty()
+        this.q.PushBack(num)
+        // 需要移动的元素个数减 1
+        length -= 1
     }
 }
+
+
+func (this *MyStack) Pop() int {
+    // 直接 pop 队首元素
+    return this.q.Remove(this.q.Front()).(int)
+}
+
+
+func (this *MyStack) Top() int {
+    return this.q.Front().Value.(int)
+}
+
+
+func (this *MyStack) Empty() bool {
+    return this.q.Len() == 0
+}
+
 
 /**
  * Your MyStack object will be instantiated and called as such:
- * let obj = MyStack::new();
- * obj.push(x);
- * let ret_2: i32 = obj.pop();
- * let ret_3: i32 = obj.top();
- * let ret_4: bool = obj.empty();
+ * obj := Constructor();
+ * obj.Push(x);
+ * param_2 := obj.Pop();
+ * param_3 := obj.Top();
+ * param_4 := obj.Empty();
  */
