@@ -298,6 +298,7 @@ LeetCode AC代码（附思路、注释）
 | [0438 - Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/) | Medium | 滑动窗口 | [√](./Rust/src/0401%20~%200500/0438%20-%20Find%20All%20Anagrams%20in%20a%20String.rs) |
 | [0452 - Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/) | Medium | 贪心 | [√](./Rust/src/0401%20~%200500/0452%20-%20Minimum%20Number%20of%20Arrows%20to%20Burst%20Balloons.rs) |
 | [0454 - 4Sum II](https://leetcode.com/problems/4sum-ii/) | Medium | Map | [√](./Rust/src/0401%20~%200500/0454%20-%204Sum%20II.rs) |
+| [0456 - 132 Pattern](https://leetcode.com/problems/132-pattern/) | Medium | 单调栈 | [●](./Rust/src/0401%20~%200500/0456%20-%20132%20Pattern.rs) | [●](./Python3/src/0401%20~%200500/0456%20-%20132%20Pattern.py) | [●](./Go/src/0401%20~%200500/0456%20-%20132%20Pattern.go) |
 </details>
 
 <details>
