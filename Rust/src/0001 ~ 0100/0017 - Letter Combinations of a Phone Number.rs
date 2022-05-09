@@ -44,37 +44,39 @@
 
 
 // 定义每个数位对应的字母列表
-var DIGIT_TO_LETTERS = [10]string{"", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"}
+const DIGIT_TO_LETTERS: [&str; 10] = ["", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"];
 
 
-func letterCombinations(digits string) []string {
-	// 如果没有按任何数字键，则返回空列表
-    if len(digits) == 0 {
-		return nil
-	}
+impl Solution {
+    pub fn letter_combinations(digits: String) -> Vec<String> {
+        // 如果没有按任何数字键，则返回空列表
+        if digits.is_empty() {
+            return vec![];
+        }
 
-	// ans 用于收集所有可能的字符串
-	ans := make([]string, 0)
-	// cur 表示当前按键下能形成的某个字符列表，初始化为空列表
-	cur := make([]rune, len(digits))
-	// 递归收集所有可能的字符串
-	dfs(digits, 0, cur, &ans)
+        // ans 用于收集所有可能的字符串
+        let mut ans = vec![];
+        // cur 表示当前按键下能形成的某个字符列表
+        let mut cur = vec![0; digits.len()];
+        // 递归收集所有可能的字符串
+        Solution::dfs(digits.as_bytes(), 0, &mut cur, &mut ans);
 
-	return ans
-}
+        ans
+    }
 
-func dfs(digits string, index int, cur []rune, ans *[]string) {
-	// 如果已按下全部数字键，则 cur 就是一个可能的字符串，收集后返回
-	if index == len(digits) {
-		*ans = append(*ans, string(cur))
-		return
-	}
+    fn dfs(digits: &[u8], index: usize, cur: &mut Vec<u8>, ans: &mut Vec<String>) {
+        // 如果已按下全部数字键，则 cur 就是一个可能的字符串，收集后返回
+        if index == digits.len() {
+            ans.push(String::from_utf8(cur.clone()).unwrap());
+            return;
+        }
 
-	// 遍历 digits[index] 下对应的的所有字母
-	for _, ch := range DIGIT_TO_LETTERS[(digits[index] - '0')] {
-		// 将当前字母放入 cur 中
-		cur[index] = ch
-		// 递归收集下一个字母
-		dfs(digits, index + 1, cur, ans)
-	}
+        // 遍历 digits[index] 下对应的的所有字母
+        for ch in DIGIT_TO_LETTERS[(digits[index] - b'0') as usize].bytes() {
+            // 将 cur[index] 设置为当前字母
+            cur[index] = ch;
+            // 递归收集下一个字母
+            Solution::dfs(digits, index + 1, cur, ans);
+        }
+    }
 }
