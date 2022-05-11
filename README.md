@@ -241,7 +241,7 @@ LeetCode AC代码（附思路、注释）
 | [0213 - House Robber II.rs](https://leetcode.com/problems/house-robber-ii/) | Medium | DP | [√](./Rust/src/0201%20~%200300/0213%20-%20House%20Robber%20II.rs) |
 | [0214 - Shortest Palindrome](https://leetcode.com/problems/shortest-palindrome/) | Hard | 枚举 &#124; KMP | [√ &#124; ●](./Rust/src/0201%20~%200300/0214%20-%20Shortest%20Palindrome.rs) |
 | [0215 - Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/) | Medium | 优先队列 &#124; 快速排序 | [√ &#124; √](./Rust/src/0201%20~%200300/0215%20-%20Kth%20Largest%20Element%20in%20an%20Array.rs) |
-| [0216 - Combination Sum III](https://leetcode.com/problems/combination-sum-iii/) | Medium | 递归 | [√](./Rust/src/0201%20~%200300/0216%20-%20Combination%20Sum%20III.rs) |
+| [0216 - Combination Sum III](https://leetcode.com/problems/combination-sum-iii/) | Medium | 递归 | [√](./Rust/src/0201%20~%200300/0216%20-%20Combination%20Sum%20III.rs) | [√](./Go/src/0201%20~%200300/0216%20-%20Combination%20Sum%20III.go) | [√](./Python3/src/0201%20~%200300/0216%20-%20Combination%20Sum%20III.py) |
 | [0217 - Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) | Easy | set | [√](./Rust/src/0201%20~%200300/0217%20-%20Contains%20Duplicate.rs) |
 | [0218 - The Skyline Problem](https://leetcode.com/problems/the-skyline-problem/) | Hard | 分治 | [●](./Rust/src/0201%20~%200300/0218%20-%20The%20Skyline%20Problem.rs) |
 | [0219 - Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/) | Easy | map | [√](./Rust/src/0201%20~%200300/0219%20-%20Contains%20Duplicate%20II.rs) |

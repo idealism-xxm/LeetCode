@@ -24,7 +24,7 @@
 // 输入： k = 4, n = 1
 // 输出： []
 // 解释： 没有合法的组合，
-//       因为最小能得到的数字 1 + 2 + 3 + 4 = 10 > 9
+//       因为最小能得到的数字 1 + 2 + 3 + 4 = 10 > 1
 
 
 // 思路： 递归
@@ -53,37 +53,41 @@
 //          2. 栈递归深度为 O(k)
 
 
-impl Solution {
-    pub fn combination_sum3(k: i32, n: i32) -> Vec<Vec<i32>> {
-        // ans 用于收集所有可能的组合
-        let mut ans = vec![];
-        // 递归回溯所有可能的组合
-        Solution::dfs(k, n, 1, &mut vec![0; k as usize], &mut ans);
-        ans
-    }
+func combinationSum3(k int, n int) [][]int {
+    // ans 用于收集所有可能的组合
+    ans := make([][]int, 0)
+    // cur 用于收集当前可能的组合
+    cur := make([]int, k)
+    // 递归回溯所有可能的组合
+    dfs(k, n, 1, cur, &ans)
+    return ans
+}
 
-    // 从 [digit, 9] 中选取和为 n 的 k 个数，并放在 cur 的后 k 个位置，
-    // 最后结束递归时将合法的 cur 放入到 ans 中
-    fn dfs(k: i32, n: i32, digit: i32, cur: &mut Vec<i32>, ans: &mut Vec<Vec<i32>>) {
-        // 如果已选取完所有的数 或 和已经满足要求，则需要返回
-        if k == 0 || n == 0 {
-            // 如果已选取完所有的数 且 和已经满足要求，
-            // 则当前 cur 是合法的组合，放入 ans 中
-            if k == 0 && n == 0 {
-                ans.push(cur.clone());
-            }
-            return;
+// 从 [digit, 9] 中选取和为 n 的 k 个数，并放在 cur 的后 k 个位置，
+// 最后结束递归时将合法的 cur 放入到 ans 中
+func dfs(k int, n int, digit int, cur []int, ans *[][]int) {
+    // 如果已选取完所有的数 或 和已经满足要求，则需要返回
+    if k == 0 || n == 0 {
+        // 如果已选取完所有的数 且 和已经满足要求，
+        // 则当前 cur 是合法的组合，放入 ans 中
+        if k == 0 && n == 0 {
+            *ans = append(*ans, append(make([]int, 0, len(cur)), cur...))
         }
-        
-        // 计算倒数第 k 个数在 cur 中的下标
-        let i = cur.len() - k as usize;
-        // 遍历 [digit, min(9, n)] 中的数字，
-        // 这里取 min(9, n) 是使得后续的 n >= 0 ，减少不必要的判断
-        for num in digit..=9.min(n) {
-            // 将倒数第 k 个数赋值为 num
-            cur[i] = num;
-            // 递归回溯所有可能的组合
-            Solution::dfs(k - 1, n - num, num + 1, cur, ans);
-        }
+        return
+    }
+    
+    // 计算倒数第 k 个数在 cur 中的下标
+    i := len(cur) - k
+    // 遍历 [digit, min(9, n)] 中的数字，
+    // 这里取 min(9, n) 是使得后续的 n >= 0 ，减少不必要的判断
+    maxDigit := n
+    if 9 < maxDigit {
+        maxDigit = 9
+    }
+    for num := digit; num <= maxDigit; num++ {
+        // 将倒数第 k 个数赋值为 num
+        cur[i] = num
+        // 递归回溯所有可能的组合
+        dfs(k - 1, n - num, num + 1, cur, ans)
     }
 }
