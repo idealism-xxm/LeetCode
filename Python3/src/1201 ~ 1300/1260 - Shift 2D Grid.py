@@ -1,4 +1,4 @@
-# 链接：https:#leetcode.com/problems/shift-2d-grid/
+# 链接：https://leetcode.com/problems/shift-2d-grid/
 # 题意：给定一个二维数组 grid ，将其循环右移 k 次。
 #      每次循环右移按如下方式操作：
 #          1. grid[i][j] 移动至 grid[i][j + 1]

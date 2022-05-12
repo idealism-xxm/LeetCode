@@ -1,4 +1,4 @@
-# 链接：https:#leetcode.com/problems/baseball-game/
+# 链接：https://leetcode.com/problems/baseball-game/
 # 题意：给定一个操作列表 ops ，
 #      在一个空的分数列表 record 中按顺序执行这些操作，
 #      返回最终的分数列表 record 中所有分数之和。
