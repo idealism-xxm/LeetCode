@@ -58,7 +58,7 @@ LeetCode AC代码（附思路、注释）
 | [0044 - Wildcard Matching](https://leetcode.com/problems/wildcard-matching/) | Hard | DP | [√](./Go/src/0001%20~%200100/0044%20-%20Wildcard%20Matching.go) |
 | [0045 - Jump Game II](https://leetcode.com/problems/jump-game-ii/) | Hard | DP &#124; 贪心 | [√ &#124; ●](./Go/src/0001%20~%200100/0045%20-%20Jump%20Game%20II.go) |
 | [0046 - Permutations](https://leetcode.com/problems/permutations/) | Medium | 递归 | [√](./Go/src/0001%20~%200100/0046%20-%20Permutations.go) |
-| [0047 - Permutations II](https://leetcode.com/problems/permutations-ii/) | Medium | 递归 | [√](./Go/src/0001%20~%200100/0047%20-%20Permutations%20II.go) |
+| [0047 - Permutations II](https://leetcode.com/problems/permutations-ii/) | Medium | Map + 递归/回溯/DFS | [√](./Go/src/0001%20~%200100/0047%20-%20Permutations%20II.go) | [√](./Python3/src/0001%20~%200100/0047%20-%20Permutations%20II.py) | [√](./Rust/src/0001%20~%200100/0047%20-%20Permutations%20II.rs) |
 | [0048 - Rotate Image](https://leetcode.com/problems/rotate-image/) | Medium | 模拟 | [√](./Go/src/0001%20~%200100/0048%20-%20Rotate%20Image.go) |
 | [0049 - Group Anagrams](https://leetcode.com/problems/group-anagrams/) | Medium | 排序模拟 &#124; 计数模拟 | [√ &#124; ●](./Go/src/0001%20~%200100/0049%20-%20Group%20Anagrams.go) |
 | [0050 - Pow(x, n)](https://leetcode.com/problems/powx-n/) | Medium | 快速幂 | [√](./Go/src/0001%20~%200100/0050%20-%20Pow(x,%20n).go) |

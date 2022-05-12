@@ -1,47 +1,87 @@
 // 链接：https://leetcode.com/problems/permutations-ii/
-// 题意：给定一个可能含重复数字的数组，求不重复的所有排列？
+// 题意：给定一个可能含有重复数字的数组 nums ，求所有不同的排列。
 
-// 输入：[1,1,2]
-// 输出：
-// [
-//   [1,1,2],
-//   [1,2,1],
-//   [2,1,1]
-// ]
 
-// 思路：递归模拟即可
-//		每次枚举未使用的数字（若当前数字已经枚举过，则跳过），
-//		放入排列对应的位置，当所有位置都放入后，即找到一个不重复且合法的排列
+// 数据限制：
+//  1 <= nums.length <= 8
+//  -10 <= nums[i] <= 10
 
-import "sort"
+
+// 输入： nums = [1,1,2]
+// 输出： [[1,1,2],[1,2,1],[2,1,1]]
+// 解释： 只有值不同的排列才认为是不同的排列。
+
+// 输入： nums = [1,2,3]
+// 输出： [[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]
+
+
+// 思路： Map + 递归/回溯/DFS
+//
+//      由于只有值不同的排列才算不同的排列，而 nums 中存在重复的值，
+//      所以我们维护每个数可使用次数的 map ，从而避免产生重复的排列。
+//
+//      我们使用 dfs(numToCnt, remain, cur, ans) 回溯收集所有可能的排列，其中：
+//          1. numToCnt: 当前每个数可使用次数的 map
+//          2. remain: 当前还需要选择 remain 个数
+//          3. cur: 当前已选择的数字列表
+//          4. ans: 当前收集到的所有可能的组合的列表
+//
+//      在 dfs 中，我们按照如下逻辑处理即可：
+//          1. remain == 0: 已选取完所有的数，则当前排列 cur 满足题意，
+//              将 cur 放入到 ans 中，然后返回。
+//          2. remain != 0: 则还需要继续选取数字，
+//              遍历 numToCnt 中的每个数字 num ，
+//              如果 num 还可以使用，则将 num 加入到 cur 中，
+//              并调用 dfs 继续回溯。
+//
+//
+//     时间复杂度：O(n * n!)
+//          1. 需要遍历全部 O(n!) 个可能的排列
+//          2. 每找到一个排列时，都需要遍历其中的全部 O(n) 个数字
+//      空间复杂度：O(n * n!)
+//          1. 需要分别维护 O(n) 的数组和 map
+//          2. 需要存储全部 O(n!) 个可能的排列，每个排列的都含有 O(n) 个数字，
+//              这部分总空间复杂度为 O(n * n!)
+//          3. 栈递归深度为 O(n)
+
 
 func permuteUnique(nums []int) [][]int {
-	used := make([]bool, len(nums))  // 表示当前数字是否正在使用
-	list := make([]int, len(nums))  // 表示当前结果排列
-	sort.Ints(nums)  // 按升序排序，方便跳过重复的数字
-	return dfs(nums, used, 0, list)
+	// ans 用于收集所有可能的排列
+	var ans [][]int
+	// cur 用于收集当前的排列
+	cur := make([]int, len(nums))
+	// numToCnt[num] 表示 num 可使用次数
+	numToCnt := make(map[int]int)
+	// 初始化每个 num 的可使用次数次数
+	for _, num := range nums {
+		numToCnt[num]++
+	}
+	// 递归回溯所有可能的排列
+	dfs(numToCnt, len(nums), cur, &ans)
+	return ans
 }
 
-func dfs(nums []int, used []bool, current int, list []int) [][]int {
-    if current == len(nums) {  // 若所有位置都放入数字，则当前排列放入结果列表中
-    	return [][]int {append(list[:0:0], list...)}
+func dfs(numToCnt map[int]int, remain int, cur []int, ans *[][]int) {
+	// 如果所有数字都已收集完，则将 cur 放入 ans 中，并返回
+	if remain == 0 {
+		*ans = append(*ans, append([]int{}, cur...))
+		return
 	}
 
-	isFirst := true  // 是否为本次递归第一个选择的数
-	preNum := nums[0] // 前一个选择的数字
-	var result [][]int  // 收集循环中产生的所有结果
-	for i := 0; i < len(nums); i++ {
-		if !used[i] {  // 如果当前数字未使用
-			if isFirst || nums[i] != preNum {  // 当前数字本次递归第一次选择的数 或者 当前数字不等于前一个选择的数
-				isFirst = false
-				preNum = nums[i]
-
-				used[i] = true  // 使用当前数字
-				list[current] = nums[i]  // current 位放入 nums[i]
-				result = append(result, dfs(nums, used, current + 1, list)...)  // 收集所有结果
-				used[i] = false  // 不再使用当前数字
-			}
+	// 计算倒数第 remain 个数字在 cur 中的下标
+	i := len(cur) - remain
+	// 遍历所有可能的数字 num
+	for num, cnt := range numToCnt {
+		// 如果 num 还有可使用次数，则可以选择 num 加入 cur 中
+		if cnt > 0 {
+			// num 可使用次数 -1
+			numToCnt[num]--
+			// num 放入 cur 中
+			cur[i] = num
+			// 继续回溯
+			dfs(numToCnt, remain - 1, cur, ans)
+			// num 可使用次数 +1
+			numToCnt[num]++
 		}
 	}
-	return result
 }
