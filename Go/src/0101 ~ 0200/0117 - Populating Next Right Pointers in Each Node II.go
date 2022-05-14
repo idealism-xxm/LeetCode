@@ -63,62 +63,47 @@
 //          1. 只需要维护常数个额外变量即可
 
 
-/*
-// Definition for a Node.
-class Node {
-    public int val;
-    public Node left;
-    public Node right;
-    public Node next;
+/**
+ * Definition for a Node.
+ * type Node struct {
+ *     Val int
+ *     Left *Node
+ *     Right *Node
+ *     Next *Node
+ * }
+ */
 
-    public Node() {}
-    
-    public Node(int _val) {
-        val = _val;
-    }
-
-    public Node(int _val, Node _left, Node _right, Node _next) {
-        val = _val;
-        left = _left;
-        right = _right;
-        next = _next;
-    }
-};
-*/
-
-class Solution {
-    public Node connect(Node root) {
-        // leftMost 表示每一层最左侧结点，
-        // 初始化为第一层最左侧结点 root
-        Node leftMost = root;
-        // 当前层还有结点时，可以继续处理下一次的 next 指针
-        while (leftMost != null) {
-            // 维护一个下一层基于 next 的链表，
-            // 为了方便处理，这里使用一个哨兵节点
-            Node nextHeadPre = new Node();
-            // 下一层基于 next 的链表的最后一个结点，
-            // 方便使用尾插法插入新结点
-            Node nextLast = nextHeadPre;
-            // 当前层的结点
-            Node cur = leftMost;
-            // 如果当前层还有结点，则继续处理
-            while (cur != null) {
-                // 如果存在左子结点，则将其加入到下一层的链表尾部
-                if (cur.left != null) {
-                    nextLast.next = cur.left;
-                    nextLast = nextLast.next;
-                }
-                // 如果存在左子结点，则将其加入到下一层的链表尾部
-                if (cur.right != null) {
-                    nextLast.next = cur.right;
-                    nextLast = nextLast.next;
-                }
-                // 继续处理当前层的下一个结点
-                cur = cur.next;
+ func connect(root *Node) *Node {
+    // leftMost 表示每一层最左侧结点，
+    // 初始化为第一层最左侧结点 root
+    leftMost := root
+    // 当前层还有结点时，可以继续处理下一次的 next 指针
+    for leftMost != nil {
+        // 维护一个下一层基于 next 的链表，
+        // 为了方便处理，这里使用一个哨兵节点
+        nextHeadPre := &Node{}
+        // 下一层基于 next 的链表的最后一个结点，
+        // 方便使用尾插法插入新结点
+        nextLast := nextHeadPre
+        // 当前层的结点
+        cur := leftMost
+        // 如果当前层还有结点，则继续处理
+        for cur != nil {
+            // 如果存在左子结点，则将其加入到下一层的链表尾部
+            if cur.Left != nil {
+                nextLast.Next = cur.Left
+                nextLast = nextLast.Next
             }
-            // nextHeadPre.Next 就是下一层的最左侧结点
-            leftMost = nextHeadPre.next;
+            // 如果存在左子结点，则将其加入到下一层的链表尾部
+            if cur.Right != nil {
+                nextLast.Next = cur.Right
+                nextLast = nextLast.Next
+            }
+            // 继续处理当前层的下一个结点
+            cur = cur.Next
         }
-        return root;
+        // nextHeadPre.Next 就是下一层的最左侧结点
+        leftMost = nextHeadPre.Next
     }
+    return root
 }
