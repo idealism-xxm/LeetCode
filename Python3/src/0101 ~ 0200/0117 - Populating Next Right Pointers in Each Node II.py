@@ -1,4 +1,4 @@
-# 链接：https:#leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/
+# 链接：https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/
 # 题意：给定一棵二叉树，每个结点 cur 有 val, left, right, next 四个字段，
 #      其中 cur.next 指向当前层 cur 右侧的结点，
 #      如果 cur 右侧没有结点，则设置为 NULL 。

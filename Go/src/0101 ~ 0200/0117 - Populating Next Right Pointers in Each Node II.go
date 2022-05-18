@@ -73,7 +73,7 @@
  * }
  */
 
- func connect(root *Node) *Node {
+func connect(root *Node) *Node {
     // leftMost 表示每一层最左侧结点，
     // 初始化为第一层最左侧结点 root
     leftMost := root
