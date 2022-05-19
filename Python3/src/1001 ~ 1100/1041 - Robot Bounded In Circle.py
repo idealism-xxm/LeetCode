@@ -47,7 +47,7 @@
 #   1: 向东走 1 步
 #   2: 向南走 1 步
 #   3: 向西走 1 步
-DIRS = ((-1, 0), (0, 1), (1, 0), (0, -1));
+DIRS = ((-1, 0), (0, 1), (1, 0), (0, -1))
 
 class Solution:
     def isRobotBounded(self, instructions: str) -> bool:
