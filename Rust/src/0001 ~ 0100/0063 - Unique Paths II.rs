@@ -34,10 +34,10 @@
 //          这样初始化也是为了方便后续处理，并能转移出 dp[1][1] = 1 。
 //
 //      状态转移方程：
-//          1. obstacleGrid[i - 1][j - 1] == 0:
+//          1. obstacle_grid[i - 1][j - 1] == 0:
 //              dp[i][j] = dp[i - 1][j] + dp[i][j - 1] ，
 //              即可以从上边或左边的格子走过来
-//          2. obstacleGrid[i - 1][j - 1] == 1:
+//          2. obstacle_grid[i - 1][j - 1] == 1:
 //              dp[i][j] = 0 ，实际上不用处理，因为初始化时就是 0
 //
 //      最后， dp[m][n] 就是从 (0, 0) 到 (m - 1, n - 1) 的不同路径数。
@@ -49,26 +49,25 @@
 //          1. 需要维护一个大小为 O(mn) 的数组 dp
 
 
-func uniquePathsWithObstacles(obstacleGrid [][]int) int {
-	m, n := len(obstacleGrid), len(obstacleGrid[0])
-	// dp[i][j] 表示从 (0, 0) 到 (i - 1, j - 1) 的不同路径数，
-	// 初始化均为 0
-	dp := make([][]int, m + 1)
-	for i := 0; i <= m; i++ {
-		dp[i] = make([]int, n + 1)
-	}
-	// 为了方便后续获得 dp[1][1] 为 1 ，这里将 dp[0][1] 设置为 1
-	dp[0][1] = 1
-	// 遍历当前要走到的格子下标 (i, j)
-	for i := 1; i <= m; i++ {
-		for j := 1; j <= n; j++ {
-			// 如果当前格子为空，则可以从上边和左边走过来
-			if obstacleGrid[i - 1][j - 1] == 0 {
-				dp[i][j] = dp[i - 1][j] + dp[i][j - 1]
-			}
-		}
-	}
+impl Solution {
+    pub fn unique_paths_with_obstacles(obstacle_grid: Vec<Vec<i32>>) -> i32 {
+        let (m, n) = (obstacle_grid.len(), obstacle_grid[0].len());
+        // dp[i][j] 表示从 (0, 0) 到 (i - 1, j - 1) 的不同路径数，
+        // 初始化均为 0
+        let mut dp = vec![vec![0; n + 1]; m + 1];
+        // 为了方便后续获得 dp[1][1] 为 1 ，这里将 dp[0][1] 设置为 1
+        dp[0][1] = 1;
+        // 遍历当前要走到的格子下标 (i, j)
+        for i in 1..=m {
+            for j in 1..=n {
+                // 如果当前格子为空，则可以从上边和左边走过来
+                if obstacle_grid[i - 1][j - 1] == 0 {
+                    dp[i][j] = dp[i - 1][j] + dp[i][j - 1];
+                }
+            }
+        }
 
-	// dp[m][n] 就是从 (0, 0) 到 (m - 1, n - 1) 的不同路径数
-	return dp[m][n]
+        // dp[m][n] 就是从 (0, 0) 到 (m - 1, n - 1) 的不同路径数
+        dp[m][n]
+    }
 }
