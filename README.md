@@ -324,6 +324,7 @@ LeetCode AC代码（附思路、注释）
 | 题目 | 难度 | 思路 | Rust | Python3 | Go |
 | ------ | ------ | ------ | ------ | ------ | ------ |
 | [0605 - Can Place Flowers](https://leetcode.com/problems/can-place-flowers/) | Easy | 贪心 | [√](./Rust/src/0601%20~%200700/0605%20-%20Can%20Place%20Flowers.rs) |
+| [0647 - Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/) | Medium | 枚举 | [√](./Rust/src/0601%20~%200700/0647%20-%20Palindromic%20Substrings.rs) | [√](./Python3/src/0601%20~%200700/0647%20-%20Palindromic%20Substrings.py) | [√](./Go/src/0601%20~%200700/0647%20-%20Palindromic%20Substrings.go) |
 | [0662 - Maximum Width of Binary Tree](https://leetcode.com/problems/maximum-width-of-binary-tree/) | Medium | DFS | [√](./Rust/src/0601%20~%200700/0662%20-%20Maximum%20Width%20of%20Binary%20Tree.rs) | [√](./Python3/src/0601%20~%200700/0662%20-%20Maximum%20Width%20of%20Binary%20Tree.py) |
 | [0669 - Trim a Binary Search Tree](https://leetcode.com/problems/trim-a-binary-search-tree/) | Medium | 递归 | [√](./Rust/src/0601%20~%200700/0669%20-%20Trim%20a%20Binary%20Search%20Tree.rs) | [√](./Python3/src/0601%20~%200700/0669%20-%20Trim%20a%20Binary%20Search%20Tree.py) | [√](./Go/src/0601%20~%200700/0669%20-%20Trim%20a%20Binary%20Search%20Tree.go) |
 | [0680 - Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii/) | Easy | 双指针 | [√](./Rust/src/0601%20~%200700/0680%20-%20Valid%20Palindrome%20II.rs) | [√](./Python3/src/0601%20~%200700/0680%20-%20Valid%20Palindrome%20II.py) | [√](./Go/src/0601%20~%200700/0680%20-%20Valid%20Palindrome%20II.go) |
