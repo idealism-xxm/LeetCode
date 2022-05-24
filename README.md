@@ -293,8 +293,8 @@ LeetCode AC代码（附思路、注释）
 <details>
 <summary>0401 ~ 0500</summary>
 
-| 题目 | 难度 | 思路 | Rust | Python3
-| ------ | ------ | ------ | ------ | ------ |
+| 题目 | 难度 | 思路 | Rust | Python3 | Go |
+| ------ | ------ | ------ | ------ | ------ | ------ |
 | [0402 - Remove K Digits](https://leetcode.com/problems/remove-k-digits/) | Medium | 贪心 + 单调栈 | [●](./Rust/src/0401%20~%200500/0402%20-%20Remove%20K%20Digits.rs) |
 | [0413 - Arithmetic Slices](https://leetcode.com/problems/arithmetic-slices/) | Medium | 滑动窗口 | [√](./Rust/src/0401%20~%200500/0413%20-%20Arithmetic%20Slices.rs) | [√](./Python3/src/0401%20~%200500/0413%20-%20Arithmetic%20Slices.py) |
 | [0421 - Maximum XOR of Two Numbers in an Array](https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/) | Medium | Trie | [√](./Rust/src/0401%20~%200500/0421%20-%20Maximum%20XOR%20of%20Two%20Numbers%20in%20an%20Array.rs) |
@@ -302,6 +302,7 @@ LeetCode AC代码（附思路、注释）
 | [0452 - Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/) | Medium | 贪心 | [√](./Rust/src/0401%20~%200500/0452%20-%20Minimum%20Number%20of%20Arrows%20to%20Burst%20Balloons.rs) |
 | [0454 - 4Sum II](https://leetcode.com/problems/4sum-ii/) | Medium | Map | [√](./Rust/src/0401%20~%200500/0454%20-%204Sum%20II.rs) |
 | [0456 - 132 Pattern](https://leetcode.com/problems/132-pattern/) | Medium | 单调栈 | [●](./Rust/src/0401%20~%200500/0456%20-%20132%20Pattern.rs) | [●](./Python3/src/0401%20~%200500/0456%20-%20132%20Pattern.py) | [●](./Go/src/0401%20~%200500/0456%20-%20132%20Pattern.go) |
+| [0474 - Ones and Zeroes](https://leetcode.com/problems/ones-and-zeroes/) | Medium | DP | [√](./Rust/src/0401%20~%200500/0474%20-%20Ones%20and%20Zeroes.rs) | [√](./Python3/src/0401%20~%200500/0474%20-%20Ones%20and%20Zeroes.py) | [√](./Go/src/0401%20~%200500/0474%20-%20Ones%20and%20Zeroes.go) |
 </details>
 
 <details>
