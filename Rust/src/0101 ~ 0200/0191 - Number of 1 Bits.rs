@@ -50,16 +50,18 @@
 //          1. 只需要维护常数个额外变量即可
 
 
-func hammingWeight(n uint32) int {
-	// ans 表示 n 的二进制中 1 的个数
-	ans := 0
-	// 当 n > 0 时，表示还有二进制位的 1 ，需要继续处理统计
-	for n > 0 {
-		// 移除 n 二进制位的最后一个 1
-		n &= n - 1
-		// 将当前移除的 1 纳入统计
-		ans += 1
-	}
+impl Solution {
+    pub fn hammingWeight (mut n: u32) -> i32 {
+        // ans 表示 n 的二进制中 1 的个数
+        let mut ans = 0;
+        // 当 n > 0 时，表示还有二进制位的 1 ，需要继续处理统计
+        while n > 0 {
+            // 移除 n 二进制位的最后一个 1
+            n &= n - 1;
+            // 将当前移除的 1 纳入统计
+            ans += 1;
+        }
 
-	return ans
+        ans
+    }
 }
