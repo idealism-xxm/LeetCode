@@ -1,4 +1,4 @@
-# 链接：https:#leetcode.com/problems/divide-two-integers/
+# 链接：https://leetcode.com/problems/divide-two-integers/
 # 题意：给定除数 dividend 和被除数 divisor ，不使用除法、乘法与模，
 #      求整数除法 dividend / divisor 的整数商 quotient 。
 #

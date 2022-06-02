@@ -428,6 +428,7 @@ LeetCode AC代码（附思路、注释）
 | 题目 | 难度 | 思路 | Rust | Python3 | Go |
 | ------ | ------ | ------ | ------ | ------ | ------ |
 | [1461 - Check If a String Contains All Binary Codes of Size K](https://leetcode.com/problems/min-cost-to-connect-all-points/) | Medium | 滑动窗口 + 滚动哈希 | [√](./Rust/src/1401%20~%201500/1461%20-%20Check%20If%20a%20String%20Contains%20All%20Binary%20Codes%20of%20Size%20K.rs) | [√](./Python3/src/1401%20~%201500/1461%20-%20Check%20If%20a%20String%20Contains%20All%20Binary%20Codes%20of%20Size%20K.py) | [√](./Go/src/1401%20~%201500/1461%20-%20Check%20If%20a%20String%20Contains%20All%20Binary%20Codes%20of%20Size%20K.go) |
+| [1480 - Running Sum of 1d Array](https://leetcode.com/problems/running-sum-of-1d-array/) | Easy | 前缀和 | [√](./Rust/src/1401%20~%201500/1480%20-%20Running%20Sum%20of%201d%20Array.rs) | [√](./Python3/src/1401%20~%201500/1480%20-%20Running%20Sum%20of%201d%20Array.py) | [√](./Go/src/1401%20~%201500/1480%20-%20Running%20Sum%20of%201d%20Array.go) |
 </details>
 
 <details>
