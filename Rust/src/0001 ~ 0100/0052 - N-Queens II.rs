@@ -50,49 +50,50 @@
 //          2. 需要维护 used 全部 O(n) 个值
 
 
-func totalNQueens(n int) int {
-	// used[0][col] 表示第 col 列是否被占用
-	// used[1][row + col] 表示 (row, col) 所在的左斜线是否被占用
-	// used[2][n + row - col] 表示 (row, col) 所在的右斜线是否被占用
-	used := make([][]bool, 3)
-	for i := 0; i < 3; i++ {
-		used[i] = make([]bool, n << 1)
-	}
-	// 递归统计所有可能的放置结果
-	return dfs(0, n, used)
-}
+impl Solution {
+    pub fn total_n_queens(n: i32) -> i32 {
+        let n = n as usize;
+        // used[0][col] 表示第 col 列是否被占用
+        // used[1][row + col] 表示 (row, col) 所在的左斜线是否被占用
+        // used[2][n + row - col] 表示 (row, col) 所在的右斜线是否被占用
+        let mut used = vec![vec![false; n << 1]; 3];
+        // 递归统计所有可能的放置结果
+        Self::dfs(0, n, &mut used)
+    }
 
-func dfs(row int, n int, used [][]bool) int {
-	// 如果 row == n ，则说明当前 board 是一个合法的放置方法，直接返回 1
-	if row == n {
-		return 1
-	}
+    fn dfs(row: usize, n: usize, used: &mut Vec<Vec<bool>>) -> i32 {
+        // 如果 row == n ，则说明当前 board 是一个合法的放置方法，直接返回 1
+        if row == n {
+            return 1;
+        }
 
-	ans := 0
-	// 枚举第 row 行放置皇后的列下标
-	for col := 0; col < n; col++ {
-		// 如果 (row, col) 没有被占用，则可以在此放置一个皇后
-		if !isUsed(used, n, row, col) {
-			// 标记 (row, col) 为已被占用
-			setUsed(used, n, row, col, true)
-			// 递归处理第 row + 1 行
-			ans += dfs(row + 1, n, used)
-			// 标记 (row, col) 为未被占用
-			setUsed(used, n, row, col, false)
-		}
-	}
-	return ans
-}
+        let mut ans = 0;
+        // 枚举第 row 行放置皇后的列下标
+        for col in 0..n {
+            // 如果 (row, col) 没有被占用，则可以在此放置一个皇后
+            if !Self::is_used(used, n, row, col) {
+                // 标记 (row, col) 为已被占用
+                Self::set_used(used, n, row, col, true);
+                // 递归处理第 row + 1 行
+                ans += Self::dfs(row + 1, n, used);
+                // 标记 (row, col) 为未被占用
+                Self::set_used(used, n, row, col, false);
+            }
+        }
 
-func isUsed(used [][]bool, n int, row int, col int) bool {
-	// 如果 (row, col) 对应的任意一种情况已有皇后，则该位置已被占用
-	return used[0][col] || used[1][row + col] || used[2][n + row - col]
-}
+        ans
+    }
 
-func setUsed(used [][]bool, n int, row int, col int, value bool) {
-	// 依次标记 (row, col) 对应的三种情况的占用值为 value 。
-	// 其中： value = true 代表已经使用，value = false 代表未使用。
-	used[0][col] = value
-	used[1][row + col] = value
-	used[2][n + row - col] = value
+    fn is_used(used: &mut Vec<Vec<bool>>, n: usize, row: usize, col: usize) -> bool {
+        // 如果 (row, col) 对应的任意一种情况已有皇后，则该位置已被占用
+        return used[0][col] || used[1][row + col] || used[2][n + row - col];
+    }
+
+    fn set_used(used: &mut Vec<Vec<bool>>, n: usize, row: usize, col: usize, value: bool) {
+        // 依次标记 (row, col) 对应的三种情况的占用值为 value 。
+        // 其中： value = true 代表已经使用，value = false 代表未使用。
+        used[0][col] = value;
+        used[1][row + col] = value;
+        used[2][n + row - col] = value;
+    }
 }

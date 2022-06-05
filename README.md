@@ -63,7 +63,7 @@ LeetCode AC代码（附思路、注释）
 | [0049 - Group Anagrams](https://leetcode.com/problems/group-anagrams/) | Medium | 排序模拟 &#124; 计数模拟 | [√ &#124; ●](./Go/src/0001%20~%200100/0049%20-%20Group%20Anagrams.go) |
 | [0050 - Pow(x, n)](https://leetcode.com/problems/powx-n/) | Medium | 快速幂 | [√](./Go/src/0001%20~%200100/0050%20-%20Pow(x,%20n).go) |
 | [0051 - N-Queens](https://leetcode.com/problems/n-queens/) | Hard | 递归/回溯/DFS | [√](./Go/src/0001%20~%200100/0051%20-%20N-Queens.go) | [√](./Python3/src/0001%20~%200100/0051%20-%20N-Queens.py) | [√](./Rust/src/0001%20~%200100/0051%20-%20N-Queens.rs) |
-| [0052 - N-Queens II](https://leetcode.com/problems/n-queens-ii/) | Hard | 递归 | [√](./Go/src/0001%20~%200100/0052%20-%20N-Queens%20II.go) |
+| [0052 - N-Queens II](https://leetcode.com/problems/n-queens-ii/) | Hard | 递归/回溯/DFS | [√](./Go/src/0001%20~%200100/0052%20-%20N-Queens%20II.go) | [√](./Python3/src/0001%20~%200100/0052%20-%20N-Queens%20II.py) | [√](./Rust/src/0001%20~%200100/0052%20-%20N-Queens%20II.rs) |
 | [0053 - Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | Easy | DP &#124; 分治 | [√ &#124; ○](./Go/src/0001%20~%200100/0053%20-%20Maximum%20Subarray.go) |
 | [0054 - Spiral Matrix](https://leetcode.com/problems/spiral-matrix/) | Medium | 模拟 | [√](./Go/src/0001%20~%200100/0054%20-%20Spiral%20Matrix.go) |
 | [0055 - Jump Game](https://leetcode.com/problems/jump-game/) | Medium | DP &#124; 贪心 | [√ &#124; ○](./Go/src/0001%20~%200100/0055%20-%20Jump%20Game.go) |
