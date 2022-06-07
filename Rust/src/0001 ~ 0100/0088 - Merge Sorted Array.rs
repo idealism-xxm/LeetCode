@@ -39,7 +39,7 @@
 //      我们可以从后往前向 nums1 中填充当前最大的数字，
 //      因为 nums1 中后面 n 个位置是空的，所以从后往前填充不会覆盖未使用的数，
 //      也能避免使用过多额外空间。
-//
+//      
 //      然后不断循环填充，直到 nums2 中的数字全部填充完毕，
 //      每次将两个数组中还未使用的最大数字的较大值放到 nums1[k] 即可。
 //
@@ -56,26 +56,28 @@
 //          1. 只需要使用常数个额外变量
 
 
-func merge(nums1 []int, m int, nums2 []int, n int) {
-	// i/j 分别表示 nums1/nums2 中还未使用的最大数的下标
-	i, j := m-1, n-1
-	// k 表示 nums1 中下一个该填充的位置。
-	k := m + n - 1
-	// 如果 nums2 中还有数字，则继续向 nums1[k] 填充当前最大的数
-	for j >= 0 {
-		if i >= 0 && nums1[i] > nums2[j] {
-			// nums1 和 num2 中都还有数字，且 nums1[i] > nums2[j] ，
-			// 则将 nums1[i] 放到 k 处
-			nums1[k] = nums1[i]
-			i -= 1
-		} else {
-			// 此时有两种情况，都需要将 nums2[j] 放到 k 处：
-			//    1. 只有 nums2 中还有数字
-			//    2. nums1 和 num2 中都还有数字，且 nums1[i] <= nums2[j]
-			nums1[k] = nums2[j]
-			j -= 1
-		}
-		k -= 1
-	}
-	// 此时 i 和 k 必定相等，后续即使 nums1 中还有数字，位置也不会再改变
+impl Solution {
+    pub fn merge(nums1: &mut Vec<i32>, m: i32, nums2: &mut Vec<i32>, n: i32) {
+        // i/j 分别表示 nums1/nums2 中还未使用的最大数的下标
+        let (mut i, mut j) = (m - 1, n - 1);
+        // k 表示 nums1 中下一个该填充的位置。
+        let mut k = m + n - 1;
+        // 如果 nums2 中还有数字，则继续向 nums1[k] 填充当前最大的数
+        while j >= 0 {
+            if i >= 0 && nums1[i as usize] > nums2[j as usize] {
+                // nums1 和 num2 中都还有数字，且 nums1[i] > nums2[j] ，
+                // 则将 nums1[i] 放到 k 处
+                nums1[k as usize] = nums1[i as usize];
+                i -= 1;
+            } else {
+                // 此时有两种情况，都需要将 nums2[j] 放到 k 处：
+                //    1. 只有 nums2 中还有数字
+                //    2. nums1 和 num2 中都还有数字，且 nums1[i] <= nums2[j]
+                nums1[k as usize] = nums2[j as usize];
+                j -= 1;
+            }
+            k -= 1;
+        }
+        // 此时 i 和 k 必定相等，后续即使 nums1 中还有数字，位置也不会再改变
+    }
 }

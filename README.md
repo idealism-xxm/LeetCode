@@ -99,7 +99,7 @@ LeetCode AC代码（附思路、注释）
 | [0085 - Maximal Rectangle](https://leetcode.com/problems/maximal-rectangle/) | Hard | 单调栈 &#124; DP | [√ &#124; √](./Go/src/0001%20~%200100/0085%20-%20Maximal%20Rectangle.go) |
 | [0086 - Partition List](https://leetcode.com/problems/partition-list/) | Medium | 模拟 | [√](./Go/src/0001%20~%200100/0086%20-%20Partition%20List.go) |
 | [0087 - Scramble String](https://leetcode.com/problems/scramble-string/) | Hard | 递归 + 记忆化 &#124; DP | [○ &#124; ●](./Go/src/0001%20~%200100/0087%20-%20Scramble%20String.go) |
-| [0088 - Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) | Easy | 两次循环 &#124; 一次循环 | [√ &#124; ●](./Go/src/0001%20~%200100/0088%20-%20Merge%20Sorted%20Array.go) |
+| [0088 - Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) | Easy | 双指针 | [●](./Go/src/0001%20~%200100/0088%20-%20Merge%20Sorted%20Array.go) | [√](./Python3/src/0001%20~%200100/0088%20-%20Merge%20Sorted%20Array.py) | [√](./Rust/src/0001%20~%200100/0088%20-%20Merge%20Sorted%20Array.rs) |
 | [0089 - Gray Code](https://leetcode.com/problems/gray-code/) | Medium | DP &#124; 数学 | [● &#124; ●](./Go/src/0001%20~%200100/0089%20-%20Gray%20Code.go) |
 | [0090 - Subsets II](https://leetcode.com/problems/subsets-ii/) | Medium | 递归 | [√](./Go/src/0001%20~%200100/0090%20-%20Subsets%20II.go) |
 | [0091 - Decode Ways](https://leetcode.com/problems/decode-ways/) | Medium | DP | [√](./Go/src/0001%20~%200100/0091%20-%20Decode%20Ways.go) |
