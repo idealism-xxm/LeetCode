@@ -17,15 +17,18 @@
 
 // 输入： numbers = [2,7,11,15], target = 9
 // 输出： [1,2]
-// 解释： 2 + 7 = 9 ，对应的索引为 (0, 1) ，因此返回 [1,2] 。
+// 解释： 2 与 7 的和为 9 ，
+//       对应的索引为 (0, 1) ，因此返回 [1,2] 。
 
 // 输入： numbers = [2,3,4], target = 6
 // 输出： [1,3]
-// 解释： 2 + 4 = 6 ，对应的索引为 (0, 2) ，因此返回 [1,3] 。
+// 解释： 2 + 4 = 6 ，
+//       对应的索引为 (0, 2) ，因此返回 [1,3] 。
 
 // 输入： numbers = [-1,0], target = -1
 // 输出： [1,2]
-// 解释： -1 + 0 = -1 ，对应的索引为 (0, 1) ，因此返回 [1,2] 。
+// 解释： -1 + 0 = -1 ，
+//       对应的索引为 (0, 1) ，因此返回 [1,2] 。
 
 
 // 思路： 双指针
@@ -53,26 +56,28 @@
 //          1. 只需要使用常数个额外变量
 
 
-func twoSum(numbers []int, target int) []int {
-	// 使用双指针找到合法解
-	l, r := 0, len(numbers) - 1
-	for l < r {
-		// 计算当前左右指针指向的两个数的和
-		sum := numbers[l] + numbers[r]
-		if sum == target {
-			// 如果和为 target ，则 [l, r] 就是所求解
-			return []int{l + 1, r + 1}
-		}
-		
-		if sum < target {
-			// 如果和小于 target ，则需要让和变大，只能右移 l
-			l += 1
-		} else {
-			// 如果和大于 target ，则需要让和变小，只能左移 r
-			r -= 1
-		}
-	}
-	
-	// 由于必定存在一个合法解，所以不会走到这
-	return nil
+impl Solution {
+    pub fn two_sum(numbers: Vec<i32>, target: i32) -> Vec<i32> {
+        // 使用双指针找到合法解
+        let (mut l, mut r) = (0, numbers.len() - 1);
+        while l < r {
+            // 计算当前左右指针指向的两个数的和
+            let sum = numbers[l] + numbers[r];
+            if sum == target {
+                // 如果和为 target ，则 [l, r] 就是所求解
+                return vec![l as i32 + 1, r as i32 + 1];
+            }
+            
+            if sum < target {
+                // 如果和小于 target ，则需要让和变大，只能右移 l
+                l += 1;
+            } else {
+                // 如果和大于 target ，则需要让和变小，只能左移 r
+                r -= 1;
+            }
+        }
+        
+        // 由于必定存在一个合法解，所以不会走到这
+        unreachable!()
+    }
 }
