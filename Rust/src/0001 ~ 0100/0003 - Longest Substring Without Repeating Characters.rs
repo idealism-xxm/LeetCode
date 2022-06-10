@@ -30,7 +30,7 @@
 //      那么我们使用滑动窗口 [l, r] 表示一个不含重复字符的连续子串，
 //      初始化为左边界 l = 0 ，右边界 r = -1 ，表示初始窗口为空。
 //
-//      同时我们使用一个集合 usedChars 来维护滑动窗口中已经出现过的字符。
+//      同时我们使用一个集合 used_chars 来维护滑动窗口中已经出现过的字符。
 //
 //      然后不断右移右边界 r ，准备将其纳入到滑动窗口中考虑。
 //
@@ -53,32 +53,31 @@
 //          1. 只需用一个集合维护全部 O(C) 种字符
 
 
-func lengthOfLongestSubstring(s string) int {
-	// 滑动窗口 [l, r] 内的字符是不重复的，
-	// 初始化左边界 l 为 0 ，右边界为 -1
-	l := 0
-	// 滑动窗口初始大小为 0 ，不含已使用的字符
-	ans := 0
-	usedChars := make(map[byte]bool, 0)
-	// 不断右移右边界 r ，准备将其纳入到滑动窗口中考虑
-	for r := range s {
-		// 如果 s[r] 已在滑动窗口中，
-		// 则不断右移左边界，直至 s[r] 不在滑动窗口中
-		for usedChars[s[r]] {
-			usedChars[s[l]] = false
-			l += 1
-		}
-		// 此时 s[r] 成功进入滑动窗口，标记为已使用，更新滑动窗口最大值
-		usedChars[s[r]] = true
-		ans = max(ans, r - l + 1)
-	}
+use std::collections::HashSet;
 
-	return ans
-}
 
-func max(a, b int) int {
-	if a > b {
-		return a
-	}
-	return b
+impl Solution {
+    pub fn length_of_longest_substring(s: String) -> i32 {
+        let s = s.as_bytes();
+        // 滑动窗口 [l, r] 内的字符是不重复的，
+        // 初始化左边界 l 为 0 ，右边界为 -1
+        let mut l = 0;
+        // 滑动窗口初始大小为 0 ，不含已使用的字符
+        let mut ans = 0;
+        let mut used_chars = HashSet::new();
+        // 不断右移右边界 r ，准备将其纳入到滑动窗口中考虑
+        for r in 0..s.len() {
+            // 如果 s[r] 已在滑动窗口中，
+            // 则不断右移左边界，直至 s[r] 不在滑动窗口中
+            while used_chars.contains(&s[r]) {
+                used_chars.remove(&s[l]);
+                l += 1;
+            }
+            // 此时 s[r] 成功进入滑动窗口，标记为已使用，更新滑动窗口最大值
+            used_chars.insert(s[r]);
+            ans = ans.max(r - l + 1);
+        }
+
+        ans as i32
+    }
 }
