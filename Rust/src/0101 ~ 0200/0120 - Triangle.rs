@@ -55,66 +55,23 @@
 //          1. 需用维护 dp 中一行的 O(n) 个状态
 
 
-func minimumTotal(triangle [][]int) int {
-	// 定义 dp 数组，为了方便后续处理，初始化为一个极大值 0x3f3f3f3f
-	dp := make([]int, len(triangle))
-	for i := range dp {
-		dp[i] = 0x3f3f3f3f
-	}
-	// 初始化第一行的状态
-	dp[0] = triangle[0][0]
-	// 将第 i - 1 行的状态转移至第 i 行
-	for i := 1; i < len(triangle); i++ {
-		// 每一行从大到小更新 dp[j] ，保证 dp[j - 1] 是上一行的状态
-		for j := i; j > 0; j-- {
-			dp[j] = min(dp[j], dp[j - 1]) + triangle[i][j]
-		}
-		// dp[0] 只能从 dp[0] 转移而来，所以直接加上 triangle[i][0]
-		dp[0] += triangle[i][0]
-	}
+impl Solution {
+    pub fn minimum_total(triangle: Vec<Vec<i32>>) -> i32 {
+        // 定义 dp 数组，为了方便后续处理，初始化为一个极大值 0x3f3f3f3f
+        let mut dp = vec![0x3f3f3f3f; triangle.len()];
+        // 初始化第一行的状态
+        dp[0] = triangle[0][0];
+        // 将第 i - 1 行的状态转移至第 i 行
+        for i in 1..triangle.len() {
+            // 每一行从大到小更新 dp[j] ，保证 dp[j - 1] 是上一行的状态
+            for j in (1..i + 1).rev() {
+                dp[j] = dp[j].min(dp[j - 1]) + triangle[i][j];
+            }
+            // dp[0] 只能从 dp[0] 转移而来，所以直接加上 triangle[i][0]
+            dp[0] += triangle[i][0];
+        }
 
-	// 最后一行的状态的最小值就是答案
-	return min(dp...)
-}
-
-func min(nums ...int) int {
-	ans := nums[0];
-	for _, num := range nums {
-		if num < ans {
-			ans = num
-		}
-	}
-	return ans
-}
-
-
-// 思路2：DP
-//
-//		应该是刚入门 DP 时做得题目
-//		从下到上更新最后不用再循环一遍，方便一点
-//		初始化：多放入一行空的，方便迁移至其他语言
-//			dp = make([]int, numRows + 1)
-//		状态转移：第 i 层第 j 列可从 第 i + 1 层第 j 列 和第 i + 1 层第 j + 1 列 中较小值得到
-//			dp[j] = min(dp[j], dp[j + 1]) + triangle[i][j]
-//
-//		时间复杂度： O(numRows ^ 2)
-//		空间复杂度： O(numRows)
-
-func minimumTotal(triangle [][]int) int {
-	numRows := len(triangle)
-	dp := make([]int, numRows + 1)
-	for i := numRows - 1; i >= 0; i-- {
-		for j := 0; j <= i; j++ {
-			// 上一行算出来的较小值算入本行的路径中
-			dp[j] = min(dp[j], dp[j + 1]) + triangle[i][j]
-		}
-	}
-	return dp[0]
-}
-
-func min(a, b int) int {
-	if a < b {
-		return a
-	}
-	return b
+        // 最后一行的状态的最小值就是答案
+        *dp.iter().min().unwrap()
+    }
 }
