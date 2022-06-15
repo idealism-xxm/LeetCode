@@ -320,6 +320,7 @@ LeetCode AC代码（附思路、注释）
 | [0538 - Convert BST to Greater Tree](https://leetcode.com/problems/convert-bst-to-greater-tree/) | Medium | 递归 | [√](./Rust/src/0501%20~%200600/0538%20-%20Convert%20BST%20to%20Greater%20Tree.rs) | [√](./Python3/src/0501%20~%200600/0538%20-%20Convert%20BST%20to%20Greater%20Tree.py) | [√](./Go/src/0501%20~%200600/0538%20-%20Convert%20BST%20to%20Greater%20Tree.go) |
 | [0560 - Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/) | Medium | 前缀和 + Map | [√](./Rust/src/0501%20~%200600/0560%20-%20Subarray%20Sum%20Equals%20K.rs) |
 | [0567 - Permutation in String](https://leetcode.com/problems/permutation-in-string/) | Medium | 滑动窗口 | [√](./Rust/src/0501%20~%200600/0567%20-%20Permutation%20in%20String.rs) |
+| [0583 - Delete Operation for Two Strings](https://leetcode.com/problems/delete-operation-for-two-strings/) | Medium | 滑动窗口 | [√](./Rust/src/0501%20~%200600/0583%20-%20Delete%20Operation%20for%20Two%20Strings.rs) | [√](./Python3/src/0501%20~%200600/0583%20-%20Delete%20Operation%20for%20Two%20Strings.py) | [√](./Go/src/0501%20~%200600/0583%20-%20Delete%20Operation%20for%20Two%20Strings.go) |
 </details>
 
 <details>
