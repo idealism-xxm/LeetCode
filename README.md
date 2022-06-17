@@ -638,4 +638,5 @@ LeetCode AC代码（附思路、注释）
 | 题目 | 难度 | 思路 | Go | Python3 | Rust |
 | ------ | ------ | ------ | ------ | ------ | ------ |
 | [2274 - Maximum Consecutive Floors Without Special Floors](https://leetcode.com/problems/maximum-consecutive-floors-without-special-floors/) | Medium | 排序 | [√](./Go/src/2201%20~%202300/2274%20-%20Maximum%20Consecutive%20Floors%20Without%20Special%20Floors.go) | [√](./Python3/src/2201%20~%202300/2274%20-%20Maximum%20Consecutive%20Floors%20Without%20Special%20Floors.py) | [√](./Rust/src/2201%20~%202300/2274%20-%20Maximum%20Consecutive%20Floors%20Without%20Special%20Floors.rs) |
+| [2278 - Percentage of Letter in String](https://leetcode.com/problems/percentage-of-letter-in-string/) | Easy | 模拟 | [√](./Go/src/2201%20~%202300/2278%20-%20Percentage%20of%20Letter%20in%20String.go) | [√](./Python3/src/2201%20~%202300/2278%20-%20Percentage%20of%20Letter%20in%20String.py) | [√](./Rust/src/2201%20~%202300/2278%20-%20Percentage%20of%20Letter%20in%20String.rs) |
 </details>
