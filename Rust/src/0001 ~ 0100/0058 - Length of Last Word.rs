@@ -34,28 +34,28 @@
 //          1. 需要遍历完最后一个单词，最差情况下要遍历 s 中全部 O(n) 个字符
 //      空间复杂度：O(1)
 //          1. 只需要维护常数个额外变量
-        
-        
 
-func lengthOfLastWord(s string) int {
-    // ans 表示最后一个单词的长度
-    ans := 0
-    for i := len(s) - 1; i >= 0; i-- {
-        ch := s[i]
-        if ch == ' ' {
-            if ans > 0 {
-                // 如果 ch 是空格且遇到过单词，
-                // 则 ans 就是最后一个单词的长度，直接返回即可
-                return ans
+
+impl Solution {
+    pub fn length_of_last_word(s: String) -> i32 {
+        // ans 表示最后一个单词的长度
+        let mut ans = 0;
+        for &ch in s.as_bytes().iter().rev() {
+            if ch == b' ' {
+                if ans > 0 {
+                    // 如果 ch 是空格且遇到过单词，
+                    // 则 ans 就是最后一个单词的长度，直接返回即可
+                    return ans
+                }
+                // 此时 ch 是空格，但还未遇到过单词，
+                // 即还处于末尾空格中，不做处理
+            } else {
+                // 统计最后一个单词的长度
+                ans += 1;
             }
-            // 此时 ch 是空格，但还未遇到过单词，
-            // 即还处于末尾空格中，不做处理
-        } else {
-            // 统计最后一个单词的长度
-            ans += 1
         }
+        // 此时 s 中只有一个单词 且 s 无前导空格，
+        // ans 就是这个单词的长度，直接返回即可
+        ans
     }
-    // 此时 s 中只有一个单词 且 s 无前导空格，
-    // ans 就是这个单词的长度，直接返回即可
-    return ans
 }
