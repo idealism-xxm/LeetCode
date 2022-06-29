@@ -29,17 +29,18 @@
 //          1. 需要用 dp 维护全部 O(n ^ 2) 个位置的数
 
 
-func generate(numRows int) [][]int {
-	var dp [][]int
-	for i := 0; i < numRows; i++ {
-		dp = append(dp, make([]int, i + 1))
-		// 直接将边界情况设置好
-		dp[i][0], dp[i][i] = 1, 1
-		// 仅处理中间非边界情况的数，即它等于左上和右上的数之和
-		for j := 1; j < i; j++ {
-			dp[i][j] = dp[i - 1][j - 1] + dp[i - 1][j]
-		}
-	}
+impl Solution {
+    pub fn generate(num_rows: i32) -> Vec<Vec<i32>> {
+        let mut dp = vec![];
+        for i in 0..num_rows as usize {
+            // 每一行默认全都是 1 ，直接将边界情况设置好
+            dp.push(vec![1; i + 1]);
+            // 仅处理中间非边界情况的数，即它等于左上和右上的数之和
+            for j in 1..i {
+                dp[i][j] = dp[i - 1][j - 1] + dp[i - 1][j];
+            }
+        }
 
-	return dp
+        dp
+    }
 }
