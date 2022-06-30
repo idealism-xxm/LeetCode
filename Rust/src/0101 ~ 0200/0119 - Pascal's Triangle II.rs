@@ -7,7 +7,7 @@
 
 
 // 数据限制：
-//  0 <= rowIndex <= 33
+//  1 <= rowIndex <= 33
 
 
 // 输入： rowIndex = 3
@@ -20,7 +20,7 @@
 // 输出： [1,1]
 
 
-// 思路： DP
+// 思路： 模拟
 //
 //      本题是 LeetCode 118 这题的加强版，需要将空间复杂度优化为 O(n) 。
 //
@@ -42,16 +42,17 @@
 //          1. 需要用 dp 维护全部 O(n) 个位置的数
 
 
-func getRow(rowIndex int) []int {
-	dp := make([]int, rowIndex + 1)
-	for i := 0; i <= rowIndex; i++ {
-		// 处理边界情况，第 i 层最后一个数必定是 1
-		dp[i] = 1
-		// 倒序转移，仅处理第 i 层中间非边界情况的数，即它等于左上和右上的数之和
-		for j := i - 1; j > 0; j-- {
-			dp[j] += dp[j - 1]
-		}
-	}
+impl Solution {
+    pub fn get_row(row_index: i32) -> Vec<i32> {
+        // 默认全都是 1 ，直接所有行的边界情况设置好
+        let mut dp = vec![1; row_index as usize + 1];
+        for i in 0..=row_index as usize {
+            // 倒序转移，仅处理第 i 层中间非边界情况的数，即它等于左上和右上的数之和
+            for j in (1..i).rev() {
+                dp[j] += dp[j - 1];
+            }
+        }
 
-	return dp
+        dp
+    }
 }
