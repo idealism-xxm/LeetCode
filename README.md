@@ -305,6 +305,7 @@ LeetCode AC代码（附思路、注释）
 | [0452 - Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/) | Medium | 贪心 | [√](./Rust/src/0401%20~%200500/0452%20-%20Minimum%20Number%20of%20Arrows%20to%20Burst%20Balloons.rs) |
 | [0454 - 4Sum II](https://leetcode.com/problems/4sum-ii/) | Medium | Map | [√](./Rust/src/0401%20~%200500/0454%20-%204Sum%20II.rs) |
 | [0456 - 132 Pattern](https://leetcode.com/problems/132-pattern/) | Medium | 单调栈 | [●](./Rust/src/0401%20~%200500/0456%20-%20132%20Pattern.rs) | [●](./Python3/src/0401%20~%200500/0456%20-%20132%20Pattern.py) | [●](./Go/src/0401%20~%200500/0456%20-%20132%20Pattern.go) |
+| [0462 - Minimum Moves to Equal Array Elements II](https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii/) | Medium | 排序 + DP | [√](./Rust/src/0401%20~%200500/0462%20-%20Minimum%20Moves%20to%20Equal%20Array%20Elements%20II.rs) | [√](./Python3/src/0401%20~%200500/0462%20-%20Minimum%20Moves%20to%20Equal%20Array%20Elements%20II.py) | [√](./Go/src/0401%20~%200500/0462%20-%20Minimum%20Moves%20to%20Equal%20Array%20Elements%20II.go) |
 | [0474 - Ones and Zeroes](https://leetcode.com/problems/ones-and-zeroes/) | Medium | DP | [√](./Rust/src/0401%20~%200500/0474%20-%20Ones%20and%20Zeroes.rs) | [√](./Python3/src/0401%20~%200500/0474%20-%20Ones%20and%20Zeroes.py) | [√](./Go/src/0401%20~%200500/0474%20-%20Ones%20and%20Zeroes.go) |
 </details>
 
