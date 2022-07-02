@@ -467,8 +467,9 @@ LeetCode AC代码（附思路、注释）
 <details>
 <summary>1701 ~ 1800</summary>
 
-| 题目 | 难度 | 思路 | Python3 | Go |
-| ------ | ------ | ------ | ------ | ------ |
+| 题目 | 难度 | 思路 | Python3 | Go | Rust |
+| ------ | ------ | ------ | ------ | ------ | ------ |
+| [1710 - Maximum Units on a Truck](https://leetcode.com/problems/maximum-units-on-a-truck/) | Easy | 贪心 + 排序 | [√](./Python3/src/1701%20~%201800/1710%20-%20Maximum%20Units%20on%20a%20Truck.py) | [√](./Go/src/1701%20~%201800/1710%20-%20Maximum%20Units%20on%20a%20Truck.go) | [√](./Rust/src/1701%20~%201800/1710%20-%20Maximum%20Units%20on%20a%20Truck.rs) |
 | [1721 - Swapping Nodes in a Linked List](https://leetcode.com/problems/swapping-nodes-in-a-linked-list/) | Easy | 双指针 | [√](./Python3/src/1701%20~%201800/1721%20-%20Swapping%20Nodes%20in%20a%20Linked%20List.py) | [√](./Go/src/1701%20~%201800/1721%20-%20Swapping%20Nodes%20in%20a%20Linked%20List.go) |
 </details>
 
