@@ -55,36 +55,48 @@
 //              最差情况下，全部 O(n) 个结点在一条链上
 
 
-/**
- * Definition for a binary tree node.
- * type TreeNode struct {
- *     Val int
- *     Left *TreeNode
- *     Right *TreeNode
- * }
- */
-func rightSideView(root *TreeNode) []int {
-	// ans 用于收集每一层最右侧结点的值
-	var ans []int
-	// dfs 先序遍历收集每一层最右侧结点的值
-	dfs(root, 1, &ans)
+// Definition for a binary tree node.
+// #[derive(Debug, PartialEq, Eq)]
+// pub struct TreeNode {
+//   pub val: i32,
+//   pub left: Option<Rc<RefCell<TreeNode>>>,
+//   pub right: Option<Rc<RefCell<TreeNode>>>,
+// }
+// 
+// impl TreeNode {
+//   #[inline]
+//   pub fn new(val: i32) -> Self {
+//     TreeNode {
+//       val,
+//       left: None,
+//       right: None
+//     }
+//   }
+// }
+use std::rc::Rc;
+use std::cell::RefCell;
+impl Solution {
+    pub fn right_side_view(root: Option<Rc<RefCell<TreeNode>>>) -> Vec<i32> {
+        // ans 用于收集每一层最右侧结点的值
+        let mut ans = vec![];
+        // dfs 先序遍历收集每一层最右侧结点的值
+        Self::dfs(&root, 1, &mut ans);
 
-	return ans
-}
+        ans
+    }
 
-func dfs(root *TreeNode, depth int, ans *[]int) {
-	// 如果 root 为空，则直接返回
-	if root == nil {
-		return
-	}
+    fn dfs(root: &Option<Rc<RefCell<TreeNode>>>, depth: usize, ans: &mut Vec<i32>) {
+        // 如果 root 不为空，则继续先序遍历 root 子树
+        if let Some(root) = root {
+            // 如果深度大于 ans 的长度，则 root.val 是当前层最右侧结点的值，需要收集
+            if depth > ans.len() {
+                ans.push(root.borrow().val);
+            }
 
-	// 如果深度大于 ans 的长度，则 root.val 是当前层最右侧结点的值，需要收集
-	if depth > len(*ans) {
-		*ans = append(*ans, root.Val)
-	}
-
-	// 先递归遍历右子树，在递归遍历左子树，
-	// 这样后续遇到每一层的第一个结点，必定是该层最右侧结点
-	dfs(root.Right, depth + 1, ans)
-	dfs(root.Left, depth + 1, ans)
+            // 先递归遍历右子树，在递归遍历左子树，
+            // 这样后续遇到每一层的第一个结点，必定是该层最右侧结点
+            Self::dfs(&root.borrow().right, depth + 1, ans);
+            Self::dfs(&root.borrow().left, depth + 1, ans);
+        }
+    }
 }
