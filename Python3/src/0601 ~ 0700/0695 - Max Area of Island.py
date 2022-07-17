@@ -56,9 +56,6 @@
 #  1: 向右走 1 步
 #  2: 向下走 1 步
 #  3: 向左走 1 步
-from os import stat
-
-
 DIRS: List[Tuple[int, int]] = [(-1, 0), (0, 1), (1, 0), (0, -1)]
 
 
