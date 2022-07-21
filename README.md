@@ -103,7 +103,7 @@ LeetCode AC代码（附思路、注释）
 | [0089 - Gray Code](https://leetcode.com/problems/gray-code/) | Medium | DP &#124; 数学 | [● &#124; ●](./Go/src/0001%20~%200100/0089%20-%20Gray%20Code.go) |
 | [0090 - Subsets II](https://leetcode.com/problems/subsets-ii/) | Medium | 递归 | [√](./Go/src/0001%20~%200100/0090%20-%20Subsets%20II.go) |
 | [0091 - Decode Ways](https://leetcode.com/problems/decode-ways/) | Medium | DP | [√](./Go/src/0001%20~%200100/0091%20-%20Decode%20Ways.go) |
-| [0092 - Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/) | Medium | 模拟 | [√](./Go/src/0001%20~%200100/0092%20-%20Reverse%20Linked%20List%20II.go) |
+| [0092 - Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/) | Medium | 模拟 | [√](./Go/src/0001%20~%200100/0092%20-%20Reverse%20Linked%20List%20II.go) | [√](./Python3/src/0001%20~%200100/0092%20-%20Reverse%20Linked%20List%20II.py) | [√](./Rust/src/0001%20~%200100/0092%20-%20Reverse%20Linked%20List%20II.rs) |
 | [0093 - Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses/) | Medium | 递归 | [√](./Go/src/0001%20~%200100/0093%20-%20Restore%20IP%20Addresses.go) |
 | [0094 - Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/) | Medium | 模拟 | [√](./Go/src/0001%20~%200100/0094%20-%20Binary%20Tree%20Inorder%20Traversal.go) |
 | [0095 - Unique Binary Search Trees II](https://leetcode.com/problems/unique-binary-search-trees-ii/) | Medium | DP | [√](./Go/src/0001%20~%200100/0095%20-%20Unique%20Binary%20Search%20Trees%20II.go) |
