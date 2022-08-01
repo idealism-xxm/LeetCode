@@ -46,7 +46,7 @@
 class Solution:
     def searchMatrix(self, matrix: List[List[int]], target: int) -> bool:
         m, n = (len(matrix), len(matrix[0]))
-		# 从左下角 (m - 1, 0) 处开始减治
+        # 从左下角 (m - 1, 0) 处开始减治
         r, c = m - 1, 0
         # 若矩阵中还有元素，则继续减治处理
         while r >= 0 and c < n:
