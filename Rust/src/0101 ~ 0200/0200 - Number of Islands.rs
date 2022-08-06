@@ -6,9 +6,9 @@
 
 // 数据限制：
 //  m == grid.length
-//	n == grid[i].length
-//	1 <= m, n <= 300
-//	grid[i][j] 是 '0' 或 '1'
+//  n == grid[i].length
+//  1 <= m, n <= 300
+//  grid[i][j] 是 '0' 或 '1'
 
 
 // 输入： grid = [["1","1","1","1","0"],["1","1","0","1","0"],["1","1","0","0","0"],["0","0","0","0","0"]]
@@ -59,57 +59,47 @@
 //  1: 向右走 1 步
 //  2: 向下走 1 步
 //  3: 向左走 1 步
-var DR = []int{-1, 0, 1, 0}
-var DC = []int{0, 1, 0, -1}
+static DIRS: [(i32, i32); 4] = [(-1, 0), (0, 1), (1, 0), (0, -1)];
 
 
-func numIslands(grid [][]byte) int {
-    m, n := len(grid), len(grid[0])
-    // visited[r][c] 表示 (r, c) 的位置是否被访问过
-    visited := make([][]bool, m)
-    for i := range visited {
-        visited[i] = make([]bool, n)
-    }
-    // 初始化最大岛面积为 0
-    ans := 0
-    for r := range grid {
-        for c := range grid[r] {
-            // 遍历计算每个位置的岛面积
-            area := dfs(grid, r, c, visited)
-            // 如果存在岛屿，则 ans 加 1
-            if area > 0 {
-                ans += 1
+impl Solution {
+    pub fn num_islands(grid: Vec<Vec<char>>) -> i32 {
+        let (m, n) = (grid.len(), grid[0].len());
+        // visited[r][c] 表示 (r, c) 的位置是否被访问过
+        let mut visited = vec![vec![false; n]; m];
+        // 初始化岛数量为 0
+        let mut ans = 0;
+        for r in 0..m {
+            for c in 0..n {
+                // 遍历计算每个位置的岛面积
+                let area = Self::dfs(&grid, r, c, &mut visited);
+                // 如果存在岛屿，则 ans 加 1
+                if area > 0 {
+                    ans += 1;
+                }
             }
         }
+
+        ans
     }
 
-    return ans
-}
+    fn dfs(grid: &Vec<Vec<char>>, r: usize, c: usize, visited: &mut Vec<Vec<bool>>) -> i32 {
+        // 如果位置不合法 或者 是水 或者 已访问过，则直接返回 0 。
+        // 注意： r, c 的类型为 usize ，所以会下溢，无需判断是否小于 0 。
+        if r >= grid.len() || c >= grid[r].len() || grid[r][c] == '0' || visited[r][c] {
+            return 0;
+        }
 
-func dfs(grid [][]byte, r int, c int, visited [][]bool) int {
-    // 如果位置不合法 或者 是水 或者 已访问过，则直接返回 0
-    if r < 0 || r >= len(grid) || 
-        c < 0 || c >= len(grid[r]) || 
-        grid[r][c] == '0' || visited[r][c] {
-            return 0
+        // 标记该位置已被遍历
+        visited[r][c] = true;
+        // 当前陆地的面积为 1
+        let mut area = 1;
+        // 加上四个方向联通的陆地的面积
+        for (dr, dc) in DIRS.iter() {
+            let (rr, cc) = (r as i32 + dr, c as i32 + dc);
+            area += Self::dfs(grid, rr as usize, cc as usize, visited);
+        }
+
+        area
     }
-
-    // 标记该位置已被遍历
-    visited[r][c] = true
-    // 当前陆地的面积为 1
-    area := 1
-    // 加上四个方向联通的陆地的面积
-    for i := range DR {
-        rr, cc := r + DR[i], c + DC[i]
-        area += dfs(grid, rr, cc, visited)
-    }
-
-    return area
-}
-
-func max(a, b int) int {
-    if a > b {
-        return a
-    }
-    return b
 }

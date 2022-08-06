@@ -1,4 +1,4 @@
-// 链接：https://leetcode.com/problems/baseball-game/
+// 链接：https://leetcode.com/problems/max-area-of-island/
 // 题意：给定一个 m * n 的矩阵 grid ，其中 1 表示陆地，0 表示水。
 //      假设 grid 四周全被水环绕。
 //
@@ -69,7 +69,7 @@ impl Solution {
         for r in 0..m {
             for c in 0..n {
                 // 遍历计算每个位置岛岛面积，并更新 ans 的最大值
-                let mut area = Self::dfs(&grid, r, c, &mut visited);
+                let area = Self::dfs(&grid, r, c, &mut visited);
                 ans = ans.max(area);
             }
         }

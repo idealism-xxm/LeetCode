@@ -1,4 +1,4 @@
-// 链接：https://leetcode.com/problems/baseball-game/
+// 链接：https://leetcode.com/problems/max-area-of-island/
 // 题意：给定一个 m * n 的矩阵 grid ，其中 1 表示陆地，0 表示水。
 //      假设 grid 四周全被水环绕。
 //
@@ -81,7 +81,7 @@ func maxAreaOfIsland(grid [][]int) int {
 }
 
 func dfs(grid [][]int, r int, c int, visited [][]bool) int {
-    // 如果位置不合法 或者 是水 或者 已访问过，则直接返回 0 。
+    // 如果位置不合法 或者 是水 或者 已访问过，则直接返回 0
     if r < 0 || r >= len(grid) || 
         c < 0 || c >= len(grid[r]) || 
         grid[r][c] == 0 || visited[r][c] {
