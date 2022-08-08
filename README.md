@@ -272,6 +272,7 @@ LeetCode AC代码（附思路、注释）
 | [0287 - Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) | Medium | 二分 | [●](./Rust/src/0201%20~%200300/0287%20-%20Find%20the%20Duplicate%20Number.rs) | [●](./Go/src/0201%20~%200300/0287%20-%20Find%20the%20Duplicate%20Number.go) | [●](./Python3/src/0201%20~%200300/0287%20-%20Find%20the%20Duplicate%20Number.py) |
 | [0289 - Game of Life](https://leetcode.com/problems/game-of-life/) | Medium | 模拟 + 状态压缩 | [●](./Rust/src/0201%20~%200300/0289%20-%20Game%20of%20Life.rs) | [●](./Go/src/0201%20~%200300/0289%20-%20Game%20of%20Life.go) | [●](./Python3/src/0201%20~%200300/0289%20-%20Game%20of%20Life.py) |
 | [0290 - Word Pattern](https://leetcode.com/problems/word-pattern/) | Easy | map | [√](./Rust/src/0201%20~%200300/0290%20-%20Word%20Pattern.rs) |
+| [0300 - Longest Increasing Subsequence](https://leetcode-cn.com/problems/longest-increasing-subsequence/) | Hard | DP + 二分 | [√](./Rust/src/0201%20~%200300/0300%20-%20Longest%20Increasing%20Subsequence.rs) | [√](./Go/src/0201%20~%200300/0300%20-%20Longest%20Increasing%20Subsequence.go) | [√](./Python3/src/0201%20~%200300/0300%20-%20Longest%20Increasing%20Subsequence.py) |
 </details>
 
 <details>
