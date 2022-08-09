@@ -372,6 +372,7 @@ LeetCode AC代码（附思路、注释）
 
 | 题目 | 难度 | 思路 | Rust | Python3 | Go |
 | ------ | ------ | ------ | ------ | ------ | ------ |
+| [0832 - Binary Trees With Factors](https://leetcode.com/problems/binary-trees-with-factors/) | Medium | DP + 排序 | [√](./Rust/src/0801%20~%200900/0832%20-%20Binary%20Trees%20With%20Factors.rs) | [√](./Python3/src/0801%20~%200900/0832%20-%20Binary%20Trees%20With%20Factors.py) | [√](./Go/src/0801%20~%200900/0832%20-%20Binary%20Trees%20With%20Factors.go) |
 | [0844 - Backspace String Compare](https://leetcode.com/problems/backspace-string-compare/) | Easy | 栈 &#124; 双指针 | [√ &#124; ●](./Rust/src/0801%20~%200900/0844%20-%20Backspace%20String%20Compare.rs) | [√ &#124; ●](./Python3/src/0801%20~%200900/0844%20-%20Backspace%20String%20Compare.py) | [√ &#124; ●](./Go/src/0801%20~%200900/0844%20-%20Backspace%20String%20Compare.go) |
 | [0847 - Shortest Path Visiting All Nodes](https://leetcode.com/problems/shortest-path-visiting-all-nodes/) | Hard | BFS + 状态压缩 | [√](./Rust/src/0801%20~%200900/0847%20-%20Shortest%20Path%20Visiting%20All%20Nodes.rs) | [√](./Python3/src/0801%20~%200900/0847%20-%20Shortest%20Path%20Visiting%20All%20Nodes.py) |
 | [0849 - Maximize Distance to Closest Person](https://leetcode.com/problems/maximize-distance-to-closest-person/) | Medium | 模拟 | [√](./Rust/src/0801%20~%200900/0849%20-%20Maximize%20Distance%20to%20Closest%20Person.rs) |

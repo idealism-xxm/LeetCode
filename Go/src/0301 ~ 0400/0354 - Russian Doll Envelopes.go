@@ -9,8 +9,8 @@
 
 
 // 数据限制：
-//  1 <= envelopes.k <= 10 ^ 5
-//  envelopes[i].k == 2
+//  1 <= envelopes.length <= 10 ^ 5
+//  envelopes[i].length == 2
 //  1 <= w_i, h_i <= 10 ^ 5
 
 
@@ -24,7 +24,8 @@
 
 // 思路： DP + 二分
 //
-//      本题是最长上升子序列 (LIS) 的加强版，需要保证子序列的两个值都是严格递增的。
+//      本题是最长上升子序列 (LIS) LeetCode 300 的加强版，
+//      需要保证子序列的两个值都是严格递增的。
 //
 //
 //      最简单地求普通 LIS 就是普通 DP ：
@@ -57,7 +58,8 @@
 //      最后 len(minHeight) - 1 就是最长上升子序列的长度。
 //
 //
-//      针对本题需要先对 envelopes 按照宽度升序排序，宽度相同时按照高度将序排序。
+//      针对本题需要先对 envelopes 按照宽度升序排序，宽度相同时按照高度降序排序，
+//      然后对高度求​ LIS 即可
 //          1. 宽度不同时，按照宽度升序排序，
 //              保证按照顺序遍历时，宽度是递增的，
 //              这样基本就转换成了普通的 LIS ，后续只需要二分高度
@@ -82,10 +84,10 @@ import "sort"
 
 
 func maxEnvelopes(envelopes [][]int) int {
-    // 按照宽度升序排序，宽度相同时按照高度将序排序
+    // 按照宽度升序排序，宽度相同时按照高度降序排序
     sort.SliceStable(envelopes, func(i, j int) bool {
         if envelopes[i][0] == envelopes[j][0] {
-            // 宽度相同时，按照高度将序排序，
+            // 宽度相同时，按照高度降序排序，
             // 结合宽度递增，就严格转换成了普通的 LIS ，
             // 保证相同宽度的信封不会嵌套
             return envelopes[i][1] > envelopes[j][1]
