@@ -1,7 +1,7 @@
 // 链接：https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/
 // 题意：给定一个升序排序的整型数组 nums ，将其转换成一棵高度平衡的二叉搜索树？
 //
-//      高度平衡的二叉搜索树是指一棵二叉树，其中每个结点的左右子树的深度相差不超过 1。
+//      高度平衡的二叉搜索树是指一棵二叉搜索树，其中每个结点的左右子树的深度相差不超过 1。
 
 
 // 数据限制：
@@ -49,33 +49,47 @@
 //          2. 需要维护树的全部 O(n) 个结点
 
 
-/**
- * Definition for a binary tree node.
- * type TreeNode struct {
- *     Val int
- *     Left *TreeNode
- *     Right *TreeNode
- * }
- */
-func sortedArrayToBST(nums []int) *TreeNode {
-	// 返回 nums 对应的高度平衡的二叉搜索树
-	return dfs(nums, 0, len(nums) - 1)
-}
+// Definition for a binary tree node.
+// #[derive(Debug, PartialEq, Eq)]
+// pub struct TreeNode {
+//   pub val: i32,
+//   pub left: Option<Rc<RefCell<TreeNode>>>,
+//   pub right: Option<Rc<RefCell<TreeNode>>>,
+// }
+// 
+// impl TreeNode {
+//   #[inline]
+//   pub fn new(val: i32) -> Self {
+//     TreeNode {
+//       val,
+//       left: None,
+//       right: None
+//     }
+//   }
+// }
+use std::rc::Rc;
+use std::cell::RefCell;
+impl Solution {
+    pub fn sorted_array_to_bst(nums: Vec<i32>) -> Option<Rc<RefCell<TreeNode>>> {
+        // 返回 nums 对应的高度平衡的二叉搜索树
+        Self::dfs(&nums, 0, nums.len() as i32 - 1)
+    }
 
-func dfs(nums []int, start int, end int) *TreeNode {
-	// 如果 start > end ，说明用于生产二叉树的数组区间为空，
-	// 则对应的二叉树为空，返回 None
-	if start > end {
-		return nil
-	}
+    fn dfs(nums: &[i32], start: i32, end: i32) -> Option<Rc<RefCell<TreeNode>>> {
+        // 如果 start > end ，说明用于生产二叉树的数组区间为空，
+        // 则对应的二叉树为空，返回 None
+        if start > end {
+            return None;
+        }
 
-	// 根节点就是区间 [start, end] 中间的数，这样就能保证根节点是高度平衡的，
-	// 因为左右子树的结点数相差不超过 1
-	mid := (start + end) / 2
-	return &TreeNode{
-		Val: nums[mid],
-		// 递归生成左右子树
-		Left: dfs(nums, start, mid - 1),
-		Right: dfs(nums, mid + 1, end),
-	}
+        // 根节点就是区间 [start, end] 中间的数，这样就能保证根节点是高度平衡的，
+        // 因为左右子树的结点数相差不超过 1
+        let mid = (start + end) / 2;
+        let root = Rc::new(RefCell::new(TreeNode::new(nums[mid as usize])));
+        // 递归生成左右子树
+        root.borrow_mut().left = Self::dfs(nums, start, mid - 1);
+        root.borrow_mut().right = Self::dfs(nums, mid + 1, end);
+
+        Some(root)
+    }
 }
