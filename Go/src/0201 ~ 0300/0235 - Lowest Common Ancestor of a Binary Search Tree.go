@@ -1,9 +1,18 @@
 // 链接：https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/
-// 题意：给定一个二叉搜索树，找到两个节点的最近公共祖先？
+// 题意：给定一个二叉搜索树，找到两个结点的最近公共祖先？
+
+
+// 数据限制：
+//  树的结点数在 [2, 10 ^ 5] 之间
+//  -(10 ^ 9) <= Node.val <= 10 ^ 9
+//  所有的 Node.val 都各不相同
+//  p != q
+//  p 和 q 必定在树中
+
 
 // 输入： root = [6,2,8,0,4,7,9,null,null,3,5], p = 2, q = 8
 // 输出： 6
-// 解释： 节点 2 和 8 的 LCA 是 6
+// 解释： 结点 2 和 8 的 LCA 是 6
 //       6
 //    /      \
 //   2        8
@@ -14,7 +23,7 @@
 
 // 输入： root = [6,2,8,0,4,7,9,null,null,3,5], p = 2, q = 4
 // 输出： 2
-// 解释： 节点 2 和 4 的 LCA 是 2
+// 解释： 结点 2 和 4 的 LCA 是 2
 //       6
 //    /      \
 //   2        8
@@ -23,17 +32,25 @@
 //    / \
 //   3   5
 
+
 // 思路： 迭代
 //
-//      因为是二叉搜索树，所以要寻找的两个节点第一次分开的节点就是它们的 LCA ，
-//      首先为了方便，令 p.val < q.val ，然后迭代判断即可，
-//		1. p.Val <= cur.Val && p.Val >= cur.Val ，则两者有不同的走向，
-//			cur 就是两者的 LCA ，直接返回
-//		2. p.Val <= q.Val < cur.Val ，则两者的 LCA 在左子树
-//		3. cur.Val < p.Val <= q.Val ，则两者的 LCA 在右子树
+//      本题是 LeetCode 236 的简化版，充分利用二叉搜索树的特性即可。
+//
+//      因为给定的树是二叉搜索树，所以要寻找的两个结点第一次分开的结点就是它们的 LCA 。
+//
+//      首先为了方便处理，令 p.val < q.val ，然后迭代判断即可：
+//          1. p.val <= cur.val && p.val >= cur.val ，则两者有不同的走向，
+//             那么 cur 就是 p 和 q 的 LCA ，直接返回
+//          2. p.val < q.val < cur.val ，则两者的 LCA 在左子树
+//          3. cur.val < p.val < q.val ，则两者的 LCA 在右子树
+//
 //
 //      时间复杂度： O(h)
+//          1. 只需要遍历树高 h 个结点，最差情况下，全部 O(n) 个结点在一条链上
 //      空间复杂度： O(1)
+//          1. 只需要使用常数个额外变量即可
+
 
 /**
  * Definition for a binary tree node.
@@ -43,27 +60,29 @@
  *     Right *TreeNode
  * }
  */
-
 func lowestCommonAncestor(root, p, q *TreeNode) *TreeNode {
-	// 让 p.Val <= q.Val ，方便后续处理
+	// 为了方便处理，令 p.val < q.val
 	if p.Val > q.Val {
 		p, q = q, p
 	}
-	for cur := root; cur != nil; {
-		// 此时两个节点将有不同的走向，所以 cur 是 LCA
+
+	cur := root
+	for {
+		// 如果 p.val <= cur.val && p.val >= cur.val ，则两者有不同的走向，
+		// 那么 cur 就是 p 和 q 的 LCA ，直接返回
 		if p.Val <= cur.Val && q.Val >= cur.Val {
 			return cur
 		}
 
-		if q.Val < cur.Val {
-			// 如果 p.Val <= q.Val < cur.Val ，则两者的 LCA 在左子树
+		if p.Val < cur.Val {
+			// 此时有 p.val < q.val < cur.val ，则两者的 LCA 在左子树
 			cur = cur.Left
 		} else {
-			// 此时 cur.Val < p.Val <= q.Val ，则两者的 LCA 在右子树
+			// 此时有 cur.val < p.val < q.val ，则两者的 LCA 在左子树
 			cur = cur.Right
 		}
 	}
 
-	// 题目保证不会走到这
+	// p 和 q 在树中，所以必定存在 LCA ，不会走到这里
 	return nil
 }
