@@ -81,7 +81,7 @@ impl Solution {
 
         // 队列 q 存储 BFS 下一次遍历的单词下标
         let mut q = VecDeque::new();
-        // 初识只有开始单词的下标在其中
+        // 初始只有开始单词的下标在其中
         q.push_back(start_index);
         // 不断从 q 中获取，直至 q 为空
         while let Some(cur) = q.pop_front() {
