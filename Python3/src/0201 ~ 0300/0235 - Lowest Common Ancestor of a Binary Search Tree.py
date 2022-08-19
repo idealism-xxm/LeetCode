@@ -41,7 +41,8 @@
 #
 #      首先为了方便处理，令 p.val < q.val ，然后迭代判断即可：
 #          1. p.val <= cur.val && p.val >= cur.val ，则两者有不同的走向，
-#             那么 cur 就是 p 和 q 的 LCA ，直接返回
+#             那么 cur 就是 p 和 q 的 LCA ，直接返回。
+#             【注意】这里为了方便处理，同时考虑了 p 或 q 是 LCA 的情况，所以条件取等号了
 #          2. p.val < q.val < cur.val ，则两者的 LCA 在左子树
 #          3. cur.val < p.val < q.val ，则两者的 LCA 在右子树
 #
@@ -68,6 +69,7 @@ class Solution:
         while True:
             # 如果 p.val <= cur.val && p.val >= cur.val ，则两者有不同的走向，
             # 那么 cur 就是 p 和 q 的 LCA ，直接返回
+            # 【注意】这里为了方便处理，同时考虑了 p 或 q 是 LCA 的情况，所以条件取等号了
             if p.val <= cur.val and cur.val <= q.val:
                 return cur
 
