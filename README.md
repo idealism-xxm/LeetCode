@@ -111,7 +111,7 @@ LeetCode AC代码（附思路、注释）
 | [0097 - Interleaving String](https://leetcode.com/problems/interleaving-string/) | Hard | DP | [√](./Go/src/0001%20~%200100/0097%20-%20Interleaving%20String.go) | [√](./Python3/src/0001%20~%200100/0097%20-%20Interleaving%20String.py) | [√](./Rust/src/0001%20~%200100/0097%20-%20Interleaving%20String.rs) |
 | [0098 - Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/) | Medium | 递归 &#124; 循环 | [√ &#124; ●](./Go/src/0001%20~%200100/0098%20-%20Validate%20Binary%20Search%20Tree.go) | [√ &#124; _](./Python3/src/0001%20~%200100/0098%20-%20Validate%20Binary%20Search%20Tree.py) | [√ &#124; _](./Rust/src/0001%20~%200100/0098%20-%20Validate%20Binary%20Search%20Tree.rs) |
 | [0099 - Recover Binary Search Tree](https://leetcode.com/problems/recover-binary-search-tree/) | Hard | 递归 &#124; Morris | [● &#124; ●](./Go/src/0001%20~%200100/0099%20-%20Recover%20Binary%20Search%20Tree.go) | [● &#124; _](Python3/src/0001%20~%200100/0099%20-%20Recover%20Binary%20Search%20Tree.py) | [● &#124; _](Rust/src/0001%20~%200100/0099%20-%20Recover%20Binary%20Search%20Tree.rs) |
-| [0100 - Same Tree](https://leetcode.com/problems/same-tree/) | Easy | 递归 | [√](./Go/src/0001%20~%200100/0100%20-%20Same%20Tree.go) |
+| [0100 - Same Tree](https://leetcode.com/problems/same-tree/) | Easy | 递归/DFS | [√](./Go/src/0001%20~%200100/0100%20-%20Same%20Tree.go) | [√](./Python3/src/0001%20~%200100/0100%20-%20Same%20Tree.py) | [√](./Rust/src/0001%20~%200100/0100%20-%20Same%20Tree.rs) |
 </details>
 
 <details>
