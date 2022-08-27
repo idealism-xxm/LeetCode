@@ -39,22 +39,24 @@
 //          1. 最高位需要进位时，需要生产一个 O(n) 的数组
 
 
-func plusOne(digits []int) []int {
-	// carry 表示当前位的进位，初始化为 1 ，表示对个位加 1
-	carry := 1
-	for i := len(digits) - 1; i >= 0; i-- {
-		// 计算第 i 位的中间计算结果
-		digits[i] += carry
-		// 计算对第 i - 1 位产生的进位
-		carry = digits[i] / 10
-		// 计算第 i 位的实际结果，保证在范围在 [0, 9] 内
-		digits[i] %= 10
-	}
+impl Solution {
+    pub fn plus_one(mut digits: Vec<i32>) -> Vec<i32> {
+        // carry 表示当前位的进位，初始化为 1 ，表示对个位加 1
+        let mut carry = 1;
+        for i in (0..digits.len()).rev() {
+            // 计算第 i 位的中间计算结果
+            digits[i] += carry;
+            // 计算对第 i - 1 位产生的进位
+            carry = digits[i] / 10;
+            // 计算第 i 位的实际结果，保证在范围在 [0, 9] 内
+            digits[i] %= 10;
+        }
 
-	// 如果最高位有进位，则需要在结果数组前面加一个 carry
-	if carry != 0 {
-		digits = append([]int{ carry }, digits...)
-	}
+        // 如果最高位有进位，则需要在结果数组前面加一个 carry
+        if carry != 0 {
+            digits.insert(0, carry)
+        }
 
-	return digits
+        digits
+    }
 }
