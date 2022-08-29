@@ -12,7 +12,7 @@ LeetCode AC代码（附思路、注释）
 
 | 题目 | 难度 | 思路 | Go | Python3 | Rust |
 | ------ | ------ | ------ | ------ | ------ | ------ |
-| [0001 - Two Sum](https://leetcode.com/problems/two-sum/) | Easy | 枚举 | [√](./Go/src/0001%20~%200100/0001%20-%20Two%20Sum.go) | [√](./Python3/src/0001%20~%200100/0001%20-%20Two%20Sum.py) |
+| [0001 - Two Sum](https://leetcode.com/problems/two-sum/) | Easy | Map | [√](./Go/src/0001%20~%200100/0001%20-%20Two%20Sum.go) | [√](./Python3/src/0001%20~%200100/0001%20-%20Two%20Sum.py) | [√](./Rust/src/0001%20~%200100/0001%20-%20Two%20Sum.rs) |
 | [0002 - Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | Medium | 模拟 | [√](./Go/src/0001%20~%200100/0002%20-%20Add%20Two%20Numbers.go) | [√](./Python3/src/0001%20~%200100/0002%20-%20Add%20Two%20Numbers.py) | [√](./Rust/src/0001%20~%200100/0002%20-%20Add%20Two%20Numbers.rs) |
 | [0003 - Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | Medium | 滑动窗口 | [√](./Go/src/0001%20~%200100/0003%20-%20Longest%20Substring%20Without%20Repeating%20Characters.go) | [√](./Python3/src/0001%20~%200100/0003%20-%20Longest%20Substring%20Without%20Repeating%20Characters.py) | [√](./Rust/src/0001%20~%200100/0003%20-%20Longest%20Substring%20Without%20Repeating%20Characters.rs) |
 | [0004 - Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/) | Hard | 二分 | [●](./Go/src/0001%20~%200100/0004%20-%20Median%20of%20Two%20Sorted%20Arrays.go) | [○](./Python3/src/0001%20~%200100/0004%20-%20Median%20of%20Two%20Sorted%20Arrays.py) |

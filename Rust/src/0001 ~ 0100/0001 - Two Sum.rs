@@ -43,19 +43,24 @@
 //              最差情况下，有 O(n) 个不同的数字
 
 
-func twoSum(nums []int, target int) []int {
-	// 记录每个数最后一次出现的下标
-	numToIndex := make(map[int]int, len(nums))
-	for i, num := range nums {
-		// 获取需要的数的下标，如果存在，则直接返回
-		if j, exists := numToIndex[target - num]; exists {
-			return []int{ i, j }
-		}
+use std::collections::HashMap;
 
-		// 如果不存在，则更新 num 的下标为 i
-		numToIndex[num] = i
-	}
 
-	// 题目保证一定有答案，所以不会走到这
-	return nil
+impl Solution {
+    pub fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
+        // 记录每个数最后一次出现的下标
+        let mut num_to_index = HashMap::with_capacity(nums.len());
+        for (i, &num) in nums.iter().enumerate() {
+            // 获取需要的数的下标，如果存在，则直接返回
+            if let Some(&j) = num_to_index.get(&(target - num)) {
+                return vec![i as i32, j as i32];
+            }
+
+            // 如果不存在，则更新 num 的下标为 i
+            num_to_index.insert(num, i);
+        }
+
+        // 题目保证一定有答案，所以不会走到这
+        unreachable!();
+    }
 }
