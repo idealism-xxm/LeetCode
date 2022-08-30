@@ -47,25 +47,28 @@
 //          1. 只需要使用常数个额外变量
 
 
-func myPow(x float64, n int) float64 {
-	// 如果 n < 0 ，则需要提前取倒数，并将 n 变成绝对值
-	if n < 0 {
-		x = 1.0 / x
-		n = -n
-	}
+impl Solution {
+    pub fn my_pow(mut x: f64, n: i32) -> f64 {
+        let mut n = n as i64;
+        // 如果 n < 0 ，则需要提前取倒数，并将 n 变成绝对值
+        if n < 0 {
+            x = 1.0 / x;
+            n = -n;
+        }
 
-	ans := 1.0
-	// 如果指数还有为 1 的二进制位，则继续处理
-	for n > 0 {
-		// 如果此时最低位为 1 ，则 x 对 ans 有贡献
-		if n & 1 == 1 {
-			ans *= x
-		}
+        let mut ans = 1.0;
+        // 如果指数还有为 1 的二进制位，则继续处理
+        while n > 0 {
+            // 如果此时最低位为 1 ，则 x 对 ans 有贡献
+            if n & 1 == 1 {
+                ans *= x;
+            }
 
-		n >>= 1
-		// x 自乘，相当于子项的指数二进制位左移一位
-		x *= x
-	}
+            n >>= 1;
+            // x 自乘，相当于子项的指数二进制位左移一位
+            x *= x;
+        }
 
-	return ans
+        ans
+    }
 }
