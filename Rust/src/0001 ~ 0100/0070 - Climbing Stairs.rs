@@ -44,18 +44,22 @@
 //          1. 只需要使用常数个额外变量
 
 
-func climbStairs(n int) int {
-	// dp[i] 表示上到第 i 级楼梯的方法数
-	dp := make([]int, n + 1)
-	// 最开始在第 0 级和第 1 级各有一种方案
-	dp[0], dp[1] = 1, 1
+impl Solution {
+    pub fn climb_stairs(n: i32) -> i32 {
+        let n = n as usize;
+        // dp[i] 表示上到第 i 级楼梯的方法数
+        let mut dp = vec![0; n + 1];
+        // 最开始在第 0 级和第 1 级各有一种方案
+        dp[0] = 1;
+        dp[1] = 1;
 
-	for i := 2; i <= n; i++ {
-		// 第 i 级可以从第 i - 1 级上一级到达，
-		// 也可以从第 i - 2 级上两级到达
-		dp[i] = dp[i - 1] + dp[i - 2]
-	}
+        for i in 2..=n {
+            // 第 i 级可以从第 i - 1 级上一级到达，
+            // 也可以从第 i - 2 级上两级到达
+            dp[i] = dp[i - 1] + dp[i - 2];
+        }
 
-	// dp[n] 就是上到顶部的方法数
-	return dp[n]
+        // dp[n] 就是上到顶部的方法数
+        dp[n]
+    }
 }

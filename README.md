@@ -81,7 +81,7 @@ LeetCode AC代码（附思路、注释）
 | [0067 - Add Binary](https://leetcode.com/problems/add-binary/) | Easy | 模拟 | [√](./Go/src/0001%20~%200100/0067%20-%20Add%20Binary.go) | | [√](Rust/src/0001%20~%200100/0067%20-%20Add%20Binary.rs) |
 | [0068 - Text Justification](https://leetcode.com/problems/text-justification/) | Hard | 模拟 | [√](./Go/src/0001%20~%200100/0068%20-%20Text%20Justification.go) |
 | [0069 - Sqrt(x)](https://leetcode.com/problems/sqrtx/) | Easy | 二分 | [√](./Go/src/0001%20~%200100/0069%20-%20Sqrt(x).go) |
-| [0070 - Climbing Stairs.go](https://leetcode.com/problems/climbing-stairs/) | Easy | DP | [√](./Go/src/0001%20~%200100/0070%20-%20Climbing%20Stairs.go) |
+| [0070 - Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) | Easy | DP | [√](./Go/src/0001%20~%200100/0070%20-%20Climbing%20Stairs.go) | [√](./Python3/src/0001%20~%200100/0070%20-%20Climbing%20Stairs.py) | [√](./Rust/src/0001%20~%200100/0070%20-%20Climbing%20Stairs.rs) |
 | [0071 - Simplify Path](https://leetcode.com/problems/simplify-path/) | Medium | 模拟 | [√](./Go/src/0001%20~%200100/0071%20-%20Simplify%20Path.go) | [√](./Python3/src/0001%20~%200100/0071%20-%20Simplify%20Path.py) | [√](./Rust/src/0001%20~%200100/0071%20-%20Simplify%20Path.rs) |
 | [0072 - Edit Distance.go](https://leetcode.com/problems/edit-distance/) | Hard | DP | [√](./Go/src/0001%20~%200100/0072%20-%20Edit%20Distance.go) |
 | [0073 - Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/) | Medium | 模拟 | [●](./Go/src/0001%20~%200100/0073%20-%20Set%20Matrix%20Zeroes.go) |
