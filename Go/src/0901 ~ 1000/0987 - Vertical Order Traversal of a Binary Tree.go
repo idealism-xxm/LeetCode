@@ -68,7 +68,7 @@
  *     Right *TreeNode
  * }
  */
- func verticalTraversal(root *TreeNode) [][]int {
+func verticalTraversal(root *TreeNode) [][]int {
 	// 先用 dfs 收集所有结点的坐标和值
 	var result []*NodeInfo
 	dfs(root, 0, 0, &result)
