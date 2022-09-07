@@ -62,7 +62,7 @@
  * }
  */
 func averageOfLevels(root *TreeNode) []float64 {
-    var ans []float64
+	var ans []float64
 	// 如果根结点为空，则直接返回空的结果
 	if root == nil {
 		return ans
@@ -72,16 +72,16 @@ func averageOfLevels(root *TreeNode) []float64 {
 	queue := []*TreeNode{ root }
 	// 队列中还有结点，则可以继续进行 BFS
 	for len(queue) > 0 {
-        // levelSum 收集当前层结点值的和， levelCnt 表示当前层的结点数
-        levelSum := 0.0
-        levelCnt := len(queue)
-        // 此时 queue 中的结点数量为当前层的结点数量，
-        // 只从队列中这些数量的结点，这样就变成了层序遍历
-        for _ = range queue {
+		// levelSum 收集当前层结点值的和， levelCnt 表示当前层的结点数
+		levelSum := 0.0
+		levelCnt := len(queue)
+		// 此时 queue 中的结点数量为当前层的结点数量，
+		// 只从队列中这些数量的结点，这样就变成了层序遍历
+		for _ = range queue {
 			node := queue[0]
 			queue = queue[1:]
-            // 收集这些结点的值到 level 中
-            levelSum += float64(node.Val)
+			// 收集这些结点的值到 level 中
+			levelSum += float64(node.Val)
 			// 将其非空左右子结点放入队列中
 			if node.Left != nil {
 				queue = append(queue, node.Left)
@@ -89,10 +89,10 @@ func averageOfLevels(root *TreeNode) []float64 {
 			if node.Right != nil {
 				queue = append(queue, node.Right)
 			}
-        }
+		}
 
-        ans = append(ans, levelSum / float64(levelCnt))
-    }
+		ans = append(ans, levelSum / float64(levelCnt))
+	}
 
-    return ans
+	return ans
 }
