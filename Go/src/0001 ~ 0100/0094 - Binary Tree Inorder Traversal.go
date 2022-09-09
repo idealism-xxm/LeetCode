@@ -74,6 +74,7 @@ func dfs(root *TreeNode, ans *[]int) {
 //		若当前结点不为 nil ，则入栈，然后处理左子结点
 //		若当前结点为 nil ，则出栈，记录出栈结点的值，并将当前结点指向其右子结点
 
+
 /**
  * Definition for a binary tree node.
  * type TreeNode struct {
@@ -108,4 +109,60 @@ func inorderTraversal(root *TreeNode) []int {
 		cur = cur.Right
 	}
 	return result
+}
+
+
+// 思路2：迭代
+//
+//      将递归转成迭代需要记录栈信息，我们可以用 stack 来记录栈中待处理的结点。
+//
+//      如果当前结点 cur 非空 或 栈 stack 非空，
+//      则还有待处理的结点，继续迭代处理：
+//          1. 中序遍历要先遍历左子树的所有结点，所以如果 cur 非空时，
+//              要将其入栈，先处理其左子结点，直至 cur 为空
+//          2. 此时 stack 顶部就是当前能处理的最左侧结点，将其值放入 ans 中
+//          3. 最后需要对 cur.right 同样执行以上操作，
+//              那么令 cur = cur.right ，进入下一轮迭代
+//
+//
+//      时间复杂度：O(n)
+//          1. 需要遍历全部 O(n) 个结点
+//      空间复杂度：O(n)
+//          1. 模拟的栈 stack 需要记录树高 O(h) 个待处理的结点，
+//              最差情况下，全部 O(n) 个结点在一条链上
+
+
+/**
+ * Definition for a binary tree node.
+ * type TreeNode struct {
+ *     Val int
+ *     Left *TreeNode
+ *     Right *TreeNode
+ * }
+ */
+func inorderTraversal(root *TreeNode) []int {
+	// ans 用于收集中序遍历的结果
+	var ans []int
+	// stack 为迭代模拟递归时需要的栈
+	var stack []*TreeNode
+	// cur 为迭代模拟递归时的当前结点
+	cur := root
+	// 如果当前结点非空 或 栈不为空，则可以继续循环
+	for cur != nil || len(stack) != 0 {
+		// 中序遍历要先遍历左子树的所有结点，所以如果 cur 非空时，
+		// 要将其入栈，先处理其左子结点，直至 cur 为空
+		for cur != nil {
+			stack = append(stack, cur)
+			cur = cur.Left
+		}
+
+		// 此时 stack 顶部就是当前能处理的最左侧结点，将其值放入 ans 中
+		cur = stack[len(stack) - 1]
+		stack = stack[:len(stack) - 1]
+		ans = append(ans, cur.Val)
+		// 接下来该处理 cur 的右子树
+		cur = cur.Right
+	}
+
+	return ans
 }
