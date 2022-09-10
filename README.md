@@ -541,8 +541,8 @@ LeetCode AC代码（附思路、注释）
 <details>
 <summary>1901 ~ 2000</summary>
 
-| 题目 | 难度 | 思路 | Python3 |
-| ------ | ------ | ------ | ------ |
+| 题目 | 难度 | 思路 | Python3 | Rust | Golang |
+| ------ | ------ | ------ | ------ | ------ | ------ |
 | [1903 - Largest Odd Number in String](https://leetcode.com/problems/largest-odd-number-in-string/) | Easy | 贪心 | [√](./Python3/src/1901%20~%202000/1903%20-%20Largest%20Odd%20Number%20in%20String.py) |
 | [1904 - The Number of Full Rounds You Have Played](https://leetcode.com/problems/the-number-of-full-rounds-you-have-played/) | Medium | 数学 | [√](./Python3/src/1901%20~%202000/1904%20-%20The%20Number%20of%20Full%20Rounds%20You%20Have%20Played.py) |
 | [1905 - Count Sub Islands](https://leetcode.com/problems/count-sub-islands/) | Medium | DFS | [√](./Python3/src/1901%20~%202000/1905%20-%20Count%20Sub%20Islands.py) |
@@ -608,7 +608,7 @@ LeetCode AC代码（附思路、注释）
 | [1993 - Operations on Tree](https://leetcode.com/problems/operations-on-tree/) | Medium | 模拟 | [√](./Python3/src/1901%20~%202000/1993%20-%20Operations%20on%20Tree.py) |
 | [1994 - The Number of Good Subsets](https://leetcode.com/problems/the-number-of-good-subsets/) | Hard | 状压 DP | [√](./Python3/src/1901%20~%202000/1994%20-%20The%20Number%20of%20Good%20Subsets.py) |
 | [1995 - Count Special Quadruplets](https://leetcode.com/problems/count-special-quadruplets/) | Easy | map | [○](./Python3/src/1901%20~%202000/1995%20-%20Count%20Special%20Quadruplets.py) |
-| [1996 - The Number of Weak Characters in the Game](https://leetcode.com/problems/the-number-of-weak-characters-in-the-game/) | Medium | 排序 | [√](./Python3/src/1901%20~%202000/1996%20-%20The%20Number%20of%20Weak%20Characters%20in%20the%20Game.py) |
+| [1996 - The Number of Weak Characters in the Game](https://leetcode.com/problems/the-number-of-weak-characters-in-the-game/) | Medium | 排序 | [√](./Python3/src/1901%20~%202000/1996%20-%20The%20Number%20of%20Weak%20Characters%20in%20the%20Game.py) | [√](./Rust/src/1901%20~%202000/1996%20-%20The%20Number%20of%20Weak%20Characters%20in%20the%20Game.rs) | [√](./Go/src/1901%20~%202000/1996%20-%20The%20Number%20of%20Weak%20Characters%20in%20the%20Game.go) |
 | [1997 - First Day Where You Have Been in All the Rooms](https://leetcode.com/problems/first-day-where-you-have-been-in-all-the-rooms/) | Medium | DP | [√](./Python3/src/1901%20~%202000/1997%20-%20First%20Day%20Where%20You%20Have%20Been%20in%20All%20the%20Rooms.py) |
 | [1998 - GCD Sort of an Array](https://leetcode.com/problems/gcd-sort-of-an-array/) | Hard | 并查集 | [○](./Python3/src/1901%20~%202000/1998%20-%20GCD%20Sort%20of%20an%20Array.py) |
 | [2000 - Reverse Prefix of Word](hhttps://leetcode.com/problems/reverse-prefix-of-word/) | Easy | 模拟 | [√](./Python3/src/1901%20~%202000/2000%20-%20Reverse%20Prefix%20of%20Word.py) |
