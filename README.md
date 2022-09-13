@@ -704,3 +704,11 @@ LeetCode AC代码（附思路、注释）
 | [2399 - Check Distances Between Same Letters](https://leetcode.com/problems/check-distances-between-same-letters/) | Easy | Map | [√](./Go/src/2301%20~%202400/2399%20-%20Check%20Distances%20Between%20Same%20Letters.go)| [√](./Python3/src/2301%20~%202400/2399%20-%20Check%20Distances%20Between%20Same%20Letters.py)| [√](./Rust/src/2301%20~%202400/2399%20-%20Check%20Distances%20Between%20Same%20Letters.rs) |
 | [2400 - Number of Ways to Reach a Position After Exactly k Steps](https://leetcode.com/problems/number-of-ways-to-reach-a-position-after-exactly-k-steps/) | Medium | DP + Map | [√](./Go/src/2301%20~%202400/2400%20-%20Number%20of%20Ways%20to%20Reach%20a%20Position%20After%20Exactly%20k%20Steps.go)| [√](./Python3/src/2301%20~%202400/2400%20-%20Number%20of%20Ways%20to%20Reach%20a%20Position%20After%20Exactly%20k%20Steps.py)| [√](./Rust/src/2301%20~%202400/2400%20-%20Number%20of%20Ways%20to%20Reach%20a%20Position%20After%20Exactly%20k%20Steps.rs) |
 </details>
+
+<details>
+<summary>2301 ~ 2400</summary>
+
+| 题目 | 难度 | 思路 | Go | Python3 | Rust |
+| ------ | ------ | ------ | ------ | ------ | ------ |
+| [2401 - Longest Nice Subarray](https://leetcode.com/problems/longest-nice-subarray/) | Medium | 滑动窗口 | [√](./Go/src/2401%20~%202500/2401%20-%20Longest%20Nice%20Subarray.go)| [√](./Python3/src/2401%20~%202500/2401%20-%20Longest%20Nice%20Subarray.py)| [√](./Rust/src/2401%20~%202500/2401%20-%20Longest%20Nice%20Subarray.rs) | 
+</details>
