@@ -711,5 +711,6 @@ LeetCode AC代码（附思路、注释）
 | 题目 | 难度 | 思路 | Go | Python3 | Rust |
 | ------ | ------ | ------ | ------ | ------ | ------ |
 | [2401 - Longest Nice Subarray](https://leetcode.com/problems/longest-nice-subarray/) | Medium | 滑动窗口 | [√](./Go/src/2401%20~%202500/2401%20-%20Longest%20Nice%20Subarray.go)| [√](./Python3/src/2401%20~%202500/2401%20-%20Longest%20Nice%20Subarray.py)| [√](./Rust/src/2401%20~%202500/2401%20-%20Longest%20Nice%20Subarray.rs) | 
-| [2404 - Most Frequent Even Element](https://leetcode.com/problems/longest-nice-subarray/) | Easy | Map | [√](./Go/src/2401%20~%202500/2404%20-%20Most%20Frequent%20Even%20Element.go)| [√](./Python3/src/2401%20~%202500/2404%20-%20Most%20Frequent%20Even%20Element.py)| [√](./Rust/src/2401%20~%202500/2404%20-%20Most%20Frequent%20Even%20Element.rs) | 
+| [2404 - Most Frequent Even Element](https://leetcode.com/problems/most-frequent-even-element/) | Easy | Map | [√](./Go/src/2401%20~%202500/2404%20-%20Most%20Frequent%20Even%20Element.go)| [√](./Python3/src/2401%20~%202500/2404%20-%20Most%20Frequent%20Even%20Element.py)| [√](./Rust/src/2401%20~%202500/2404%20-%20Most%20Frequent%20Even%20Element.rs) | 
+| [2405 - Optimal Partition of String](https://leetcode.com/problems/optimal-partition-of-string/) | Medium | 贪心 + Set | [√](./Go/src/2401%20~%202500/2405%20-%20Optimal%20Partition%20of%20String.go)| [√](./Python3/src/2401%20~%202500/2405%20-%20Optimal%20Partition%20of%20String.py)| [√](./Rust/src/2401%20~%202500/2405%20-%20Optimal%20Partition%20of%20String.rs) | 
 </details>
