@@ -1,4 +1,4 @@
-# 链接：https:#leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/
+# 链接：https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/
 # 题意：给定一棵二叉树，找到两个结点的最近公共祖先？
 
 

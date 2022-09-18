@@ -1,4 +1,4 @@
-# 链接：https:#leetcode.com/problems/decode-the-message/
+# 链接：https://leetcode.com/problems/decode-the-message/
 # 题意：给定两个字符串 key 和 message ，其中 key 表示密钥， message 表示加密消息。
 #      解密 message 的步骤如下：
 #          1. 使用 key 中 26 个小写字母第一次出现的位置，作为替换表中的字母顺序

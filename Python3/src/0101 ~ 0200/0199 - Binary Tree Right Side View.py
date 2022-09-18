@@ -1,4 +1,4 @@
-# 链接：https:#leetcode.com/problems/binary-tree-right-side-view/
+# 链接：https://leetcode.com/problems/binary-tree-right-side-view/
 # 题意：给定一棵二叉树，想象你站在它右侧，
 #      按照从顶部到底部的顺序，返回你能看见的结点值的数组。
 

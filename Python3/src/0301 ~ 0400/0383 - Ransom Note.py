@@ -1,4 +1,4 @@
-# 链接：https:#leetcode.com/problems/ransom-note/
+# 链接：https://leetcode.com/problems/ransom-note/
 # 题意：给定两个字符串 ransomNote 和 magazine ，
 #      判断 ransomNote 是否能由 magazine 中的字母组成？
 #
