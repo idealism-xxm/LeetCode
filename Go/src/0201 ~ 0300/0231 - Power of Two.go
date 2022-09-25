@@ -37,13 +37,11 @@
 //          2. 只需要使用常数个额外变量即可
 
 
-impl Solution {
-    pub fn is_power_of_two(n: i32) -> bool {
-        // 非正数一定不是 2 的幂次方
-        if n <= 0 {
-            return false
-        }
-
-        (n & (n - 1)) == 0
+func isPowerOfTwo(n int) bool {
+    // 非正数一定不是 2 的幂次方
+    if n <= 0 {
+        return false
     }
+
+    return (n & (n - 1)) == 0
 }
