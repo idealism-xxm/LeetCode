@@ -433,6 +433,14 @@ LeetCode AC代码（附思路、注释）
 </details>
 
 <details>
+<summary>1101 ~ 1200</summary>
+
+| 题目 | 难度 | 思路 | Rust | Python3 | Go |
+| ------ | ------ | ------ | ------ | ------ | ------ |
+| [1155 - Number of Dice Rolls With Target Sum](https://leetcode.com/problems/number-of-dice-rolls-with-target-sum/) | Medium | DP | [√](./Rust/src/1101%20~%201200/1155%20-%20Number%20of%20Dice%20Rolls%20With%20Target%20Sum.rs) | [√](./Python3/src/1101%20~%201200/1155%20-%20Number%20of%20Dice%20Rolls%20With%20Target%20Sum.py) | [√](./Go/src/1101%20~%201200/1155%20-%20Number%20of%20Dice%20Rolls%20With%20Target%20Sum.go) |
+</details>
+
+<details>
 <summary>1201 ~ 1300</summary>
 
 | 题目 | 难度 | 思路 | Rust | Python3 | Go |
