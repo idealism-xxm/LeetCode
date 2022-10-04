@@ -38,7 +38,7 @@
 //      按照以下逻辑进行处理：
 //
 //      1. 如果当前是空结点，则必定不存在路径，直接返回 false
-//      2. 如果当前是叶子结点，则返回 root.Val == targetSum
+//      2. 如果当前是叶子结点，则返回 root.val == target_sum
 //      3. 如果左子结点存在，递归处理左子结点，并将 sum 减去当前结点的值
 //          (1) 递归处理结果为 true ，直接返回 true
 //          (2) 递归处理结果为 false ，继续执行以下逻辑
@@ -54,35 +54,49 @@
 //          1. 栈递归深度就是树高，最差情况下，全部 O(n) 个结点在一条链上
 
 
-/**
- * Definition for a binary tree node.
- * type TreeNode struct {
- *     Val int
- *     Left *TreeNode
- *     Right *TreeNode
- * }
- */
-func hasPathSum(root *TreeNode, targetSum int) bool {
-	// 空结点不存在路径，直接返回 false
-	if root == nil {
-		return false
-	}
+// Definition for a binary tree node.
+// #[derive(Debug, PartialEq, Eq)]
+// pub struct TreeNode {
+//   pub val: i32,
+//   pub left: Option<Rc<RefCell<TreeNode>>>,
+//   pub right: Option<Rc<RefCell<TreeNode>>>,
+// }
+// 
+// impl TreeNode {
+//   #[inline]
+//   pub fn new(val: i32) -> Self {
+//     TreeNode {
+//       val,
+//       left: None,
+//       right: None
+//     }
+//   }
+// }
+use std::rc::Rc;
+use std::cell::RefCell;
+impl Solution {
+    pub fn has_path_sum(root: Option<Rc<RefCell<TreeNode>>>, target_sum: i32) -> bool {
+        // 空结点不存在路径，直接返回 false
+        if root.is_none() {
+            return false;
+        }
+        let root = root.as_ref().unwrap().borrow();
+        // 如果是叶子结点，则仅当值等于 target_sum 时，才满足题意
+        if root.left.is_none() && root.right.is_none() {
+            return root.val == target_sum;
+        }
 
-	// 如果是叶子结点，则仅当值等于 targetSum 时，才满足题意
-	if root.Left == nil && root.Right == nil {
-		return root.Val == targetSum
-	}
+        let remain_sum = target_sum - root.val;
+        // 当左子结点存在，且存在一条左子结点到叶子路径上所有值到和为 remain_sum ，则满足题意
+        if root.left.is_some() && Self::has_path_sum(root.left.clone(), remain_sum) {
+            return true;
+        }
+        // 当右子结点存在，且存在一条右子结点到叶子路径上所有值到和为 remain_sum ，则满足题意
+        if root.right.is_some() && Self::has_path_sum(root.right.clone(), remain_sum) {
+            return true;
+        }
 
-	remainSum := targetSum - root.Val
-	// 当左子结点存在，且存在一条左子结点到叶子路径上所有值到和为 remainSum ，则满足题意
-	if root.Left != nil && hasPathSum(root.Left, remainSum) {
-		return true
-	}
-	// 当右子结点存在，且存在一条右子结点到叶子路径上所有值到和为 remainSum ，则满足题意
-	if root.Right != nil && hasPathSum(root.Right, remainSum) {
-		return true
-	}
-
-	// 左右子结点都不满足题意，返回 false
-	return false
+        // 左右子结点都不满足题意，返回 false
+        false
+    }
 }
