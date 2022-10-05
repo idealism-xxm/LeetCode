@@ -15,13 +15,13 @@
 //       5 + 4 + 11 + 2 = 22
 //       5 + 8 + 4 + 5 = 22
 //
-//        (5)       
-//        /  \      
-//      (4)  (8)     
-//      /    / \    
-//    (11)  13 (4)
-//    /  \     /  \
-//   7   (2)  (5)  1
+//         (5)       
+//         /  \      
+//       (4)  (8)     
+//       /    / \    
+//     (11)  13 (4)
+//     /  \     /  \
+//    7   (2)  (5)  1
 
 // 输入： root = [1,2,3], targetSum = 5
 // 输出： false
@@ -41,18 +41,18 @@
 //      本题是 LeetCode 0112 的加强版，不过需要回溯全部可能的结果，
 //      需要记录从根结点到当前结点的所有数，最后在叶子结点处判断收集可能的路径。
 //
-//      本题需要维护路径上的数，所以需要定义 dfs(root, targetSum, nums, ans) 来辅助处理。
+//      本题需要维护路径上的数，所以需要定义 dfs(root, target_sum, nums, ans) 来辅助处理。
 //          1. root: 当前待处理的子树的根结点
-//          2. targetSum: root 到其叶子结点的路径上数之和需要为 targetSum
+//          2. target_sum: root 到其叶子结点的路径上数之和需要为 target_sum
 //          3. nums: 从根结点到 root 的所有数
 //          4. ans: 用来收集所有可能的路径
 //
 //      dfs 按照以下逻辑进行处理：
 //          1. 如果 root 是空结点，则不存在路径，则直接返回
-//          2. 将 root.Val 放入 nums 中，并从 targetSum 中减去 root.Val
-//          3. 如果 targetSum 为 0 且 root 是叶子结点，则当前路径满足题意，将 nums 放入 ans
-//          4. 递归处理左子结点，直接调用 dfs(root.Left, targetSum, nums, ans)
-//          5. 递归处理右子结点，直接调用 dfs(root.Right, targetSum, nums, ans)
+//          2. 将 root.val 放入 nums 中，并从 target_sum 中减去 root.val
+//          3. 如果 target_sum 为 0 且 root 是叶子结点，则当前路径满足题意，将 nums 放入 ans
+//          4. 递归处理左子结点，直接调用 dfs(root.left, target_sum, nums, ans)
+//          5. 递归处理右子结点，直接调用 dfs(root.right, target_sum, nums, ans)
 //          6. 退出递归前需要将本层放入 nums 中的最后一个数移除
 //
 //
@@ -69,41 +69,55 @@
 //               总共需要维护结果全部 O(n ^ 2) 个结点的值
 
 
-/**
- * Definition for a binary tree node.
- * type TreeNode struct {
- *     Val int
- *     Left *TreeNode
- *     Right *TreeNode
- * }
- */
-func pathSum(root *TreeNode, targetSum int) [][]int {
-    var nums []int
-    var ans [][]int
-    dfs(root, targetSum, &nums, &ans)
-    
-    return ans
-}
-
-func dfs(root *TreeNode, targetSum int, nums *[]int, ans *[][]int) {
-    // 空结点不存在路径，直接返回
-    if root == nil {
-        return
+// Definition for a binary tree node.
+// #[derive(Debug, PartialEq, Eq)]
+// pub struct TreeNode {
+//   pub val: i32,
+//   pub left: Option<Rc<RefCell<TreeNode>>>,
+//   pub right: Option<Rc<RefCell<TreeNode>>>,
+// }
+// 
+// impl TreeNode {
+//   #[inline]
+//   pub fn new(val: i32) -> Self {
+//     TreeNode {
+//       val,
+//       left: None,
+//       right: None
+//     }
+//   }
+// }
+use std::rc::Rc;
+use std::cell::RefCell;
+impl Solution {
+    pub fn path_sum(root: Option<Rc<RefCell<TreeNode>>>, target_sum: i32) -> Vec<Vec<i32>> {
+        let mut ans = vec![];
+        Self::dfs(&root, target_sum, &mut vec![], &mut ans);
+        
+        ans
     }
 
-    // root.Val 放入 nums 中，并从 targetSum 中减去 root.Val
-    *nums = append(*nums, root.Val)
-    targetSum -= root.Val
+    fn dfs(root: &Option<Rc<RefCell<TreeNode>>>, mut target_sum: i32, nums: &mut Vec<i32>, ans: &mut Vec<Vec<i32>>) {
+        // 空结点不存在路径，直接返回
+        if root.is_none() {
+            return;
+        }
 
-    // 如果 targetSum 为 0 且 root 是叶子结点，则当前路径满足题意
-    if targetSum == 0 && root.Left == nil && root.Right == nil {
-        *ans = append(*ans, append((*nums)[:0:0], (*nums)...))
+        let root = root.as_ref().unwrap().borrow();
+        // root.val 放入 nums 中，并从 target_sum 中减去 root.val
+        nums.push(root.val);
+        target_sum -= root.val;
+
+        // 如果 target_sum 为 0 且 root 是叶子结点，则当前路径满足题意
+        if target_sum == 0 && root.left.is_none() && root.right.is_none() {
+            ans.push(nums.clone());
+        }
+
+        // 递归处理左右子结点
+        Self::dfs(&root.left, target_sum, nums, ans);
+        Self::dfs(&root.right, target_sum, nums, ans);
+
+        // 将本层放入 nums 中的最后一个数移除
+        nums.pop();
     }
-
-    // 递归处理左右子结点
-    dfs(root.Left, targetSum, nums, ans)
-    dfs(root.Right, targetSum, nums, ans)
-
-    // 将本层放入 nums 中的最后一个数移除
-    *nums = (*nums)[:len(*nums) - 1]
 }
