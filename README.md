@@ -529,8 +529,9 @@ LeetCode AC代码（附思路、注释）
 <details>
 <summary>1801 ~ 1900</summary>
 
-| 题目 | 难度 | 思路 | Python3 |
-| ------ | ------ | ------ | ------ |
+| 题目 | 难度 | 思路 | Python3 | Go | Rust |
+| ------ | ------ | ------ | ------ | ------ | ------ |
+| [1832 - Check if the Sentence Is Pangram](https://leetcode.com/problems/check-if-the-sentence-is-pangram/) | Easy | Set/Map | [√](./Python3/src/1801%20~%201900/1832%20-%20Check%20if%20the%20Sentence%20Is%20Pangram.py) | [√](./Go/src/1801%20~%201900/1832%20-%20Check%20if%20the%20Sentence%20Is%20Pangram.go) |  [√](./Rust/src/1801%20~%201900/1832%20-%20Check%20if%20the%20Sentence%20Is%20Pangram.rs)
 | [1863 - Sum of All Subset XOR Totals](https://leetcode.com/problems/sum-of-all-subset-xor-totals/) | Easy | 异或 | [●](./Python3/src/1801%20~%201900/1863%20-%20Sum%20of%20All%20Subset%20XOR%20Totals.py) |
 | [1864 - Minimum Number of Swaps to Make the Binary String Alternating](https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-binary-string-alternating/) | Medium | 贪心 | [√](./Python3/src/1801%20~%201900/1864%20-%20Minimum%20Number%20of%20Swaps%20to%20Make%20the%20Binary%20String%20Alternating.py) |
 | [1865 - Finding Pairs With a Certain Sum](https://leetcode.com/problems/finding-pairs-with-a-certain-sum/) | Medium | map | [√](./Python3/src/1801%20~%201900/1865%20-%20Finding%20Pairs%20With%20a%20Certain%20Sum.py) |
