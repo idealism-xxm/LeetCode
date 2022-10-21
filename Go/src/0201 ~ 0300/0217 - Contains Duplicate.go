@@ -1,5 +1,5 @@
 // 链接：https://leetcode.com/problems/contains-duplicate/
-// 题意：给定一个数组，判断是否存在重复的数？
+// 题意：给定一个数组 nums ，判断是否存在重复的数？
 
 
 // 数据限制：
@@ -33,16 +33,13 @@
 //          1. 需要用一个集合维护全部不同的数字，最差情况下有 O(n) 个
 
 
-use std::collections::HashSet;
-
-
-impl Solution {
-    pub fn contains_duplicate(nums: Vec<i32>) -> bool {
-        nums
-            .iter()
-            // 将 nums 转成集合
-            .collect::<HashSet<&i32>>()
-            // 集合的长度不等于 nums 的长度时，才含有重复数字
-            .len() != nums.len()
+func containsDuplicate(nums []int) bool {
+    // 将 nums 转成集合
+    numSet := make(map[int]bool)
+    for _, num := range nums {
+        numSet[num] = true
     }
+
+    // 集合的长度不等于 nums 的长度时，才含有重复数字
+    return len(numSet) != len(nums)
 }
