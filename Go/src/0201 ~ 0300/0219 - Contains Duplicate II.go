@@ -41,26 +41,18 @@
 //          1. 需要维护全部不同数最后一次出现的下标，最差情况下有 O(n) 个
 
 
-use std::collections::HashMap;
-
-
-impl Solution {
-    pub fn contains_nearby_duplicate(nums: Vec<i32>, k: i32) -> bool {
-        let k = k as usize;
-        // 维护每个数最后一次出现的下标
-        let mut num_to_last_index = HashMap::new();
-        for (i, num) in nums.iter().enumerate() {
-            if let Some(j) = num_to_last_index.get(num) {
-                // 若 num 存在，且 i - j <= k ，则满足题意
-                if i - j <= k {
-                    return true;
-                }
-            }
-            // num 最后一次出现的下标设置为 i
-            num_to_last_index.insert(num, i);
+func containsNearbyDuplicate(nums []int, k int) bool {
+    // 维护每个数最后一次出现的下标
+    numToLastIndex := make(map[int]int)
+    for i, num := range nums {
+        // 若 num 存在，且 i - j <= k ，则满足题意
+        if j, exists := numToLastIndex[num]; exists && i - j <= k {
+            return true
         }
-        
-        // 在循环中没有返回，则所有数都不满足题意
-        false
+        // num 最后一次出现的下标设置为 i
+        numToLastIndex[num] = i
     }
+    
+    // 在循环中没有返回，则所有数都不满足题意
+    return false
 }
