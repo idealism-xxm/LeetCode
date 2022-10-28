@@ -46,61 +46,23 @@
 //          2. 需要维护结果中全部 O(n) 个字符串（复用原字符串，字符串不占额外空间）
 
 
-import (
-	"sort"
-	"strings"
-)
+use std::collections::HashMap;
 
 
-func groupAnagrams(strs []string) [][]string {
-	// group 维护所有相同的字母异位词
-	group := make(map[string][]string)
-	for _, s := range strs {
-		// 对 s 按照字典序升序排序，获取对应的 key
-		runes := []rune(s)
-		sort.SliceStable(runes, func(i, j int) bool { return runes[i] < runes[j] })
-		sortedS := string(runes)
-		// 将 s 放入对应的字母异位词列表
-		group[sortedS] = append(group[sortedS], s)
-	}
-
-	// 收集所有的列表并返回
-	var result [][]string
-	for _, slice := range group {
-		result = append(result, slice)
-	}
-	return result
-}
-
-
-// 思路2：计数模拟
-//		看了官方题解后，发现还可以用计数的方式统计每个字母出现的次数
-//		再组装成字符串当作键，由于使用了计数代替排序，复杂度降低了
-//		时间复杂度： O(n * k) ，其中 k 是最长的字符串长度
-
-import (
-	"bytes"
-	"strconv"
-)
-
-func groupAnagrams(strs []string) [][]string {
-	strToStrArr := make(map[string][]string)
-	for _, str := range strs {
-		count := make([]int, 128)
-		for i := range str {
-			count[str[i]]++
-		}
-		var key bytes.Buffer
-		for ch := 'a'; ch <= 'z'; ch++ {
-			key.WriteString(strconv.Itoa(count[ch]))
-			key.WriteByte('#')
-		}
-		keyStr := key.String()
-		strToStrArr[keyStr] = append(strToStrArr[keyStr], str)
-	}
-	var result [][]string
-	for _, strArr := range strToStrArr {
-		result = append(result, strArr)
-	}
-	return result
+impl Solution {
+    pub fn group_anagrams(strs: Vec<String>) -> Vec<Vec<String>> {
+        // group 维护所有相同的字母异位词
+        let mut group = HashMap::new();
+        for s in strs {
+            // 对 s 按照字典序升序排序，获取对应的 key
+            let mut chs = s.chars().collect::<Vec<char>>();
+            chs.sort();
+            let sorted_s = chs.iter().collect::<String>();
+            // 将 s 放入对应的字母异位词列表
+            group.entry(sorted_s).or_insert_with(Vec::new).push(s);
+        }
+        
+        // 收集所有的列表并返回
+        group.into_values().collect()
+    }
 }
