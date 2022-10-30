@@ -458,6 +458,7 @@ LeetCode AC代码（附思路、注释）
 | [1260 - Shift 2D Grid](https://leetcode.com/problems/shift-2d-grid/) | Easy | 三次翻转 | [√](./Rust/src/1201%20~%201300/1260%20-%20Shift%202D%20Grid.rs) | [√](./Python3/src/1201%20~%201300/1260%20-%20Shift%202D%20Grid.py) | [√](./Go/src/1201%20~%201300/1260%20-%20Shift%202D%20Grid.go) |
 | [1288 - Remove Covered Intervals](https://leetcode.com/problems/remove-covered-intervals/) | Medium | 贪心 + 排序 | [√](./Rust/src/1201%20~%201300/1288%20-%20Remove%20Covered%20Intervals.rs) | [√](./Python3/src/1201%20~%201300/1288%20-%20Remove%20Covered%20Intervals.py) |
 | [1291 - Sequential Digits](https://leetcode.com/problems/sequential-digits/) | Medium | BFS | [√](./Rust/src/1201%20~%201300/1291%20-%20Sequential%20Digits.rs) |
+| [1293 - Shortest Path in a Grid with Obstacles Elimination](https://leetcode.com/problems/shortest-path-in-a-grid-with-obstacles-elimination/) | Hard | BFS | [√](./Rust/src/1201%20~%201300/1293%20-%20Shortest%20Path%20in%20a%20Grid%20with%20Obstacles%20Elimination.rs) | [√](./Python3/src/1201%20~%201300/1293%20-%20Shortest%20Path%20in%20a%20Grid%20with%20Obstacles%20Elimination.py) | [√](./Go/src/1201%20~%201300/1293%20-%20Shortest%20Path%20in%20a%20Grid%20with%20Obstacles%20Elimination.go) |
 </details>
 
 <details>
