@@ -62,53 +62,61 @@
 //          1. 需要维护 count 中全部 O(C) 个不同字母的出现次数
 
 
-func minWindow(s string, t string) string {
-	m := len(s)
-	// count[ch] 表示滑动窗口 [l, r) 中字母 ch 还需出现的次数
-    count := make(map[byte]int)
-	// 初始化为 t 中每个字母的出现次数
-    for _, ch := range t {
-        count[byte(ch)] += 1
-	}
-	// remain 表示滑动窗口 [l, r) 中还需出现的不同字母数
-	remain := len(count)
+use std::collections::HashMap;
+use std::ops::{ AddAssign, SubAssign };
 
-	ansL, ansR, ansLen := 0, 0, m + 1
-	// 初始化为空滑动窗口 
-    r := 0
-	// 右移左边界 l ，准备将其从到滑动窗口中移除
-	for l := 0; l < m; l++ {
-		// 不断右移右边界 r ，直至 remain 为 0
-		for remain != 0 && r < m {
-			// 滑动窗口内 s[r] 需要出现的次数 -1
-			count[s[r]] -= 1
-			// 如果等于 0 ，则表示 s[r] 在窗口中出现的次数恰好满足题意，剩余不同字母数 -1
-			if count[s[r]] == 0 {
-				remain -= 1
-			}
 
-			r += 1
-		}
-		// 如果所有字母的出现次数都满足题意，且其长度更短，则更新答案
-		if remain == 0 && r - l < ansLen {
-			ansL = l
-			ansR = r
-			ansLen = r - l
-		}
+impl Solution {
+    pub fn min_window(s: String, t: String) -> String {
+        let s = s.as_bytes();
+        let m = s.len();
+        // count[ch] 表示滑动窗口 [l, r) 中字母 ch 还需出现的次数
+        let mut count = HashMap::new();
+        // 初始化为 t 中每个字母的出现次数
+        for &ch in t.as_bytes() {
+            count.entry(ch).or_insert(0).add_assign(1);
+        }
+        // remain 表示滑动窗口 [l, r) 中还需出现的不同字母数
+        let mut remain = count.len();
 
-		// 最后将 s[l] 从滑动窗口中移除
-		count[s[l]] += 1
-		// 如果等于 1 ，则表示 s[l] 移除后，
-		// s[l] 在窗口中出现的次数恰好不满足题意，剩余不同字母数 -1
-		if count[s[l]] == 1 {  
-			remain += 1
-		}
-	}
+        let (mut ans_l, mut ans_r, mut ans_len) = (0, 0, m + 1);
+        // 初始化为空滑动窗口 
+        let mut r = 0;
+        // 右移左边界 l ，准备将其从到滑动窗口中移除
+        for l in 0..m {
+            // 不断右移右边界 r ，直至 remain 为 0
+            while remain != 0 && r < m {
+                // 滑动窗口内 s[r] 需要出现的次数 -1
+                count.entry(s[r]).or_insert(0).sub_assign(1);
+                // 如果等于 0 ，则表示 s[r] 在窗口中出现的次数恰好满足题意，剩余不同字母数 -1
+                if count[&s[r]] == 0 {
+                    remain -= 1;
+                }
 
-	if ansLen == m + 1 {
-		// 如果从未更新过，则无答案
-		return ""
-	}
-	// 更新过，则获取对应的子串
-	return s[ansL:ansR]
+                r += 1
+            }
+            // 如果所有字母的出现次数都满足题意，且其长度更短，则更新答案
+            if remain == 0 && r - l < ans_len {
+                ans_l = l;
+                ans_r = r;
+                ans_len = r - l;
+            }
+
+            // 最后将 s[l] 从滑动窗口中移除
+            count.entry(s[l]).or_insert(0).add_assign(1);
+            // 如果等于 1 ，则表示 s[l] 移除后，
+            // s[l] 在窗口中出现的次数恰好不满足题意，剩余不同字母数 -1
+            if count[&s[l]] == 1 {  
+                remain += 1;
+            }
+        }
+
+        if ans_len == m + 1 {
+            // 如果从未更新过，则无答案
+            "".to_owned()
+        } else {
+            // 更新过，则获取对应的子串
+            String::from_utf8(s[ans_l..ans_r].to_vec()).unwrap()
+        }
+    }
 }
