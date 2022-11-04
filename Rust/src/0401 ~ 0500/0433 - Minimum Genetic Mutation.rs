@@ -29,7 +29,7 @@
 // 解释： "AAAAACCC" -> "AAAACCCC" -> "AAACCCCC" -> "AACCCCCC"
 
 
-// 思路：BFS
+// 思路：BFS + DFS
 //
 //      本题是单源最短路，而且边长都是 1 ，所以可以直接使用 BFS 搜索即可。
 //
@@ -68,10 +68,9 @@
 //              每次遍历时都需要生成对应的长度为 O(L) 的通配符字符串。
 //              总时间复杂度为 O(n * L ^ 2)
 //      空间复杂度：O(nL) 
-//          1. 需要维护开始基因的克隆中全部 O(L) 个字母
-//          2. 需要维护邻接表中全部 O(nL) 个基因下标
-//          3. 需要维护 distance 全部 O(n) 个状态
-//          4. 需要维护队列 q 中全部 O(n) 个基因
+//          1. 需要维护邻接表中全部 O(nL) 个基因下标
+//          2. 需要维护 distance 全部 O(n) 个状态
+//          3. 需要维护队列 q 中全部 O(n) 个基因
 
 
 use std::collections::{ HashMap, VecDeque };
@@ -80,7 +79,7 @@ use std::collections::{ HashMap, VecDeque };
 impl Solution {
     pub fn min_mutation(start: String, end: String, mut bank: Vec<String>) -> i32 {
         // 先把开始基因放入基因库中，方便后续使用下标处理
-        bank.push(start.clone());
+        bank.push(start);
         let start_index = bank.len() - 1;
 
         // 找到结束基因在基因库中的下标

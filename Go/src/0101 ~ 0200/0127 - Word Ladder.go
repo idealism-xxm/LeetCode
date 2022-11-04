@@ -1,7 +1,7 @@
 // 链接：https://leetcode.com/problems/word-ladder/
 // 题意：给定开始单词、结束单词和一个单词列表（所有单词长度一样），
-//		每次可以改变一个字母变成单词列表内的一个单词，
-//      求从开始单词变成结束单词最短变换序列的长度？
+//      每次可以改变一个字母变成单词列表内的一个单词，
+//      求从开始单词变成结束单词最短转换序列的长度？
 
 
 // 数据限制：
@@ -22,71 +22,120 @@
 // 输出：0
 // 解释：结束单词 "cog" 不在单词列表中，所以无法进行转换。
 
-// 思路： BFS
-//		0126 的简化版，直接使用 BFS 即可
-//		刚开始第一反应就是在 O(m * n ^ 2) 将可相互转换的单词标记，视为无向边，变长均为 1 ，
-//		【题解用 map 和字符串变换，可以将相互可转换的单词在 O(n) 内找出来，感觉非常巧妙
-//		可以将时间复杂度优化为 O(n * m ^ 2) , m 是单词长度】
-//		这样就转换成了边长都相同的最短路，直接 BFS 并标记转换到每个单词最短路径长度
-//		后来发现其实不需要预处理无向边，直接在 BFS 的时候判断即可，
-//		因为每个单词只会入队一次，入队前和一个单词判断一次，出队后和列表中的单词判断一次
+
+// 思路：BFS + Map
 //
-//		由于本题只用找到最短路径的长度即可，所以也可以使用 双向 BFS
+//      本题是 LeetCode 433 加强版，字符集大小从 4 变为 26 ，数据量也变大了。
+//      但思路和代码基本一致，只需要修改一下返回值就能直接复用。
 //
-//		时间复杂度： O(n * m ^ 2)
-//		空间复杂度： O(m * n)
+//
+//      本题是单源最短路，而且边长都是 1 ，所以可以直接使用 BFS 搜索即可。
+//
+//      我们可以维护一个邻接表 adj ，遍历每个单词 wordList[i] 的每个位置 j ，
+//      将第 j 个字符替换为 '.' 形成通配字符串 source 。
+//
+//      然后将 i 放入 adj[source] 中，
+//      那么 adj[source] 中的所有下标对应的单词都可以相互转换。
+//
+//      同时维护一个距离数组 distance ， 
+//      distance[i] 表示转换到单词 wordList[i] 时的序列长度，
+//      0 表示无法转换至单词 wordList[i] 。
+//
+//      BFS 每个单词出队时，遍历可替换的字符生成通配字符串 source ，
+//      遍历 adj[source] 中所有能转换的单词下标 next ，
+//      更新转化序列长度 distance[next] ，并将 next 放入队列中。
+//
+//      每次出队时，如果当前单词下标 cur 就是结束单词的下标 end_index ，
+//      则直接返回 distance[cur] 。
+//
+//      最后如果 BFS 结束还没有返回，则直接返回 0 ，表示无法转换到结束单词。
+//
+//      由于本题只用找到最短路径的长度即可，所以也可以使用 双向 BFS 。
+//
+//
+//      设 n 为单词列表长度， L 为单词长度。
+//
+//      时间复杂度：O(n * L ^ 2)
+//          1. 需要计算全部 O(n) 个单词所属的邻接表，
+//              每次计算时都需要遍历全部 O(L) 个可替换的字符，
+//              每次遍历时都需要生成对应的长度为 O(L) 的通配符字符串。
+//              总时间复杂度为 O(n * L ^ 2)
+//          2. 全部 O(n) 个单词都会入队列一次
+//          3. 全部 O(n) 个单词都会出队列一次，
+//              每次出队列都需要遍历全部 O(L) 个可替换的字符，
+//              每次遍历时都需要生成对应的长度为 O(L) 的通配符字符串。
+//              总时间复杂度为 O(n * L ^ 2)
+//      空间复杂度：O(nL) 
+//          1. 需要维护邻接表中全部 O(nL) 个单词下标
+//          2. 需要维护 distance 全部 O(n) 个状态
+//          3. 需要维护队列 q 中全部 O(n) 个单词
+
 
 func ladderLength(beginWord string, endWord string, wordList []string) int {
-	// 1. 预处理
-	// 将开始单词放入，方便后续操作
-	wordList = append(wordList, beginWord)
-	// 获取开始单词和结束单词的下标
-	length := len(wordList)
-	beginIndex, endIndex := length - 1, -1
-	// 将单词 word 变换成 word[:j] + "*" + word[j + 1:] ，然后映射到的均可以互相转换
-	m := len(beginWord)
-	connectedIndex := make(map[string][]int)
-	for i, word := range wordList {
-		// 找到结束单词的下标
-		if endWord == word {
-			endIndex = i
-		}
-		// 枚举可转换字母的位置
-		for j := 0; j < m; j++ {
-			commonWord := word[:j] + "*" + word[j + 1:]
-			connectedIndex[commonWord] = append(connectedIndex[commonWord], i)
-		}
-	}
-	// 如果结束单词不在单词列表中，则直接返回 0
-	if endIndex == -1 {
-		return 0
-	}
-	// 记录每个下标对应的单词是第几个（0 表示还未遍历过）
-	count := make([]int, length)
+    // 先把开始单词放入单词列表中，方便后续使用下标处理
+    wordList = append(wordList, beginWord)
+    startIndex := len(wordList) - 1
 
-	// 2. BFS 找出可能路径
-	// BFS 所用队列
-	queue := []int{beginIndex}
-	// 开始单词是第一个
-	count[beginIndex] = 1
-	for ; len(queue) != 0; {
-		// 队首下标出队
-		curIndex := queue[0]
-		queue = queue[1:]
-		curWord := wordList[curIndex]
-		// 找下一个入队单词，枚举可转换字母的位置
-		for j := 0; j < m; j++ {
-			commonWord := curWord[:j] + "*" + curWord[j + 1:]
-			for _, index := range connectedIndex[commonWord] {
-				// 如果 index 对应的单词还未遍历过，则入队
-				if count[index] == 0 {
-					queue = append(queue, index)
-					count[index] = count[curIndex] + 1
-				}
-			}
-		}
-	}
+    // 找到结束单词在单词列表中的下标
+    endIndex := -1
+    for i, word := range wordList {
+        if word == endWord {
+            endIndex = i
+            break
+        }
+    }
+    // 如果结束单词不在单词列表中，则无法转换，直接返回 0
+    if endIndex == -1 {
+        return 0
+    }
 
-	// 3. 返回转换成结束单词的所需长度
-	return count[endIndex]
+    // 构建邻接表
+    adj := make(map[string][]int)
+    for i, word := range wordList {
+        // 枚举 word 替换的字符
+        for j := range word {
+            // 将第 j 个字符替换为通配符 '.'
+            source := word[:j] + "." + word[j+1:]
+            // 所有能变为 source 的单词都能相互转换
+            adj[source] = append(adj[source], i)
+        }
+    }
+
+    // 队列 q 存储 BFS 下一次遍历的单词下标
+    var q []int
+    // 初始只有开始单词的下标在其中
+    q = append(q, startIndex)
+    // distance[i] 表示从 startIndex 转换到 i 时的序列长度，
+    // 初始化为 0 ，表示无法转换
+    distance := make([]int, len(wordList))
+    // 开始单词本身的无需任何转换就能得到
+    distance[startIndex] = 1
+
+    // 不断从 q 中获取下一个单词下标，直至 q 为空
+    for len(q) > 0 {
+        cur := q[0]
+        q = q[1:]
+        // 如果当前单词下标就是结束单词的下标，则直接返回
+        if cur == endIndex {
+            return distance[endIndex]
+        }
+
+        // 枚举 cur 替换的字符
+        for j := range wordList[cur] {
+            // 将第 j 个字符替换为通配符 '.'
+            source := wordList[cur][:j] + "." + wordList[cur][j+1:]
+            // 遍历邻接表
+            for _, next := range adj[source] {
+                // 如果 next 还未遍历过，则更新 distance[next] ，
+                // 并将 next 放入队列 q 中
+                if distance[next] == 0 {
+                    distance[next] = distance[cur] + 1
+                    q = append(q, next)
+                }
+            }
+        }
+    }
+
+    // 最后遍历完还没有找结束单词，则直接返回 0
+    return 0
 }
