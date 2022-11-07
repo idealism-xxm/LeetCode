@@ -63,52 +63,52 @@
 
 
 func minWindow(s string, t string) string {
-	m := len(s)
-	// count[ch] 表示滑动窗口 [l, r) 中字母 ch 还需出现的次数
+    m := len(s)
+    // count[ch] 表示滑动窗口 [l, r) 中字母 ch 还需出现的次数
     count := make(map[byte]int)
-	// 初始化为 t 中每个字母的出现次数
+    // 初始化为 t 中每个字母的出现次数
     for _, ch := range t {
         count[byte(ch)] += 1
-	}
-	// remain 表示滑动窗口 [l, r) 中还需出现的不同字母数
-	remain := len(count)
+    }
+    // remain 表示滑动窗口 [l, r) 中还需出现的不同字母数
+    remain := len(count)
 
-	ansL, ansR, ansLen := 0, 0, m + 1
-	// 初始化为空滑动窗口 
+    ansL, ansR, ansLen := 0, 0, m + 1
+    // 初始化为空滑动窗口 
     r := 0
-	// 右移左边界 l ，准备将其从滑动窗口中移除
-	for l := 0; l < m; l++ {
-		// 不断右移右边界 r ，直至 remain 为 0
-		for remain != 0 && r < m {
-			// 滑动窗口内 s[r] 需要出现的次数 -1
-			count[s[r]] -= 1
-			// 如果等于 0 ，则表示 s[r] 在窗口中出现的次数恰好满足题意，剩余不同字母数 -1
-			if count[s[r]] == 0 {
-				remain -= 1
-			}
+    // 右移左边界 l ，准备将其从滑动窗口中移除
+    for l := 0; l < m; l++ {
+        // 不断右移右边界 r ，直至 remain 为 0
+        for remain != 0 && r < m {
+            // 滑动窗口内 s[r] 需要出现的次数 -1
+            count[s[r]] -= 1
+            // 如果等于 0 ，则表示 s[r] 在窗口中出现的次数恰好满足题意，剩余不同字母数 -1
+            if count[s[r]] == 0 {
+                remain -= 1
+            }
 
-			r += 1
-		}
-		// 如果所有字母的出现次数都满足题意，且其长度更短，则更新答案
-		if remain == 0 && r - l < ansLen {
-			ansL = l
-			ansR = r
-			ansLen = r - l
-		}
+            r += 1
+        }
+        // 如果所有字母的出现次数都满足题意，且其长度更短，则更新答案
+        if remain == 0 && r - l < ansLen {
+            ansL = l
+            ansR = r
+            ansLen = r - l
+        }
 
-		// 最后将 s[l] 从滑动窗口中移除
-		count[s[l]] += 1
-		// 如果等于 1 ，则表示 s[l] 移除后，
-		// s[l] 在窗口中出现的次数恰好不满足题意，剩余不同字母数 -1
-		if count[s[l]] == 1 {  
-			remain += 1
-		}
-	}
+        // 最后将 s[l] 从滑动窗口中移除
+        count[s[l]] += 1
+        // 如果等于 1 ，则表示 s[l] 移除后，
+        // s[l] 在窗口中出现的次数恰好不满足题意，剩余不同字母数 -1
+        if count[s[l]] == 1 {  
+            remain += 1
+        }
+    }
 
-	if ansLen == m + 1 {
-		// 如果从未更新过，则无答案
-		return ""
-	}
-	// 更新过，则获取对应的子串
-	return s[ansL:ansR]
+    if ansLen == m + 1 {
+        // 如果从未更新过，则无答案
+        return ""
+    }
+    // 更新过，则获取对应的子串
+    return s[ansL:ansR]
 }

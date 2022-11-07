@@ -7,11 +7,11 @@
 
 
 // 数据限制：
-//  evnet1.length == event2.length == 2.
+//  evnet1.length == event2.length == 2
 //  event1[i].length == event2[i].length == 5
 //  startTime1 <= endTime1
 //  startTime2 <= endTime2
-//  所有时间的格式都是 'HH:MM'
+//  所有时间的格式都是 HH:MM
 
 
 // 输入： event1 = ["01:15","02:00"], event2 = ["02:00","03:00"]
@@ -34,7 +34,7 @@
 //
 //
 //      时间复杂度：O(1)
-//          1. 只需要常数次布尔操作即可
+//          1. 只需要常数次布尔运算即可
 //      空间复杂度：O(1)
 //          1. 只需要维护常数个额外变量
 
