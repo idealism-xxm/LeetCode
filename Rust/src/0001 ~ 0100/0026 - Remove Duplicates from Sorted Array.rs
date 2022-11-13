@@ -42,19 +42,21 @@
 //          1. 只需要使用常数个额外变量即可
 
 
-func removeDuplicates(nums []int) int {
-    // l 表示不重复的数字个数，也是下一个可以放入数字的下标。
-    // 初始化为 1 ，表示第 1 个数必定不是重复的
-    l := 1
-    // 遍历剩余所有的数字
-    for r := 1; r < len(nums); r++ {
-        // 如果当前数字不等于前一个数字，
-        // 则 nums[r] 是不重复的，放入 l 处
-        if nums[r] != nums[r - 1] {
-            nums[l] = nums[r]
-            l += 1
+impl Solution {
+    pub fn remove_duplicates(nums: &mut Vec<i32>) -> i32 {
+        // l 表示不重复的数字个数，也是下一个可以放入数字的下标。
+        // 初始化为 1 ，表示第 1 个数必定不是重复的
+        let mut l = 1;
+        // 遍历剩余所有的数字
+        for r in 1..nums.len() {
+            // 如果当前数字不等于前一个数字，
+            // 则 nums[r] 是不重复的，放入 l 处
+            if nums[r] != nums[r - 1] {
+                nums[l] = nums[r];
+                l += 1;
+            }
         }
-    }
 
-    return l
+        l as i32
+    }
 }
