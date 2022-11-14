@@ -44,17 +44,19 @@
 //          1. 只需要使用常数个额外变量即可
 
 
-func removeElement(nums []int, val int) int {
-    // l 表示不等于 val 的数字个数，也是下一个可以放入数字的下标，初始化为 0
-    l := 0
-    // 遍历剩余所有的数字
-    for r := range nums {
-        // 如果当前数字不等于 val ，则 nums[r] 不需要移除，放入 l 处
-        if nums[r] != val {
-            nums[l] = nums[r]
-            l += 1
+impl Solution {
+    pub fn remove_element(nums: &mut Vec<i32>, val: i32) -> i32 {
+        // l 表示不等于 val 的数字个数，也是下一个可以放入数字的下标，初始化为 0
+        let mut l = 0;
+        // 遍历剩余所有的数字
+        for r in 0..nums.len() {
+            // 如果当前数字不等于 val ，则 nums[r] 不需要移除，放入 l 处
+            if nums[r] != val {
+                nums[l] = nums[r];
+                l += 1;
+            }
         }
-    }
 
-    return l
+        l as i32
+    }
 }
