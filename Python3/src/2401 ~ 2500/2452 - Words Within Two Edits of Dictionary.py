@@ -1,7 +1,7 @@
 # 链接：https://leetcode.com/problems/words-within-two-edits-of-dictionary/
 # 题意：给定两个字符串数组 queries 和 dictionary 。
 #      每次修改可以选择 queries 中的一个字符串，将其中一个字母修改成任意其他字母。
-#      求哪些但字符串经过最多 2 次修改后，等于 dictionary 中的某个但字符串？
+#      求哪些字符串经过最多 2 次修改后，等于 dictionary 中的某个字符串？
 
 
 # 数据限制：

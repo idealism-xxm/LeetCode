@@ -46,31 +46,40 @@
 //          1. 只需要维护常数个额外变量
 
 
-use std::cmp::{ min, max };
-
-
-impl Solution {
-    pub fn compute_area(ax1: i32, ay1: i32, ax2: i32, ay2: i32, bx1: i32, by1: i32, bx2: i32, by2: i32) -> i32 {
-        // x 表示矩形 x 方向相交长度。初始化为 0 ，表示不相交，方便后续处理
-        let mut x = 0;
-        // 如果 x 方向相交，则更新相交长度
-        if ax1 <= bx2 && bx1 <= ax2 {
-            x = min(ax2, bx2) - max(ax1, bx1);
-        }
-
-        // y 表示矩形 y 方向相交长度。初始化为 0 ，表示不相交，方便后续处理
-        let mut y = 0;
-        // 如果 y 方向相交，则更新相交长度
-        if ay1 <= by2 && by1 <= ay2 {
-            y = min(ay2, by2) - max(ay1, by1);
-        }
-
-        // 总面积 = 两个矩形的面积和 - 两个矩形重叠区域的面积
-        Self::area(ax1, ay1, ax2, ay2) + Self::area(bx1, by1, bx2, by2) - x * y
+func computeArea(ax1 int, ay1 int, ax2 int, ay2 int, bx1 int, by1 int, bx2 int, by2 int) int {
+    // x 表示矩形 x 方向相交长度。初始化为 0 ，表示不相交，方便后续处理
+    x := 0
+    // 如果 x 方向相交，则更新相交长度
+    if ax1 <= bx2 && bx1 <= ax2 {
+        x = min(ax2, bx2) - max(ax1, bx1)
     }
 
-    // 计算矩形（左下角为 (x1, y1) ，右上角为 (x2, y2) ）的面积
-    fn area(x1: i32, y1: i32, x2: i32, y2: i32) -> i32 {
-        (x2 - x1) * (y2 - y1)
+    // y 表示矩形 y 方向相交长度。初始化为 0 ，表示不相交，方便后续处理
+    y := 0
+    // 如果 y 方向相交，则更新相交长度
+    if ay1 <= by2 && by1 <= ay2 {
+        y = min(ay2, by2) - max(ay1, by1)
     }
+
+    // 总面积 = 两个矩形的面积和 - 两个矩形重叠区域的面积
+    return area(ax1, ay1, ax2, ay2) + area(bx1, by1, bx2, by2) - x * y
+}
+
+// 计算矩形（左下角为 (x1, y1) ，右上角为 (x2, y2) ）的面积
+func area(x1, y1, x2, y2 int) int {
+    return (x2 - x1) * (y2 - y1)
+}
+
+func max(a, b int) int {
+    if a > b {
+        return a
+    }
+    return b
+}
+
+func min(a, b int) int {
+    if a < b {
+        return a
+    }
+    return b
 }
