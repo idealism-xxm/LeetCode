@@ -55,7 +55,7 @@ class Solution:
         #  remain: nums[i] 模 space 的余数
         #  min_num: nums 中模 space 余 remain 的最小的数
         #  cnt: nums 中模 space 余 remain 的数的个数
-        remain_to_info: Dict[int, List[int]] = defaultdict(lambda: [MAX, 0])
+        remain_to_info: Dict[int, Tuple[int, int]] = defaultdict(lambda: (MAX, 0))
         # ans 维护满足题意的结果
         ans: int = 0
         # total 维护选择 ans 后可移除的数的个数
