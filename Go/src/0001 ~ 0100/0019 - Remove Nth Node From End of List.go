@@ -58,7 +58,7 @@ func removeNthFromEnd(head *ListNode, n int) *ListNode {
 }
 
 
-// 思路2：快慢指针
+// 思路2：快慢指针/双指针
 //
 //      对于链表的题目，一般都可以使用一个哨兵结点。
 //
