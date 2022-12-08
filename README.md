@@ -711,6 +711,7 @@ LeetCode AC代码（附思路、注释）
 | [2060 - Check if an Original String Exists Given Two Encoded Strings](https://leetcode.com/problems/check-if-an-original-string-exists-given-two-encoded-strings/) | Hard | DP | [●](./Python3/src/2001%20~%202100/2060%20-%20Check%20if%20an%20Original%20String%20Exists%20Given%20Two%20Encoded%20Strings.py) |
 | [2062 - Count Vowel Substrings of a String](https://leetcode.com/problems/count-vowel-substrings-of-a-string/) | Easy | 枚举 | [√](./Python3/src/2001%20~%202100/2062%20-%20Count%20Vowel%20Substrings%20of%20a%20String.py) |
 | [2063 - Vowels of All Substrings](https://leetcode.com/problems/vowels-of-all-substrings/) | Medium | 计数 | [√](./Python3/src/2001%20~%202100/2063%20-%20Vowels%20of%20All%20Substrings.py) |
+| [2095 - Delete the Middle Node of a Linked List](https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/) | Medium | 快慢指针/双指针 | [√](./Python3/src/2001%20~%202100/2095%20-%20Delete%20the%20Middle%20Node%20of%20a%20Linked%20List.py) | [√](./Go/src/2001%20~%202100/2095%20-%20Delete%20the%20Middle%20Node%20of%20a%20Linked%20List.go) | [√](./Rust/src/2001%20~%202100/2095%20-%20Delete%20the%20Middle%20Node%20of%20a%20Linked%20List.rs) |
 
 </details>
 
