@@ -44,10 +44,8 @@
 #
 #      时间复杂度：O(n)
 #          1. 需要遍历全部 O(n) 个结点
-#          2. Rust 中需要 clone 原链表 O(n) 个结点
-#      空间复杂度：O(n)
+#      空间复杂度：O(1)
 #          1. 只需要维护常数个额外变量即可
-#          2. Rust 中需要 clone 原链表 O(n) 个结点    
 
 
 # Definition for singly-linked list.
