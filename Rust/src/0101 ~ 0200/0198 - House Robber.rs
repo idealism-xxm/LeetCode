@@ -41,31 +41,26 @@
 //          2. 需要维护 dp 中全部 O(n) 个状态
 
 
-func rob(nums []int) int {
-    n := len(nums)
-    // 如果只有一个数，那么必定是选择这个数
-    if n == 1 {
-        return nums[0]
-    }
+impl Solution {
+    pub fn rob(nums: Vec<i32>) -> i32 {
+        let n = nums.len();
+        // 如果只有一个数，那么必定是选择这个数
+        if n == 1 {
+            return nums[0];
+        }
 
-    // dp[i] 表示从 nums[..=i] 中选择的数的最大和
-    dp := make([]int, n)
-    // nums[..=0] 中只能选择 nums[0]
-    dp[0] = nums[0]
-    // nums[..=1] 中不能两个都选，只能二选一，贪心选择最大的
-    dp[1] = max(nums[0], nums[1])
-    for i := 2; i < n; i++ {
-        // 1. 不选 nums[i] ，则 dp[i] 由 dp[i - 1] 转移而来
-        // 2. 选择 nums[i] ，则 dp[i] 由 dp[i - 2] + nums[i] 转移而来
-        dp[i] = max(dp[i - 1], dp[i - 2] + nums[i])
-    }
+        // dp[i] 表示从 nums[..=i] 中选择的数的最大和
+        let mut dp = vec![0; n];
+        // nums[..=0] 中只能选择 nums[0]
+        dp[0] = nums[0];
+        // nums[..=1] 中不能两个都选，只能二选一，贪心选择最大的
+        dp[1] = nums[0].max(nums[1]);
+        for i in 2..n {
+            // 1. 不选 nums[i] ，则 dp[i] 由 dp[i - 1] 转移而来
+            // 2. 选择 nums[i] ，则 dp[i] 由 dp[i - 2] + nums[i] 转移而来
+            dp[i] = dp[i - 1].max(dp[i - 2] + nums[i]);
+        }
 
-    return dp[n - 1]
-}
-
-func max(a, b int) int {
-    if a > b {
-        return a
+        dp[n - 1]
     }
-    return b
 }
