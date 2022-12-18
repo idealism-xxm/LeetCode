@@ -461,6 +461,7 @@ LeetCode AC代码（附思路、注释）
 | 题目 | 难度 | 思路 | Rust | Python3 | Go |
 | ------ | ------ | ------ | ------ | ------ | ------ |
 | [1137 - N-th Tribonacci Number](https://leetcode.com/problems/n-th-tribonacci-number/) | Easy | DP | [√](./Rust/src/1101%20~%201200/1137%20-%20N-th%20Tribonacci%20Number.rs) | [√](./Python3/src/1101%20~%201200/1137%20-%20N-th%20Tribonacci%20Number.py) | [√](./Go/src/1101%20~%201200/1137%20-%20N-th%20Tribonacci%20Number.go) |
+| [1143 - Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/) | Medium | DP | [√](./Rust/src/1101%20~%201200/1143%20-%20Longest%20Common%20Subsequence.rs) | [√](./Python3/src/1101%20~%201200/1143%20-%20Longest%20Common%20Subsequence.py) | [√](./Go/src/1101%20~%201200/1143%20-%20Longest%20Common%20Subsequence.go) |
 | [1155 - Number of Dice Rolls With Target Sum](https://leetcode.com/problems/number-of-dice-rolls-with-target-sum/) | Medium | DP | [√](./Rust/src/1101%20~%201200/1155%20-%20Number%20of%20Dice%20Rolls%20With%20Target%20Sum.rs) | [√](./Python3/src/1101%20~%201200/1155%20-%20Number%20of%20Dice%20Rolls%20With%20Target%20Sum.py) | [√](./Go/src/1101%20~%201200/1155%20-%20Number%20of%20Dice%20Rolls%20With%20Target%20Sum.go) |
 </details>
 
