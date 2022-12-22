@@ -87,31 +87,80 @@ class Solution:
 
 # 思路2： 并查集
 #
-#       第一反应肯定是 BFS ，每个点每条边只会遍历一次，时间复杂度为 O(E)
+#      本题其实就是判断 source 和 destination 是否联通，那么可以直接使用并查集进行处理。
 #
-#       看到有人用并查集，立刻反应过来，这颗题目可以使用，因为只需要判断是否联通即可
+#      初始化大小为 n 的并查集，并遍历每一条边 edges[i] = [u_i, v_i] ，
+#      将并查集中的 u_i 和 v_i 合并。
 #
-#       时间复杂度： O(E * alpha(E))
-#       空间复杂度： O(1)
+#      最后，如果 source 和 destination 在同一个集合中，则说明他们联通，返回 true ；
+#      否则返回 false 。
+#
+#
+#      时间复杂度：O(n + m * α(n))
+#          1. 需要初始化并查集中全部 O(n) 个点
+#          2. 需要遍历全部 O(m) 条边，每次需要执行时间复杂度为 O(α(n)) 并查集操作
+#      空间复杂度：O(n)
+#          1. 需要维护并查集中全部 O(n) 个点
+
 
 class Solution:
-    def validPath(self, n: int, edges: List[List[int]], start: int, end: int) -> bool:
-        parent = [i for i in range(n)]
+    def validPath(self, n: int, edges: List[List[int]], source: int, destination: int) -> bool:
+        # 初始化大小为 n 的并查集
+        union_find: UnionFind = UnionFind(n)
         
-        def find(x: int) -> int:
-            if parent[x] == x:
-                return x
-            parent[x] = find(parent[x])
-            return parent[x]
-        
-        def union(x: int, y: int) -> None:
-            x, y = find(x), find(y)
-            if x != y:
-                parent[x] = y
-        
-        # 合并边的两点
+        # 合并每一条边的两点
         for u, v in edges:
-            union(u, v)
+            union_find.union(u, v)
         
-        # 如果最后 start 和 end 在同一个并查集种，则他们联通
-        return find(start) == find(end)
+        # 最后，如果 source 和 destination 在同一个集合中，则说明他们联通
+        return union_find.find(source) == union_find.find(destination)
+
+
+# 并查集
+class UnionFind:
+
+    # 初始化一个大小为 n 的并查集
+    def __init__(self, n: int):
+        # parent[i] 表示第 i 个元素所指向的父元素
+        # 初始每个元素的父元素都是自己
+        self.parent = list(range(n))
+        # rank[i] 表示以第 i 个元素的深度（秩），
+        # 当 i 是根元素（即 parent[i] == i ）时有效
+        # 初始化深度（秩）都是 1
+        self.rank = [1] * n
+
+    # 查找元素 x 所在集合的根元素
+    def find(self, x: int) -> int:
+        if self.parent[x] == x:
+            # 如果 x 的父元素是自己，那么 x 是根元素
+            return x
+
+        # 如果 x 的父元素不是自己，那么递归查找其所在集合的根元素。
+        # 这里使用路径压缩优化，将路径上所有的元素都直接挂在根元素下
+        self.parent[x] = self.find(self.parent[x])
+        # 返回 x 所在集合的根元素
+        return self.parent[x]
+
+    # 合并元素 x 和 y 所在的集合
+    def union(self, x: int, y: int):
+        # 找到 x 和 y 所在集合的根元素
+        x_root: int = self.find(x)
+        y_root: int = self.find(y)
+        # 如果 x 和 y 在同一个集合，则不需要合并
+        if x_root == y_root:
+            return
+
+        if self.rank[x_root] < self.rank[y_root]:
+            # 如果 x_root 深度（秩）更小，
+            # 则将 y_root 合并入 x_root 中
+            self.parent[x_root] = y_root
+        elif self.rank[x_root] > self.rank[y_root]:
+            # 如果 x_root 深度（秩）更大，
+            # 则将 x_root 合并入 y_root 中
+            self.parent[y_root] = x_root
+        else:
+            # 如果 x_root 深度（秩）相等，
+            # 则将 y_root 合并入 x_root 中
+            self.parent[y_root] = x_root
+            # 同时将 x_root 的深度（秩）加 1
+            self.rank[x_root] += 1

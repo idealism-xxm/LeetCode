@@ -91,3 +91,100 @@ func validPath(n int, edges [][]int, source int, destination int) bool {
     // 遍历完 source 所在的联通块还没找到 destination ，则说明不存在合法的路径
     return false
 }
+
+
+// 思路2： 并查集
+//
+//      本题其实就是判断 source 和 destination 是否联通，那么可以直接使用并查集进行处理。
+//
+//      初始化大小为 n 的并查集，并遍历每一条边 edges[i] = [u_i, v_i] ，
+//      将并查集中的 u_i 和 v_i 合并。
+//
+//      最后，如果 source 和 destination 在同一个集合中，则说明他们联通，返回 true ；
+//      否则返回 false 。
+//
+//
+//      时间复杂度：O(n + m * α(n))
+//          1. 需要初始化并查集中全部 O(n) 个点
+//          2. 需要遍历全部 O(m) 条边，每次需要执行时间复杂度为 O(α(n)) 并查集操作
+//      空间复杂度：O(n)
+//          1. 需要维护并查集中全部 O(n) 个点
+
+
+func validPath(n int, edges [][]int, source int, destination int) bool {
+    // 初始化大小为 n 的并查集
+    unionFind := newUnionFind(n)
+    
+    // 合并每一条边的两点
+    for _, edge := range edges {
+        unionFind.union(edge[0], edge[1])
+    }
+    
+    // 最后，如果 source 和 destination 在同一个集合中，则说明他们联通
+    return unionFind.find(source) == unionFind.find(destination)
+}
+
+
+// 并查集
+type UnionFind struct {
+    // parent[i] 表示第 i 个元素所指向的父元素
+    parent []int
+    // rank[i] 表示以第 i 个元素的深度（秩），
+    // 当 i 是根元素（即 parent[i] == i ）时有效
+    rank []int
+}
+
+
+    // 初始化一个大小为 n 的并查集
+func newUnionFind(n int) *UnionFind {
+    parent := make([]int, n)
+    rank := make([]int, n)
+    for i := 0; i < n; i++ {
+        // 初始每个元素的父元素都是自己
+        parent[i] = i
+        // 初始化深度（秩）都是 1
+        rank[i] = 1
+    }
+    return &UnionFind{parent, rank}
+}
+
+// 查找元素 x 所在集合的根元素
+func (uf *UnionFind) find(x int) int {
+    if uf.parent[x] == x {
+        // 如果 x 的父元素是自己，那么 x 是根元素
+        return x
+    }
+
+    // 如果 x 的父元素不是自己，那么递归查找其所在集合的根元素。
+    // 这里使用路径压缩优化，将路径上所有的元素都直接挂在根元素下
+    uf.parent[x] = uf.find(uf.parent[x])
+    // 返回 x 所在集合的根元素
+    return uf.parent[x]
+}
+
+// 合并元素 x 和 y 所在的集合
+func (uf *UnionFind) union(x int, y int) {
+    // 找到 x 和 y 所在集合的根元素
+    xRoot := uf.find(x);
+    yRoot := uf.find(y);
+    // 如果 x 和 y 在同一个集合，则不需要合并
+    if xRoot == yRoot {
+        return
+    }
+
+    if uf.rank[xRoot] < uf.rank[yRoot] {
+        // 如果 xRoot 深度（秩）更小，
+        // 则将 yRoot 合并入 xRoot 中
+        uf.parent[xRoot] = yRoot
+    } else if uf.rank[xRoot] > uf.rank[yRoot] {
+        // 如果 xRoot 深度（秩）更大，
+        // 则将 xRoot 合并入 yRoot 中
+        uf.parent[yRoot] = xRoot
+    } else {
+        // 如果 xRoot 深度（秩）相等，
+        // 则将 yRoot 合并入 xRoot 中
+        uf.parent[yRoot] = xRoot
+        // 同时将 xRoot 的深度（秩）加 1
+        uf.rank[xRoot] += 1
+    }
+}
