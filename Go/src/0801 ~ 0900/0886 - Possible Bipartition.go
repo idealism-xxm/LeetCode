@@ -1,31 +1,42 @@
-// 链接：https://leetcode.com/problems/is-graph-bipartite/
-// 题意：给定一个无向图，判断其是否是一个二分图？
+// 链接：https://leetcode.com/problems/possible-bipartition/
+// 题意：给定一个整数 n 和一个数组 dislikes 。
+//      其中， n 表示人数，
+//      dislikes[i] = [a_i, b_i] 表示 a_i 不喜欢 b_i 。
 //
-//      二分图能被分成两个独立的点集 A 和 B ，
-//      且图中过的每条边都连接了 A 和 B 中的各一个点。
+//      求是否能将这 n 个人分成两组，使得存在不喜欢关系的人不在同一组？
 
 
 // 数据限制：
-//  graph.length == n
-//  1 <= n <= 100
-//  0 <= graph[u].length < n
-//  0 <= graph[u][i] <= n - 1
-//  graph[u] 不含 u ，即没有自环
-//  graph[u] 中的所有值都不同，即不含重边
-//  如果 graph[u] 包含 v ，则 graph[v] 包含 u
+//  1 <= n <= 2000
+//  0 <= dislikes.length <= 10 ^ 4
+//  dislikes[i].length == 2
+//  1 <= dislikes[i][j] <= n
+//  a_i < b_i
+//  dislikes 中所有的元素都各不相同
 
 
-// 输入： graph = [[1,2,3],[0,2],[0,1,3],[0,2]]
-// 输出： false
-// 解释： 没法将图分成两个独立的点集，
-//       使得每条边都分别连接了两个点集中的点
-
-// 输入： graph = [[1,3],[0,2],[1,3],[0,2]]
+// 输入： n = 4, dislikes = [[1,2],[1,3],[2,4]]
 // 输出： true
-// 解释： 可以将点分为 {0, 2} 和 {1, 3} 两个集合
+// 解释： 第一组： {1, 4}
+//       第二组： {2, 3}
+
+// 输入： n = 3, dislikes = [[1,2],[1,3],[2,3]]
+// 输出： false
+// 解释： 1 不喜欢 2 和 3 ，所以 2 和 3 需要在同一组；
+//       但 2 也不喜欢 3 ，所以 2 和 3 需要在不同组。
+
+// 输入： n = 5, dislikes = [[1,2],[2,3],[3,4],[4,5],[1,5]]
+// 输出： false
 
 
 // 思路1： 递归/DFS
+//
+//      本题是 LeetCode 785 的加强版，给「判断二分图」增加了一个场景，
+//      需要自己推导出题目的实际目的：给定一个无向图，判断其是否是一个二分图？
+//
+//      所以我们可以先建立邻接表，
+//      然后调用 LeetCode 785 的「判断二分图」的方法即可。
+//
 //
 //      我们可以使用染色的方法，将图中的点分成两个独立的点集合。
 //
@@ -55,10 +66,25 @@
 //      时间复杂度：O(n + m)
 //          1. 需要遍历全部 O(n) 个点
 //          2. 需要遍历全部 O(m) 条边
-//      空间复杂度：O(n)
-//          1. 递归深度就是一个联通子图的大小，
+//      空间复杂度：O(n + m)
+//          1. 需要维护邻接表中全部 O(m) 条边
+//          2. 递归深度就是一个联通子图的大小，
 //              最差情况下，这个图是二分图，且全部 O(n) 点在同一个联通子图中
 
+
+func possibleBipartition(n int, dislikes [][]int) bool {
+    // 构建邻接表
+    adj := make([][]int, n)
+    for _, dislike := range dislikes {
+        // 这里将 [1, n] 映射成 [0, n - 1] ，方便直接复用 isBipartite
+        a, b := dislike[0] - 1, dislike[1] - 1
+        adj[a] = append(adj[a], b)
+        adj[b] = append(adj[b], a)
+    }
+
+    // 判断该无向图是否为二分图
+    return isBipartite(adj)
+}
 
 func isBipartite(graph [][]int) bool {
     // colors[i] 表示每个点的颜色
@@ -107,6 +133,13 @@ func dfs(graph [][]int, colors []int, cur, color int) bool {
 
 // 思路2： 并查集
 //
+//      本题是 LeetCode 785 的加强版，给「判断二分图」增加了一个场景，
+//      需要自己推导出题目的实际目的：给定一个无向图，判断其是否是一个二分图？
+//
+//      所以我们可以先建立邻接表，
+//      然后调用 LeetCode 785 的「判断二分图」的方法即可。
+//
+//
 //      二分图需要将图分成两个独立的点集，
 //      并且每条边的两个点分别在不同的集合中。
 //
@@ -132,8 +165,24 @@ func dfs(graph [][]int, colors []int, cur, color int) bool {
 //          2. 需要遍历全部 O(m) 条边
 //          3. 遍历每条边时，都需要执行常数次并查集的操作，
 //              时间复杂度为 O(α(n))
-//      空间复杂度：O(n)
-//          1. 需要维护一个大小为 O(n) 的并查集
+//      空间复杂度：O(n + m)
+//          1. 需要维护邻接表中全部 O(m) 条边
+//          2. 需要维护一个大小为 O(n) 的并查集
+
+
+func possibleBipartition(n int, dislikes [][]int) bool {
+    // 构建邻接表
+    adj := make([][]int, n)
+    for _, dislike := range dislikes {
+        // 这里将 [1, n] 映射成 [0, n - 1] ，方便直接复用 isBipartite
+        a, b := dislike[0] - 1, dislike[1] - 1
+        adj[a] = append(adj[a], b)
+        adj[b] = append(adj[b], a)
+    }
+
+    // 判断该无向图是否为二分图
+    return isBipartite(adj)
+}
 
 
 func isBipartite(graph [][]int) bool {
