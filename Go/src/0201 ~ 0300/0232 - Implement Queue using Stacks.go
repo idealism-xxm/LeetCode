@@ -44,73 +44,65 @@
 //          1. 需要维护 push 栈和 pop 栈中共 O(n) 个元素
 
 
-use std::vec::Vec;
-
-
-// 简化创建节点
-#[derive(Default)]
-struct MyQueue {
+type MyQueue struct {
     // push 栈维护已放入的元素
-    push_stack: Vec<i32>,
+    pushStack []int
     // pop 栈维护待移除的元素。
     // 将 push 栈中的元素放入 pop 栈时，就将先进后出转换为了先进先出
-    pop_stack: Vec<i32>,
+    popStack []int
 }
 
-/**
- * `&self` means the method takes an immutable reference.
- * If you need a mutable reference, change it to `&mut self` instead.
- */
-impl MyQueue {
 
-    /** Initialize your data structure here. */
-    fn new() -> Self {
-        MyQueue::default()
-    }
+func Constructor() MyQueue {
+    return MyQueue{}
+}
 
-    /** Push element x to the back of queue. */
-    fn push(&mut self, x: i32) {
-        self.push_stack.push(x);
-    }
 
-    /** Removes the element from in front of queue and returns that element. */
-    fn pop(&mut self) -> i32 {
-        // 如果 pop 栈为空，则需要将当前 push 栈中的元素转移到 pop 栈中，
-        // 这样就将先进后出转换为了先进先出
-        if self.pop_stack.is_empty() {
-            while !self.push_stack.is_empty() {
-                self.pop_stack.push(self.push_stack.pop().unwrap());
-            }
+func (this *MyQueue) Push(x int)  {
+    this.pushStack = append(this.pushStack, x)
+}
+
+
+func (this *MyQueue) Pop() int {
+    // 先进行转移，避免 pop 栈为空
+    this.transfer()
+    // pop 栈顶元素出栈
+    top := this.popStack[len(this.popStack) - 1]
+    this.popStack = this.popStack[:len(this.popStack) - 1]
+    return top
+}
+
+
+func (this *MyQueue) Peek() int {
+    // 先进行转移，避免 pop 栈为空
+    this.transfer()
+    // 返回 pop 栈顶元素
+    return this.popStack[len(this.popStack) - 1]
+}
+
+
+func (this *MyQueue) Empty() bool {
+    // 当两个栈都为空是，队列才为空
+    return len(this.pushStack) == 0 && len(this.popStack) == 0
+}
+
+func (this *MyQueue) transfer() {
+    // 如果 pop 栈为空，则需要将当前 push 栈中的元素转移到 pop 栈中，
+    // 这样就将先进后出转换为了先进先出
+    if len(this.popStack) == 0 {
+        for len(this.pushStack) > 0 {
+            this.popStack = append(this.popStack, this.pushStack[len(this.pushStack) - 1])
+            this.pushStack = this.pushStack[:len(this.pushStack) - 1]
         }
-        // pop 栈顶元素出栈
-        return self.pop_stack.pop().unwrap()
-    }
-
-    /** Get the front element. */
-    fn peek(&mut self) -> i32 {
-        // 如果 pop 栈为空，则需要将当前 push 栈中的元素转移到 pop 栈中，
-        // 这样就将先进后出转换为了先进先出
-        if self.pop_stack.is_empty() {
-            while !self.push_stack.is_empty() {
-                self.pop_stack.push(self.push_stack.pop().unwrap());
-            }
-        }
-        // 返回 pop 栈顶元素
-        return *self.pop_stack.last().unwrap();
-    }
-
-    /** Returns whether the queue is empty. */
-    fn empty(&self) -> bool {
-        // 当两个栈都为空是，队列才为空
-        return self.push_stack.is_empty() && self.pop_stack.is_empty();
     }
 }
+
 
 /**
  * Your MyQueue object will be instantiated and called as such:
- * let obj = MyQueue::new();
- * obj.push(x);
- * let ret_2: i32 = obj.pop();
- * let ret_3: i32 = obj.peek();
- * let ret_4: bool = obj.empty();
+ * obj := Constructor();
+ * obj.Push(x);
+ * param_2 := obj.Pop();
+ * param_3 := obj.Peek();
+ * param_4 := obj.Empty();
  */
