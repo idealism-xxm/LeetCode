@@ -16,7 +16,8 @@
 // 输入： n = 2
 // 输出： false
 
-// 思路：模拟
+
+// 思路： Set
 //
 //      用 used 维护已出现的数字集合。
 //
@@ -41,37 +42,31 @@
 //              则最终能产生的数为 81 * 10 = 810 。
 
 
-use std::collections::HashSet;
-
-
-impl Solution {
-    pub fn is_happy(n: i32) -> bool {
-        let mut n = n as usize;
-        // used 维护已出现的数字集合
-        let mut used = HashSet::new();
-        // 当 n 未出现过时，继续计算下一个数
-        while !used.contains(&n) {
-            // 标记 n 已出现过
-            used.insert(n);
-            // 计算下一个数，即求 n 的每一位的平方和
-            let mut nxt = 0;
-            // 当 n 不为 0 时，则还可以计算平方和
-            while n > 0 {
-                // 获取 n 剩余的最后一位
-                let digit = n % 10;
-                // 计算平方和加入 nxt
-                nxt += digit * digit;
-                n /= 10;
-            }
-            // 如果下一个数字是 1 ，则直接返回 true
-            if nxt == 1 {
-                return true
-            }
-            // 准备计算下一个数
-            n = nxt;
+func isHappy(n int) bool {
+    // used 维护已出现的数字集合
+    used := make(map[int]bool)
+    // 当 n 未出现过时，继续计算下一个数
+    for !used[n] {
+        // 标记 n 已出现过
+        used[n] = true
+        // 计算下一个数，即求 n 的每一位的平方和
+        nxt := 0
+        // 当 n 不为 0 时，则还可以计算平方和
+        for n > 0 {
+            // 获取 n 剩余的最后一位
+            digit := n % 10
+            // 计算平方和加入 nxt
+            nxt += digit * digit
+            n /= 10
         }
-
-        // 此时遇到了重复的数，说明不能变为 1
-        false
+        // 如果下一个数字是 1 ，则直接返回 true
+        if nxt == 1 {
+            return true
+        }
+        // 准备计算下一个数
+        n = nxt
     }
+
+    // 此时遇到了重复的数，说明不能变为 1
+    return false
 }
