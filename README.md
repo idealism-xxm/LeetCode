@@ -677,7 +677,7 @@ LeetCode AC代码（附思路、注释）
 
 | 题目 | 难度 | 思路 | Python3 | Go | Rust |
 | ------ | ------ | ------ | ------ | ------ | ------ |
-| [2001 - Number of Pairs of Interchangeable Rectangles](https://leetcode.com/problems/number-of-pairs-of-interchangeable-rectangles/) | Medium | 数学 | [√](./Python3/src/2001%20~%202100/2001%20-%20Number%20of%20Pairs%20of%20Interchangeable%20Rectangles.py) |
+| [2001 - Number of Pairs of Interchangeable Rectangles](https://leetcode.com/problems/number-of-pairs-of-interchangeable-rectangles/) | Medium | Map | [√](./Python3/src/2001%20~%202100/2001%20-%20Number%20of%20Pairs%20of%20Interchangeable%20Rectangles.py) | [√](./Go/src/2001%20~%202100/2001%20-%20Number%20of%20Pairs%20of%20Interchangeable%20Rectangles.go) | [√](./Rust/src/2001%20~%202100/2001%20-%20Number%20of%20Pairs%20of%20Interchangeable%20Rectangles.rs) |
 | [2002 - Maximum Product of the Length of Two Palindromic Subsequences](https://leetcode.com/problems/maximum-product-of-the-length-of-two-palindromic-subsequences/) | Medium | 状压 DP | [√](./Python3/src/2001%20~%202100/2002%20-%20Maximum%20Product%20of%20the%20Length%20of%20Two%20Palindromic%20Subsequences.py) |
 | [2003 - Smallest Missing Genetic Value in Each Subtree](https://leetcode.com/problems/smallest-missing-genetic-value-in-each-subtree/) | Hard | DFS | [●](./Python3/src/2001%20~%202100/2003%20-%20Smallest%20Missing%20Genetic%20Value%20in%20Each%20Subtree.py) |
 | [2011 - Final Value of Variable After Performing Operations](https://leetcode.com/problems/final-value-of-variable-after-performing-operations/) | Easy | 模拟 | [√](./Python3/src/2001%20~%202100/2011%20-%20Final%20Value%20of%20Variable%20After%20Performing%20Operations.py) |
