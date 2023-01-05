@@ -1,10 +1,12 @@
 # 链接：https://leetcode.com/problems/count-number-of-pairs-with-absolute-difference-k/
-# 题意：给定一个整数数组 nums ，求有多少对 (i, j) 满足 |nums[i] - nums[j]| <= k ，其中 i < j 。
+# 题意：给定一个整数数组 nums ，求有多少对 (i, j) 满足 |nums[i] - nums[j]| == k ，其中 i < j 。
+
 
 # 数据限制：
 #   1 <= nums.length <= 200
 #   1 <= nums[i] <= 100
 #   1 <= k <= 99
+
 
 # 输入： nums = [1,2,2,1], k = 1
 # 输出： 4
@@ -27,21 +29,31 @@
 
 # 思路： Map
 #
-#       最简单就是使用 O(n ^ 2) 的枚举判断，但 k 是一个定值，
-#       所以我们可以使用一个 map 记录，然后每次遍历的时候直接计算即可
+#       k 是一个定值，所以我们可以使用一个 map 记录每个数字出现的次数，
+#       在遍历 nums 的时候计算满足题意的数对个数，并更新 map 。
+#
+#       遍历 nums 中的数字 num ，让其作为数对的 nums[j] ，
+#       那么 nums[i] 的取值只有 num - k 和 num + k 。
+#
+#       将这两个数字的出现次数计入答案，然后更新 num 的出现次数。
+#
 #
 #       时间复杂度： O(n)
-#       空间复杂度： O(C), 其中 C 表示整型数字的范围
+#          1. 需要遍历 nums 中全部 O(n) 个数字
+#       空间复杂度： O(n)
+#          2. 需要维护 num_to_cnt 中全部不同的数字的出现次数，最差情况下有 O(n) 个
 
 
 class Solution:
     def countKDifference(self, nums: List[int], k: int) -> int:
         # 统计每个数字出现的次数
-        cnt = defaultdict(int)
-        ans = 0
+        num_to_cnt: Dict[int, int] = defaultdict(int)
+        # ans 维护所有满足题意的数对
+        ans: int = 0
         for num in nums:
             # num - k 和 num + k 都能与 num 形成差为 k 的数对
-            ans += cnt[num - k] + cnt[num + k]
+            ans += num_to_cnt[num - k] + num_to_cnt[num + k]
             # 计入 num 出现次数
-            cnt[num] += 1
+            num_to_cnt[num] += 1
+
         return ans
