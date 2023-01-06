@@ -3,51 +3,55 @@
 #       "X++" 和 "++X": X += 1
 #       "X--" 和 "--X": X -= 1
 
+
 # 数据限制：
 #   1 <= operations.length <= 100
 #   operations[i] 是 "++X", "X++", "--X", "X--" 四个之一
 
+
 # 输入： operations = ["--X","X++","X++"]
 # 输出： 1
-# 解释：
-#   初始： X = 0
-#   --X: X =  0 - 1 = -1
-#   X++: X = -1 + 1 =  0
-#   X++: X =  0 + 1 =  1
+# 解释： 初始： X = 0
+#       --X: X =  0 - 1 = -1
+#       X++: X = -1 + 1 =  0
+#       X++: X =  0 + 1 =  1
 
 # 输入： operations = ["++X","++X","X++"]
 # 输出： 3
-# 解释：
-#   初始： X = 0
-#   ++X: X = 0 + 1 = 1
-#   ++X: X = 1 + 1 = 2
-#   X++: X = 2 + 1 = 3
+# 解释： 初始： X = 0
+#       ++X: X = 0 + 1 = 1
+#       ++X: X = 1 + 1 = 2
+#       X++: X = 2 + 1 = 3
 
 # 输入： operations = ["X++","++X","--X","X--"]
 # 输出： 0
-# 解释：
-#   初始： X = 0
-#   X++: X = 0 + 1 = 1
-#   ++X: X = 1 + 1 = 2
-#   --X: X = 2 + 1 = 1
-#   X--: X = 1 - 1 = 0
+# 解释： 初始： X = 0
+#       X++: X = 0 + 1 = 1
+#       ++X: X = 1 + 1 = 2
+#       --X: X = 2 + 1 = 1
+#       X--: X = 1 - 1 = 0
 
 
 # 思路： 模拟
 #
-#       按照题意对 X 操作即可
+#       按照题意对 X 操作即可。
+#
 #
 #       时间复杂度： O(n)
+#          1. 需要遍历 oprations 中全部 O(n) 个操作
 #       空间复杂度： O(1)
+#          1. 只需要维护常数个额外变量即可
 
 
 class Solution:
     def finalValueAfterOperations(self, operations: List[str]) -> int:
-        ans = 0
+        # ans 维护 X 的值，初始化为 0
+        ans: int = 0
         for ope in operations:
             # 如果是加法操作，则执行 +1 ，否则执行 -1
             if ope == "X++" or ope == "++X":
                 ans += 1
             else:
                 ans -= 1
+
         return ans
