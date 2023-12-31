@@ -1,10 +1,12 @@
 # 链接：https://leetcode.com/problems/minimum-difference-between-highest-and-lowest-of-k-scores/
-# 题意：给定一个整型数组，从中选取 k 个数，求最大值减去最小值的最小是多少？
+# 题意：给定一个整型数组，从中选取 k 个数，求最大值减去最小值的差最小是多少？
+
 
 # 数据限制：
 #   1 <= k <= nums.length <= 1000
 #   0 <= nums[i] <= 10 ^ 5
 
+ 
 # 输入： nums = [90], k = 1
 # 输出： 0
 # 解释： 
@@ -18,17 +20,25 @@
 
 # 思路： 贪心
 #
-#       当选择的数是按顺序连续的 k 个数时，才有可能取得最小差值，
-#       假设选择了一个非连续的数，那么差值不会变小，结果都不会更优。
+#       当选择的数是按顺序连续的 k 个数时，才有可能取得最小差值。
 #
-#       所以排序完成后，没有所有长度为 k 的子数组计算差值的最小值即可。
+#       假设选择了一个非连续的数，那么差值不会变小，结果不会更优。
+#
+#       所以我们可以对 nums 排序，然后枚举所有长度为 k 的子数组计算差值的最小值即可。
+#
 #
 #       时间复杂度： O(nlogn)
+#           1. 需要对 nums 中全部 O(n) 个数字排序，排序时间复杂度为 O(nlogn)
+#           2. 需要遍历 nums 中全部 O(n - k) 个长度为 k 的子数组
 #       空间复杂度： O(1)
+#           1. 只需要维护常数个额外变量即可
 
 class Solution:
     def minimumDifference(self, nums: List[int], k: int) -> int:
         # 先排序
         nums.sort()
         # 从所有长度为 k 的子数组中找到最小差值
-        return min(nums[i + k - 1] - nums[i] for i in range(len(nums) - k + 1))
+        return min(
+            nums[i] - nums[i - k + 1]
+            for i in range(k - 1, len(nums))
+        )
